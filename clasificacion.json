@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastUpdate": "2026-06-06T20:09:59",
-    "fase": "Jornada 3 — Fase de Grupos",
+    "lastUpdate": "2026-06-06T20:21:58",
+    "fase": "Final",
     "totalParticipants": 22
   },
   "standings": [
@@ -9,41 +9,41 @@
       "pos": 1,
       "prevPos": 145,
       "id": 1,
-      "name": "arrobamarcovarelafam",
-      "total": 0,
-      "grupos": 0,
+      "name": "ARROBAMARCOVARELAFAM",
+      "total": 31,
+      "grupos": 31,
       "eliminatorias": 0,
       "pichichi": 0,
       "matches": [
         {
           "phase": "Grupo A",
           "match": "ALE-SCO",
-          "pts": 0
+          "pts": 3
         },
         {
           "phase": "Grupo A",
           "match": "HUN-SUI",
-          "pts": 0
+          "pts": 3
         },
         {
           "phase": "Grupo A",
           "match": "ALE-HUN",
-          "pts": 0
+          "pts": 3
         },
         {
           "phase": "Grupo A",
           "match": "SCO-SUI",
-          "pts": 0
+          "pts": 3
         },
         {
           "phase": "Grupo A",
           "match": "SUI-ALE",
-          "pts": 0
+          "pts": 3
         },
         {
           "phase": "Grupo A",
           "match": "SCO-HUN",
-          "pts": 0
+          "pts": 3
         },
         {
           "phase": "Grupo B",
@@ -53,7 +53,7 @@
         {
           "phase": "Grupo B",
           "match": "ITA-ALB",
-          "pts": 0
+          "pts": 1
         },
         {
           "phase": "Grupo B",
@@ -73,7 +73,7 @@
         {
           "phase": "Grupo B",
           "match": "CRO-ITA",
-          "pts": 0
+          "pts": 1
         },
         {
           "phase": "Grupo C",
@@ -83,7 +83,7 @@
         {
           "phase": "Grupo C",
           "match": "SER-ING",
-          "pts": 0
+          "pts": 1
         },
         {
           "phase": "Grupo C",
@@ -93,7 +93,7 @@
         {
           "phase": "Grupo C",
           "match": "DIN-ING",
-          "pts": 0
+          "pts": 1
         },
         {
           "phase": "Grupo C",
@@ -128,7 +128,7 @@
         {
           "phase": "Grupo D",
           "match": "FRA-POL",
-          "pts": 0
+          "pts": 1
         },
         {
           "phase": "Grupo D",
@@ -143,17 +143,17 @@
         {
           "phase": "Grupo E",
           "match": "RUM-UCR",
-          "pts": 0
+          "pts": 1
         },
         {
           "phase": "Grupo E",
           "match": "BEL-RUM",
-          "pts": 0
+          "pts": 1
         },
         {
           "phase": "Grupo E",
           "match": "SVK-UCR",
-          "pts": 0
+          "pts": 1
         },
         {
           "phase": "Grupo E",
@@ -163,7 +163,7 @@
         {
           "phase": "Grupo E",
           "match": "SVK-RUM",
-          "pts": 0
+          "pts": 1
         },
         {
           "phase": "Grupo F",
@@ -173,12 +173,12 @@
         {
           "phase": "Grupo F",
           "match": "POR-CHE",
-          "pts": 0
+          "pts": 1
         },
         {
           "phase": "Grupo F",
           "match": "TUR-POR",
-          "pts": 0
+          "pts": 3
         },
         {
           "phase": "Grupo F",
@@ -253,126 +253,6 @@
         {
           "phase": "Grupo H",
           "match": "CRO-ITA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
           "pts": 0
         },
         {
@@ -633,126 +513,6 @@
           "pts": 0
         },
         {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
-          "pts": 0
-        },
-        {
           "phase": "Final y Campeón",
           "match": "CAMPEÓN",
           "pts": 0
@@ -760,7 +520,7 @@
       ]
     },
     {
-      "pos": 3,
+      "pos": 2,
       "prevPos": 73,
       "id": 3,
       "name": "MONNE",
@@ -1010,126 +770,6 @@
           "pts": 0
         },
         {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
-          "pts": 0
-        },
-        {
           "phase": "Final y Campeón",
           "match": "CAMPEÓN",
           "pts": 0
@@ -1137,7 +777,7 @@
       ]
     },
     {
-      "pos": 4,
+      "pos": 2,
       "prevPos": 46,
       "id": 4,
       "name": "JUANPI TORRICO",
@@ -1387,126 +1027,6 @@
           "pts": 0
         },
         {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
-          "pts": 0
-        },
-        {
           "phase": "Final y Campeón",
           "match": "CAMPEÓN",
           "pts": 0
@@ -1514,7 +1034,7 @@
       ]
     },
     {
-      "pos": 5,
+      "pos": 2,
       "prevPos": 132,
       "id": 5,
       "name": "Josele",
@@ -1764,126 +1284,6 @@
           "pts": 0
         },
         {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
-          "pts": 0
-        },
-        {
           "phase": "Final y Campeón",
           "match": "CAMPEÓN",
           "pts": 0
@@ -1891,7 +1291,7 @@
       ]
     },
     {
-      "pos": 6,
+      "pos": 2,
       "prevPos": 39,
       "id": 6,
       "name": "Homer",
@@ -2141,126 +1541,6 @@
           "pts": 0
         },
         {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
-          "pts": 0
-        },
-        {
           "phase": "Final y Campeón",
           "match": "CAMPEÓN",
           "pts": 0
@@ -2268,7 +1548,7 @@
       ]
     },
     {
-      "pos": 7,
+      "pos": 2,
       "prevPos": 97,
       "id": 7,
       "name": "AK99",
@@ -2518,126 +1798,6 @@
           "pts": 0
         },
         {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
-          "pts": 0
-        },
-        {
           "phase": "Final y Campeón",
           "match": "CAMPEÓN",
           "pts": 0
@@ -2645,7 +1805,7 @@
       ]
     },
     {
-      "pos": 8,
+      "pos": 2,
       "prevPos": 160,
       "id": 8,
       "name": "PepeDSV",
@@ -2895,126 +2055,6 @@
           "pts": 0
         },
         {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
-          "pts": 0
-        },
-        {
           "phase": "Final y Campeón",
           "match": "CAMPEÓN",
           "pts": 0
@@ -3022,7 +2062,7 @@
       ]
     },
     {
-      "pos": 9,
+      "pos": 2,
       "prevPos": 21,
       "id": 9,
       "name": "PR7",
@@ -3272,126 +2312,6 @@
           "pts": 0
         },
         {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
-          "pts": 0
-        },
-        {
           "phase": "Final y Campeón",
           "match": "CAMPEÓN",
           "pts": 0
@@ -3399,7 +2319,7 @@
       ]
     },
     {
-      "pos": 10,
+      "pos": 2,
       "prevPos": 13,
       "id": 10,
       "name": "Luisco",
@@ -3649,126 +2569,6 @@
           "pts": 0
         },
         {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
-          "pts": 0
-        },
-        {
           "phase": "Final y Campeón",
           "match": "CAMPEÓN",
           "pts": 0
@@ -3776,7 +2576,7 @@
       ]
     },
     {
-      "pos": 11,
+      "pos": 2,
       "prevPos": 101,
       "id": 11,
       "name": "Trusky",
@@ -4026,126 +2826,6 @@
           "pts": 0
         },
         {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
-          "pts": 0
-        },
-        {
           "phase": "Final y Campeón",
           "match": "CAMPEÓN",
           "pts": 0
@@ -4153,7 +2833,7 @@
       ]
     },
     {
-      "pos": 12,
+      "pos": 2,
       "prevPos": 12,
       "id": 12,
       "name": "Rivaldo 11",
@@ -4403,126 +3083,6 @@
           "pts": 0
         },
         {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
-          "pts": 0
-        },
-        {
           "phase": "Final y Campeón",
           "match": "CAMPEÓN",
           "pts": 0
@@ -4530,7 +3090,7 @@
       ]
     },
     {
-      "pos": 13,
+      "pos": 2,
       "prevPos": 82,
       "id": 13,
       "name": "Hasselbaink 17",
@@ -4780,126 +3340,6 @@
           "pts": 0
         },
         {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
-          "pts": 0
-        },
-        {
           "phase": "Final y Campeón",
           "match": "CAMPEÓN",
           "pts": 0
@@ -4907,7 +3347,7 @@
       ]
     },
     {
-      "pos": 14,
+      "pos": 2,
       "prevPos": 64,
       "id": 14,
       "name": "Javi Lorente",
@@ -5157,126 +3597,6 @@
           "pts": 0
         },
         {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
-          "pts": 0
-        },
-        {
           "phase": "Final y Campeón",
           "match": "CAMPEÓN",
           "pts": 0
@@ -5284,7 +3604,7 @@
       ]
     },
     {
-      "pos": 15,
+      "pos": 2,
       "prevPos": 4,
       "id": 15,
       "name": "Beltrán Lorente -Sorolla",
@@ -5534,126 +3854,6 @@
           "pts": 0
         },
         {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
-          "pts": 0
-        },
-        {
           "phase": "Final y Campeón",
           "match": "CAMPEÓN",
           "pts": 0
@@ -5661,7 +3861,7 @@
       ]
     },
     {
-      "pos": 16,
+      "pos": 2,
       "prevPos": 37,
       "id": 17,
       "name": "JCMILLABR",
@@ -5911,126 +4111,6 @@
           "pts": 0
         },
         {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
-          "pts": 0
-        },
-        {
           "phase": "Final y Campeón",
           "match": "CAMPEÓN",
           "pts": 0
@@ -6038,7 +4118,7 @@
       ]
     },
     {
-      "pos": 17,
+      "pos": 2,
       "prevPos": 125,
       "id": 18,
       "name": "BELAS",
@@ -6288,126 +4368,6 @@
           "pts": 0
         },
         {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
-          "pts": 0
-        },
-        {
           "phase": "Final y Campeón",
           "match": "CAMPEÓN",
           "pts": 0
@@ -6415,7 +4375,7 @@
       ]
     },
     {
-      "pos": 18,
+      "pos": 2,
       "prevPos": 105,
       "id": 19,
       "name": "Pipita",
@@ -6665,126 +4625,6 @@
           "pts": 0
         },
         {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
-          "pts": 0
-        },
-        {
           "phase": "Final y Campeón",
           "match": "CAMPEÓN",
           "pts": 0
@@ -6792,7 +4632,7 @@
       ]
     },
     {
-      "pos": 19,
+      "pos": 2,
       "prevPos": 117,
       "id": 20,
       "name": "Gabriel Lopez Garzon",
@@ -7042,126 +4882,6 @@
           "pts": 0
         },
         {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
-          "pts": 0
-        },
-        {
           "phase": "Final y Campeón",
           "match": "CAMPEÓN",
           "pts": 0
@@ -7169,7 +4889,7 @@
       ]
     },
     {
-      "pos": 20,
+      "pos": 2,
       "prevPos": 7,
       "id": 21,
       "name": "Carlota Peidro",
@@ -7419,126 +5139,6 @@
           "pts": 0
         },
         {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
-          "pts": 0
-        },
-        {
           "phase": "Final y Campeón",
           "match": "CAMPEÓN",
           "pts": 0
@@ -7546,7 +5146,7 @@
       ]
     },
     {
-      "pos": 21,
+      "pos": 2,
       "prevPos": 66,
       "id": 22,
       "name": "DANNY_MELLOW",
@@ -7796,126 +5396,6 @@
           "pts": 0
         },
         {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
-          "pts": 0
-        },
-        {
           "phase": "Final y Campeón",
           "match": "CAMPEÓN",
           "pts": 0
@@ -7923,7 +5403,7 @@
       ]
     },
     {
-      "pos": 22,
+      "pos": 2,
       "prevPos": 93,
       "id": 23,
       "name": "JotaVilla22",
@@ -8170,126 +5650,6 @@
         {
           "phase": "Grupo H",
           "match": "CRO-ITA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-DIN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SER-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "SLV-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ING-SLV",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "DIN-SER",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUT-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "POL-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "FRA-POL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "NED-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-SVK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "RUM-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "BEL-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-UCR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "UCR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "SVK-RUM",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-GEO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "POR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUR-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "CHE-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "GEO-POR",
           "pts": 0
         },
         {
