@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veletoporra Mundial 2026 — Clasificación</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --bg:#0f1923;
+  --surface:#18232f;
+  --surface2:#1e2d3d;
+  --border:#253345;
+  --gold:#c9a227;
+  --gold-dim:rgba(201,162,39,0.15);
+  --silver-dim:rgba(192,192,192,0.08);
+  --bronze-dim:rgba(180,120,40,0.1);
+  --text:#dde6f0;
+  --muted:#6b7e91;
+  --up:#34d399;
+  --down:#f87171;
+  --neutral:#4b5a6a;
+  --highlight:rgba(201,162,39,0.18);
+  --radius:8px;
+}
+
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  min-height:100vh;
+  font-size:14px;
+  line-height:1.4;
+}
+
+/* ── HEADER ─────────────────────────────────────────────── */
+.header{
+  background:linear-gradient(160deg,#0a1520 0%,#162030 60%,#0f1923 100%);
+  border-bottom:2px solid var(--gold);
+  padding:14px 20px;
+}
+.header-inner{
+  max-width:1100px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.header-brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.header-ball{font-size:clamp(24px,5vw,36px)}
+.header-text h1{
+  font-size:clamp(16px,4vw,24px);
+  font-weight:800;
+  color:var(--gold);
+  text-transform:uppercase;
+  letter-spacing:-0.3px;
+}
+.header-text .subtitle{
+  font-size:12px;
+  color:var(--muted);
+  margin-top:2px;
+}
+.header-update{
+  text-align:right;
+  font-size:12px;
+  color:var(--muted);
+  flex-shrink:0;
+}
+.header-update strong{
+  display:block;
+  font-size:13px;
+  color:var(--text);
+}
+
+/* ── MAIN ────────────────────────────────────────────────── */
+.main{
+  max-width:1100px;
+  margin:0 auto;
+  padding:20px 16px 40px;
+}
+
+/* ── STATS ───────────────────────────────────────────────── */
+.stats{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+  gap:10px;
+  margin-bottom:20px;
+}
+.stat{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:12px 14px;
+}
+.stat-label{
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.6px;
+  color:var(--muted);
+}
+.stat-value{
+  font-size:22px;
+  font-weight:800;
+  color:var(--gold);
+  margin-top:3px;
+  line-height:1;
+}
+.stat-sub{
+  font-size:12px;
+  color:var(--text);
+  margin-top:3px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+/* ── CONTROLS ────────────────────────────────────────────── */
+.controls{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:14px;
+  flex-wrap:wrap;
+}
+.search-wrap{
+  position:relative;
+  flex:1;
+  min-width:200px;
+}
+.search-icon{
+  position:absolute;
+  left:11px;top:50%;
+  transform:translateY(-50%);
+  color:var(--muted);
+  font-size:13px;
+  pointer-events:none;
+}
+.search{
+  width:100%;
+  padding:9px 12px 9px 34px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  color:var(--text);
+  font-size:14px;
+  outline:none;
+  transition:border-color .2s;
+}
+.search:focus{border-color:var(--gold)}
+.search::placeholder{color:var(--muted)}
+.search-hint{
+  font-size:12px;
+  color:var(--muted);
+  white-space:nowrap;
+}
+
+/* ── TABLE WRAPPER ───────────────────────────────────────── */
+.table-wrap{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  overflow:hidden;
+}
+.table-scroll{
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  min-width:460px;
+}
+@media(max-width:580px){
+  table{min-width:0;table-layout:fixed;width:100%}
+  .col-pos{width:38px}
+  .col-mov,.mov{display:none}
+  .col-pts{width:52px}
+  .col-exp{width:32px}
+  td{padding:8px 7px}
+  .pts-cell{font-size:14px}
+  .name-cell{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+}
+
+/* ── THEAD ───────────────────────────────────────────────── */
+thead{position:sticky;top:0;z-index:20}
+thead tr{background:#0d1822;border-bottom:2px solid var(--border)}
+th{
+  padding:9px 10px;
+  font-size:10px;
+  font-weight:700;
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:.6px;
+  white-space:nowrap;
+  cursor:pointer;
+  user-select:none;
+  transition:color .15s;
+}
+th:hover{color:var(--text)}
+th.sort-active{color:var(--gold)}
+th.sort-active::after{content:' ▲';font-size:8px}
+th.sort-desc::after{content:' ▼';font-size:8px}
+.col-pos{width:40px;text-align:center}
+.col-mov{width:46px;text-align:center}
+.col-name{min-width:150px}
+.col-pts{width:56px;text-align:right}
+.col-sub{width:52px;text-align:right}
+.col-exp{width:34px;text-align:center;cursor:default!important}
+.col-exp:hover{color:var(--muted)!important}
+
+/* ── ROWS ────────────────────────────────────────────────── */
+tbody tr.data-row{
+  border-bottom:1px solid var(--border);
+  transition:background .12s;
+}
+tbody tr.data-row:last-of-type{border-bottom:none}
+tbody tr.data-row:hover{background:rgba(255,255,255,.025)}
+tr.r1{background:var(--gold-dim)}
+tr.r2{background:var(--silver-dim)}
+tr.r3{background:var(--bronze-dim)}
+tr.found{background:var(--highlight)!important}
+tr.found:hover{background:var(--highlight)!important}
+
+td{
+  padding:9px 10px;
+  vertical-align:middle;
+}
+
+/* position cell */
+.pos-cell{text-align:center;font-weight:700;font-size:15px}
+.medal{font-size:18px;line-height:1}
+
+/* movement cell */
+.mov{text-align:center;font-size:11px;font-weight:700;white-space:nowrap}
+.mov-up{color:var(--up)}
+.mov-dn{color:var(--down)}
+.mov-eq{color:var(--neutral)}
+
+/* name cell */
+.name-cell{font-weight:600;font-size:14px}
+
+/* points cell */
+.pts-cell{text-align:right;font-size:16px;font-weight:800;color:var(--gold)}
+
+/* sub totals */
+.sub-cell{text-align:right;font-size:13px;color:var(--muted)}
+
+/* expand button */
+.xbtn{
+  display:flex;align-items:center;justify-content:center;
+  width:22px;height:22px;margin:0 auto;
+  background:var(--border);
+  border:none;border-radius:4px;
+  color:var(--muted);font-size:9px;
+  cursor:pointer;transition:all .15s;
+}
+.xbtn:hover{background:var(--gold);color:#000}
+.xbtn.open{background:var(--gold);color:#000;transform:rotate(90deg)}
+
+/* ── DETAIL ROW ──────────────────────────────────────────── */
+tr.detail-row{display:none}
+tr.detail-row.open{display:table-row}
+.detail-cell{
+  padding:12px 14px 16px;
+  background:#0d1822;
+  border-bottom:1px solid var(--border);
+}
+
+.phase-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  gap:10px;
+}
+.phase-block{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:6px;
+  padding:10px 12px;
+}
+.phase-title{
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+  color:var(--muted);
+  margin-bottom:7px;
+}
+.match-line{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:3px 0;
+  font-size:12px;
+  border-bottom:1px solid rgba(37,51,69,.6);
+}
+.match-line:last-of-type{border:none}
+.match-name{color:var(--text)}
+.pts-val{font-weight:700;min-width:24px;text-align:right}
+.pts-pos{color:var(--up)}
+.pts-zero{color:var(--neutral)}
+.phase-footer{
+  display:flex;
+  justify-content:space-between;
+  margin-top:7px;padding-top:7px;
+  border-top:1px solid var(--gold);
+  font-size:11px;font-weight:700;
+  color:var(--gold);
+}
+.detail-empty{
+  color:var(--muted);
+  font-size:13px;
+  text-align:center;
+  padding:6px 0;
+}
+
+/* ── HIDE ON MOBILE ──────────────────────────────────────── */
+@media(max-width:580px){
+  .hide-sm{display:none}
+  td{padding:8px 7px}
+  .pts-cell{font-size:14px}
+  .name-cell{font-size:13px}
+}
+
+/* ── SPONSORS ────────────────────────────────────────────── */
+.sponsors{margin-top:36px}
+.sponsors-label{
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  color:var(--muted);
+  text-align:center;
+  margin-bottom:14px;
+}
+.sponsors-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(190px,1fr));
+  gap:10px;
+}
+.sponsor-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:14px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+  color:var(--text);
+  transition:border-color .2s,transform .2s;
+}
+.sponsor-card:hover{
+  border-color:var(--gold);
+  transform:translateY(-2px);
+}
+.sp-logo-wrap{
+  width:44px;height:44px;
+  flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(255,255,255,.04);
+  border-radius:6px;
+  font-size:20px;
+}
+.sp-logo{
+  width:44px;height:44px;
+  object-fit:contain;
+  border-radius:6px;
+}
+.sp-name{font-weight:700;font-size:13px}
+.sp-tagline{font-size:11px;color:var(--muted);margin-top:2px}
+
+/* ── EMPTY / LOADING ─────────────────────────────────────── */
+.state-cell{
+  text-align:center;
+  padding:36px;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* ── FOOTER ──────────────────────────────────────────────── */
+.footer{
+  margin-top:36px;
+  padding:16px;
+  text-align:center;
+  font-size:12px;
+  color:var(--muted);
+  border-top:1px solid var(--border);
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <span class="header-ball">⚽</span>
+      <div class="header-text">
+        <h1>Veletoporra Mundial 2026</h1>
+        <p class="subtitle" id="fase-label">Clasificación General</p>
+      </div>
+    </div>
+    <div class="header-update">
+      <strong id="last-update">—</strong>
+      Última actualización
+    </div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-label">Participantes</div>
+      <div class="stat-value" id="stat-n">—</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Líder</div>
+      <div class="stat-value">🥇</div>
+      <div class="stat-sub" id="stat-leader">—</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Puntos líder</div>
+      <div class="stat-value" id="stat-pts">—</div>
+    </div>
+    <div class="stat" id="stat-you-wrap" style="display:none">
+      <div class="stat-label">Tu posición</div>
+      <div class="stat-value" id="stat-you">—</div>
+      <div class="stat-sub" id="stat-you-name">—</div>
+    </div>
+  </div>
+
+  <!-- CONTROLS -->
+  <div class="controls">
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" class="search" id="search"
+             placeholder="Busca tu nombre o alias…"
+             autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </div>
+    <span class="search-hint" id="search-hint"></span>
+  </div>
+
+  <!-- TABLE -->
+  <div class="table-wrap">
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th class="col-pos" title="Posición">#</th>
+            <th class="col-mov" title="Movimiento respecto a ayer">Mov</th>
+            <th class="col-name" data-sort="name">Nombre</th>
+            <th class="col-pts sort-active" data-sort="total">Total</th>
+            <th class="col-sub hide-sm" data-sort="grupos">Grupos</th>
+            <th class="col-sub hide-sm" data-sort="eliminatorias">Elim.</th>
+            <th class="col-sub hide-sm" data-sort="pichichi">Pic.</th>
+            <th class="col-exp"></th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <tr><td class="state-cell" colspan="8">Cargando clasificación…</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SPONSORS -->
+  <section class="sponsors" id="sponsors" style="display:none">
+    <p class="sponsors-label">Patrocinadores</p>
+    <div class="sponsors-grid" id="sponsors-grid"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  Veletoporra Mundial 2026 · Organizada por Baro y Pato
+</footer>
+
+<script>
+// ─── STATE ──────────────────────────────────────────────────────────────────
+let ALL = [];          // todos los standings, ordenados
+let VIEW = [];         // vista actual (filtrada)
+let sortKey = 'total';
+let sortAsc = false;
+let expanded = new Set();
+
+// ─── INIT ────────────────────────────────────────────────────────────────────
+async function init() {
+  let data;
+  try {
+    const r = await fetch('clasificacion.json?t=' + Date.now());
+    if (r.ok) data = await r.json();
+  } catch(_) {}
+  if (!data) data = DEMO;
+
+  const meta = data.meta || {};
+
+  // Meta
+  el('fase-label').textContent = meta.fase || 'Clasificación General';
+  if (meta.lastUpdate) {
+    const d = new Date(meta.lastUpdate);
+    el('last-update').textContent = d.toLocaleDateString('es-ES',
+      {day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});
+  }
+  el('stat-n').textContent = meta.totalParticipants ?? data.standings.length;
+
+  // Sort initial
+  ALL = [...data.standings].sort((a,b) => a.pos - b.pos || b.total - a.total);
+  if (ALL.length) {
+    el('stat-leader').textContent = ALL[0].name;
+    el('stat-pts').textContent    = ALL[0].total;
+  }
+
+  VIEW = [...ALL];
+  renderTable();
+  renderSponsors(data.sponsors || []);
+
+  // Column sort
+  document.querySelectorAll('th[data-sort]').forEach(th => {
+    th.addEventListener('click', () => {
+      const k = th.dataset.sort;
+      if (sortKey === k) { sortAsc = !sortAsc; }
+      else { sortKey = k; sortAsc = k === 'name'; }
+      document.querySelectorAll('th').forEach(t =>
+        t.classList.remove('sort-active','sort-desc'));
+      th.classList.add('sort-active');
+      if (!sortAsc) th.classList.add('sort-desc');
+      sortAndRender();
+    });
+  });
+
+  // Search
+  el('search').addEventListener('input', e => {
+    const q = e.target.value.trim().toLowerCase();
+    if (!q) {
+      VIEW = [...ALL];
+      el('search-hint').textContent = '';
+      el('stat-you-wrap').style.display = 'none';
+    } else {
+      VIEW = ALL.filter(p => p.name.toLowerCase().includes(q));
+      el('search-hint').textContent =
+        VIEW.length ? `${VIEW.length} resultado${VIEW.length !== 1 ? 's' : ''}` : 'Sin resultados';
+
+      // "Tu posición" card si hay coincidencia exacta
+      const exact = VIEW.find(p => p.name.toLowerCase() === q);
+      if (exact) {
+        el('stat-you').textContent    = exact.pos;
+        el('stat-you-name').textContent = exact.name;
+        el('stat-you-wrap').style.display = '';
+      } else {
+        el('stat-you-wrap').style.display = 'none';
+      }
+    }
+    renderTable();
+  });
+}
+
+// ─── SORT ────────────────────────────────────────────────────────────────────
+function sortAndRender() {
+  const dir = sortAsc ? 1 : -1;
+  ALL.sort((a,b) => {
+    if (sortKey === 'name') return dir * a.name.localeCompare(b.name,'es');
+    const va = a[sortKey] ?? 0, vb = b[sortKey] ?? 0;
+    if (va !== vb) return dir * (va - vb);
+    return a.pos - b.pos;
+  });
+  const q = el('search').value.trim().toLowerCase();
+  VIEW = q ? ALL.filter(p => p.name.toLowerCase().includes(q)) : [...ALL];
+  renderTable();
+}
+
+// ─── TABLE ───────────────────────────────────────────────────────────────────
+function renderTable() {
+  const tbody = el('tbody');
+  if (!VIEW.length) {
+    tbody.innerHTML = '<tr><td class="state-cell" colspan="8">Sin participantes que coincidan.</td></tr>';
+    return;
+  }
+  const q = el('search').value.trim().toLowerCase();
+  tbody.innerHTML = VIEW.map(p => rowHtml(p, q)).join('');
+
+  tbody.querySelectorAll('.xbtn').forEach(btn => {
+    btn.addEventListener('click', () => toggleDetail(btn.dataset.id));
+  });
+
+  // Restaurar expanded
+  expanded.forEach(id => {
+    const dr = document.getElementById('d-' + id);
+    const btn = document.querySelector('.xbtn[data-id="' + id + '"]');
+    if (dr)  dr.classList.add('open');
+    if (btn) btn.classList.add('open');
+  });
+}
+
+function rowHtml(p, q) {
+  const rankCls = p.pos === 1 ? 'r1' : p.pos === 2 ? 'r2' : p.pos === 3 ? 'r3' : '';
+  const foundCls = q && p.name.toLowerCase().includes(q) ? 'found' : '';
+
+  const posHtml = p.pos === 1 ? '<span class="medal">🥇</span>'
+                : p.pos === 2 ? '<span class="medal">🥈</span>'
+                : p.pos === 3 ? '<span class="medal">🥉</span>'
+                : p.pos;
+
+  return `
+<tr class="data-row ${rankCls} ${foundCls}" data-id="${p.id}">
+  <td class="pos-cell">${posHtml}</td>
+  <td class="mov">${movHtml(p.pos, p.prevPos)}</td>
+  <td class="name-cell">${esc(p.name)}</td>
+  <td class="pts-cell">${p.total}</td>
+  <td class="sub-cell hide-sm">${p.grupos}</td>
+  <td class="sub-cell hide-sm">${p.eliminatorias}</td>
+  <td class="sub-cell hide-sm">${p.pichichi}</td>
+  <td><button class="xbtn" data-id="${p.id}" title="Ver desglose por partido">▶</button></td>
+</tr>
+<tr class="detail-row" id="d-${p.id}">
+  <td class="detail-cell" colspan="8">${detailHtml(p)}</td>
+</tr>`;
+}
+
+function movHtml(pos, prev) {
+  if (!prev || prev === 0) return '<span class="mov-eq">—</span>';
+  const d = prev - pos;
+  if (d > 0) return `<span class="mov-up">▲${d}</span>`;
+  if (d < 0) return `<span class="mov-dn">▼${Math.abs(d)}</span>`;
+  return '<span class="mov-eq">─</span>';
+}
+
+function detailHtml(p) {
+  if (!p.matches || !p.matches.length)
+    return `<p class="detail-empty">Desglose disponible cuando empiece el torneo.</p>`;
+
+  // Agrupar por fase
+  const phases = {};
+  p.matches.forEach(m => {
+    if (!phases[m.phase]) phases[m.phase] = [];
+    phases[m.phase].push(m);
+  });
+
+  const blocks = Object.entries(phases).map(([phase, ms]) => {
+    const sub = ms.reduce((s,m) => s + (m.pts||0), 0);
+    const lines = ms.map(m => {
+      const cls = m.pts > 0 ? 'pts-pos' : 'pts-zero';
+      return `<div class="match-line">
+        <span class="match-name">${esc(m.match)}</span>
+        <span class="pts-val ${cls}">${m.pts}</span>
+      </div>`;
+    }).join('');
+    return `<div class="phase-block">
+      <div class="phase-title">${esc(phase)}</div>
+      ${lines}
+      <div class="phase-footer"><span>Subtotal</span><span>${sub}</span></div>
+    </div>`;
+  }).join('');
+
+  return `<div class="phase-grid">${blocks}</div>`;
+}
+
+function toggleDetail(id) {
+  const dr  = document.getElementById('d-' + id);
+  const btn = document.querySelector('.xbtn[data-id="' + id + '"]');
+  if (!dr) return;
+  const open = dr.classList.toggle('open');
+  if (btn) btn.classList.toggle('open', open);
+  if (open) expanded.add(id); else expanded.delete(id);
+}
+
+// ─── SPONSORS ────────────────────────────────────────────────────────────────
+function renderSponsors(list) {
+  if (!list.length) return;
+  const grid = el('sponsors-grid');
+  grid.innerHTML = list.map(s => {
+    const logoHtml = s.logo
+      ? `<img class="sp-logo" src="${esc(s.logo)}" alt="${esc(s.name)}" loading="lazy">`
+      : `<div class="sp-logo-wrap">🏢</div>`;
+    const tag  = s.url && s.url !== '#' ? 'a' : 'div';
+    const attr = s.url && s.url !== '#'
+      ? `href="${esc(s.url)}" target="_blank" rel="noopener noreferrer"`
+      : '';
+    return `<${tag} class="sponsor-card" ${attr}>
+      <div class="sp-logo-wrap">${logoHtml}</div>
+      <div><div class="sp-name">${esc(s.name)}</div>
+           <div class="sp-tagline">${esc(s.tagline||'')}</div></div>
+    </${tag}>`;
+  }).join('');
+  el('sponsors').style.display = '';
+}
+
+// ─── UTILS ───────────────────────────────────────────────────────────────────
+function el(id) { return document.getElementById(id); }
+function esc(s) {
+  if (s == null) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ─── DEMO DATA (fallback sin servidor) ───────────────────────────────────────
+const DEMO = {
+  meta:{
+    lastUpdate: new Date().toISOString(),
+    fase: "Demo — Torneo no iniciado",
+    totalParticipants: 23
+  },
+  standings:[
+    {pos:1,prevPos:3,id:8,name:"PepeDSV",total:47,grupos:35,eliminatorias:8,pichichi:4,matches:[
+      {phase:"Grupo A",match:"ESP-MAR",pts:3},{phase:"Grupo A",match:"ESP-CRO",pts:1},{phase:"Grupo A",match:"ESP-ITA",pts:2},
+      {phase:"Grupo B",match:"BRA-SUI",pts:0},{phase:"Grupo B",match:"FRA-ARG",pts:3},
+      {phase:"Eliminatorias",match:"ESP-ALE",pts:2},{phase:"Eliminatorias",match:"BRA-FRA",pts:0},
+      {phase:"Pichichi",match:"Pichichi torneo",pts:3},{phase:"Pichichi",match:"Pichichi español",pts:1}
+    ]},
+    {pos:2,prevPos:2,id:2,name:"Gaspar GS",total:45,grupos:33,eliminatorias:8,pichichi:4,matches:[]},
+    {pos:3,prevPos:1,id:3,name:"MONNE",total:43,grupos:31,eliminatorias:8,pichichi:4,matches:[]},
+    {pos:4,prevPos:6,id:1,name:"arrobamarcovarelafam",total:41,grupos:30,eliminatorias:7,pichichi:4,matches:[]},
+    {pos:5,prevPos:4,id:4,name:"JUANPI TORRICO",total:38,grupos:28,eliminatorias:6,pichichi:4,matches:[]},
+    {pos:6,prevPos:5,id:5,name:"Josele",total:36,grupos:26,eliminatorias:7,pichichi:3,matches:[]},
+    {pos:7,prevPos:9,id:7,name:"AK99",total:34,grupos:25,eliminatorias:6,pichichi:3,matches:[]},
+    {pos:8,prevPos:7,id:6,name:"Homer",total:32,grupos:24,eliminatorias:5,pichichi:3,matches:[]},
+    {pos:9,prevPos:8,id:9,name:"PR7",total:30,grupos:22,eliminatorias:5,pichichi:3,matches:[]},
+    {pos:10,prevPos:15,id:10,name:"Luisco",total:28,grupos:21,eliminatorias:4,pichichi:3,matches:[]},
+    {pos:11,prevPos:10,id:11,name:"Trusky",total:26,grupos:20,eliminatorias:4,pichichi:2,matches:[]},
+    {pos:12,prevPos:11,id:12,name:"Rivaldo 11",total:24,grupos:18,eliminatorias:4,pichichi:2,matches:[]},
+    {pos:13,prevPos:12,id:13,name:"Hasselbaink 17",total:22,grupos:17,eliminatorias:3,pichichi:2,matches:[]},
+    {pos:14,prevPos:13,id:14,name:"Javi Lorente",total:20,grupos:15,eliminatorias:3,pichichi:2,matches:[]},
+    {pos:15,prevPos:14,id:15,name:"Beltrán Lorente",total:18,grupos:14,eliminatorias:2,pichichi:2,matches:[]},
+    {pos:16,prevPos:20,id:17,name:"JCMILLABR",total:15,grupos:12,eliminatorias:1,pichichi:2,matches:[]},
+    {pos:17,prevPos:16,id:18,name:"BELAS",total:13,grupos:10,eliminatorias:1,pichichi:2,matches:[]},
+    {pos:18,prevPos:17,id:19,name:"Pipita",total:10,grupos:8,eliminatorias:0,pichichi:2,matches:[]},
+    {pos:19,prevPos:18,id:20,name:"Gabi López",total:8,grupos:6,eliminatorias:0,pichichi:2,matches:[]},
+    {pos:20,prevPos:19,id:21,name:"Carlota Peidro",total:6,grupos:5,eliminatorias:0,pichichi:1,matches:[]},
+    {pos:21,prevPos:21,id:22,name:"DANNY_MELLOW",total:5,grupos:4,eliminatorias:0,pichichi:1,matches:[]},
+    {pos:22,prevPos:22,id:23,name:"JotaVilla22",total:3,grupos:3,eliminatorias:0,pichichi:0,matches:[]},
+    {pos:23,prevPos:23,id:16,name:"Raúl Murillo",total:0,grupos:0,eliminatorias:0,pichichi:0,matches:[]}
+  ],
+  sponsors:[
+    {name:"Patrocinador 1",logo:"",url:"#",tagline:"Texto del patrocinador"},
+    {name:"Patrocinador 2",logo:"",url:"#",tagline:"Texto del patrocinador"},
+    {name:"Patrocinador 3",logo:"",url:"#",tagline:"Texto del patrocinador"},
+    {name:"Patrocinador 4",logo:"",url:"#",tagline:"Texto del patrocinador"},
+    {name:"Patrocinador 5",logo:"",url:"#",tagline:"Texto del patrocinador"}
+  ]
+};
+
+init();
+</script>
+</body>
+</html>
