@@ -676,15 +676,17 @@ function renderSponsors(list) {
   if (!list.length) return;
   const grid = el('sponsors-grid');
   grid.innerHTML = list.map(s => {
-    const logoHtml = s.logo
+    // logo puede ser URL (http/data:) o emoji corto
+    const isUrl = s.logo && (s.logo.startsWith('http') || s.logo.startsWith('data:'));
+    const logoInner = isUrl
       ? `<img class="sp-logo" src="${esc(s.logo)}" alt="${esc(s.name)}" loading="lazy">`
-      : `<div class="sp-logo-wrap">🏢</div>`;
+      : `<span style="font-size:22px">${s.logo || '🏢'}</span>`;
     const tag  = s.url && s.url !== '#' ? 'a' : 'div';
     const attr = s.url && s.url !== '#'
       ? `href="${esc(s.url)}" target="_blank" rel="noopener noreferrer"`
       : '';
     return `<${tag} class="sponsor-card" ${attr}>
-      <div class="sp-logo-wrap">${logoHtml}</div>
+      <div class="sp-logo-wrap">${logoInner}</div>
       <div><div class="sp-name">${esc(s.name)}</div>
            <div class="sp-tagline">${esc(s.tagline||'')}</div></div>
     </${tag}>`;
