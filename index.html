@@ -677,8 +677,8 @@ function renderSponsors(list) {
   const grid = el('sponsors-grid');
   grid.innerHTML = list.map(s => {
     // logo puede ser URL (http/data:) o emoji corto
-    const isUrl = s.logo && (s.logo.startsWith('http') || s.logo.startsWith('data:'));
-    const logoInner = isUrl
+    const isImg = s.logo && (s.logo.includes('/') || s.logo.includes('.') || s.logo.startsWith('data:'));
+    const logoInner = isImg
       ? `<img class="sp-logo" src="${esc(s.logo)}" alt="${esc(s.name)}" loading="lazy">`
       : `<span style="font-size:22px">${s.logo || '🏢'}</span>`;
     const tag  = s.url && s.url !== '#' ? 'a' : 'div';
@@ -739,11 +739,14 @@ const DEMO = {
     {pos:23,prevPos:23,id:16,name:"Raúl Murillo",total:0,grupos:0,eliminatorias:0,pichichi:0,matches:[]}
   ],
   sponsors:[
-    {name:"Patrocinador 1",logo:"",url:"#",tagline:"Texto del patrocinador"},
-    {name:"Patrocinador 2",logo:"",url:"#",tagline:"Texto del patrocinador"},
-    {name:"Patrocinador 3",logo:"",url:"#",tagline:"Texto del patrocinador"},
-    {name:"Patrocinador 4",logo:"",url:"#",tagline:"Texto del patrocinador"},
-    {name:"Patrocinador 5",logo:"",url:"#",tagline:"Texto del patrocinador"}
+    {name:"FutbolBet365",   logo:"logos/futbolbet365.svg",  url:"#",tagline:"Apuesta con cabeza"},
+    {name:"Cerveza La Roja",logo:"logos/cervezalaroja.svg", url:"#",tagline:"La bebida del campeón"},
+    {name:"ViajesGol",      logo:"logos/viagol.svg",        url:"#",tagline:"Viaja donde juega tu equipo"},
+    {name:"KitSport",       logo:"logos/kitsport.svg",      url:"#",tagline:"La equipación oficial"},
+    {name:"GameStar FC",    logo:"logos/gamestarfc.svg",    url:"#",tagline:"El videojuego del Mundial"},
+    {name:"Pizza del Balón",logo:"logos/pizzabalon.svg",    url:"#",tagline:"La pizza más futbolera"},
+    {name:"AppMarcador",    logo:"logos/appmarcador.svg",   url:"#",tagline:"El marcador en tu bolsillo"},
+    {name:"GymGoal",        logo:"logos/gymgoal.svg",       url:"#",tagline:"Entrena como un pro"}
   ]
 };
 
