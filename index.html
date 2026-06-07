@@ -78,6 +78,31 @@ body{
   font-size:13px;
   color:var(--text);
 }
+.header-nav{
+  display:flex;
+  gap:8px;
+  flex-shrink:0;
+}
+.nav-pill{
+  padding:6px 14px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:600;
+  text-decoration:none;
+  transition:all .2s;
+  border:1px solid var(--border);
+  color:var(--muted);
+  background:var(--surface);
+}
+.nav-pill:hover{
+  border-color:var(--gold);
+  color:var(--gold);
+}
+.nav-pill.active{
+  background:var(--gold);
+  border-color:var(--gold);
+  color:#000;
+}
 
 /* ── MAIN ────────────────────────────────────────────────── */
 .main{
@@ -405,6 +430,10 @@ tr.detail-row.open{display:table-row}
         <p class="subtitle" id="fase-label">Clasificación General</p>
       </div>
     </div>
+    <nav class="header-nav">
+      <a href="index.html" class="nav-pill active">📊 Clasificación</a>
+      <a href="premios.html" class="nav-pill">🏆 Premios</a>
+    </nav>
     <div class="header-update">
       <strong id="last-update">—</strong>
       Última actualización
@@ -480,7 +509,7 @@ tr.detail-row.open{display:table-row}
 </main>
 
 <footer class="footer">
-  Veletoporra Mundial 2026 · Organizada por Baro y Pato
+  Veletoporra Mundial 2026
 </footer>
 
 <script>
@@ -739,14 +768,15 @@ const DEMO = {
     {pos:23,prevPos:23,id:16,name:"Raúl Murillo",total:0,grupos:0,eliminatorias:0,pichichi:0,matches:[]}
   ],
   sponsors:[
-    {name:"FutbolBet365",   logo:"logos/futbolbet365.svg",  url:"#",tagline:"Apuesta con cabeza"},
-    {name:"Cerveza La Roja",logo:"logos/cervezalaroja.svg", url:"#",tagline:"La bebida del campeón"},
-    {name:"ViajesGol",      logo:"logos/viagol.svg",        url:"#",tagline:"Viaja donde juega tu equipo"},
-    {name:"KitSport",       logo:"logos/kitsport.svg",      url:"#",tagline:"La equipación oficial"},
-    {name:"GameStar FC",    logo:"logos/gamestarfc.svg",    url:"#",tagline:"El videojuego del Mundial"},
-    {name:"Pizza del Balón",logo:"logos/pizzabalon.svg",    url:"#",tagline:"La pizza más futbolera"},
-    {name:"AppMarcador",    logo:"logos/appmarcador.svg",   url:"#",tagline:"El marcador en tu bolsillo"},
-    {name:"GymGoal",        logo:"logos/gymgoal.svg",       url:"#",tagline:"Entrena como un pro"}
+    {name:"I'm Room Apartments",   logo:"🏠", url:"#", tagline:"Alojamiento en Madrid"},
+    {name:"Ágora Arquitectura",    logo:"🏗️", url:"#", tagline:"Arquitectura y certificación"},
+    {name:"Clínica Santamaría",    logo:"🦷", url:"#", tagline:"Salud dental"},
+    {name:"LiftforLive",           logo:"💪", url:"#", tagline:"Preparación física online"},
+    {name:"Cría Cuervos",          logo:"🍷", url:"#", tagline:"Vinos con carácter"},
+    {name:"Clínica Baena Martín",  logo:"👟", url:"#", tagline:"Podología y biomecánica"},
+    {name:"Yaiza Cakes",           logo:"🎂", url:"#", tagline:"Tartas personalizadas"},
+    {name:"Acrisure Summa Insurance", logo:"🛡️", url:"#", tagline:"Seguros a tu medida"},
+    {name:"Health Force Food",     logo:"🥗", url:"#", tagline:"Nutrición y bienestar"}
   ]
 };
 

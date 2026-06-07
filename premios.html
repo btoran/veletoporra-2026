@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premios — Veletoporra Mundial 2026</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --bg:#0f1923;
+  --surface:#18232f;
+  --surface2:#1e2d3d;
+  --border:#253345;
+  --gold:#c9a227;
+  --gold-dim:rgba(201,162,39,0.15);
+  --text:#dde6f0;
+  --muted:#6b7e91;
+  --radius:8px;
+}
+
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  min-height:100vh;
+  font-size:14px;
+  line-height:1.4;
+}
+
+/* ── HEADER ─────────────────────────────────────────────── */
+.header{
+  background:linear-gradient(160deg,#0a1520 0%,#162030 60%,#0f1923 100%);
+  border-bottom:2px solid var(--gold);
+  padding:14px 20px;
+}
+.header-inner{
+  max-width:1100px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.header-brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.header-ball{font-size:clamp(24px,5vw,36px)}
+.header-text h1{
+  font-size:clamp(16px,4vw,24px);
+  font-weight:800;
+  color:var(--gold);
+  text-transform:uppercase;
+  letter-spacing:-0.3px;
+}
+.header-text .subtitle{
+  font-size:12px;
+  color:var(--muted);
+  margin-top:2px;
+}
+.header-nav{
+  display:flex;
+  gap:8px;
+  flex-shrink:0;
+}
+.nav-pill{
+  padding:6px 14px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:600;
+  text-decoration:none;
+  transition:all .2s;
+  border:1px solid var(--border);
+  color:var(--muted);
+  background:var(--surface);
+}
+.nav-pill:hover{
+  border-color:var(--gold);
+  color:var(--gold);
+}
+.nav-pill.active{
+  background:var(--gold);
+  border-color:var(--gold);
+  color:#000;
+}
+
+/* ── MAIN ────────────────────────────────────────────────── */
+.main{
+  max-width:1100px;
+  margin:0 auto;
+  padding:24px 16px 60px;
+}
+
+/* ── AVISO EDICIÓN ───────────────────────────────────────── */
+.edition-note{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-left:3px solid var(--gold);
+  border-radius:var(--radius);
+  padding:10px 14px;
+  font-size:12px;
+  color:var(--muted);
+  margin-bottom:28px;
+}
+.edition-note strong{color:var(--text)}
+
+/* ── HERO ────────────────────────────────────────────────── */
+.hero{
+  text-align:center;
+  padding:28px 0 28px;
+}
+.hero-icon{font-size:48px;margin-bottom:12px}
+.hero h2{
+  font-size:clamp(22px,5vw,38px);
+  font-weight:900;
+  color:var(--gold);
+  text-transform:uppercase;
+  letter-spacing:-0.5px;
+}
+.hero p{
+  font-size:14px;
+  color:var(--muted);
+  margin-top:8px;
+  max-width:520px;
+  margin-left:auto;
+  margin-right:auto;
+  line-height:1.6;
+}
+
+/* ── SECTION ─────────────────────────────────────────────── */
+.section{margin-bottom:40px}
+.section-label{
+  font-size:10px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:1.2px;
+  color:var(--muted);
+  margin-bottom:14px;
+  padding-bottom:8px;
+  border-bottom:1px solid var(--border);
+}
+
+/* ── PODIO ───────────────────────────────────────────────── */
+.podio{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+}
+@media(max-width:600px){
+  .podio{grid-template-columns:1fr}
+}
+
+.podio-card{
+  border-radius:10px;
+  overflow:hidden;
+  border:1px solid var(--border);
+  display:flex;
+  flex-direction:column;
+}
+.podio-card:nth-child(1){
+  border-color:rgba(201,162,39,0.5);
+  box-shadow:0 0 24px rgba(201,162,39,0.08);
+}
+.podio-card:nth-child(2){border-color:rgba(192,192,192,0.25)}
+.podio-card:nth-child(3){border-color:rgba(180,120,40,0.25)}
+
+.podio-stripe{height:4px;width:100%}
+.podio-body{
+  background:var(--surface);
+  padding:22px 16px 20px;
+  text-align:center;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.podio-medal{font-size:38px;margin-bottom:10px}
+.podio-pos{
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  color:var(--muted);
+  margin-bottom:10px;
+}
+.podio-amount{
+  font-size:clamp(32px,6vw,44px);
+  font-weight:900;
+  line-height:1;
+  margin-bottom:4px;
+}
+.podio-unit{
+  font-size:12px;
+  color:var(--muted);
+  margin-bottom:12px;
+}
+.podio-extra{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  font-size:11px;
+  color:var(--muted);
+  background:var(--surface2);
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:4px 12px;
+  margin-top:auto;
+}
+
+/* ── PRIZE GRID ──────────────────────────────────────────── */
+.prizes-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:12px;
+}
+
+.prize-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  transition:transform .2s,border-color .2s;
+}
+.prize-card:hover{transform:translateY(-2px)}
+.prize-stripe{height:3px}
+
+.prize-body{
+  padding:16px;
+  flex:1;
+}
+.prize-cat{
+  font-size:10px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.8px;
+  color:var(--muted);
+  margin-bottom:10px;
+}
+.prize-icon{
+  font-size:26px;
+  margin-bottom:8px;
+  display:block;
+  line-height:1;
+}
+.prize-title{
+  font-size:14px;
+  font-weight:700;
+  color:var(--text);
+  line-height:1.4;
+  margin-bottom:6px;
+}
+.prize-desc{
+  font-size:12px;
+  color:var(--muted);
+  line-height:1.5;
+}
+
+.prize-footer{
+  padding:10px 16px;
+  border-top:1px solid var(--border);
+  background:rgba(0,0,0,.1);
+}
+.prize-courtesy{
+  font-size:10px;
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:.5px;
+  margin-bottom:5px;
+}
+.sponsor-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  text-decoration:none;
+  color:var(--text);
+  transition:color .15s;
+}
+.sponsor-badge:hover{color:var(--gold)}
+.sponsor-initials{
+  width:26px;height:26px;
+  border-radius:5px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:9px;font-weight:800;
+  color:#fff;
+  flex-shrink:0;
+  letter-spacing:0;
+}
+.sponsor-logo{
+  width:26px;height:26px;
+  object-fit:contain;
+  border-radius:5px;
+}
+.sponsor-name{font-size:12px;font-weight:600;line-height:1.3}
+
+/* ── CTA ─────────────────────────────────────────────────── */
+.cta{
+  margin-top:48px;
+  background:var(--gold-dim);
+  border:1px solid rgba(201,162,39,0.25);
+  border-radius:10px;
+  padding:28px 24px;
+  text-align:center;
+}
+.cta h3{
+  font-size:20px;
+  font-weight:800;
+  color:var(--gold);
+  margin-bottom:6px;
+}
+.cta p{
+  font-size:13px;
+  color:var(--muted);
+  margin-bottom:18px;
+  max-width:400px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.cta-btn{
+  display:inline-block;
+  padding:10px 26px;
+  background:var(--gold);
+  color:#000;
+  font-weight:700;
+  font-size:13px;
+  border-radius:6px;
+  text-decoration:none;
+  transition:opacity .15s;
+}
+.cta-btn:hover{opacity:.85}
+
+/* ── FOOTER ──────────────────────────────────────────────── */
+.footer{
+  margin-top:36px;
+  padding:16px;
+  text-align:center;
+  font-size:12px;
+  color:var(--muted);
+  border-top:1px solid var(--border);
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <span class="header-ball">⚽</span>
+      <div class="header-text">
+        <h1>Veletoporra Mundial 2026</h1>
+        <p class="subtitle">¿Qué hay en juego?</p>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a href="index.html" class="nav-pill">📊 Clasificación</a>
+      <a href="premios.html" class="nav-pill active">🏆 Premios</a>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+
+  <div class="edition-note">
+    <strong>Referencia edición anterior.</strong> Los premios que ves aquí son los que repartimos en la Veletoporra Euro 2024. Los del Mundial 2026 se anunciarán próximamente — y prometen ser aún mejores.
+  </div>
+
+  <div class="hero">
+    <div class="hero-icon">🏆</div>
+    <h2>Premios Veletoporra</h2>
+    <p>Metálico, experiencias y regalos de nuestros patrocinadores. Aquí todo el mundo tiene opciones — aunque sea por llegar el primero en enviar la porra.</p>
+  </div>
+
+  <div class="section">
+    <p class="section-label">El bote — premios en metálico</p>
+    <div class="podio" id="podio"></div>
+  </div>
+
+  <div class="section">
+    <p class="section-label">Premios de categoría</p>
+    <div class="prizes-grid" id="especiales"></div>
+  </div>
+
+  <div class="section">
+    <p class="section-label">Premios de posición — cortesía de patrocinadores</p>
+    <div class="prizes-grid" id="posicion"></div>
+  </div>
+
+  <div class="section">
+    <p class="section-label">Premios especiales</p>
+    <div class="prizes-grid" id="simbolicos"></div>
+  </div>
+
+
+</main>
+
+<footer class="footer">
+  Veletoporra Mundial 2026
+</footer>
+
+<script>
+// ─── DATOS (actualizar con premios del Mundial 2026) ─────────────────────────
+
+const PODIO = [
+  {
+    pos: "Campeón",
+    medal: "🥇",
+    amount: "1.100 €",
+    unit: "en metálico",
+    extra: "🍺 Caja de cerveza de cortesía",
+    color: "#c9a227"
+  },
+  {
+    pos: "2º clasificado",
+    medal: "🥈",
+    amount: "500 €",
+    unit: "en metálico",
+    extra: "🍺 Caja de cerveza de cortesía",
+    color: "#a8a8a8"
+  },
+  {
+    pos: "3er clasificado",
+    medal: "🥉",
+    amount: "225 €",
+    unit: "en metálico",
+    extra: "🍺 Caja de cerveza de cortesía",
+    color: "#b87333"
+  }
+];
+
+const ESPECIALES = [
+  {
+    cat: "Mejor fase de grupos",
+    icon: "⭐",
+    title: "Fin de semana de alojamiento en Madrid",
+    desc: "Para el que lidere la porra al término de la fase de grupos.",
+    sponsor: { name: "I'm Room Apartments", initials: "IR", bg: "#1a5fa0", url: "#" },
+    color: "#4a7fb5"
+  },
+  {
+    cat: "Premio Pichichi",
+    icon: "🎯",
+    title: "Camiseta de la Selección de España",
+    desc: "Para el que acierte el máximo goleador del torneo.",
+    sponsor: { name: "Ágora Arquitectura", initials: "ÁA", bg: "#3a5e3a", url: "#" },
+    color: "#5b8e5b"
+  },
+  {
+    cat: "Último clasificado",
+    icon: "🪣",
+    title: "Certificado energético + Caja de cerveza",
+    desc: "El más veterano de los premios. Para el que lo da todo… en sentido contrario.",
+    sponsor: { name: "Ágora Arquitectura", initials: "ÁA", bg: "#3a5e3a", url: "#" },
+    color: "#e05050"
+  },
+  {
+    cat: "El Poleman — 1º en enviar la porra",
+    icon: "🏎️",
+    title: "Sesión de asesoramiento en alimentación y nutrición online",
+    desc: "Porque la puntualidad también se premia. El madrugador tiene su recompensa.",
+    sponsor: { name: "Health Force Food", initials: "HF", bg: "#1a6b3a", url: "#" },
+    color: "#2a9b5a"
+  }
+];
+
+const POSICION = [
+  {
+    cat: "4º clasificado",
+    icon: "4️⃣",
+    title: "Tratamiento de limpieza y blanqueamiento dental",
+    sponsor: { name: "Clínica Santamaría", initials: "CS", bg: "#1a5fa0", url: "#" },
+    color: "#3a7fc0"
+  },
+  {
+    cat: "5º clasificado",
+    icon: "5️⃣",
+    title: "Trimestre de sesiones de preparación física online",
+    sponsor: { name: "LiftforLive", initials: "LL", bg: "#c05020", url: "#" },
+    color: "#e07020"
+  },
+  {
+    cat: "6º clasificado",
+    icon: "🍷",
+    title: "Pack de 3 botellas de vino",
+    sponsor: { name: "Cría Cuervos", initials: "CC", bg: "#7d2060", url: "#" },
+    color: "#9d3080"
+  },
+  {
+    cat: "7º clasificado",
+    icon: "🍷",
+    title: "Pack de 2 botellas de vino",
+    sponsor: { name: "Cría Cuervos", initials: "CC", bg: "#7d2060", url: "#" },
+    color: "#9d3080"
+  },
+  {
+    cat: "8º clasificado",
+    icon: "🍷",
+    title: "Pack de 2 botellas de vino",
+    sponsor: { name: "Cría Cuervos", initials: "CC", bg: "#7d2060", url: "#" },
+    color: "#9d3080"
+  },
+  {
+    cat: "9º clasificado",
+    icon: "👟",
+    title: "Estudio gratis de la pisada + 20% dto. en plantillas",
+    sponsor: { name: "Clínica Baena Martín", initials: "BM", bg: "#1a6fa8", url: "#" },
+    color: "#2a8fc8"
+  },
+  {
+    cat: "10º clasificado",
+    icon: "🎂",
+    title: "Tarta personalizada",
+    sponsor: { name: "Yaiza Cakes", initials: "YC", bg: "#b03080", url: "#" },
+    color: "#d050a0"
+  },
+  {
+    cat: "24º clasificado",
+    icon: "🎁",
+    title: "Lote de regalos + vale de 50 € en la contratación de un seguro",
+    sponsor: { name: "Acrisure Summa Insurance", initials: "AS", bg: "#1a7a5a", url: "#" },
+    color: "#2a9a6a"
+  }
+];
+
+const SIMBOLICOS = [
+  {
+    cat: "Premio especial",
+    icon: "✨",
+    title: "Caja de cerveza de cortesía",
+    desc: "Para el participante con más ilusión, más cábalas y mejores teorías de la conspiración del torneo.",
+    sponsor: null,
+    color: "#9060d0"
+  }
+];
+
+// ─── RENDER ──────────────────────────────────────────────────────────────────
+
+function renderPodio() {
+  document.getElementById('podio').innerHTML = PODIO.map(p => `
+    <div class="podio-card">
+      <div class="podio-stripe" style="background:${p.color}"></div>
+      <div class="podio-body">
+        <div class="podio-medal">${p.medal}</div>
+        <div class="podio-pos">${p.pos}</div>
+        <div class="podio-amount" style="color:${p.color}">${p.amount}</div>
+        <div class="podio-unit">${p.unit}</div>
+        <span class="podio-extra">${p.extra}</span>
+      </div>
+    </div>`
+  ).join('');
+}
+
+function sponsorHtml(s) {
+  if (!s) return '';
+  const logoInner = s.logo
+    ? `<img class="sponsor-logo" src="${s.logo}" alt="${s.name}" loading="lazy">`
+    : `<div class="sponsor-initials" style="background:${s.bg}">${s.initials}</div>`;
+  const tag  = s.url && s.url !== '#' ? 'a' : 'span';
+  const attr = s.url && s.url !== '#'
+    ? `href="${s.url}" target="_blank" rel="noopener noreferrer"`
+    : '';
+  return `
+    <div class="prize-footer">
+      <div class="prize-courtesy">Cortesía de</div>
+      <${tag} class="sponsor-badge" ${attr}>
+        ${logoInner}
+        <span class="sponsor-name">${s.name}</span>
+      </${tag}>
+    </div>`;
+}
+
+function prizeCardHtml(p) {
+  return `
+    <div class="prize-card">
+      <div class="prize-stripe" style="background:${p.color}"></div>
+      <div class="prize-body">
+        <div class="prize-cat">${p.cat}</div>
+        <span class="prize-icon">${p.icon}</span>
+        <div class="prize-title">${p.title}</div>
+        ${p.desc ? `<div class="prize-desc">${p.desc}</div>` : ''}
+      </div>
+      ${sponsorHtml(p.sponsor)}
+    </div>`;
+}
+
+renderPodio();
+document.getElementById('especiales').innerHTML  = ESPECIALES.map(prizeCardHtml).join('');
+document.getElementById('posicion').innerHTML    = POSICION.map(prizeCardHtml).join('');
+document.getElementById('simbolicos').innerHTML  = SIMBOLICOS.map(prizeCardHtml).join('');
+</script>
+</body>
+</html>

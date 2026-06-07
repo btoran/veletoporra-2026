@@ -5662,52 +5662,58 @@
   ],
   "sponsors": [
     {
-      "name": "FutbolBet365",
-      "logo": "logos/futbolbet365.svg",
+      "name": "I'm Room Apartments",
+      "logo": "🏠",
       "url": "#",
-      "tagline": "Apuesta con cabeza"
+      "tagline": "Alojamiento en Madrid"
     },
     {
-      "name": "Cerveza La Roja",
-      "logo": "logos/cervezalaroja.svg",
+      "name": "Ágora Arquitectura",
+      "logo": "🏗️",
       "url": "#",
-      "tagline": "La bebida del campeón"
+      "tagline": "Arquitectura y certificación"
     },
     {
-      "name": "ViajesGol",
-      "logo": "logos/viagol.svg",
+      "name": "Clínica Santamaría",
+      "logo": "🦷",
       "url": "#",
-      "tagline": "Viaja donde juega tu equipo"
+      "tagline": "Salud dental"
     },
     {
-      "name": "KitSport",
-      "logo": "logos/kitsport.svg",
+      "name": "LiftforLive",
+      "logo": "💪",
       "url": "#",
-      "tagline": "La equipación oficial"
+      "tagline": "Preparación física online"
     },
     {
-      "name": "GameStar FC",
-      "logo": "logos/gamestarfc.svg",
+      "name": "Cría Cuervos",
+      "logo": "🍷",
       "url": "#",
-      "tagline": "El videojuego del Mundial"
+      "tagline": "Vinos con carácter"
     },
     {
-      "name": "Pizza del Balón",
-      "logo": "logos/pizzabalon.svg",
+      "name": "Clínica Baena Martín",
+      "logo": "👟",
       "url": "#",
-      "tagline": "La pizza más futbolera"
+      "tagline": "Podología y biomecánica"
     },
     {
-      "name": "AppMarcador",
-      "logo": "logos/appmarcador.svg",
+      "name": "Yaiza Cakes",
+      "logo": "🎂",
       "url": "#",
-      "tagline": "El marcador en tu bolsillo"
+      "tagline": "Tartas personalizadas"
     },
     {
-      "name": "GymGoal",
-      "logo": "logos/gymgoal.svg",
+      "name": "Acrisure Summa Insurance",
+      "logo": "🛡️",
       "url": "#",
-      "tagline": "Entrena como un pro"
+      "tagline": "Seguros a tu medida"
+    },
+    {
+      "name": "Health Force Food",
+      "logo": "🥗",
+      "url": "#",
+      "tagline": "Nutrición y bienestar"
     }
   ]
 }
