@@ -364,52 +364,20 @@ tr.detail-row.open{display:table-row}
 }
 .sponsors-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(190px,1fr));
-  gap:10px;
-  align-items:start;
-}
-.sponsor-card{
-  background:var(--surface);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  padding:14px;
-  display:flex;
-  align-items:center;
+  grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
   gap:12px;
-  text-decoration:none;
-  color:var(--text);
-  transition:border-color .2s,transform .2s;
 }
-.sponsor-card:hover{
-  border-color:var(--gold);
-  transform:translateY(-2px);
-}
-.sp-logo-wrap{
-  width:44px;height:44px;
-  flex-shrink:0;
-  display:flex;align-items:center;justify-content:center;
-  background:rgba(255,255,255,.04);
-  border-radius:6px;
-  font-size:20px;
-}
-.sp-logo{
-  width:44px;height:44px;
-  object-fit:contain;
-  border-radius:6px;
-}
-.sp-name{font-weight:700;font-size:13px}
-.sp-tagline{font-size:11px;color:var(--muted);margin-top:2px}
 
 /* ── SPONSOR FLIP ────────────────────────────────────────── */
 .sp-flip{
-  perspective:800px;
-  height:170px;
+  perspective:900px;
+  height:220px;
   cursor:pointer;
 }
 .sp-flip-inner{
   position:relative;
   width:100%;height:100%;
-  transition:transform .5s cubic-bezier(.4,0,.2,1);
+  transition:transform .55s cubic-bezier(.4,0,.2,1);
   transform-style:preserve-3d;
 }
 .sp-flip:hover .sp-flip-inner,
@@ -418,41 +386,94 @@ tr.detail-row.open{display:table-row}
   position:absolute;inset:0;
   backface-visibility:hidden;
   -webkit-backface-visibility:hidden;
-  border-radius:var(--radius);
+  border-radius:10px;
   overflow:hidden;
-  background:var(--surface);
   border:1px solid var(--border);
   display:flex;flex-direction:column;
   align-items:center;justify-content:center;
-  padding:14px;
   text-align:center;
-  gap:8px;
-  text-decoration:none;
-  color:var(--text);
 }
-.sp-flip-front:hover{border-color:var(--gold)}
-.sp-flip-back{
-  transform:rotateY(180deg);
-  background:var(--surface2);
-  border-color:var(--border);
+.sp-flip-back{transform:rotateY(180deg)}
+
+/* ── FRONT ───────────────────────────────────────────────── */
+.sp-flip-front{
+  background:linear-gradient(160deg,var(--surface) 60%,var(--surface2) 100%);
+  gap:10px;
+  padding:18px 14px 14px;
+}
+.sp-flip-stripe{
+  position:absolute;top:0;left:0;right:0;
+  height:4px;border-radius:10px 10px 0 0;
+}
+.sp-flip-logo-wrap{
+  width:calc(100% - 24px);
+  height:88px;
+  border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  padding:10px 14px;
+  flex-shrink:0;
+}
+.sp-flip-logo-wrap.dark-logo{
+  background:#fff;
+  box-shadow:0 4px 16px rgba(0,0,0,.3);
+}
+.sp-flip-logo-wrap.light-logo{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1);
 }
 .sp-flip-logo{
-  width:64px;height:64px;
+  max-width:100%;max-height:68px;
+  width:auto;height:auto;
   object-fit:contain;
-  border-radius:6px;
+  border-radius:4px;
 }
-.sp-flip-name{font-size:13px;font-weight:700;line-height:1.3}
-.sp-flip-tagline{font-size:12px;color:var(--muted);line-height:1.5;margin-bottom:10px}
+.sp-flip-name{
+  font-size:13px;font-weight:700;
+  color:var(--text);
+  letter-spacing:.2px;
+  line-height:1.3;
+}
+.sp-flip-badge{
+  font-size:9px;font-weight:700;
+  letter-spacing:1.2px;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-top:-4px;
+}
+
+/* ── BACK ────────────────────────────────────────────────── */
+.sp-flip-back{
+  background:var(--surface2);
+  padding:20px 16px 16px;
+  gap:0;
+}
+.sp-flip-quote{
+  font-size:40px;line-height:.9;
+  opacity:.25;
+  color:var(--gold);
+  font-family:Georgia,serif;
+  margin-bottom:6px;
+  align-self:flex-start;
+}
+.sp-flip-tagline{
+  font-size:12px;
+  color:var(--text);
+  line-height:1.65;
+  font-style:italic;
+  flex:1;
+  display:flex;align-items:center;
+  margin-bottom:14px;
+}
 .sp-visit-btn{
   display:inline-block;
-  padding:6px 16px;
+  padding:7px 20px;
   background:var(--gold);
   color:#000;
-  font-size:11px;
-  font-weight:700;
+  font-size:11px;font-weight:700;
   border-radius:20px;
   text-decoration:none;
-  flex-shrink:0;
+  letter-spacing:.3px;
+  transition:opacity .15s;
 }
 .sp-visit-btn:hover{opacity:.85}
 
@@ -760,46 +781,34 @@ function toggleDetail(id) {
 // ─── SPONSORS ────────────────────────────────────────────────────────────────
 function renderSponsors(list) {
   if (!list.length) return;
-  const half = Math.ceil(list.length / 2);
   const grid = el('sponsors-grid');
-  grid.innerHTML = list.map((s, i) => {
-    const isImg = s.logo && (s.logo.includes('/') || s.logo.includes('.') || s.logo.startsWith('data:'));
+  grid.innerHTML = list.map(s => {
+    const isImg = s.logo && (s.logo.includes('/') || s.logo.includes('.'));
+    const logoWrapClass = s.lightBg ? 'dark-logo' : 'light-logo';
     const logoInner = isImg
-      ? `<img class="sp-logo" src="${esc(s.logo)}" alt="${esc(s.name)}" loading="lazy">`
-      : `<span style="font-size:22px">${s.logo || '🏢'}</span>`;
-
-    if (i < half) {
-      // flip card: frente = logo + nombre, dorso = slogan + botón visitar
-      const flipLogoInner = isImg
-        ? `<img class="sp-flip-logo" src="${esc(s.logo)}" alt="${esc(s.name)}" loading="lazy">`
-        : `<span style="font-size:36px">${s.logo || '🏢'}</span>`;
-      const visitBtn = s.url && s.url !== '#'
-        ? `<a class="sp-visit-btn" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">Visitar →</a>`
-        : '';
-      return `<div class="sp-flip" onclick="this.classList.toggle('flipped')">
-        <div class="sp-flip-inner">
-          <div class="sp-flip-front">
-            ${flipLogoInner}
-            <div class="sp-flip-name">${esc(s.name)}</div>
-          </div>
-          <div class="sp-flip-back">
-            <div class="sp-flip-tagline">${esc(s.tagline || '')}</div>
-            ${visitBtn}
-          </div>
-        </div>
-      </div>`;
-    }
-
-    // card normal
-    const tag  = s.url && s.url !== '#' ? 'a' : 'div';
-    const attr = s.url && s.url !== '#'
-      ? `href="${esc(s.url)}" target="_blank" rel="noopener noreferrer"`
+      ? `<img class="sp-flip-logo" src="${esc(s.logo)}" alt="${esc(s.name)}" loading="lazy">`
+      : `<span style="font-size:44px">${s.logo || '🏢'}</span>`;
+    const color = esc(s.color || 'var(--gold)');
+    const visitBtn = s.url && s.url !== '#'
+      ? `<a class="sp-visit-btn" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">Visitar →</a>`
       : '';
-    return `<${tag} class="sponsor-card" ${attr}>
-      <div class="sp-logo-wrap">${logoInner}</div>
-      <div><div class="sp-name">${esc(s.name)}</div>
-           <div class="sp-tagline">${esc(s.tagline||'')}</div></div>
-    </${tag}>`;
+    return `
+    <div class="sp-flip" onclick="this.classList.toggle('flipped')">
+      <div class="sp-flip-inner">
+        <div class="sp-flip-front">
+          <div class="sp-flip-stripe" style="background:${color}"></div>
+          <div class="sp-flip-logo-wrap ${logoWrapClass}">${logoInner}</div>
+          <div class="sp-flip-name">${esc(s.name)}</div>
+          <div class="sp-flip-badge">Patrocinador</div>
+        </div>
+        <div class="sp-flip-back">
+          <div class="sp-flip-stripe" style="background:${color}"></div>
+          <div class="sp-flip-quote">"</div>
+          <div class="sp-flip-tagline">${esc(s.tagline || '')}</div>
+          ${visitBtn}
+        </div>
+      </div>
+    </div>`;
   }).join('');
   el('sponsors').style.display = '';
 }

@@ -24401,67 +24401,89 @@
       "name": "Ojo Cría Cuervos",
       "logo": "logos/criacuervos_3.png",
       "url": "https://vinoscriacuervos.com",
-      "tagline": "Vinos versátiles para los pequeños grandes momentos"
+      "tagline": "Vinos versátiles para los pequeños grandes momentos",
+      "color": "#8b1e3f",
+      "lightBg": true
     },
     {
       "name": "XIA Perfumes",
       "logo": "logos/xia.png",
       "url": "https://www.xiaperfumes.es/",
-      "tagline": "Una nueva era en la perfumería"
+      "tagline": "Una nueva era en la perfumería",
+      "color": "#7b309a",
+      "lightBg": false
     },
     {
       "name": "Clínica Santamaría",
       "logo": "logos/clinica_santamaria.png",
       "url": "https://www.clinica-santamaria.com/",
-      "tagline": "La mejor sonrisa para cuando ganemos el mundial"
+      "tagline": "La mejor sonrisa para cuando ganemos el mundial",
+      "color": "#1a75a8",
+      "lightBg": false
     },
     {
       "name": "Ágora Arquitectura",
       "logo": "logos/agora.png",
       "url": "https://agora-arquitectura.com/",
-      "tagline": "+30 años en construcción, reforma y rehabilitación"
+      "tagline": "+30 años en construcción, reforma y rehabilitación",
+      "color": "#c47a20",
+      "lightBg": true
     },
     {
       "name": "Acrisure",
       "logo": "logos/acrisure.jpeg",
       "url": "https://acrisure.es/acrisure/",
-      "tagline": "Atención local, capacidad global"
+      "tagline": "Atención local, capacidad global",
+      "color": "#1a5a9a",
+      "lightBg": false
     },
     {
       "name": "Flexicar",
       "logo": "logos/flexicar.png",
       "url": "https://www.flexicar.es/",
-      "tagline": "Más de 175 concesionarios en toda España"
+      "tagline": "Más de 175 concesionarios en toda España",
+      "color": "#e05020",
+      "lightBg": false
     },
     {
       "name": "22EVNTS",
       "logo": "logos/22evnts.jpeg",
       "url": "https://www.instagram.com/22evnts/",
-      "tagline": "Entradas para cualquier evento a nivel mundial"
+      "tagline": "Entradas para cualquier evento a nivel mundial",
+      "color": "#5b2090",
+      "lightBg": true
     },
     {
       "name": "SOMA Osteopatía",
       "logo": "logos/soma.png",
       "url": "https://www.instagram.com/fabioguerra_15/",
-      "tagline": "Recupera tu bienestar y movilidad en Algete"
+      "tagline": "Recupera tu bienestar y movilidad en Algete",
+      "color": "#1a8b6b",
+      "lightBg": false
     },
     {
       "name": "Volga Real Estate",
       "logo": "logos/volga.png",
       "url": "https://www.idealista.com/pro/volga-real-estate/",
-      "tagline": "Tu hogar tiene una historia. Te ayudamos a encontrarla"
+      "tagline": "Tu hogar tiene una historia. Te ayudamos a encontrarla",
+      "color": "#2a70b0",
+      "lightBg": false
     },
     {
       "name": "Clínica Baena Martín",
       "logo": "logos/baena_martin.png",
       "url": "https://www.clinicabaenamartin.com/",
-      "tagline": "Podología, fisioterapia y medicina estética"
+      "tagline": "Podología, fisioterapia y medicina estética",
+      "color": "#1a6ba8",
+      "lightBg": false
     },
     {
       "name": "La Vuelta",
       "logo": "logos/la_vuelta.png",
       "url": "https://www.instagram.com/lavuelta_madrid/",
-      "tagline": "A veces el mejor premio está a la vuelta de la esquina"
+      "tagline": "A veces el mejor premio está a la vuelta de la esquina",
+      "color": "#b83020",
+      "lightBg": false
     }
   ]
 }
