@@ -296,6 +296,63 @@ body{
 }
 .sponsor-name{font-size:12px;font-weight:600;line-height:1.3}
 
+/* ── FLIP CARDS ──────────────────────────────────────────── */
+.flip-wrap{
+  perspective:900px;
+  height:260px;
+  cursor:pointer;
+}
+.flip-inner{
+  position:relative;
+  width:100%;
+  height:100%;
+  transition:transform .55s cubic-bezier(.4,0,.2,1);
+  transform-style:preserve-3d;
+}
+.flip-wrap:hover .flip-inner,
+.flip-wrap.flipped .flip-inner{
+  transform:rotateY(180deg);
+}
+.flip-front,.flip-back{
+  position:absolute;
+  inset:0;
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+  border-radius:10px;
+  overflow:hidden;
+  background:var(--surface);
+  border:1px solid var(--border);
+  display:flex;
+  flex-direction:column;
+}
+.flip-back{transform:rotateY(180deg)}
+.flip-back .prize-body{overflow-y:auto;flex:1}
+.flip-front-body{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:14px 16px;
+  text-align:center;
+  gap:8px;
+}
+.flip-logo{
+  width:80px;height:80px;
+  object-fit:contain;
+  border-radius:8px;
+}
+.flip-sponsor-name{font-size:14px;font-weight:700;color:var(--text);line-height:1.3}
+.flip-tagline{font-size:11px;color:var(--muted);line-height:1.5}
+.flip-hint{
+  font-size:9px;
+  color:var(--muted);
+  padding:5px;
+  text-align:center;
+  border-top:1px solid var(--border);
+  letter-spacing:.4px;
+}
+
 /* ── CTA ─────────────────────────────────────────────────── */
 .cta{
   margin-top:48px;
@@ -451,64 +508,60 @@ const ESPECIALES = [
 
 const POSICION = [
   {
-    cat: "4º clasificado",
-    icon: "✨",
+    cat: "4º clasificado", icon: "✨", flip: true,
     title: "Tarjeta regalo para crear tu perfume único personalizado con IA",
     desc: "Recuerdos, momentos y emociones se transforman en el alma de tu perfume.",
-    sponsor: { name: "XIA Perfumes", logo: "logos/xia.png", url: "https://www.xiaperfumes.es/" },
+    sponsor: { name: "XIA Perfumes", logo: "logos/xia.png", url: "https://www.xiaperfumes.es/",
+      tagline: "Una experiencia única en el mundo que da comienzo a una nueva era en la perfumería." },
     color: "#9060c0"
   },
   {
-    cat: "5º clasificado",
-    icon: "🦷",
+    cat: "5º clasificado", icon: "🦷", flip: true,
     title: "Blanqueamiento completo, sesiones luz LED y férulas personalizadas",
     desc: "Para lucir una sonrisa perfecta cuando nuestra selección levante el mundial.",
-    sponsor: { name: "Clínica Santamaría", logo: "logos/clinica_santamaria.png", url: "https://www.clinica-santamaria.com/" },
+    sponsor: { name: "Clínica Santamaría", logo: "logos/clinica_santamaria.png", url: "https://www.clinica-santamaria.com/",
+      tagline: "El mejor sitio al que acudir para lucir la sonrisa perfecta cuando nuestra selección levante el mundial." },
     color: "#3a7fc0"
   },
   {
-    cat: "6º clasificado",
-    icon: "🎁",
+    cat: "6º clasificado", icon: "🎁", flip: true,
     title: "Caja Wonderbox Escapada con Encanto",
-    desc: "Atención cercana local con capacidad operativa global. Cualquier seguro que necesitéis, Daniel San José seguro que puede mejorarlo.",
-    sponsor: { name: "Acrisure", logo: "logos/acrisure.jpeg", url: "https://acrisure.es/acrisure/" },
+    desc: "Combinamos atención local con capacidad global. Cualquier seguro que necesitéis, Daniel San José seguro que lo mejora.",
+    sponsor: { name: "Acrisure", logo: "logos/acrisure.jpeg", url: "https://acrisure.es/acrisure/",
+      tagline: "Atención cercana de un equipo local con capacidad operativa de una red global." },
     color: "#1a7a5a"
   },
   {
-    cat: "7º clasificado",
-    icon: "🚗",
+    cat: "7º clasificado", icon: "🚗", flip: true,
     title: "Revisión técnica de coche en servicio post-venta",
     desc: "Yo compro mi coche en Flexicar. Si lo prefieres, también gestionamos la venta de tu vehículo.",
-    sponsor: { name: "Flexicar", logo: "logos/flexicar.png", url: "https://www.flexicar.es/" },
+    sponsor: { name: "Flexicar", logo: "logos/flexicar.png", url: "https://www.flexicar.es/",
+      tagline: "Más de 175 concesionarios de coches de segunda mano en toda España." },
     color: "#e07020"
   },
   {
-    cat: "8º clasificado",
-    icon: "⚽",
+    cat: "8º clasificado", icon: "⚽",
     title: "2 entradas para un partido de liga del Real Madrid",
     desc: "A elegir libremente, excepto derbis y clásicos. ¡Quien sabe si tendrá que gestionarnos entradas para la final del mundial!",
     sponsor: { name: "22EVNTS", logo: "logos/22evnts.jpeg", url: "https://www.instagram.com/22evnts/" },
     color: "#c0c020"
   },
   {
-    cat: "9º clasificado",
-    icon: "🦴",
+    cat: "9º clasificado", icon: "🦴",
     title: "Sesión de osteopatía personalizada en clínica de Algete",
     desc: "Recupera tu bienestar, mejora tu movilidad y vuelve a sentirte bien con atención osteopática personalizada.",
     sponsor: { name: "SOMA Osteopatía", logo: "logos/soma.png", url: "https://www.instagram.com/fabioguerra_15/" },
     color: "#20a0a0"
   },
   {
-    cat: "10º clasificado",
-    icon: "🏠",
+    cat: "10º clasificado", icon: "🏠",
     title: "Tarjeta regalo MediaMarkt por valor de 200 €",
     desc: "Porque cada hogar tiene una historia, te ayudamos a encontrar la tuya.",
     sponsor: { name: "Volga Real Estate", logo: "logos/volga.png", url: "https://www.idealista.com/pro/volga-real-estate/" },
     color: "#4a7fb5"
   },
   {
-    cat: "11º clasificado",
-    icon: "👟",
+    cat: "11º clasificado", icon: "👟",
     title: "Estudio de la pisada gratuito + 20% dto. en plantillas",
     desc: "Especialistas en podología, fisioterapia y medicina estética para todas las edades. En su clínica de Alcobendas.",
     sponsor: { name: "Clínica Baena Martín", logo: "logos/baena_martin.png", url: "https://www.clinicabaenamartin.com/" },
@@ -536,6 +589,37 @@ const SIMBOLICOS = [
 ];
 
 // ─── RENDER ──────────────────────────────────────────────────────────────────
+
+function flipCardHtml(p) {
+  const s = p.sponsor;
+  const logoHtml = s && s.logo
+    ? `<img class="flip-logo" src="${s.logo}" alt="${s.name}" loading="lazy">`
+    : `<div class="flip-logo" style="display:flex;align-items:center;justify-content:center;background:var(--surface2);font-size:32px">${p.icon}</div>`;
+  return `
+    <div class="flip-wrap" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="prize-stripe" style="background:${p.color}"></div>
+          <div class="flip-front-body">
+            ${logoHtml}
+            <div class="flip-sponsor-name">${s ? s.name : ''}</div>
+            ${s && s.tagline ? `<div class="flip-tagline">${s.tagline}</div>` : ''}
+          </div>
+          <div class="flip-hint">Pasa el ratón · toca para ver el premio</div>
+        </div>
+        <div class="flip-back">
+          <div class="prize-stripe" style="background:${p.color}"></div>
+          <div class="prize-body">
+            <div class="prize-cat">${p.cat}</div>
+            <span class="prize-icon">${p.icon}</span>
+            <div class="prize-title">${p.title}</div>
+            ${p.desc ? `<div class="prize-desc">${p.desc}</div>` : ''}
+          </div>
+          ${sponsorHtml(p.sponsor)}
+        </div>
+      </div>
+    </div>`;
+}
 
 function renderPodio() {
   document.getElementById('podio').innerHTML = PODIO.map(p => `
@@ -587,7 +671,7 @@ function prizeCardHtml(p) {
 
 renderPodio();
 document.getElementById('especiales').innerHTML  = ESPECIALES.map(prizeCardHtml).join('');
-document.getElementById('posicion').innerHTML    = POSICION.map(prizeCardHtml).join('');
+document.getElementById('posicion').innerHTML    = POSICION.map(p => p.flip ? flipCardHtml(p) : prizeCardHtml(p)).join('');
 document.getElementById('simbolicos').innerHTML  = SIMBOLICOS.map(prizeCardHtml).join('');
 </script>
 </body>
