@@ -643,7 +643,7 @@ function sponsorHtml(s) {
     : `<div class="sponsor-initials" style="background:${s.bg}">${s.initials}</div>`;
   const tag  = s.url && s.url !== '#' ? 'a' : 'span';
   const attr = s.url && s.url !== '#'
-    ? `href="${s.url}" target="_blank" rel="noopener noreferrer"`
+    ? `href="${s.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"`
     : '';
   return `
     <div class="prize-footer">

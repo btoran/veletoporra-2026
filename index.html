@@ -442,7 +442,19 @@ tr.detail-row.open{display:table-row}
   border-radius:6px;
 }
 .sp-flip-name{font-size:13px;font-weight:700;line-height:1.3}
-.sp-flip-tagline{font-size:12px;color:var(--muted);line-height:1.5}
+.sp-flip-tagline{font-size:12px;color:var(--muted);line-height:1.5;margin-bottom:10px}
+.sp-visit-btn{
+  display:inline-block;
+  padding:6px 16px;
+  background:var(--gold);
+  color:#000;
+  font-size:11px;
+  font-weight:700;
+  border-radius:20px;
+  text-decoration:none;
+  flex-shrink:0;
+}
+.sp-visit-btn:hover{opacity:.85}
 
 /* ── EMPTY / LOADING ─────────────────────────────────────── */
 .state-cell{
@@ -757,22 +769,22 @@ function renderSponsors(list) {
       : `<span style="font-size:22px">${s.logo || '🏢'}</span>`;
 
     if (i < half) {
-      // flip card: frente = logo + nombre, dorso = slogan
+      // flip card: frente = logo + nombre, dorso = slogan + botón visitar
       const flipLogoInner = isImg
         ? `<img class="sp-flip-logo" src="${esc(s.logo)}" alt="${esc(s.name)}" loading="lazy">`
         : `<span style="font-size:36px">${s.logo || '🏢'}</span>`;
-      const linkAttr = s.url && s.url !== '#'
-        ? `href="${esc(s.url)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"`
+      const visitBtn = s.url && s.url !== '#'
+        ? `<a class="sp-visit-btn" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">Visitar →</a>`
         : '';
-      const frontTag = s.url && s.url !== '#' ? 'a' : 'div';
       return `<div class="sp-flip" onclick="this.classList.toggle('flipped')">
         <div class="sp-flip-inner">
-          <${frontTag} class="sp-flip-front" ${linkAttr}>
+          <div class="sp-flip-front">
             ${flipLogoInner}
             <div class="sp-flip-name">${esc(s.name)}</div>
-          </${frontTag}>
+          </div>
           <div class="sp-flip-back">
             <div class="sp-flip-tagline">${esc(s.tagline || '')}</div>
+            ${visitBtn}
           </div>
         </div>
       </div>`;
