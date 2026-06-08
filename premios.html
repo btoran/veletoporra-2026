@@ -364,7 +364,7 @@ body{
 <main class="main">
 
   <div class="edition-note">
-    <strong>Referencia edición anterior.</strong> Los premios que ves aquí son los que repartimos en la Veletoporra Euro 2024. Los del Mundial 2026 se anunciarán próximamente — y prometen ser aún mejores.
+    <strong>Premios Mundial 2026 confirmados.</strong> Patrocinadores y premios reales para esta edición. Las asignaciones de posición son provisionales y pueden cambiar antes del inicio del torneo.
   </div>
 
   <div class="hero">
@@ -401,137 +401,137 @@ body{
 </footer>
 
 <script>
-// ─── DATOS (actualizar con premios del Mundial 2026) ─────────────────────────
+// ─── DATOS Mundial 2026 ───────────────────────────────────────────────────────
 
 const PODIO = [
   {
     pos: "Campeón",
     medal: "🥇",
-    amount: "1.100 €",
+    amount: "POR CONFIRMAR",
     unit: "en metálico",
-    extra: "🍺 Caja de cerveza de cortesía",
+    extra: "🍷 6 botellas de vino — cortesía de Cría Cuervos",
     color: "#c9a227"
   },
   {
     pos: "2º clasificado",
     medal: "🥈",
-    amount: "500 €",
+    amount: "POR CONFIRMAR",
     unit: "en metálico",
-    extra: "🍺 Caja de cerveza de cortesía",
+    extra: "🍷 4 botellas de vino — cortesía de Cría Cuervos",
     color: "#a8a8a8"
   },
   {
     pos: "3er clasificado",
     medal: "🥉",
-    amount: "225 €",
+    amount: "POR CONFIRMAR",
     unit: "en metálico",
-    extra: "🍺 Caja de cerveza de cortesía",
+    extra: "🍷 2 botellas de vino — cortesía de Cría Cuervos",
     color: "#b87333"
   }
 ];
 
 const ESPECIALES = [
   {
-    cat: "Mejor fase de grupos",
-    icon: "⭐",
-    title: "Fin de semana de alojamiento en Madrid",
-    desc: "Para el que lidere la porra al término de la fase de grupos.",
-    sponsor: { name: "I'm Room Apartments", initials: "IR", bg: "#1a5fa0", url: "#" },
-    color: "#4a7fb5"
-  },
-  {
-    cat: "Premio Pichichi",
-    icon: "🎯",
-    title: "Camiseta de la Selección de España",
-    desc: "Para el que acierte el máximo goleador del torneo.",
-    sponsor: { name: "Ágora Arquitectura", initials: "ÁA", bg: "#3a5e3a", url: "#" },
-    color: "#5b8e5b"
-  },
-  {
     cat: "Último clasificado",
     icon: "🪣",
-    title: "Certificado energético + Caja de cerveza",
-    desc: "El más veterano de los premios. Para el que lo da todo… en sentido contrario.",
-    sponsor: { name: "Ágora Arquitectura", initials: "ÁA", bg: "#3a5e3a", url: "#" },
+    title: "Certificado energético + camiseta oficial de España",
+    desc: "Para el que lo da todo… en sentido contrario.",
+    sponsor: { name: "Ágora Arquitectura", logo: "logos/agora.png", url: "https://agora-arquitectura.com/" },
     color: "#e05050"
   },
   {
-    cat: "El Poleman — 1º en enviar la porra",
-    icon: "🏎️",
-    title: "Sesión de asesoramiento en alimentación y nutrición online",
-    desc: "Porque la puntualidad también se premia. El madrugador tiene su recompensa.",
-    sponsor: { name: "Health Force Food", initials: "HF", bg: "#1a6b3a", url: "#" },
-    color: "#2a9b5a"
+    cat: "Premio especial",
+    icon: "🥂",
+    title: "15 entradas + 2 botellas de vino en la terraza",
+    desc: "Porque los premios se disfrutan mejor compartiéndolos. A veces el mejor premio está a la vuelta de la esquina.",
+    sponsor: { name: "La Vuelta", logo: "logos/la_vuelta.png", url: "https://www.instagram.com/lavuelta_madrid/" },
+    color: "#c9a227"
   }
 ];
 
 const POSICION = [
   {
     cat: "4º clasificado",
-    icon: "4️⃣",
-    title: "Tratamiento de limpieza y blanqueamiento dental",
-    sponsor: { name: "Clínica Santamaría", initials: "CS", bg: "#1a5fa0", url: "#" },
-    color: "#3a7fc0"
+    icon: "✨",
+    title: "Tarjeta regalo para crear tu perfume único personalizado con IA",
+    desc: "Recuerdos, momentos y emociones se transforman en el alma de tu perfume.",
+    sponsor: { name: "XIA Perfumes", logo: "logos/xia.png", url: "https://www.xiaperfumes.es/" },
+    color: "#9060c0"
   },
   {
     cat: "5º clasificado",
-    icon: "5️⃣",
-    title: "Trimestre de sesiones de preparación física online",
-    sponsor: { name: "LiftforLive", initials: "LL", bg: "#c05020", url: "#" },
-    color: "#e07020"
+    icon: "🦷",
+    title: "Blanqueamiento completo, sesiones luz LED y férulas personalizadas",
+    desc: "Para lucir una sonrisa perfecta cuando nuestra selección levante el mundial.",
+    sponsor: { name: "Clínica Santamaría", logo: "logos/clinica_santamaria.png", url: "https://www.clinica-santamaria.com/" },
+    color: "#3a7fc0"
   },
   {
     cat: "6º clasificado",
-    icon: "🍷",
-    title: "Pack de 3 botellas de vino",
-    sponsor: { name: "Cría Cuervos", initials: "CC", bg: "#7d2060", url: "#" },
-    color: "#9d3080"
+    icon: "🎁",
+    title: "Caja Wonderbox Escapada con Encanto",
+    desc: "Atención cercana local con capacidad operativa global. Cualquier seguro que necesitéis, Daniel San José seguro que puede mejorarlo.",
+    sponsor: { name: "Acrisure", logo: "logos/acrisure.jpeg", url: "https://acrisure.es/acrisure/" },
+    color: "#1a7a5a"
   },
   {
     cat: "7º clasificado",
-    icon: "🍷",
-    title: "Pack de 2 botellas de vino",
-    sponsor: { name: "Cría Cuervos", initials: "CC", bg: "#7d2060", url: "#" },
-    color: "#9d3080"
+    icon: "🚗",
+    title: "Revisión técnica de coche en servicio post-venta",
+    desc: "Yo compro mi coche en Flexicar. Si lo prefieres, también gestionamos la venta de tu vehículo.",
+    sponsor: { name: "Flexicar", logo: "logos/flexicar.png", url: "https://www.flexicar.es/" },
+    color: "#e07020"
   },
   {
     cat: "8º clasificado",
-    icon: "🍷",
-    title: "Pack de 2 botellas de vino",
-    sponsor: { name: "Cría Cuervos", initials: "CC", bg: "#7d2060", url: "#" },
-    color: "#9d3080"
+    icon: "⚽",
+    title: "2 entradas para un partido de liga del Real Madrid",
+    desc: "A elegir libremente, excepto derbis y clásicos. ¡Quien sabe si tendrá que gestionarnos entradas para la final del mundial!",
+    sponsor: { name: "22EVNTS", logo: "logos/22evnts.jpeg", url: "https://www.instagram.com/22evnts/" },
+    color: "#c0c020"
   },
   {
     cat: "9º clasificado",
-    icon: "👟",
-    title: "Estudio gratis de la pisada + 20% dto. en plantillas",
-    sponsor: { name: "Clínica Baena Martín", initials: "BM", bg: "#1a6fa8", url: "#" },
-    color: "#2a8fc8"
+    icon: "🦴",
+    title: "Sesión de osteopatía personalizada en clínica de Algete",
+    desc: "Recupera tu bienestar, mejora tu movilidad y vuelve a sentirte bien con atención osteopática personalizada.",
+    sponsor: { name: "SOMA Osteopatía", logo: "logos/soma.png", url: "https://www.instagram.com/fabioguerra_15/" },
+    color: "#20a0a0"
   },
   {
     cat: "10º clasificado",
-    icon: "🎂",
-    title: "Tarta personalizada",
-    sponsor: { name: "Yaiza Cakes", initials: "YC", bg: "#b03080", url: "#" },
-    color: "#d050a0"
+    icon: "🏠",
+    title: "Tarjeta regalo MediaMarkt por valor de 200 €",
+    desc: "Porque cada hogar tiene una historia, te ayudamos a encontrar la tuya.",
+    sponsor: { name: "Volga Real Estate", logo: "logos/volga.png", url: "https://www.idealista.com/pro/volga-real-estate/" },
+    color: "#4a7fb5"
   },
   {
-    cat: "24º clasificado",
-    icon: "🎁",
-    title: "Lote de regalos + vale de 50 € en la contratación de un seguro",
-    sponsor: { name: "Acrisure Summa Insurance", initials: "AS", bg: "#1a7a5a", url: "#" },
-    color: "#2a9a6a"
+    cat: "11º clasificado",
+    icon: "👟",
+    title: "Estudio de la pisada gratuito + 20% dto. en plantillas",
+    desc: "Especialistas en podología, fisioterapia y medicina estética para todas las edades. En su clínica de Alcobendas.",
+    sponsor: { name: "Clínica Baena Martín", logo: "logos/baena_martin.png", url: "https://www.clinicabaenamartin.com/" },
+    color: "#2a8fc8"
   }
 ];
 
 const SIMBOLICOS = [
   {
-    cat: "Premio especial",
-    icon: "✨",
-    title: "Caja de cerveza de cortesía",
-    desc: "Para el participante con más ilusión, más cábalas y mejores teorías de la conspiración del torneo.",
+    cat: "De la organización",
+    icon: "🏎️",
+    title: "Conjunto de merchandising Oracle Red Bull Racing F1",
+    desc: null,
     sponsor: null,
-    color: "#9060d0"
+    color: "#cc2200"
+  },
+  {
+    cat: "De la organización",
+    icon: "🍺",
+    title: "3 cajas de cerveza Mahou 5 Estrellas",
+    desc: null,
+    sponsor: null,
+    color: "#d4a020"
   }
 ];
 
