@@ -223,8 +223,10 @@ body{
   transition:transform .55s cubic-bezier(.4,0,.2,1);
   transform-style:preserve-3d;
 }
-.flip-wrap:hover .flip-inner,
 .flip-wrap.flipped .flip-inner{transform:rotateY(180deg)}
+@media(hover:hover){.flip-wrap:hover .flip-inner{transform:rotateY(180deg)}}
+.flip-wrap:not(.flipped) .flip-back{pointer-events:none}
+.flip-wrap.flipped .flip-front{pointer-events:none}
 .flip-front,.flip-back{
   position:absolute;inset:0;
   backface-visibility:hidden;-webkit-backface-visibility:hidden;

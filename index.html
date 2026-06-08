@@ -380,8 +380,10 @@ tr.detail-row.open{display:table-row}
   transition:transform .55s cubic-bezier(.4,0,.2,1);
   transform-style:preserve-3d;
 }
-.sp-flip:hover .sp-flip-inner,
 .sp-flip.flipped .sp-flip-inner{transform:rotateY(180deg)}
+@media(hover:hover){.sp-flip:hover .sp-flip-inner{transform:rotateY(180deg)}}
+.sp-flip:not(.flipped) .sp-flip-back{pointer-events:none}
+.sp-flip.flipped .sp-flip-front{pointer-events:none}
 .sp-flip-front,.sp-flip-back{
   position:absolute;inset:0;
   backface-visibility:hidden;
