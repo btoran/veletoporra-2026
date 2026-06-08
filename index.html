@@ -366,6 +366,7 @@ tr.detail-row.open{display:table-row}
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(190px,1fr));
   gap:10px;
+  align-items:start;
 }
 .sponsor-card{
   background:var(--surface);
@@ -398,6 +399,50 @@ tr.detail-row.open{display:table-row}
 }
 .sp-name{font-weight:700;font-size:13px}
 .sp-tagline{font-size:11px;color:var(--muted);margin-top:2px}
+
+/* ── SPONSOR FLIP ────────────────────────────────────────── */
+.sp-flip{
+  perspective:800px;
+  height:170px;
+  cursor:pointer;
+}
+.sp-flip-inner{
+  position:relative;
+  width:100%;height:100%;
+  transition:transform .5s cubic-bezier(.4,0,.2,1);
+  transform-style:preserve-3d;
+}
+.sp-flip:hover .sp-flip-inner,
+.sp-flip.flipped .sp-flip-inner{transform:rotateY(180deg)}
+.sp-flip-front,.sp-flip-back{
+  position:absolute;inset:0;
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+  border-radius:var(--radius);
+  overflow:hidden;
+  background:var(--surface);
+  border:1px solid var(--border);
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  padding:14px;
+  text-align:center;
+  gap:8px;
+  text-decoration:none;
+  color:var(--text);
+}
+.sp-flip-front:hover{border-color:var(--gold)}
+.sp-flip-back{
+  transform:rotateY(180deg);
+  background:var(--surface2);
+  border-color:var(--border);
+}
+.sp-flip-logo{
+  width:64px;height:64px;
+  object-fit:contain;
+  border-radius:6px;
+}
+.sp-flip-name{font-size:13px;font-weight:700;line-height:1.3}
+.sp-flip-tagline{font-size:12px;color:var(--muted);line-height:1.5}
 
 /* ── EMPTY / LOADING ─────────────────────────────────────── */
 .state-cell{
@@ -703,13 +748,37 @@ function toggleDetail(id) {
 // ─── SPONSORS ────────────────────────────────────────────────────────────────
 function renderSponsors(list) {
   if (!list.length) return;
+  const half = Math.ceil(list.length / 2);
   const grid = el('sponsors-grid');
-  grid.innerHTML = list.map(s => {
-    // logo puede ser URL (http/data:) o emoji corto
+  grid.innerHTML = list.map((s, i) => {
     const isImg = s.logo && (s.logo.includes('/') || s.logo.includes('.') || s.logo.startsWith('data:'));
     const logoInner = isImg
       ? `<img class="sp-logo" src="${esc(s.logo)}" alt="${esc(s.name)}" loading="lazy">`
       : `<span style="font-size:22px">${s.logo || '🏢'}</span>`;
+
+    if (i < half) {
+      // flip card: frente = logo + nombre, dorso = slogan
+      const flipLogoInner = isImg
+        ? `<img class="sp-flip-logo" src="${esc(s.logo)}" alt="${esc(s.name)}" loading="lazy">`
+        : `<span style="font-size:36px">${s.logo || '🏢'}</span>`;
+      const linkAttr = s.url && s.url !== '#'
+        ? `href="${esc(s.url)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"`
+        : '';
+      const frontTag = s.url && s.url !== '#' ? 'a' : 'div';
+      return `<div class="sp-flip" onclick="this.classList.toggle('flipped')">
+        <div class="sp-flip-inner">
+          <${frontTag} class="sp-flip-front" ${linkAttr}>
+            ${flipLogoInner}
+            <div class="sp-flip-name">${esc(s.name)}</div>
+          </${frontTag}>
+          <div class="sp-flip-back">
+            <div class="sp-flip-tagline">${esc(s.tagline || '')}</div>
+          </div>
+        </div>
+      </div>`;
+    }
+
+    // card normal
     const tag  = s.url && s.url !== '#' ? 'a' : 'div';
     const attr = s.url && s.url !== '#'
       ? `href="${esc(s.url)}" target="_blank" rel="noopener noreferrer"`
