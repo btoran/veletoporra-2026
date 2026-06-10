@@ -218,6 +218,7 @@ body{
 
 /* ── FLIP CARDS ──────────────────────────────────────────── */
 .flip-wrap{perspective:900px;height:260px;cursor:pointer}
+.prizes-grid .flip-wrap{height:var(--card-h,260px)}
 .flip-inner{
   position:relative;width:100%;height:100%;
   transition:transform .55s cubic-bezier(.4,0,.2,1);
@@ -266,13 +267,14 @@ body{
   background:var(--surface2);padding:14px;
   align-items:stretch;text-align:left;gap:0;
 }
-.flip-back-header{margin-bottom:10px}
-.flip-back-body{flex:1;display:flex;flex-direction:column;gap:5px;overflow:hidden}
-.flip-prize-icon{font-size:22px;line-height:1;display:block;margin-bottom:4px}
-.flip-prize-title{font-size:12px;font-weight:700;color:var(--text);line-height:1.35}
+.flip-back-header{margin-bottom:8px}
+.flip-back-body{flex:1;display:flex;flex-direction:column;gap:5px}
+.flip-prize-icon{font-size:18px;line-height:1;display:block;margin-bottom:2px}
+.flip-prize-title{
+  font-size:11px;font-weight:700;color:var(--text);line-height:1.35;
+}
 .flip-prize-desc{
   font-size:11px;color:var(--muted);line-height:1.5;
-  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
 }
 .flip-back-footer{margin-top:10px;display:flex;justify-content:flex-end}
 .flip-visit-btn{
@@ -327,6 +329,26 @@ body{
   color:var(--muted);
   border-top:1px solid var(--border);
 }
+
+/* ── PERSONA ACTUAL ──────────────────────────────────────── */
+.flip-current-person{
+  font-size:10px;
+  font-weight:600;
+  color:var(--gold);
+  background:rgba(201,162,39,0.12);
+  border:1px solid rgba(201,162,39,0.25);
+  border-radius:20px;
+  padding:3px 10px;
+  margin-top:5px;
+  max-width:calc(100% - 20px);
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+/* ── LOGO GRANDE ─────────────────────────────────────────── */
+.flip-logo-wrap.logo-xl{height:108px;padding:2px 4px}
+.flip-logo-wrap.logo-xl .flip-sponsor-logo{max-height:100px}
 </style>
 </head>
 <body>
@@ -421,15 +443,15 @@ const ESPECIALES = [
     cat: "Último clasificado",
     icon: "🪣",
     title: "Certificado energético + camiseta oficial de España",
-    desc: "Para el que lo da todo… en sentido contrario.",
+    desc: "Si buscas tu mejor aliado para proyectos de nueva construcción, reforma o rehabilitación, Ágora Arquitectura es el indicado. Con más de 30 años de experiencia, tus proyectos están en las mejores manos.",
     sponsor: { name: "Ágora Arquitectura", logo: "logos/agora.png", url: "https://agora-arquitectura.com/" },
     color: "#e05050"
   },
   {
     cat: "Premio especial",
     icon: "🥂",
-    title: "15 entradas + 2 botellas de vino en la terraza",
-    desc: "Porque los premios se disfrutan mejor compartiéndolos. A veces el mejor premio está a la vuelta de la esquina.",
+    title: "15 entradas gratis + 2 botellas de vino en la terraza",
+    desc: "Porque los premios se disfrutan mejor compartiéndolos. Si tú eres mi PORRA, yo soy tu VUELTA. A veces el mejor premio está a la vuelta de la esquina.",
     sponsor: { name: "La Vuelta", logo: "logos/la_vuelta.png", url: "https://www.instagram.com/lavuelta_madrid/" },
     color: "#c9a227"
   }
@@ -439,61 +461,57 @@ const POSICION = [
   {
     cat: "4º clasificado", icon: "✨",
     title: "Tarjeta regalo para crear tu perfume único personalizado con IA",
-    desc: "Recuerdos, momentos y emociones se transforman en el alma de tu perfume.",
-    sponsor: { name: "XIA Perfumes", logo: "logos/xia.png", url: "https://www.xiaperfumes.es/",
-      tagline: "Una experiencia única en el mundo que da comienzo a una nueva era en la perfumería." },
+    desc: "Recuerdos, momentos y emociones se transforman en el alma de tu perfume. Una experiencia única en el mundo, que da comienzo a una nueva era en la perfumería.",
+    sponsor: { name: "XIA Perfumes", logo: "logos/xia.png", url: "https://www.xiaperfumes.es/", logoLarge: true },
     color: "#9060c0"
   },
   {
     cat: "5º clasificado", icon: "🦷",
     title: "Blanqueamiento completo, sesiones luz LED y férulas personalizadas",
-    desc: "Para lucir una sonrisa perfecta cuando nuestra selección levante el mundial.",
-    sponsor: { name: "Clínica Santamaría", logo: "logos/clinica_santamaria.png", url: "https://www.clinica-santamaria.com/",
-      tagline: "El mejor sitio al que acudir para lucir la sonrisa perfecta cuando nuestra selección levante el mundial." },
+    desc: "Para lucir una sonrisa perfecta cuando nuestra selección levante el mundial, el mejor sitio al que acudir es Clínica Santamaría.",
+    sponsor: { name: "Clínica Santamaría", logo: "logos/clinica_santamaria.png", url: "https://www.clinica-santamaria.com/" },
     color: "#3a7fc0"
   },
   {
     cat: "6º clasificado", icon: "🎁",
     title: "Caja Wonderbox Escapada con Encanto",
-    desc: "Combinamos atención local con capacidad global. Cualquier seguro que necesitéis, Daniel San José seguro que lo mejora.",
-    sponsor: { name: "Acrisure", logo: "logos/acrisure.jpeg", url: "https://acrisure.es/acrisure/",
-      tagline: "Atención cercana de un equipo local con capacidad operativa de una red global." },
+    desc: "En Acrisure combinamos la atención cercana de un equipo local con la capacidad operativa de una red global. Cualquier seguro que necesitéis, nuestro amigo Daniel San José seguro que es capaz de mejorarlo.",
+    sponsor: { name: "Acrisure", logo: "logos/acrisure.jpeg", url: "https://acrisure.es/acrisure/", logoLarge: true },
     color: "#1a7a5a"
   },
   {
     cat: "7º clasificado", icon: "🚗",
     title: "Revisión técnica de coche en servicio post-venta",
     desc: "Yo compro mi coche en Flexicar. Si lo prefieres, también gestionamos la venta de tu vehículo.",
-    sponsor: { name: "Flexicar", logo: "logos/flexicar.png", url: "https://www.flexicar.es/",
-      tagline: "Más de 175 concesionarios de coches de segunda mano en toda España." },
+    sponsor: { name: "Flexicar", logo: "logos/flexicar.png", url: "https://www.flexicar.es/" },
     color: "#e07020"
   },
   {
     cat: "8º clasificado", icon: "⚽",
     title: "2 entradas para un partido de liga del Real Madrid",
-    desc: "A elegir libremente, excepto derbis y clásicos. ¡Quien sabe si tendrá que gestionarnos entradas para la final del mundial!",
+    desc: "Si necesitas entradas para cualquier evento a nivel mundial y una gestión personalizada, 22EVNTS es tu empresa. ¡Quien sabe si tendrá que gestionarnos entradas para la final del mundial!",
     sponsor: { name: "22EVNTS", logo: "logos/22evnts.jpeg", url: "https://www.instagram.com/22evnts/" },
     color: "#c0c020"
   },
   {
     cat: "9º clasificado", icon: "🦴",
     title: "Sesión de osteopatía personalizada en clínica de Algete",
-    desc: "Recupera tu bienestar, mejora tu movilidad y vuelve a sentirte bien con atención osteopática personalizada.",
+    desc: "Recupera tu bienestar, mejora tu movilidad y vuelve a sentirte bien con una atención osteopática personalizada en tu clínica en Algete.",
     sponsor: { name: "SOMA Osteopatía", logo: "logos/soma.png", url: "https://www.instagram.com/fabioguerra_15/" },
     color: "#20a0a0"
   },
   {
     cat: "10º clasificado", icon: "🏠",
     title: "Tarjeta regalo MediaMarkt por valor de 200 €",
-    desc: "Porque cada hogar tiene una historia, te ayudamos a encontrar la tuya.",
-    sponsor: { name: "Volga Real Estate", logo: "logos/volga.png", url: "https://www.idealista.com/pro/volga-real-estate/" },
+    desc: "Porque cada hogar tiene una historia, te ayudamos a encontrar la tuya. Convertimos la búsqueda de tu hogar en una experiencia cercana y personal.",
+    sponsor: { name: "Volga Real Estate", logo: "logos/volga.png", url: "https://www.idealista.com/pro/volga-real-estate/", logoLarge: true },
     color: "#4a7fb5"
   },
   {
     cat: "11º clasificado", icon: "👟",
-    title: "Estudio de la pisada gratuito + 20% dto. en plantillas",
-    desc: "Especialistas en podología, fisioterapia y medicina estética para todas las edades. En su clínica de Alcobendas.",
-    sponsor: { name: "Clínica Baena Martín", logo: "logos/baena_martin.png", url: "https://www.clinicabaenamartin.com/" },
+    title: "Estudio de la pisada gratuita + 20% dto. en plantillas",
+    desc: "En clínica Baena Martín, centro de podología, medicina estética y fisioterapia, se especializan en cuidados para todas las edades. Sus profesionales están esperando para cubrir vuestras necesidades. ¡No dudéis en visitarles, saldréis encantados!",
+    sponsor: { name: "Clínica Baena Martín", logo: "logos/baena_martin.jpg", url: "https://www.clinicabaenamartin.com/" },
     color: "#2a8fc8"
   }
 ];
@@ -517,6 +535,35 @@ const SIMBOLICOS = [
   }
 ];
 
+// ─── STANDINGS ───────────────────────────────────────────────────────────────
+
+let STANDINGS = [];
+
+const DEMO_STANDINGS = [
+  {pos:1,name:"PepeDSV"},{pos:2,name:"Gaspar GS"},{pos:3,name:"MONNE"},
+  {pos:4,name:"arrobamarcovarelafam"},{pos:5,name:"JUANPI TORRICO"},{pos:6,name:"Josele"},
+  {pos:7,name:"AK99"},{pos:8,name:"Homer"},{pos:9,name:"PR7"},{pos:10,name:"Luisco"},
+  {pos:11,name:"Trusky"},{pos:23,name:"Raúl Murillo"}
+];
+
+function personAtPos(catText) {
+  const src = STANDINGS.length ? STANDINGS : DEMO_STANDINGS;
+  const lower = catText.toLowerCase();
+  if (/último/i.test(lower)) {
+    const sorted = [...src].sort((a,b) => b.pos - a.pos);
+    return sorted[0]?.name || null;
+  }
+  const m = catText.match(/^(\d+)/);
+  if (m) {
+    const pos = parseInt(m[1]);
+    return src.find(s => s.pos === pos)?.name || null;
+  }
+  if (lower.includes('campeón') || lower.includes('campeon')) {
+    return src.find(s => s.pos === 1)?.name || null;
+  }
+  return null;
+}
+
 // ─── RENDER ──────────────────────────────────────────────────────────────────
 
 const DARK_LOGOS = new Set(['logos/agora.png','logos/22evnts.jpeg','logos/criacuervos_3.png']);
@@ -524,10 +571,11 @@ const DARK_LOGOS = new Set(['logos/agora.png','logos/22evnts.jpeg','logos/criacu
 function flipCardHtml(p) {
   const s = p.sponsor;
   const color = p.color || 'var(--gold)';
+  const person = personAtPos(p.cat);
 
   let frontLogo;
   if (s && s.logo) {
-    const wrapClass = DARK_LOGOS.has(s.logo) ? 'dark-logo' : 'light-logo';
+    const wrapClass = (DARK_LOGOS.has(s.logo) ? 'dark-logo' : 'light-logo') + (s.logoLarge ? ' logo-xl' : '');
     frontLogo = `
       <div class="flip-logo-wrap ${wrapClass}">
         <img class="flip-sponsor-logo" src="${s.logo}" alt="${s.name}" loading="lazy">
@@ -538,6 +586,10 @@ function flipCardHtml(p) {
       <div class="flip-logo-wrap no-logo">${p.icon}</div>
       <div class="flip-sponsor-name" style="color:var(--muted);font-size:11px;font-weight:600">De la organización</div>`;
   }
+
+  const personBadge = person
+    ? `<div class="flip-current-person">Ahora: ${person}</div>`
+    : '';
 
   const visitBtn = s && s.url && s.url !== '#'
     ? `<div class="flip-back-footer">
@@ -552,11 +604,12 @@ function flipCardHtml(p) {
           <div class="flip-prize-stripe" style="background:${color}"></div>
           ${frontLogo}
           <div class="flip-pos-badge">${p.cat}</div>
+          ${personBadge}
         </div>
         <div class="flip-back">
           <div class="flip-prize-stripe" style="background:${color}"></div>
           <div class="flip-back-header">
-            <div class="flip-pos-badge" style="margin-top:0">${p.cat}</div>
+            <div class="flip-pos-badge" style="margin-top:0">${p.cat}${person ? ' · ' + person : ''}</div>
           </div>
           <div class="flip-back-body">
             <span class="flip-prize-icon">${p.icon}</span>
@@ -570,7 +623,10 @@ function flipCardHtml(p) {
 }
 
 function renderPodio() {
-  document.getElementById('podio').innerHTML = PODIO.map(p => `
+  document.getElementById('podio').innerHTML = PODIO.map(p => {
+    const person = personAtPos(p.pos);
+    const personBadge = person ? `<div class="flip-current-person" style="margin-top:8px">Ahora: ${person}</div>` : '';
+    return `
     <div class="podio-card">
       <div class="podio-stripe" style="background:${p.color}"></div>
       <div class="podio-body">
@@ -579,15 +635,84 @@ function renderPodio() {
         <div class="podio-amount" style="color:${p.color}">${p.amount}</div>
         <div class="podio-unit">${p.unit}</div>
         <span class="podio-extra">${p.extra}</span>
+        ${personBadge}
       </div>
-    </div>`
-  ).join('');
+    </div>`;
+  }).join('');
 }
 
-renderPodio();
-document.getElementById('especiales').innerHTML  = ESPECIALES.map(flipCardHtml).join('');
-document.getElementById('posicion').innerHTML    = POSICION.map(flipCardHtml).join('');
-document.getElementById('simbolicos').innerHTML  = SIMBOLICOS.map(flipCardHtml).join('');
+// Mide la altura natural de una cara poniéndola un instante en flujo normal
+// (las caras son position:absolute, así que su altura real no se ve afectada
+// por la altura fija de la card).
+function measureFace(face) {
+  if (!face) return 0;
+  const p = face.style.position, h = face.style.height, t = face.style.transform;
+  face.style.position = 'static';
+  face.style.height = 'auto';
+  face.style.transform = 'none';
+  const measured = face.offsetHeight;
+  face.style.position = p;
+  face.style.height = h;
+  face.style.transform = t;
+  return measured;
+}
+
+// Iguala la altura de todas las flip cards de un grid a la de la card de
+// mayor contenido (frente o dorso), para que se vea la frase entera + el botón.
+function equalizeHeights(gridId) {
+  const grid = document.getElementById(gridId);
+  if (!grid) return;
+  const wraps = [...grid.querySelectorAll('.flip-wrap')];
+  if (!wraps.length) return;
+  grid.style.removeProperty('--card-h');
+  let max = 0;
+  wraps.forEach(w => {
+    max = Math.max(max,
+      measureFace(w.querySelector('.flip-front')),
+      measureFace(w.querySelector('.flip-back')));
+  });
+  grid.style.setProperty('--card-h', max + 'px');
+}
+
+function equalizeAll() {
+  ['especiales','posicion','simbolicos'].forEach(equalizeHeights);
+}
+
+// Dispara la igualación en varios momentos para acertar pese a fuentes/imágenes
+// que cargan tarde: rAF, fuentes listas, carga de cada logo y fallback.
+function scheduleEqualize() {
+  requestAnimationFrame(equalizeAll);
+  [120, 400, 900].forEach(t => setTimeout(equalizeAll, t));
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(equalizeAll);
+  document.querySelectorAll('.prizes-grid img').forEach(img => {
+    if (!img.complete) img.addEventListener('load', equalizeAll, { once: true });
+  });
+}
+
+function render() {
+  renderPodio();
+  document.getElementById('especiales').innerHTML = ESPECIALES.map(flipCardHtml).join('');
+  document.getElementById('posicion').innerHTML   = POSICION.map(flipCardHtml).join('');
+  document.getElementById('simbolicos').innerHTML = SIMBOLICOS.map(flipCardHtml).join('');
+  scheduleEqualize();
+}
+
+let _eqT;
+window.addEventListener('resize', () => {
+  clearTimeout(_eqT);
+  _eqT = setTimeout(equalizeAll, 150);
+});
+
+(async () => {
+  try {
+    const r = await fetch('clasificacion.json?t=' + Date.now());
+    if (r.ok) {
+      const data = await r.json();
+      STANDINGS = (data.standings || []).sort((a,b) => a.pos - b.pos);
+    }
+  } catch(_) {}
+  render();
+})();
 </script>
 </body>
 </html>

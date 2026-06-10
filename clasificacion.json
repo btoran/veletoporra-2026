@@ -24401,7 +24401,7 @@
       "name": "Ojo Cría Cuervos",
       "logo": "logos/criacuervos_3.png",
       "url": "https://vinoscriacuervos.com",
-      "tagline": "Vinos versátiles para los pequeños grandes momentos",
+      "tagline": "Vinos versátiles, que le den sabor y color a todos esos pequeños grandes momentos de la vida.",
       "color": "#8b1e3f",
       "lightBg": true
     },
@@ -24409,15 +24409,16 @@
       "name": "XIA Perfumes",
       "logo": "logos/xia.png",
       "url": "https://www.xiaperfumes.es/",
-      "tagline": "Una nueva era en la perfumería",
+      "tagline": "Recuerdos, momentos y emociones se transforman en el alma de tu perfume. Una experiencia única en el mundo, que da comienzo a una nueva era en la perfumería.",
       "color": "#7b309a",
-      "lightBg": false
+      "lightBg": false,
+      "logoLarge": true
     },
     {
       "name": "Clínica Santamaría",
       "logo": "logos/clinica_santamaria.png",
       "url": "https://www.clinica-santamaria.com/",
-      "tagline": "La mejor sonrisa para cuando ganemos el mundial",
+      "tagline": "Para lucir una sonrisa perfecta cuando nuestra selección levante el mundial, el mejor sitio al que acudir es Clínica Santamaría.",
       "color": "#1a75a8",
       "lightBg": false
     },
@@ -24425,7 +24426,7 @@
       "name": "Ágora Arquitectura",
       "logo": "logos/agora.png",
       "url": "https://agora-arquitectura.com/",
-      "tagline": "+30 años en construcción, reforma y rehabilitación",
+      "tagline": "Si buscas tu mejor aliado para proyectos de nueva construcción, reforma o rehabilitación, Ágora Arquitectura es el indicado. Con más de 30 años de experiencia, tus proyectos están en las mejores manos.",
       "color": "#c47a20",
       "lightBg": true
     },
@@ -24433,15 +24434,16 @@
       "name": "Acrisure",
       "logo": "logos/acrisure.jpeg",
       "url": "https://acrisure.es/acrisure/",
-      "tagline": "Atención local, capacidad global",
+      "tagline": "En Acrisure combinamos la atención cercana de un equipo local con la capacidad operativa de una red global. Cualquier seguro que necesitéis, nuestro amigo Daniel San José seguro que es capaz de mejorarlo.",
       "color": "#1a5a9a",
-      "lightBg": false
+      "lightBg": false,
+      "logoLarge": true
     },
     {
       "name": "Flexicar",
       "logo": "logos/flexicar.png",
       "url": "https://www.flexicar.es/",
-      "tagline": "Más de 175 concesionarios en toda España",
+      "tagline": "Yo compro mi coche en Flexicar. Si lo prefieres, también gestionamos la venta de tu vehículo.",
       "color": "#e05020",
       "lightBg": false
     },
@@ -24449,7 +24451,7 @@
       "name": "22EVNTS",
       "logo": "logos/22evnts.jpeg",
       "url": "https://www.instagram.com/22evnts/",
-      "tagline": "Entradas para cualquier evento a nivel mundial",
+      "tagline": "Si necesitas entradas para cualquier evento a nivel mundial y una gestión personalizada, 22EVNTS es tu empresa. ¡Quien sabe si tendrá que gestionarnos entradas para la final del mundial!",
       "color": "#5b2090",
       "lightBg": true
     },
@@ -24457,7 +24459,7 @@
       "name": "SOMA Osteopatía",
       "logo": "logos/soma.png",
       "url": "https://www.instagram.com/fabioguerra_15/",
-      "tagline": "Recupera tu bienestar y movilidad en Algete",
+      "tagline": "Recupera tu bienestar, mejora tu movilidad y vuelve a sentirte bien con una atención osteopática personalizada en tu clínica en Algete.",
       "color": "#1a8b6b",
       "lightBg": false
     },
@@ -24465,15 +24467,16 @@
       "name": "Volga Real Estate",
       "logo": "logos/volga.png",
       "url": "https://www.idealista.com/pro/volga-real-estate/",
-      "tagline": "Tu hogar tiene una historia. Te ayudamos a encontrarla",
+      "tagline": "Porque cada hogar tiene una historia, te ayudamos a encontrar la tuya. Convertimos la búsqueda de tu hogar en una experiencia cercana y personal.",
       "color": "#2a70b0",
-      "lightBg": false
+      "lightBg": false,
+      "logoLarge": true
     },
     {
       "name": "Clínica Baena Martín",
-      "logo": "logos/baena_martin.png",
+      "logo": "logos/baena_martin.jpg",
       "url": "https://www.clinicabaenamartin.com/",
-      "tagline": "Podología, fisioterapia y medicina estética",
+      "tagline": "En clínica Baena Martín, centro de podología, medicina estética y fisioterapia, se especializan en cuidados para todas las edades. Sus profesionales están esperando para cubrir vuestras necesidades. ¡No dudéis en visitarles, saldréis encantados!",
       "color": "#1a6ba8",
       "lightBg": false
     },
@@ -24481,7 +24484,7 @@
       "name": "La Vuelta",
       "logo": "logos/la_vuelta.png",
       "url": "https://www.instagram.com/lavuelta_madrid/",
-      "tagline": "A veces el mejor premio está a la vuelta de la esquina",
+      "tagline": "Porque los premios se disfrutan mejor compartiéndolos. Si tú eres mi PORRA, yo soy tu VUELTA. A veces el mejor premio está a la vuelta de la esquina.",
       "color": "#b83020",
       "lightBg": false
     }

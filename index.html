@@ -371,7 +371,7 @@ tr.detail-row.open{display:table-row}
 /* ── SPONSOR FLIP ────────────────────────────────────────── */
 .sp-flip{
   perspective:900px;
-  height:220px;
+  height:var(--card-h,220px);
   cursor:pointer;
 }
 .sp-flip-inner{
@@ -458,13 +458,17 @@ tr.detail-row.open{display:table-row}
   align-self:flex-start;
 }
 .sp-flip-tagline{
-  font-size:12px;
-  color:var(--text);
-  line-height:1.65;
-  font-style:italic;
   flex:1;
-  display:flex;align-items:center;
+  display:flex;
+  align-items:center;
   margin-bottom:14px;
+  align-self:stretch;
+}
+.sp-flip-tagline span{
+  font-size:11px;
+  color:var(--text);
+  line-height:1.6;
+  font-style:italic;
 }
 .sp-visit-btn{
   display:inline-block;
@@ -478,6 +482,10 @@ tr.detail-row.open{display:table-row}
   transition:opacity .15s;
 }
 .sp-visit-btn:hover{opacity:.85}
+
+/* ── LOGO GRANDE ─────────────────────────────────────────── */
+.sp-flip-logo-wrap.logo-xl{height:108px;padding:2px 4px}
+.sp-flip-logo-wrap.logo-xl .sp-flip-logo{max-height:100px}
 
 /* ── EMPTY / LOADING ─────────────────────────────────────── */
 .state-cell{
@@ -786,7 +794,7 @@ function renderSponsors(list) {
   const grid = el('sponsors-grid');
   grid.innerHTML = list.map(s => {
     const isImg = s.logo && (s.logo.includes('/') || s.logo.includes('.'));
-    const logoWrapClass = s.lightBg ? 'dark-logo' : 'light-logo';
+    const logoWrapClass = (s.lightBg ? 'dark-logo' : 'light-logo') + (s.logoLarge ? ' logo-xl' : '');
     const logoInner = isImg
       ? `<img class="sp-flip-logo" src="${esc(s.logo)}" alt="${esc(s.name)}" loading="lazy">`
       : `<span style="font-size:44px">${s.logo || '🏢'}</span>`;
@@ -806,14 +814,66 @@ function renderSponsors(list) {
         <div class="sp-flip-back">
           <div class="sp-flip-stripe" style="background:${color}"></div>
           <div class="sp-flip-quote">"</div>
-          <div class="sp-flip-tagline">${esc(s.tagline || '')}</div>
+          <div class="sp-flip-tagline"><span>${esc(s.tagline || '')}</span></div>
           ${visitBtn}
         </div>
       </div>
     </div>`;
   }).join('');
   el('sponsors').style.display = '';
+  scheduleSponsorEqualize();
 }
+
+// Dispara la igualación en varios momentos para acertar pese a fuentes/imágenes
+// que cargan tarde: tras fuentes listas, tras carga de cada logo, y por fallback.
+function scheduleSponsorEqualize() {
+  const run = () => equalizeSponsorHeights();
+  requestAnimationFrame(run);
+  [120, 400, 900].forEach(t => setTimeout(run, t));
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(run);
+  el('sponsors-grid').querySelectorAll('img').forEach(img => {
+    if (!img.complete) img.addEventListener('load', run, { once: true });
+  });
+}
+
+// Mide la altura natural de una cara poniéndola un instante en flujo normal
+// (las caras son position:absolute, así que su altura real no se ve afectada
+// por la altura fija de la card).
+function measureFace(face) {
+  if (!face) return 0;
+  const p = face.style.position, h = face.style.height, t = face.style.transform;
+  face.style.position = 'static';
+  face.style.height = 'auto';
+  face.style.transform = 'none';
+  const measured = face.offsetHeight;
+  face.style.position = p;
+  face.style.height = h;
+  face.style.transform = t;
+  return measured;
+}
+
+// Iguala la altura de todas las tarjetas de patrocinador a la de mayor
+// contenido, para que se vea la frase entera + el botón "Visitar".
+function equalizeSponsorHeights() {
+  const grid = el('sponsors-grid');
+  if (!grid) return;
+  const wraps = [...grid.querySelectorAll('.sp-flip')];
+  if (!wraps.length) return;
+  grid.style.removeProperty('--card-h');
+  let max = 0;
+  wraps.forEach(w => {
+    max = Math.max(max,
+      measureFace(w.querySelector('.sp-flip-front')),
+      measureFace(w.querySelector('.sp-flip-back')));
+  });
+  grid.style.setProperty('--card-h', max + 'px');
+}
+
+let _spEqT;
+window.addEventListener('resize', () => {
+  clearTimeout(_spEqT);
+  _spEqT = setTimeout(equalizeSponsorHeights, 150);
+});
 
 // ─── UTILS ───────────────────────────────────────────────────────────────────
 function el(id) { return document.getElementById(id); }
@@ -860,17 +920,17 @@ const DEMO = {
     {pos:23,prevPos:23,id:16,name:"Raúl Murillo",total:0,grupos:0,eliminatorias:0,pichichi:0,matches:[]}
   ],
   sponsors:[
-    {name:"Ojo Cría Cuervos",      logo:"logos/criacuervos_3.png", url:"https://vinoscriacuervos.com",                    tagline:"Vinos versátiles para los pequeños grandes momentos"},
-    {name:"XIA Perfumes",          logo:"logos/xia.png",           url:"https://www.xiaperfumes.es/",                    tagline:"Una nueva era en la perfumería"},
-    {name:"Clínica Santamaría",    logo:"logos/clinica_santamaria.png", url:"https://www.clinica-santamaria.com/",        tagline:"La mejor sonrisa para cuando ganemos el mundial"},
-    {name:"Ágora Arquitectura",    logo:"logos/agora.png",         url:"https://agora-arquitectura.com/",                tagline:"+30 años en construcción, reforma y rehabilitación"},
-    {name:"Acrisure",              logo:"logos/acrisure.jpeg",     url:"https://acrisure.es/acrisure/",                  tagline:"Atención local, capacidad global"},
-    {name:"Flexicar",              logo:"logos/flexicar.png",      url:"https://www.flexicar.es/",                       tagline:"Más de 175 concesionarios en toda España"},
-    {name:"22EVNTS",               logo:"logos/22evnts.jpeg",      url:"https://www.instagram.com/22evnts/",             tagline:"Entradas para cualquier evento a nivel mundial"},
-    {name:"SOMA Osteopatía",       logo:"logos/soma.png",          url:"https://www.instagram.com/fabioguerra_15/",      tagline:"Recupera tu bienestar y movilidad en Algete"},
-    {name:"Volga Real Estate",     logo:"logos/volga.png",         url:"https://www.idealista.com/pro/volga-real-estate/",tagline:"Tu hogar tiene una historia. Te ayudamos a encontrarla"},
-    {name:"Clínica Baena Martín",  logo:"logos/baena_martin.png",  url:"https://www.clinicabaenamartin.com/",            tagline:"Podología, fisioterapia y medicina estética"},
-    {name:"La Vuelta",             logo:"logos/la_vuelta.png",     url:"https://www.instagram.com/lavuelta_madrid/",     tagline:"A veces el mejor premio está a la vuelta de la esquina"}
+    {name:"Ojo Cría Cuervos",      logo:"logos/criacuervos_3.png", lightBg:true, url:"https://vinoscriacuervos.com",                    tagline:"Vinos versátiles, que le den sabor y color a todos esos pequeños grandes momentos de la vida."},
+    {name:"XIA Perfumes",          logo:"logos/xia.png",           logoLarge:true, url:"https://www.xiaperfumes.es/",                  tagline:"Recuerdos, momentos y emociones se transforman en el alma de tu perfume. Una experiencia única en el mundo, que da comienzo a una nueva era en la perfumería."},
+    {name:"Clínica Santamaría",    logo:"logos/clinica_santamaria.png", url:"https://www.clinica-santamaria.com/",                     tagline:"Para lucir una sonrisa perfecta cuando nuestra selección levante el mundial, el mejor sitio al que acudir es Clínica Santamaría."},
+    {name:"Ágora Arquitectura",    logo:"logos/agora.png",         lightBg:true, url:"https://agora-arquitectura.com/",                tagline:"Si buscas tu mejor aliado para proyectos de nueva construcción, reforma o rehabilitación, Ágora Arquitectura es el indicado. Con más de 30 años de experiencia, tus proyectos están en las mejores manos."},
+    {name:"Acrisure",              logo:"logos/acrisure.jpeg",     logoLarge:true, url:"https://acrisure.es/acrisure/",                tagline:"En Acrisure combinamos la atención cercana de un equipo local con la capacidad operativa de una red global. Cualquier seguro que necesitéis, nuestro amigo Daniel San José seguro que es capaz de mejorarlo."},
+    {name:"Flexicar",              logo:"logos/flexicar.png",      url:"https://www.flexicar.es/",                                    tagline:"Yo compro mi coche en Flexicar. Si lo prefieres, también gestionamos la venta de tu vehículo."},
+    {name:"22EVNTS",               logo:"logos/22evnts.jpeg",      lightBg:true, url:"https://www.instagram.com/22evnts/",             tagline:"Si necesitas entradas para cualquier evento a nivel mundial y una gestión personalizada, 22EVNTS es tu empresa. ¡Quien sabe si tendrá que gestionarnos entradas para la final del mundial!"},
+    {name:"SOMA Osteopatía",       logo:"logos/soma.png",          url:"https://www.instagram.com/fabioguerra_15/",                   tagline:"Recupera tu bienestar, mejora tu movilidad y vuelve a sentirte bien con una atención osteopática personalizada en tu clínica en Algete."},
+    {name:"Volga Real Estate",     logo:"logos/volga.png",         logoLarge:true, url:"https://www.idealista.com/pro/volga-real-estate/",tagline:"Porque cada hogar tiene una historia, te ayudamos a encontrar la tuya. Convertimos la búsqueda de tu hogar en una experiencia cercana y personal."},
+    {name:"Clínica Baena Martín",  logo:"logos/baena_martin.jpg",  url:"https://www.clinicabaenamartin.com/",                         tagline:"En clínica Baena Martín, centro de podología, medicina estética y fisioterapia, se especializan en cuidados para todas las edades. Sus profesionales están esperando para cubrir vuestras necesidades. ¡No dudéis en visitarles, saldréis encantados!"},
+    {name:"La Vuelta",             logo:"logos/la_vuelta.png",     url:"https://www.instagram.com/lavuelta_madrid/",                  tagline:"Porque los premios se disfrutan mejor compartiéndolos. Si tú eres mi PORRA, yo soy tu VUELTA. A veces el mejor premio está a la vuelta de la esquina."}
   ]
 };
 
