@@ -357,7 +357,7 @@ body{
 }
 .flip-logo-wrap.photo-logo .flip-sponsor-logo{
   width:100%;height:100%;max-width:none;max-height:none;
-  object-fit:cover;object-position:center 38%;
+  object-fit:cover;object-position:center 66%;
 }
 </style>
 </head>
@@ -483,21 +483,21 @@ const POSICION = [
   {
     cat: "4º clasificado", icon: "🍷",
     title: "6 botellas de vino",
-    desc: "Más que vinos: versátiles, que le den sabor y color a todos esos pequeños grandes momentos de la vida. Aquí y ahora.",
+    desc: "Vinos versátiles que le den sabor y color a todos esos pequeños, grandes momentos de la vida. Aquí y ahora, disfruta del mundial y de la vida con uno de nuestros vinos.",
     sponsor: { name: "Cría Cuervos", logo: "logos/criacuervos_3.png", url: "https://vinoscriacuervos.com" },
     color: "#7a2a4a"
   },
   {
     cat: "5º clasificado", icon: "🍷",
     title: "4 botellas de vino",
-    desc: "Más que vinos: versátiles, que le den sabor y color a todos esos pequeños grandes momentos de la vida. Aquí y ahora.",
+    desc: "Vinos versátiles que le den sabor y color a todos esos pequeños, grandes momentos de la vida. Aquí y ahora, disfruta del mundial y de la vida con uno de nuestros vinos.",
     sponsor: { name: "Cría Cuervos", logo: "logos/criacuervos_3.png", url: "https://vinoscriacuervos.com" },
     color: "#7a2a4a"
   },
   {
     cat: "6º clasificado", icon: "🍷",
     title: "2 botellas de vino",
-    desc: "Más que vinos: versátiles, que le den sabor y color a todos esos pequeños grandes momentos de la vida. Aquí y ahora.",
+    desc: "Vinos versátiles que le den sabor y color a todos esos pequeños, grandes momentos de la vida. Aquí y ahora, disfruta del mundial y de la vida con uno de nuestros vinos.",
     sponsor: { name: "Cría Cuervos", logo: "logos/criacuervos_3.png", url: "https://vinoscriacuervos.com" },
     color: "#7a2a4a"
   },
@@ -568,15 +568,76 @@ const SIMBOLICOS = [
 let STANDINGS = [];
 
 const DEMO_STANDINGS = [
-  {pos:1,name:"PepeDSV"},{pos:2,name:"Gaspar GS"},{pos:3,name:"MONNE"},
-  {pos:4,name:"arrobamarcovarelafam"},{pos:5,name:"JUANPI TORRICO"},{pos:6,name:"Josele"},
-  {pos:7,name:"AK99"},{pos:8,name:"Homer"},{pos:9,name:"PR7"},{pos:10,name:"Luisco"},
-  {pos:11,name:"Trusky"},{pos:23,name:"Raúl Murillo"}
+  {pos:1, id:8,  name:"PepeDSV",              gender:"M", grupos:52, pichichi_mundial:6, pichichi1:4, pichichi2:2, pichichi_esp:3},
+  {pos:2, id:2,  name:"Gaspar GS",            gender:"M", grupos:48, pichichi_mundial:5, pichichi1:3, pichichi2:2, pichichi_esp:2},
+  {pos:3, id:29, name:"ANITA DINAMITA",       gender:"F", grupos:46, pichichi_mundial:4, pichichi1:3, pichichi2:1, pichichi_esp:4},
+  {pos:4, id:1,  name:"arrobamarcovarelafam", gender:"M", grupos:44, pichichi_mundial:3, pichichi1:2, pichichi2:1, pichichi_esp:1},
+  {pos:5, id:4,  name:"JUANPI TORRICO",       gender:"M", grupos:42, pichichi_mundial:3, pichichi1:2, pichichi2:1, pichichi_esp:2},
+  {pos:6, id:5,  name:"Josele",               gender:"M", grupos:40, pichichi_mundial:2, pichichi1:1, pichichi2:1, pichichi_esp:1},
+  {pos:7, id:7,  name:"AK99",                 gender:"M", grupos:38, pichichi_mundial:2, pichichi1:1, pichichi2:1, pichichi_esp:1},
+  {pos:8, id:6,  name:"Homer",                gender:"M", grupos:36, pichichi_mundial:1, pichichi1:1, pichichi2:0, pichichi_esp:0},
+  {pos:9, id:9,  name:"PR7",                  gender:"M", grupos:34, pichichi_mundial:1, pichichi1:0, pichichi2:1, pichichi_esp:1},
+  {pos:10,id:10, name:"Luisco",               gender:"M", grupos:32, pichichi_mundial:0, pichichi1:0, pichichi2:0, pichichi_esp:2},
+  {pos:11,id:11, name:"Trusky",               gender:"M", grupos:30, pichichi_mundial:0, pichichi1:0, pichichi2:0, pichichi_esp:0},
+  {pos:55,id:76, name:"Mari Madero",          gender:"F", grupos:10, pichichi_mundial:0, pichichi1:0, pichichi2:0, pichichi_esp:0},
+  {pos:245,id:16,name:"MURO",                 gender:"M", grupos:2,  pichichi_mundial:0, pichichi1:0, pichichi2:0, pichichi_esp:0},
 ];
+
+// ─── CATEGORY WINNER HELPERS ─────────────────────────────────────────────────
+
+/**
+ * Devuelve el nombre del ganador de una categoría especial.
+ * En caso de empate usa lower ID (= antes enviado).
+ */
+function categoryWinner(field, tieFields = []) {
+  const base = STANDINGS.length ? STANDINGS : DEMO_STANDINGS;
+  const src = base.filter(s => s.pos > 0 || s.total > 0 || (s[field] || 0) > 0);
+  if (!src.length) return null;
+  // Solo considerar si hay algún valor > 0 (torneo empezado)
+  const maxVal = Math.max(...src.map(s => s[field] || 0));
+  if (maxVal === 0) return null;
+  let candidates = src.filter(s => (s[field] || 0) === maxVal);
+  // Desempates sucesivos
+  for (const tf of tieFields) {
+    if (candidates.length === 1) break;
+    const maxTie = Math.max(...candidates.map(s => s[tf] || 0));
+    const next = candidates.filter(s => (s[tf] || 0) === maxTie);
+    if (next.length) candidates = next;
+  }
+  // Desempate final: menor ID (antes envió la porra)
+  candidates.sort((a, b) => a.id - b.id);
+  return candidates[0]?.name || null;
+}
+
+/** Primera mujer en la clasificación general (pos más baja con gender==="F"). */
+function firstWoman() {
+  const base = STANDINGS.length ? STANDINGS : DEMO_STANDINGS;
+  const src = base.filter(s => s.gender === 'F' && s.pos > 0);
+  if (!src.length) return null;
+  src.sort((a, b) => a.pos - b.pos);
+  return src[0]?.name || null;
+}
 
 function personAtPos(catText) {
   const src = STANDINGS.length ? STANDINGS : DEMO_STANDINGS;
   const lower = catText.toLowerCase();
+
+  // Categorías especiales
+  if (lower.includes('ganador de grupos')) {
+    return categoryWinner('grupos');
+  }
+  if (lower.includes('pichichi') && (lower.includes('mundial') || lower.includes('goleador mundial'))) {
+    // Desempate: pichichi1 (preferente) → pichichi2 (secundario) → ID
+    return categoryWinner('pichichi_mundial', ['pichichi1', 'pichichi2']);
+  }
+  if (lower.includes('goleador españa') || lower.includes('goleador espana')) {
+    return categoryWinner('pichichi_esp');
+  }
+  if (lower.includes('mujer')) {
+    return firstWoman();
+  }
+
+  // Posición numérica
   if (/último/i.test(lower)) {
     const sorted = [...src].sort((a,b) => b.pos - a.pos);
     return sorted[0]?.name || null;
@@ -738,6 +799,7 @@ window.addEventListener('resize', () => {
     const r = await fetch('clasificacion.json?t=' + Date.now());
     if (r.ok) {
       const data = await r.json();
+      // Conservar todos los campos del JSON (gender, pichichi_mundial, etc.)
       STANDINGS = (data.standings || []).sort((a,b) => a.pos - b.pos);
     }
   } catch(_) {}
