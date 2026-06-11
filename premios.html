@@ -349,6 +349,16 @@ body{
 /* ── LOGO GRANDE ─────────────────────────────────────────── */
 .flip-logo-wrap.logo-xl{height:108px;padding:2px 4px}
 .flip-logo-wrap.logo-xl .flip-sponsor-logo{max-height:100px}
+
+/* ── LOGO FOTO (imagen a sangre) ─────────────────────────── */
+.flip-logo-wrap.photo-logo{
+  height:108px;width:calc(100% - 20px);padding:0;border-radius:10px;
+  overflow:hidden;background:#000;border:none;
+}
+.flip-logo-wrap.photo-logo .flip-sponsor-logo{
+  width:100%;height:100%;max-width:none;max-height:none;
+  object-fit:cover;object-position:center 38%;
+}
 </style>
 </head>
 <body>
@@ -417,7 +427,7 @@ const PODIO = [
     medal: "🥇",
     amount: "POR CONFIRMAR",
     unit: "en metálico",
-    extra: "🍷 6 botellas de vino — cortesía de Cría Cuervos",
+    extra: "🍺 Caja de cerveza Mahou 5 Estrellas",
     color: "#c9a227"
   },
   {
@@ -425,7 +435,7 @@ const PODIO = [
     medal: "🥈",
     amount: "POR CONFIRMAR",
     unit: "en metálico",
-    extra: "🍷 4 botellas de vino — cortesía de Cría Cuervos",
+    extra: "🍺 Caja de cerveza Mahou 5 Estrellas",
     color: "#a8a8a8"
   },
   {
@@ -433,58 +443,70 @@ const PODIO = [
     medal: "🥉",
     amount: "POR CONFIRMAR",
     unit: "en metálico",
-    extra: "🍷 2 botellas de vino — cortesía de Cría Cuervos",
+    extra: "🍺 Caja de cerveza Mahou 5 Estrellas",
     color: "#b87333"
   }
 ];
 
 const ESPECIALES = [
   {
-    cat: "Último clasificado",
-    icon: "🪣",
-    title: "Certificado energético + camiseta oficial de España",
-    desc: "Si buscas tu mejor aliado para proyectos de nueva construcción, reforma o rehabilitación, Ágora Arquitectura es el indicado. Con más de 30 años de experiencia, tus proyectos están en las mejores manos.",
-    sponsor: { name: "Ágora Arquitectura", logo: "logos/agora.png", url: "https://agora-arquitectura.com/" },
-    color: "#e05050"
-  },
-  {
-    cat: "Premio especial",
-    icon: "🥂",
-    title: "15 entradas gratis + 2 botellas de vino en la terraza",
-    desc: "Porque los premios se disfrutan mejor compartiéndolos. Si tú eres mi PORRA, yo soy tu VUELTA. A veces el mejor premio está a la vuelta de la esquina.",
-    sponsor: { name: "La Vuelta", logo: "logos/la_vuelta.png", url: "https://www.instagram.com/lavuelta_madrid/" },
-    color: "#c9a227"
-  }
-];
-
-const POSICION = [
-  {
-    cat: "4º clasificado", icon: "✨",
-    title: "Tarjeta regalo para crear tu perfume único personalizado con IA",
-    desc: "Recuerdos, momentos y emociones se transforman en el alma de tu perfume. Una experiencia única en el mundo, que da comienzo a una nueva era en la perfumería.",
-    sponsor: { name: "XIA Perfumes", logo: "logos/xia.png", url: "https://www.xiaperfumes.es/", logoLarge: true },
-    color: "#9060c0"
-  },
-  {
-    cat: "5º clasificado", icon: "🦷",
+    cat: "Ganador de grupos", icon: "🦷",
     title: "Blanqueamiento completo, sesiones luz LED y férulas personalizadas",
     desc: "Para lucir una sonrisa perfecta cuando nuestra selección levante el mundial, el mejor sitio al que acudir es Clínica Santamaría.",
     sponsor: { name: "Clínica Santamaría", logo: "logos/clinica_santamaria.png", url: "https://www.clinica-santamaria.com/" },
     color: "#3a7fc0"
   },
   {
-    cat: "6º clasificado", icon: "🎁",
+    cat: "Primera mujer clasificada", icon: "✨",
+    title: "Tarjeta regalo para crear tu perfume único personalizado con IA",
+    desc: "Recuerdos, momentos y emociones se transforman en el alma de tu perfume. Una experiencia única en el mundo, que da comienzo a una nueva era en la perfumería.",
+    sponsor: { name: "XIA Perfumes", logo: "logos/xia.jpeg", url: "https://www.xiaperfumes.es/", photo: true },
+    color: "#9060c0"
+  },
+  {
+    cat: "Goleador España", icon: "👕",
+    title: "Camiseta oficial de la selección de España",
+    desc: "Si buscas tu mejor aliado para proyectos de nueva construcción, reforma o rehabilitación, Ágora Arquitectura es el indicado. Con más de 30 años de experiencia, tus proyectos están en las mejores manos.",
+    sponsor: { name: "Ágora Arquitectura", logo: "logos/agora.png", url: "https://agora-arquitectura.com/" },
+    color: "#e05050"
+  },
+  {
+    cat: "Goleador mundial · Pichichi", icon: "🏠",
+    title: "Tarjeta regalo MediaMarkt por valor de 200 €",
+    desc: "Porque cada hogar tiene una historia, te ayudamos a encontrar la tuya. Convertimos la búsqueda de tu hogar en una experiencia cercana y personal.",
+    sponsor: { name: "Volga Real Estate", logo: "logos/volga.png", url: "https://www.idealista.com/pro/volga-real-estate/", logoLarge: true },
+    color: "#4a7fb5"
+  }
+];
+
+const POSICION = [
+  {
+    cat: "4º clasificado", icon: "🍷",
+    title: "6 botellas de vino",
+    desc: "Más que vinos: versátiles, que le den sabor y color a todos esos pequeños grandes momentos de la vida. Aquí y ahora.",
+    sponsor: { name: "Cría Cuervos", logo: "logos/criacuervos_3.png", url: "https://vinoscriacuervos.com" },
+    color: "#7a2a4a"
+  },
+  {
+    cat: "5º clasificado", icon: "🍷",
+    title: "4 botellas de vino",
+    desc: "Más que vinos: versátiles, que le den sabor y color a todos esos pequeños grandes momentos de la vida. Aquí y ahora.",
+    sponsor: { name: "Cría Cuervos", logo: "logos/criacuervos_3.png", url: "https://vinoscriacuervos.com" },
+    color: "#7a2a4a"
+  },
+  {
+    cat: "6º clasificado", icon: "🍷",
+    title: "2 botellas de vino",
+    desc: "Más que vinos: versátiles, que le den sabor y color a todos esos pequeños grandes momentos de la vida. Aquí y ahora.",
+    sponsor: { name: "Cría Cuervos", logo: "logos/criacuervos_3.png", url: "https://vinoscriacuervos.com" },
+    color: "#7a2a4a"
+  },
+  {
+    cat: "7º clasificado", icon: "🎁",
     title: "Caja Wonderbox Escapada con Encanto",
     desc: "En Acrisure combinamos la atención cercana de un equipo local con la capacidad operativa de una red global. Cualquier seguro que necesitéis, nuestro amigo Daniel San José seguro que es capaz de mejorarlo.",
     sponsor: { name: "Acrisure", logo: "logos/acrisure.jpeg", url: "https://acrisure.es/acrisure/", logoLarge: true },
     color: "#1a7a5a"
-  },
-  {
-    cat: "7º clasificado", icon: "🚗",
-    title: "Revisión técnica de coche en servicio post-venta",
-    desc: "Yo compro mi coche en Flexicar. Si lo prefieres, también gestionamos la venta de tu vehículo.",
-    sponsor: { name: "Flexicar", logo: "logos/flexicar.png", url: "https://www.flexicar.es/" },
-    color: "#e07020"
   },
   {
     cat: "8º clasificado", icon: "⚽",
@@ -494,25 +516,39 @@ const POSICION = [
     color: "#c0c020"
   },
   {
-    cat: "9º clasificado", icon: "🦴",
+    cat: "9º clasificado", icon: "👟",
+    title: "Estudio de la pisada gratuito + 20% dto. en plantillas",
+    desc: "En clínica Baena Martín, centro de podología, medicina estética y fisioterapia, se especializan en cuidados para todas las edades. Sus profesionales están esperando para cubrir vuestras necesidades. ¡No dudéis en visitarles, saldréis encantados!",
+    sponsor: { name: "Clínica Baena Martín", logo: "logos/baena_martin.jpg", url: "https://www.clinicabaenamartin.com/" },
+    color: "#2a8fc8"
+  },
+  {
+    cat: "10º clasificado", icon: "🦴",
     title: "Sesión de osteopatía personalizada en clínica de Algete",
     desc: "Recupera tu bienestar, mejora tu movilidad y vuelve a sentirte bien con una atención osteopática personalizada en tu clínica en Algete.",
     sponsor: { name: "SOMA Osteopatía", logo: "logos/soma.png", url: "https://www.instagram.com/fabioguerra_15/" },
     color: "#20a0a0"
   },
   {
-    cat: "10º clasificado", icon: "🏠",
-    title: "Tarjeta regalo MediaMarkt por valor de 200 €",
-    desc: "Porque cada hogar tiene una historia, te ayudamos a encontrar la tuya. Convertimos la búsqueda de tu hogar en una experiencia cercana y personal.",
-    sponsor: { name: "Volga Real Estate", logo: "logos/volga.png", url: "https://www.idealista.com/pro/volga-real-estate/", logoLarge: true },
-    color: "#4a7fb5"
+    cat: "26º clasificado", icon: "🚗",
+    title: "Revisión técnica de coche en servicio post-venta",
+    desc: "Yo compro mi coche en Flexicar. Si lo prefieres, también gestionamos la venta de tu vehículo.",
+    sponsor: { name: "Flexicar", logo: "logos/flexicar.png", url: "https://www.flexicar.es/" },
+    color: "#e07020"
   },
   {
-    cat: "11º clasificado", icon: "👟",
-    title: "Estudio de la pisada gratuita + 20% dto. en plantillas",
-    desc: "En clínica Baena Martín, centro de podología, medicina estética y fisioterapia, se especializan en cuidados para todas las edades. Sus profesionales están esperando para cubrir vuestras necesidades. ¡No dudéis en visitarles, saldréis encantados!",
-    sponsor: { name: "Clínica Baena Martín", logo: "logos/baena_martin.jpg", url: "https://www.clinicabaenamartin.com/" },
-    color: "#2a8fc8"
+    cat: "55º clasificado", icon: "🥂",
+    title: "15 entradas gratis + 2 botellas de vino en la terraza",
+    desc: "Porque los premios se disfrutan mejor compartiéndolos. Si tú eres mi PORRA, yo soy tu VUELTA. A veces el mejor premio está a la vuelta de la esquina.",
+    sponsor: { name: "La Vuelta", logo: "logos/la_vuelta.png", url: "https://www.instagram.com/lavuelta_madrid/" },
+    color: "#c9a227"
+  },
+  {
+    cat: "Último clasificado", icon: "🪣",
+    title: "Certificado energético",
+    desc: "Si buscas tu mejor aliado para proyectos de nueva construcción, reforma o rehabilitación, Ágora Arquitectura es el indicado. Con más de 30 años de experiencia, tus proyectos están en las mejores manos.",
+    sponsor: { name: "Ágora Arquitectura", logo: "logos/agora.png", url: "https://agora-arquitectura.com/" },
+    color: "#e05050"
   }
 ];
 
@@ -524,14 +560,6 @@ const SIMBOLICOS = [
     desc: null,
     sponsor: null,
     color: "#cc2200"
-  },
-  {
-    cat: "De la organización",
-    icon: "🍺",
-    title: "3 cajas de cerveza Mahou 5 Estrellas",
-    desc: null,
-    sponsor: null,
-    color: "#d4a020"
   }
 ];
 
@@ -575,7 +603,9 @@ function flipCardHtml(p) {
 
   let frontLogo;
   if (s && s.logo) {
-    const wrapClass = (DARK_LOGOS.has(s.logo) ? 'dark-logo' : 'light-logo') + (s.logoLarge ? ' logo-xl' : '');
+    const wrapClass = s.photo
+      ? 'photo-logo'
+      : (DARK_LOGOS.has(s.logo) ? 'dark-logo' : 'light-logo') + (s.logoLarge ? ' logo-xl' : '');
     frontLogo = `
       <div class="flip-logo-wrap ${wrapClass}">
         <img class="flip-sponsor-logo" src="${s.logo}" alt="${s.name}" loading="lazy">

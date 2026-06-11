@@ -487,6 +487,16 @@ tr.detail-row.open{display:table-row}
 .sp-flip-logo-wrap.logo-xl{height:108px;padding:2px 4px}
 .sp-flip-logo-wrap.logo-xl .sp-flip-logo{max-height:100px}
 
+/* ── LOGO FOTO (imagen a sangre) ─────────────────────────── */
+.sp-flip-logo-wrap.photo-logo{
+  height:108px;width:calc(100% - 24px);padding:0;border-radius:12px;
+  overflow:hidden;background:#000;border:none;
+}
+.sp-flip-logo-wrap.photo-logo .sp-flip-logo{
+  width:100%;height:100%;max-width:none;max-height:none;
+  object-fit:cover;object-position:center 38%;border-radius:0;
+}
+
 /* ── EMPTY / LOADING ─────────────────────────────────────── */
 .state-cell{
   text-align:center;
@@ -794,7 +804,9 @@ function renderSponsors(list) {
   const grid = el('sponsors-grid');
   grid.innerHTML = list.map(s => {
     const isImg = s.logo && (s.logo.includes('/') || s.logo.includes('.'));
-    const logoWrapClass = (s.lightBg ? 'dark-logo' : 'light-logo') + (s.logoLarge ? ' logo-xl' : '');
+    const logoWrapClass = s.photo
+      ? 'photo-logo'
+      : (s.lightBg ? 'dark-logo' : 'light-logo') + (s.logoLarge ? ' logo-xl' : '');
     const logoInner = isImg
       ? `<img class="sp-flip-logo" src="${esc(s.logo)}" alt="${esc(s.name)}" loading="lazy">`
       : `<span style="font-size:44px">${s.logo || '🏢'}</span>`;
@@ -921,7 +933,7 @@ const DEMO = {
   ],
   sponsors:[
     {name:"Ojo Cría Cuervos",      logo:"logos/criacuervos_3.png", lightBg:true, url:"https://vinoscriacuervos.com",                    tagline:"Vinos versátiles, que le den sabor y color a todos esos pequeños grandes momentos de la vida."},
-    {name:"XIA Perfumes",          logo:"logos/xia.png",           logoLarge:true, url:"https://www.xiaperfumes.es/",                  tagline:"Recuerdos, momentos y emociones se transforman en el alma de tu perfume. Una experiencia única en el mundo, que da comienzo a una nueva era en la perfumería."},
+    {name:"XIA Perfumes",          logo:"logos/xia.jpeg",          photo:true,     url:"https://www.xiaperfumes.es/",                  tagline:"Recuerdos, momentos y emociones se transforman en el alma de tu perfume. Una experiencia única en el mundo, que da comienzo a una nueva era en la perfumería."},
     {name:"Clínica Santamaría",    logo:"logos/clinica_santamaria.png", url:"https://www.clinica-santamaria.com/",                     tagline:"Para lucir una sonrisa perfecta cuando nuestra selección levante el mundial, el mejor sitio al que acudir es Clínica Santamaría."},
     {name:"Ágora Arquitectura",    logo:"logos/agora.png",         lightBg:true, url:"https://agora-arquitectura.com/",                tagline:"Si buscas tu mejor aliado para proyectos de nueva construcción, reforma o rehabilitación, Ágora Arquitectura es el indicado. Con más de 30 años de experiencia, tus proyectos están en las mejores manos."},
     {name:"Acrisure",              logo:"logos/acrisure.jpeg",     logoLarge:true, url:"https://acrisure.es/acrisure/",                tagline:"En Acrisure combinamos la atención cercana de un equipo local con la capacidad operativa de una red global. Cualquier seguro que necesitéis, nuestro amigo Daniel San José seguro que es capaz de mejorarlo."},
