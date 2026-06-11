@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdate": "2026-06-11T15:55:40",
+    "lastUpdate": "2026-06-11T16:02:56",
     "fase": "Final",
     "totalParticipants": 245
   },
@@ -134023,52 +134023,70 @@
   ],
   "sponsors": [
     {
-      "name": "FutbolBet365",
-      "logo": "logos/futbolbet365.svg",
-      "url": "#",
-      "tagline": "Apuesta con cabeza"
+      "name": "Cría Cuervos",
+      "logo": "logos/criacuervos_1.png",
+      "url": "https://vinoscriacuervos.com",
+      "tagline": "MÁS QUE VINOS. Para todos esos pequeños grandes momentos."
     },
     {
-      "name": "Cerveza La Roja",
-      "logo": "logos/cervezalaroja.svg",
+      "name": "XIA Perfumes",
+      "logo": "logos/xia.png",
       "url": "#",
-      "tagline": "La bebida del campeón"
+      "tagline": "Recuerdos, momentos y emociones hechos perfume único."
     },
     {
-      "name": "ViajesGol",
-      "logo": "logos/viagol.svg",
+      "name": "Clínica Santamaría",
+      "logo": "logos/clinica_santamaria.png",
       "url": "#",
-      "tagline": "Viaja donde juega tu equipo"
+      "tagline": "La sonrisa perfecta para celebrar el Mundial."
     },
     {
-      "name": "KitSport",
-      "logo": "logos/kitsport.svg",
+      "name": "Ágora Arquitectura",
+      "logo": "logos/agora.png",
       "url": "#",
-      "tagline": "La equipación oficial"
+      "tagline": "Más de 30 años construyendo tus proyectos."
     },
     {
-      "name": "GameStar FC",
-      "logo": "logos/gamestarfc.svg",
-      "url": "#",
-      "tagline": "El videojuego del Mundial"
+      "name": "Acrisure",
+      "logo": "logos/acrisure.jpeg",
+      "url": "https://acrisure.com",
+      "tagline": "Atención local con respaldo global. Seguros a medida."
     },
     {
-      "name": "Pizza del Balón",
-      "logo": "logos/pizzabalon.svg",
-      "url": "#",
-      "tagline": "La pizza más futbolera"
+      "name": "Flexicar",
+      "logo": "logos/flexicar.png",
+      "url": "https://www.flexicar.es",
+      "tagline": "Yo compro mi coche en Flexicar."
     },
     {
-      "name": "AppMarcador",
-      "logo": "logos/appmarcador.svg",
-      "url": "#",
-      "tagline": "El marcador en tu bolsillo"
+      "name": "22EVNTS",
+      "logo": "logos/22evnts.jpeg",
+      "url": "https://www.instagram.com/22evnts",
+      "tagline": "Entradas para cualquier evento a nivel mundial."
     },
     {
-      "name": "GymGoal",
-      "logo": "logos/gymgoal.svg",
+      "name": "SOMA Osteopatía",
+      "logo": "logos/soma.png",
+      "url": "https://www.instagram.com/fabioguerra_15",
+      "tagline": "Recupera tu bienestar con atención osteopática personalizada."
+    },
+    {
+      "name": "Volga Real Estate",
+      "logo": "logos/volga.png",
+      "url": "https://volgarealestate.es",
+      "tagline": "Porque cada hogar tiene una historia."
+    },
+    {
+      "name": "Clínica Baena Martín",
+      "logo": "logos/baena_martin.png",
       "url": "#",
-      "tagline": "Entrena como un pro"
+      "tagline": "Podología, fisioterapia y medicina estética para todas las edades."
+    },
+    {
+      "name": "La Vuelta",
+      "logo": "logos/la_vuelta.png",
+      "url": "https://www.instagram.com/lavuelta_madrid",
+      "tagline": "Si tú eres mi porra, yo soy tu vuelta."
     }
   ]
 }
