@@ -756,7 +756,7 @@ function renderTable() {
     return;
   }
   const q = el('search').value.trim().toLowerCase();
-  tbody.innerHTML = VIEW.map(p => rowHtml(p, q)).join('');
+  tbody.innerHTML = VIEW.map((p, i) => rowHtml(p, i + 1, q)).join('');
 
   tbody.querySelectorAll('.xbtn').forEach(btn => {
     btn.addEventListener('click', () => toggleDetail(btn.dataset.id));
@@ -771,14 +771,14 @@ function renderTable() {
   });
 }
 
-function rowHtml(p, q) {
-  const rankCls = p.pos === 1 ? 'r1' : p.pos === 2 ? 'r2' : p.pos === 3 ? 'r3' : '';
+function rowHtml(p, displayPos, q) {
+  const rankCls = displayPos === 1 ? 'r1' : displayPos === 2 ? 'r2' : displayPos === 3 ? 'r3' : '';
   const foundCls = q && p.name.toLowerCase().includes(q) ? 'found' : '';
 
-  const posHtml = p.pos === 1 ? '<span class="medal">🥇</span>'
-                : p.pos === 2 ? '<span class="medal">🥈</span>'
-                : p.pos === 3 ? '<span class="medal">🥉</span>'
-                : p.pos;
+  const posHtml = displayPos === 1 ? '<span class="medal">🥇</span>'
+                : displayPos === 2 ? '<span class="medal">🥈</span>'
+                : displayPos === 3 ? '<span class="medal">🥉</span>'
+                : displayPos;
 
   return `
 <tr class="data-row ${rankCls} ${foundCls}" data-id="${p.id}">
