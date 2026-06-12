@@ -129,6 +129,12 @@ body{
   justify-content:space-between;
   gap:8px;
 }
+.pron-item > span:first-child{
+  flex:1;
+  min-width:0;
+  word-break:break-word;
+  overflow-wrap:break-word;
+}
 .pron-item:last-child{border-bottom:none}
 .pron-item:hover{background:rgba(255,255,255,.04)}
 .pron-item.selected{background:var(--highlight);color:var(--gold)}
@@ -271,11 +277,14 @@ body{
 }
 
 @media(max-width:580px){
-  .phase-grid{grid-template-columns:1fr 1fr}
   .pron-card-meta{display:none}
+  .phase-grid{grid-template-columns:1fr 1fr}
 }
-@media(max-width:380px){
+@media(max-width:560px){
   .phase-grid{grid-template-columns:1fr}
+  .match-name{white-space:normal;overflow:visible;text-overflow:clip}
+  .match-line{align-items:flex-start;flex-wrap:wrap;gap:3px}
+  .pred-val,.pred-name{align-self:center}
 }
 </style>
 </head>
