@@ -478,9 +478,12 @@ function renderPredictions(p) {
       const empty = !raw;
 
       if (isPichichi) {
+        const [picName, picGoals] = raw.includes('|') ? raw.split('|') : [raw, ''];
+        const goalsLabel = picGoals ? `${picGoals} gol${picGoals === '1' ? '' : 'es'}` : '';
         return `<div class="match-line">
           <span class="match-name" title="${esc(match)}">${esc(match)}</span>
-          <span class="pred-name${empty ? ' pred-empty' : ''}">${esc(pred)}</span>
+          <span class="pred-name${!picName ? ' pred-empty' : ''}">${esc(picName || '—')}</span>
+          <span class="pred-val${!picGoals ? ' pred-empty' : ''}">${esc(goalsLabel || '—')}</span>
         </div>`;
       }
 
