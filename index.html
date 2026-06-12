@@ -329,6 +329,10 @@ tr.detail-row.open{display:table-row}
 .pts-val{font-weight:700;min-width:24px;text-align:right}
 .pts-pos{color:var(--up)}
 .pts-zero{color:var(--neutral)}
+.real-result{font-size:10px;font-weight:600;padding:1px 5px;border-radius:3px;margin:0 6px;white-space:nowrap}
+.res-exact{background:rgba(72,199,142,.18);color:#48c78e}
+.res-sign{background:rgba(255,214,0,.15);color:#ffd600}
+.res-miss{background:rgba(255,80,80,.15);color:#ff6b6b}
 .phase-footer{
   display:flex;
   justify-content:space-between;
@@ -529,8 +533,9 @@ tr.detail-row.open{display:table-row}
       </div>
     </div>
     <nav class="header-nav">
-      <a href="index.html" class="nav-pill active">📊 Clasificación</a>
-      <a href="premios.html" class="nav-pill">🏆 Premios</a>
+      <a href="index.html"       class="nav-pill active">📊 Clasificación</a>
+      <a href="pronosticos.html" class="nav-pill">🔮 Pronósticos</a>
+      <a href="premios.html"     class="nav-pill">🏆 Premios</a>
     </nav>
     <div class="header-update">
       <strong id="last-update">—</strong>
@@ -618,6 +623,7 @@ let VIEW = [];         // vista actual (filtrada)
 let sortKey = 'total';
 let sortAsc = false;
 let expanded = new Set();
+let RESULTS = {};
 
 // ─── INIT ────────────────────────────────────────────────────────────────────
 async function init() {
@@ -640,6 +646,7 @@ async function init() {
   el('stat-n').textContent = meta.totalParticipants ?? data.standings.length;
 
   // Sort initial
+  RESULTS = data.results || {};
   ALL = [...data.standings].sort((a,b) => a.pos - b.pos || b.total - a.total);
   if (ALL.length) {
     el('stat-leader').textContent = ALL[0].name;
@@ -774,10 +781,25 @@ function detailHtml(p) {
 
   const blocks = Object.entries(phases).map(([phase, ms]) => {
     const sub = ms.reduce((s,m) => s + (m.pts||0), 0);
+    const isGroup = phase.toLowerCase().includes('grupo');
     const lines = ms.map(m => {
       const cls = m.pts > 0 ? 'pts-pos' : 'pts-zero';
+      const key = phase + '|' + m.match;
+      const res = RESULTS[key];
+      let realTag = '';
+      if (res && res.r) {
+        if (isGroup) {
+          if (m.pts >= 3)       realTag = `<span class="real-result res-exact">${esc(res.r)}</span>`;
+          else if (m.pts >= 1)  realTag = `<span class="real-result res-sign">${esc(res.q)||'X'}</span>`;
+          else                  realTag = `<span class="real-result res-miss">${esc(res.r)}</span>`;
+        } else {
+          if (m.pts > 0)        realTag = `<span class="real-result res-exact">${esc(res.r)}</span>`;
+          else                  realTag = `<span class="real-result res-miss">${esc(res.r)}</span>`;
+        }
+      }
       return `<div class="match-line">
         <span class="match-name">${esc(m.match)}</span>
+        ${realTag}
         <span class="pts-val ${cls}">${m.pts}</span>
       </div>`;
     }).join('');

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veletoporra Mundial 2026 — Pronósticos</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --bg:#0f1923;
+  --surface:#18232f;
+  --surface2:#1e2d3d;
+  --border:#253345;
+  --gold:#c9a227;
+  --gold-dim:rgba(201,162,39,0.15);
+  --text:#dde6f0;
+  --muted:#6b7e91;
+  --up:#34d399;
+  --down:#f87171;
+  --neutral:#4b5a6a;
+  --highlight:rgba(201,162,39,0.18);
+  --radius:8px;
+}
+
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  min-height:100vh;
+  font-size:14px;
+  line-height:1.4;
+}
+
+/* ── HEADER ─────────────────────────────────────────────── */
+.header{
+  background:linear-gradient(160deg,#0a1520 0%,#162030 60%,#0f1923 100%);
+  border-bottom:2px solid var(--gold);
+  padding:14px 20px;
+}
+.header-inner{
+  max-width:1100px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.header-brand{display:flex;align-items:center;gap:12px}
+.header-ball{font-size:clamp(24px,5vw,36px)}
+.header-text h1{
+  font-size:clamp(16px,4vw,24px);
+  font-weight:800;
+  color:var(--gold);
+  text-transform:uppercase;
+  letter-spacing:-0.3px;
+}
+.header-text .subtitle{font-size:12px;color:var(--muted);margin-top:2px}
+.header-nav{display:flex;gap:8px;flex-shrink:0}
+.nav-pill{
+  padding:6px 14px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:600;
+  text-decoration:none;
+  transition:all .2s;
+  border:1px solid var(--border);
+  color:var(--muted);
+  background:var(--surface);
+}
+.nav-pill:hover{border-color:var(--gold);color:var(--gold)}
+.nav-pill.active{background:var(--gold);border-color:var(--gold);color:#000}
+
+/* ── MAIN ────────────────────────────────────────────────── */
+.main{max-width:1100px;margin:0 auto;padding:20px 16px 40px}
+
+/* ── CONTROLS ────────────────────────────────────────────── */
+.controls{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:14px;
+  flex-wrap:wrap;
+}
+.search-wrap{position:relative;flex:1;min-width:220px}
+.search-icon{
+  position:absolute;left:11px;top:50%;
+  transform:translateY(-50%);
+  color:var(--muted);font-size:13px;
+  pointer-events:none;
+}
+.search{
+  width:100%;
+  padding:9px 12px 9px 34px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  color:var(--text);
+  font-size:14px;
+  outline:none;
+  transition:border-color .2s;
+}
+.search:focus{border-color:var(--gold)}
+.search::placeholder{color:var(--muted)}
+.search-hint{font-size:12px;color:var(--muted);white-space:nowrap}
+
+/* ── PARTICIPANT LIST ────────────────────────────────────── */
+.pron-list-wrap{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;
+  max-height:260px;
+  overflow-y:auto;
+  margin-bottom:16px;
+  scrollbar-width:thin;
+  scrollbar-color:var(--border) transparent;
+}
+.pron-item{
+  padding:10px 14px;
+  cursor:pointer;
+  border-bottom:1px solid var(--border);
+  font-size:13px;
+  font-weight:600;
+  transition:background .1s;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+}
+.pron-item:last-child{border-bottom:none}
+.pron-item:hover{background:rgba(255,255,255,.04)}
+.pron-item.selected{background:var(--highlight);color:var(--gold)}
+.pron-item-arrow{color:var(--muted);font-size:10px;flex-shrink:0}
+.pron-item.selected .pron-item-arrow{color:var(--gold)}
+.pron-no-results{
+  padding:18px 14px;
+  font-size:13px;
+  color:var(--muted);
+  text-align:center;
+}
+
+/* ── CARD ────────────────────────────────────────────────── */
+.pron-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  overflow:hidden;
+  margin-bottom:16px;
+}
+.pron-card-header{
+  background:#0d1822;
+  padding:12px 16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:2px solid var(--gold);
+  gap:12px;
+}
+.pron-card-name{
+  font-size:15px;
+  font-weight:800;
+  color:var(--gold);
+  text-transform:uppercase;
+  letter-spacing:.3px;
+  flex:1;
+}
+.pron-card-meta{
+  font-size:11px;
+  color:var(--muted);
+  white-space:nowrap;
+}
+.pron-card-close{
+  background:none;
+  border:none;
+  color:var(--muted);
+  cursor:pointer;
+  font-size:15px;
+  padding:2px 6px;
+  border-radius:4px;
+  transition:color .15s;
+  line-height:1;
+}
+.pron-card-close:hover{color:var(--text)}
+.pron-grid-wrap{padding:14px}
+
+/* ── PHASE GRID (reusada de clasificación) ───────────────── */
+.phase-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  gap:10px;
+}
+.phase-block{
+  background:var(--surface2);
+  border:1px solid var(--border);
+  border-radius:6px;
+  padding:10px 12px;
+}
+.phase-title{
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+  color:var(--muted);
+  margin-bottom:7px;
+}
+.match-line{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:3px 0;
+  font-size:12px;
+  border-bottom:1px solid rgba(37,51,69,.6);
+  gap:6px;
+}
+.match-line:last-of-type{border:none}
+.match-name{color:var(--text);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pred-val{
+  font-weight:700;
+  font-size:11px;
+  color:var(--text);
+  background:rgba(255,255,255,.08);
+  padding:2px 6px;
+  border-radius:4px;
+  font-family:'SF Mono','Fira Mono',monospace;
+  white-space:nowrap;
+  min-width:36px;
+  text-align:center;
+  flex-shrink:0;
+}
+.pred-empty{opacity:.35;background:transparent}
+/* Pichichi: bloque ancho + nombre largo sin chip */
+.phase-block-wide{grid-column:span 2}
+@media(max-width:480px){.phase-block-wide{grid-column:span 1}}
+.pred-name{
+  font-weight:600;
+  font-size:12px;
+  color:var(--text);
+  background:none;
+  padding:0;
+  border-radius:0;
+  font-family:inherit;
+  white-space:normal;
+  min-width:0;
+  text-align:right;
+  flex-shrink:1;
+}
+
+/* ── EMPTY STATE ─────────────────────────────────────────── */
+.pron-empty{
+  text-align:center;
+  padding:52px 24px;
+  color:var(--muted);
+}
+.pron-empty-icon{font-size:40px;margin-bottom:14px;opacity:.5}
+.pron-empty-title{font-size:16px;font-weight:700;color:var(--text);margin-bottom:8px}
+.pron-empty-sub{font-size:13px;line-height:1.6}
+
+/* ── FOOTER ──────────────────────────────────────────────── */
+.footer{
+  margin-top:36px;
+  padding:16px;
+  text-align:center;
+  font-size:12px;
+  color:var(--muted);
+  border-top:1px solid var(--border);
+}
+
+@media(max-width:580px){
+  .phase-grid{grid-template-columns:1fr 1fr}
+  .pron-card-meta{display:none}
+}
+@media(max-width:380px){
+  .phase-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <span class="header-ball">⚽</span>
+      <div class="header-text">
+        <h1>Veletoporra Mundial 2026</h1>
+        <p class="subtitle">Pronósticos</p>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a href="index.html"      class="nav-pill">📊 Clasificación</a>
+      <a href="pronosticos.html" class="nav-pill active">🔮 Pronósticos</a>
+      <a href="premios.html"    class="nav-pill">🏆 Premios</a>
+    </nav>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- SEARCH -->
+  <div class="controls">
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" class="search" id="pron-search"
+             placeholder="Busca tu nombre o el de otro participante…"
+             autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </div>
+    <span class="search-hint" id="search-hint"></span>
+  </div>
+
+  <!-- PARTICIPANT LIST -->
+  <div class="pron-list-wrap" id="pron-list-wrap" style="display:none">
+    <div id="pron-list"></div>
+  </div>
+
+  <!-- PREDICTION CARD -->
+  <div class="pron-card" id="pron-card" style="display:none">
+    <div class="pron-card-header">
+      <span class="pron-card-name" id="pron-card-name"></span>
+      <span class="pron-card-meta" id="pron-card-meta"></span>
+      <button class="pron-card-close" onclick="clearSelection()" title="Cerrar">✕</button>
+    </div>
+    <div class="pron-grid-wrap">
+      <div class="phase-grid" id="pron-phase-grid"></div>
+    </div>
+  </div>
+
+  <!-- EMPTY STATE -->
+  <div id="pron-empty" class="pron-empty">
+    <div class="pron-empty-icon">🔮</div>
+    <div class="pron-empty-title">Consulta los pronósticos</div>
+    <p class="pron-empty-sub">
+      Escribe tu nombre en el buscador para ver todos tus pronósticos.<br>
+      También puedes buscar a cualquier otro participante.
+    </p>
+  </div>
+
+</main>
+
+<footer class="footer">
+  Veletoporra Mundial 2026
+</footer>
+
+<script>
+// ─── STATE ──────────────────────────────────────────────────────────────────
+let DATA       = null;   // pronosticos.json completo
+let selectedId = null;
+
+// ─── INIT ────────────────────────────────────────────────────────────────────
+async function init() {
+  try {
+    const r = await fetch('pronosticos.json?t=' + Date.now());
+    if (r.ok) DATA = await r.json();
+  } catch(_) {}
+
+  if (!DATA) {
+    el('pron-empty').innerHTML =
+      '<div class="pron-empty-icon">⚠️</div>' +
+      '<div class="pron-empty-title">No se pudo cargar el archivo de pronósticos</div>' +
+      '<p class="pron-empty-sub">Asegúrate de abrir esta página desde el servidor local (./preview.sh) y de haber ejecutado export_json.py.</p>';
+    return;
+  }
+
+  el('pron-search').addEventListener('input', onSearch);
+
+  // Si hay hash en la URL (#id=N), cargar directamente
+  const m = location.hash.match(/id=(\d+)/);
+  if (m) {
+    const p = DATA.participants.find(x => x.id === parseInt(m[1]));
+    if (p) selectParticipant(p.id);
+  }
+}
+
+// ─── SEARCH ──────────────────────────────────────────────────────────────────
+function onSearch(e) {
+  const q = e.target.value.trim().toLowerCase();
+  const listWrap = el('pron-list-wrap');
+  const hint     = el('search-hint');
+
+  if (!q) {
+    listWrap.style.display = 'none';
+    hint.textContent = '';
+    if (!selectedId) showEmpty();
+    return;
+  }
+
+  const matches = DATA.participants.filter(p =>
+    p.name.toLowerCase().includes(q)
+  );
+
+  hint.textContent = matches.length
+    ? `${matches.length} resultado${matches.length !== 1 ? 's' : ''}`
+    : 'Sin resultados';
+
+  const listEl = el('pron-list');
+  if (!matches.length) {
+    listEl.innerHTML = '<div class="pron-no-results">Sin resultados para "' + esc(e.target.value.trim()) + '"</div>';
+  } else {
+    listEl.innerHTML = matches.map(p =>
+      `<div class="pron-item${p.id === selectedId ? ' selected' : ''}"
+            onclick="selectParticipant(${p.id})">
+        <span>${esc(p.name)}</span>
+        <span class="pron-item-arrow">▶</span>
+      </div>`
+    ).join('');
+  }
+
+  listWrap.style.display = '';
+  el('pron-empty').style.display = 'none';
+}
+
+// ─── SELECT ───────────────────────────────────────────────────────────────────
+function selectParticipant(id) {
+  const p = DATA.participants.find(x => x.id === id);
+  if (!p) return;
+
+  selectedId = id;
+
+  // Actualizar lista (highlight)
+  document.querySelectorAll('.pron-item').forEach(item => {
+    item.classList.toggle('selected', parseInt(item.dataset && item.getAttribute('onclick').match(/\d+/)[0]) === id);
+  });
+
+  // Ocultar empty, mostrar card
+  el('pron-empty').style.display    = 'none';
+  el('pron-list-wrap').style.display = 'none';
+  el('pron-search').value            = p.name;
+  el('search-hint').textContent      = '';
+
+  el('pron-card-name').textContent = p.name;
+  el('pron-card-meta').textContent = `Participante #${p.id}`;
+  el('pron-phase-grid').innerHTML  = renderPredictions(p);
+  el('pron-card').style.display    = '';
+
+  el('pron-card').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  // URL hash para compartir
+  history.replaceState(null, '', '#id=' + p.id);
+}
+
+function clearSelection() {
+  selectedId = null;
+  el('pron-card').style.display = 'none';
+  el('pron-search').value       = '';
+  el('search-hint').textContent = '';
+  el('pron-list-wrap').style.display = 'none';
+  showEmpty();
+  history.replaceState(null, '', location.pathname);
+}
+
+function showEmpty() {
+  el('pron-empty').style.display = '';
+}
+
+// ─── RENDER PREDICTIONS ──────────────────────────────────────────────────────
+function renderPredictions(p) {
+  let idx = 0;
+  return DATA.structure.map(block => {
+    const isPichichi = block.phase === 'Pichichi';
+    const lines = block.matches.map(match => {
+      const raw  = p.preds[idx++] || '';
+      const pred = raw || '—';
+      const empty = !raw;
+      if (isPichichi) {
+        return `<div class="match-line">
+          <span class="match-name" title="${esc(match)}">${esc(match)}</span>
+          <span class="pred-name${empty ? ' pred-empty' : ''}">${esc(pred)}</span>
+        </div>`;
+      }
+      return `<div class="match-line">
+        <span class="match-name" title="${esc(match)}">${esc(match)}</span>
+        <span class="pred-val${empty ? ' pred-empty' : ''}">${esc(pred)}</span>
+      </div>`;
+    }).join('');
+
+    return `<div class="phase-block${isPichichi ? ' phase-block-wide' : ''}">
+      <div class="phase-title">${esc(block.phase)}</div>
+      ${lines}
+    </div>`;
+  }).join('');
+}
+
+// ─── UTILS ───────────────────────────────────────────────────────────────────
+function el(id) { return document.getElementById(id); }
+function esc(s) {
+  if (s == null) return '';
+  return String(s)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+init();
+</script>
+</body>
+</html>

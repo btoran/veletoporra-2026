@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdate": "2026-06-12T18:07:55",
+    "lastUpdate": "2026-06-12T18:48:20",
     "fase": "Final",
     "totalParticipants": 250
   },
@@ -137506,6 +137506,420 @@
       ]
     }
   ],
+  "results": {
+    "Grupo A|MEX-SUD": {
+      "r": "2-1",
+      "q": "1"
+    },
+    "Grupo A|COR-CHE": {
+      "r": "0-1",
+      "q": "2"
+    },
+    "Grupo A|CHE-SUD": {
+      "r": "1-0",
+      "q": "1"
+    },
+    "Grupo A|MEX-COR": {
+      "r": "1-0",
+      "q": "1"
+    },
+    "Grupo A|CHE-MEX": {
+      "r": "0-1",
+      "q": "2"
+    },
+    "Grupo A|SUD-COR": {
+      "r": "1-1",
+      "q": "X"
+    },
+    "Grupo B|CAN-BIH": {
+      "r": "0-2",
+      "q": "2"
+    },
+    "Grupo B|QAT-SUI": {
+      "r": "1-3",
+      "q": "2"
+    },
+    "Grupo B|CAN-QAT": {
+      "r": "1-0",
+      "q": "1"
+    },
+    "Grupo B|SUI-BIH": {
+      "r": "1-1",
+      "q": "X"
+    },
+    "Grupo B|SUI-CAN": {
+      "r": "2-1",
+      "q": "1"
+    },
+    "Grupo B|BIH-QAT": {
+      "r": "1-1",
+      "q": "X"
+    },
+    "Grupo C|BRA-MAR": {
+      "r": "0-0",
+      "q": "X"
+    },
+    "Grupo C|HAI-ESC": {
+      "r": "1-2",
+      "q": "2"
+    },
+    "Grupo C|ESC-MAR": {
+      "r": "3-1",
+      "q": "1"
+    },
+    "Grupo C|BRA-HAI": {
+      "r": "2-0",
+      "q": "1"
+    },
+    "Grupo C|ESC-BRA": {
+      "r": "3-1",
+      "q": "1"
+    },
+    "Grupo C|MAR-HAI": {
+      "r": "2-3",
+      "q": "2"
+    },
+    "Grupo D|USA-PAR": {
+      "r": "2-1",
+      "q": "1"
+    },
+    "Grupo D|AUS-TUR": {
+      "r": "1-1",
+      "q": "X"
+    },
+    "Grupo D|USA-AUS": {
+      "r": "1-2",
+      "q": "2"
+    },
+    "Grupo D|TUR-PAR": {
+      "r": "0-1",
+      "q": "2"
+    },
+    "Grupo D|TUR-USA": {
+      "r": "0-2",
+      "q": "2"
+    },
+    "Grupo D|PAR-AUS": {
+      "r": "2-2",
+      "q": "X"
+    },
+    "Grupo E|ALE-CUR": {
+      "r": "0-2",
+      "q": "2"
+    },
+    "Grupo E|IVO-ECU": {
+      "r": "2-2",
+      "q": "X"
+    },
+    "Grupo E|ALE-IVO": {
+      "r": "2-1",
+      "q": "1"
+    },
+    "Grupo E|ECU-CUR": {
+      "r": "2-1",
+      "q": "1"
+    },
+    "Grupo E|ECU-ALE": {
+      "r": "2-2",
+      "q": "X"
+    },
+    "Grupo E|CUR-IVO": {
+      "r": "2-3",
+      "q": "2"
+    },
+    "Grupo F|NED-JAP": {
+      "r": "2-0",
+      "q": "1"
+    },
+    "Grupo F|SWE-TUN": {
+      "r": "3-2",
+      "q": "1"
+    },
+    "Grupo F|NED-SWE": {
+      "r": "1-0",
+      "q": "1"
+    },
+    "Grupo F|TUN-JAP": {
+      "r": "1-2",
+      "q": "2"
+    },
+    "Grupo F|JAP-SWE": {
+      "r": "1-1",
+      "q": "X"
+    },
+    "Grupo F|TUN-NED": {
+      "r": "2-1",
+      "q": "1"
+    },
+    "Grupo G|BEL-EGY": {
+      "r": "3-2",
+      "q": "1"
+    },
+    "Grupo G|IRA-NZE": {
+      "r": "3-3",
+      "q": "X"
+    },
+    "Grupo G|BEL-IRA": {
+      "r": "2-3",
+      "q": "2"
+    },
+    "Grupo G|NZE-EGY": {
+      "r": "3-1",
+      "q": "1"
+    },
+    "Grupo G|EGY-IRA": {
+      "r": "3-1",
+      "q": "1"
+    },
+    "Grupo G|NZE-BEL": {
+      "r": "2-2",
+      "q": "X"
+    },
+    "Grupo H|ESP-CAB": {
+      "r": "1-2",
+      "q": "2"
+    },
+    "Grupo H|SAU-URU": {
+      "r": "3-3",
+      "q": "X"
+    },
+    "Grupo H|ESP-SAU": {
+      "r": "0-3",
+      "q": "2"
+    },
+    "Grupo H|URU-CAB": {
+      "r": "2-2",
+      "q": "X"
+    },
+    "Grupo H|CAB-SAU": {
+      "r": "2-1",
+      "q": "1"
+    },
+    "Grupo H|URU-ESP": {
+      "r": "3-2",
+      "q": "1"
+    },
+    "Grupo I|FRA-SEN": {
+      "r": "1-0",
+      "q": "1"
+    },
+    "Grupo I|IRK-NOR": {
+      "r": "1-1",
+      "q": "X"
+    },
+    "Grupo I|FRA-IRK": {
+      "r": "1-1",
+      "q": "X"
+    },
+    "Grupo I|NOR-SEN": {
+      "r": "2-1",
+      "q": "1"
+    },
+    "Grupo I|NOR-FRA": {
+      "r": "0-2",
+      "q": "2"
+    },
+    "Grupo I|SEN-IRK": {
+      "r": "0-1",
+      "q": "2"
+    },
+    "Grupo J|ARG-ALG": {
+      "r": "0-3",
+      "q": "2"
+    },
+    "Grupo J|AUT-JOR": {
+      "r": "2-1",
+      "q": "1"
+    },
+    "Grupo J|ARG-AUT": {
+      "r": "1-1",
+      "q": "X"
+    },
+    "Grupo J|JOR-ALG": {
+      "r": "3-2",
+      "q": "1"
+    },
+    "Grupo J|ALG-AUT": {
+      "r": "1-0",
+      "q": "1"
+    },
+    "Grupo J|JOR-ARG": {
+      "r": "3-0",
+      "q": "1"
+    },
+    "Grupo K|POR-RDC": {
+      "r": "0-2",
+      "q": "2"
+    },
+    "Grupo K|UZB-COL": {
+      "r": "2-3",
+      "q": "2"
+    },
+    "Grupo K|POR-UZB": {
+      "r": "2-1",
+      "q": "1"
+    },
+    "Grupo K|COL-RDC": {
+      "r": "0-3",
+      "q": "2"
+    },
+    "Grupo K|COL-POR": {
+      "r": "3-0",
+      "q": "1"
+    },
+    "Grupo K|RDC-UZB": {
+      "r": "1-2",
+      "q": "2"
+    },
+    "Grupo L|ING-CRO": {
+      "r": "1-0",
+      "q": "1"
+    },
+    "Grupo L|GHA-PAN": {
+      "r": "0-3",
+      "q": "2"
+    },
+    "Grupo L|ING-GHA": {
+      "r": "2-0",
+      "q": "1"
+    },
+    "Grupo L|PAN-CRO": {
+      "r": "3-3",
+      "q": "X"
+    },
+    "Grupo L|PAN-ING": {
+      "r": "2-2",
+      "q": "X"
+    },
+    "Grupo L|CRO-GHA": {
+      "r": "0-3",
+      "q": "2"
+    },
+    "Dieciseisavos de Final|NED-MAR": {
+      "r": "1-0",
+      "q": ""
+    },
+    "Dieciseisavos de Final|ECU-NOR": {
+      "r": "1-1",
+      "q": ""
+    },
+    "Dieciseisavos de Final|FRA-JAP": {
+      "r": "2-0",
+      "q": ""
+    },
+    "Dieciseisavos de Final|MEX-ESC": {
+      "r": "1-0",
+      "q": ""
+    },
+    "Dieciseisavos de Final|CRO-SEN": {
+      "r": "2-1",
+      "q": ""
+    },
+    "Dieciseisavos de Final|BEL-COR": {
+      "r": "1-0",
+      "q": ""
+    },
+    "Dieciseisavos de Final|TUR-IVO": {
+      "r": "0-0",
+      "q": ""
+    },
+    "Dieciseisavos de Final|ESP-AUT": {
+      "r": "3-1",
+      "q": ""
+    },
+    "Dieciseisavos de Final|POR-ING": {
+      "r": "1-0",
+      "q": ""
+    },
+    "Dieciseisavos de Final|SUI-EGY": {
+      "r": "1-1",
+      "q": ""
+    },
+    "Dieciseisavos de Final|USA-NZE": {
+      "r": "1-0",
+      "q": ""
+    },
+    "Dieciseisavos de Final|ARG-URU": {
+      "r": "1-0",
+      "q": ""
+    },
+    "Dieciseisavos de Final|COL-GHA": {
+      "r": "1-0",
+      "q": ""
+    },
+    "Octavos de Final|ALE-FRA": {
+      "r": "1-1",
+      "q": ""
+    },
+    "Octavos de Final|CHE-NED": {
+      "r": "0-1",
+      "q": ""
+    },
+    "Octavos de Final|BRA-ECU": {
+      "r": "2-0",
+      "q": ""
+    },
+    "Octavos de Final|MEX-CRO": {
+      "r": "1-1",
+      "q": ""
+    },
+    "Octavos de Final|POR-ESP": {
+      "r": "1-2",
+      "q": ""
+    },
+    "Octavos de Final|TUR-BEL": {
+      "r": "0-1",
+      "q": ""
+    },
+    "Octavos de Final|ARG-USA": {
+      "r": "1-1",
+      "q": ""
+    },
+    "Octavos de Final|EGY-COL": {
+      "r": "0-1",
+      "q": ""
+    },
+    "Cuartos de final|FRA-NED": {
+      "r": "1-1",
+      "q": ""
+    },
+    "Cuartos de final|ESP-BEL": {
+      "r": "1-0",
+      "q": ""
+    },
+    "Cuartos de final|BRA-MEX": {
+      "r": "1-0",
+      "q": ""
+    },
+    "Cuartos de final|ARG-COL": {
+      "r": "1-0",
+      "q": ""
+    },
+    "Semifinales|NED-ESP": {
+      "r": "1-2",
+      "q": ""
+    },
+    "Semifinales|BRA-ARG": {
+      "r": "1-1",
+      "q": ""
+    },
+    "Tercer y Cuarto|NED-BRA": {
+      "r": "0-2",
+      "q": ""
+    },
+    "Tercer y Cuarto|TERCERO": {
+      "r": "Brasil",
+      "q": ""
+    },
+    "Final y Campeón|ESP-ARG": {
+      "r": "1-0",
+      "q": ""
+    },
+    "Final y Campeón|CAMPEÓN": {
+      "r": "España",
+      "q": ""
+    }
+  },
   "sponsors": [
     {
       "name": "Cría Cuervos",
