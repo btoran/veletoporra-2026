@@ -229,6 +229,10 @@ body{
   flex-shrink:0;
 }
 .pred-empty{opacity:.35;background:transparent}
+.real-result{font-size:10px;font-weight:600;padding:1px 5px;border-radius:3px;margin:0 5px;white-space:nowrap;flex-shrink:0}
+.res-exact{background:rgba(72,199,142,.18);color:#48c78e}
+.res-sign{background:rgba(255,214,0,.15);color:#ffd600}
+.res-miss{background:rgba(255,80,80,.15);color:#ff6b6b}
 /* Pichichi: bloque ancho + nombre largo sin chip */
 .phase-block-wide{grid-column:span 2}
 @media(max-width:480px){.phase-block-wide{grid-column:span 1}}
@@ -350,8 +354,8 @@ let selectedId = null;
 // ─── INIT ────────────────────────────────────────────────────────────────────
 async function init() {
   try {
-    const r = await fetch('pronosticos.json?t=' + Date.now());
-    if (r.ok) DATA = await r.json();
+    const rp = await fetch('pronosticos.json?t=' + Date.now());
+    if (rp.ok) DATA = await rp.json();
   } catch(_) {}
 
   if (!DATA) {
@@ -458,19 +462,40 @@ function renderPredictions(p) {
   let idx = 0;
   return DATA.structure.map(block => {
     const isPichichi = block.phase === 'Pichichi';
+    const isGroup    = block.phase.startsWith('Grupo');
     const lines = block.matches.map(match => {
       const raw  = p.preds[idx++] || '';
       const pred = raw || '—';
       const empty = !raw;
+
       if (isPichichi) {
         return `<div class="match-line">
           <span class="match-name" title="${esc(match)}">${esc(match)}</span>
           <span class="pred-name${empty ? ' pred-empty' : ''}">${esc(pred)}</span>
         </div>`;
       }
+
+      if (isGroup) {
+        return `<div class="match-line">
+          <span class="match-name">${esc(match)}</span>
+          <span class="pred-val${empty ? ' pred-empty' : ''}">${esc(pred)}</span>
+        </div>`;
+      }
+
+      // Eliminatorias: formato "local|score|visitor" → equipos a la izq, marcador a la der
+      if (raw.includes('|')) {
+        const [local, score, visitor] = raw.split('|');
+        const teams = (local && visitor) ? `${local} - ${visitor}` : match;
+        return `<div class="match-line">
+          <span class="match-name">${esc(teams)}</span>
+          <span class="pred-val${!score ? ' pred-empty' : ''}">${esc(score || '—')}</span>
+        </div>`;
+      }
+
+      // Winner slots (Tercer Clasificado, Campeón): solo nombre equipo
       return `<div class="match-line">
-        <span class="match-name" title="${esc(match)}">${esc(match)}</span>
-        <span class="pred-val${empty ? ' pred-empty' : ''}">${esc(pred)}</span>
+        <span class="match-name">${esc(match)}</span>
+        <span class="pred-name${empty ? ' pred-empty' : ''}">${esc(raw || '—')}</span>
       </div>`;
     }).join('');
 

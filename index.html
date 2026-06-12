@@ -333,6 +333,31 @@ tr.detail-row.open{display:table-row}
 .res-exact{background:rgba(72,199,142,.18);color:#48c78e}
 .res-sign{background:rgba(255,214,0,.15);color:#ffd600}
 .res-miss{background:rgba(255,80,80,.15);color:#ff6b6b}
+.res-plain{background:rgba(255,255,255,.07);color:var(--text)}
+/* Layout de columnas para fase de grupos */
+.match-col-hdr{
+  display:grid;
+  grid-template-columns:1fr 36px 36px 22px;
+  gap:0 4px;
+  padding:2px 0 5px;
+  border-bottom:1px solid rgba(37,51,69,.5);
+  margin-bottom:2px;
+}
+.match-col-hdr span{
+  font-size:8px;font-weight:700;letter-spacing:.5px;
+  color:var(--muted);text-transform:uppercase;
+  text-align:center;
+}
+.match-col-hdr span:last-child{text-align:right}
+.match-line-group{
+  display:grid;
+  grid-template-columns:1fr 36px 36px 22px;
+  gap:0 4px;
+  align-items:center;
+}
+.match-line-group.match-line{display:grid}
+.match-line-group .real-result{margin:0;text-align:center;display:block}
+.match-line-group .pts-val{text-align:right}
 .phase-footer{
   display:flex;
   justify-content:space-between;
@@ -624,6 +649,7 @@ let sortKey = 'total';
 let sortAsc = false;
 let expanded = new Set();
 let RESULTS = {};
+let PREDS = {};        // PREDS[id][fase|partido] = string pronóstico
 
 // ─── INIT ────────────────────────────────────────────────────────────────────
 async function init() {
@@ -644,6 +670,22 @@ async function init() {
       {day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});
   }
   el('stat-n').textContent = meta.totalParticipants ?? data.standings.length;
+
+  // Cargar pronósticos para el detalle
+  try {
+    const rp = await fetch('pronosticos.json?t=' + Date.now());
+    if (rp.ok) {
+      const pd = await rp.json();
+      const flatKeys = [];
+      (pd.structure || []).forEach(ph =>
+        (ph.matches || []).forEach(m => flatKeys.push(ph.phase + '|' + m))
+      );
+      (pd.participants || []).forEach(p => {
+        PREDS[p.id] = {};
+        flatKeys.forEach((key, i) => { PREDS[p.id][key] = (p.preds[i] || '').trim(); });
+      });
+    }
+  } catch(_) {}
 
   // Sort initial
   RESULTS = data.results || {};
@@ -786,25 +828,41 @@ function detailHtml(p) {
       const cls = m.pts > 0 ? 'pts-pos' : 'pts-zero';
       const key = phase + '|' + m.match;
       const res = RESULTS[key];
-      let realTag = '';
-      if (res && res.r) {
-        if (isGroup) {
-          if (m.pts >= 3)       realTag = `<span class="real-result res-exact">${esc(res.r)}</span>`;
-          else if (m.pts >= 1)  realTag = `<span class="real-result res-sign">${esc(res.q)||'X'}</span>`;
-          else                  realTag = `<span class="real-result res-miss">${esc(res.r)}</span>`;
-        } else {
-          if (m.pts > 0)        realTag = `<span class="real-result res-exact">${esc(res.r)}</span>`;
-          else                  realTag = `<span class="real-result res-miss">${esc(res.r)}</span>`;
+      if (isGroup) {
+        const realStr = res && res.r ? res.r : '';
+        const predStr = (PREDS[p.id] && PREDS[p.id][key]) || '';
+        let pronCls = '';
+        if (predStr && realStr) {
+          if (m.pts >= 3)      pronCls = 'res-exact';
+          else if (m.pts >= 1) pronCls = 'res-sign';
+          else                 pronCls = 'res-miss';
         }
+        const realCell = realStr ? `<span class="real-result res-plain">${esc(realStr)}</span>` : `<span></span>`;
+        const pronCell = (predStr && realStr) ? `<span class="real-result ${pronCls}">${esc(predStr)}</span>` : `<span></span>`;
+        return `<div class="match-line match-line-group">
+          <span class="match-name">${esc(m.match)}</span>
+          ${realCell}
+          ${pronCell}
+          <span class="pts-val ${cls}">${m.pts}</span>
+        </div>`;
+      }
+      let resultBadges = '';
+      if (res && res.r) {
+        const rcls = m.pts > 0 ? 'res-exact' : 'res-miss';
+        resultBadges = `<span class="real-result ${rcls}">${esc(res.r)}</span>`;
       }
       return `<div class="match-line">
         <span class="match-name">${esc(m.match)}</span>
-        ${realTag}
+        ${resultBadges}
         <span class="pts-val ${cls}">${m.pts}</span>
       </div>`;
     }).join('');
+    const colHeader = isGroup
+      ? `<div class="match-col-hdr"><span></span><span>real</span><span>pron</span><span>pts</span></div>`
+      : '';
     return `<div class="phase-block">
       <div class="phase-title">${esc(phase)}</div>
+      ${colHeader}
       ${lines}
       <div class="phase-footer"><span>Subtotal</span><span>${sub}</span></div>
     </div>`;

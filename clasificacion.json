@@ -1,13 +1,13 @@
 {
   "meta": {
-    "lastUpdate": "2026-06-12T18:48:20",
+    "lastUpdate": "2026-06-12T21:04:22",
     "fase": "Final",
-    "totalParticipants": 250
+    "totalParticipants": 251
   },
   "standings": [
     {
       "pos": 1,
-      "prevPos": 145,
+      "prevPos": 0,
       "id": 1,
       "name": "ARROBAMARCOVARELAFAM",
       "gender": "M",
@@ -557,7 +557,7 @@
     },
     {
       "pos": 2,
-      "prevPos": 96,
+      "prevPos": 0,
       "id": 143,
       "name": "HENAR CDS",
       "gender": "F",
@@ -1107,7 +1107,7 @@
     },
     {
       "pos": 3,
-      "prevPos": 52,
+      "prevPos": 0,
       "id": 49,
       "name": "JUANRA",
       "gender": "M",
@@ -2757,7 +2757,7 @@
     },
     {
       "pos": 6,
-      "prevPos": 160,
+      "prevPos": 0,
       "id": 168,
       "name": "SUSINO",
       "gender": "M",
@@ -3307,7 +3307,7 @@
     },
     {
       "pos": 7,
-      "prevPos": 168,
+      "prevPos": 0,
       "id": 24,
       "name": "DANIEL MALDONADO",
       "gender": "M",
@@ -3857,7 +3857,7 @@
     },
     {
       "pos": 8,
-      "prevPos": 141,
+      "prevPos": 0,
       "id": 178,
       "name": "ARMAS",
       "gender": "M",
@@ -4407,7 +4407,7 @@
     },
     {
       "pos": 9,
-      "prevPos": 110,
+      "prevPos": 0,
       "id": 45,
       "name": "GONZALO JR",
       "gender": "M",
@@ -4957,7 +4957,7 @@
     },
     {
       "pos": 10,
-      "prevPos": 11,
+      "prevPos": 0,
       "id": 124,
       "name": "GIOVANNI PIERDOMENICO",
       "gender": "F",
@@ -5507,7 +5507,7 @@
     },
     {
       "pos": 11,
-      "prevPos": 29,
+      "prevPos": 0,
       "id": 132,
       "name": "ROBERTO IBÁÑEZ",
       "gender": "M",
@@ -6607,7 +6607,7 @@
     },
     {
       "pos": 13,
-      "prevPos": 19,
+      "prevPos": 0,
       "id": 50,
       "name": "ILLY",
       "gender": "F",
@@ -7157,7 +7157,7 @@
     },
     {
       "pos": 14,
-      "prevPos": 141,
+      "prevPos": 0,
       "id": 140,
       "name": "LA CUCARACHA",
       "gender": "F",
@@ -7707,7 +7707,7 @@
     },
     {
       "pos": 15,
-      "prevPos": 8,
+      "prevPos": 0,
       "id": 174,
       "name": "THE BIG MAN",
       "gender": "M",
@@ -8257,7 +8257,7 @@
     },
     {
       "pos": 16,
-      "prevPos": 26,
+      "prevPos": 0,
       "id": 79,
       "name": "CURRO",
       "gender": "M",
@@ -8807,7 +8807,7 @@
     },
     {
       "pos": 17,
-      "prevPos": 93,
+      "prevPos": 0,
       "id": 179,
       "name": "BORJALORO",
       "gender": "M",
@@ -9357,7 +9357,7 @@
     },
     {
       "pos": 18,
-      "prevPos": 159,
+      "prevPos": 0,
       "id": 84,
       "name": "JRIEGO",
       "gender": "M",
@@ -9907,7 +9907,7 @@
     },
     {
       "pos": 19,
-      "prevPos": 132,
+      "prevPos": 0,
       "id": 5,
       "name": "JOSELE",
       "gender": "M",
@@ -10457,7 +10457,7 @@
     },
     {
       "pos": 19,
-      "prevPos": 172,
+      "prevPos": 0,
       "id": 48,
       "name": "MANZANA",
       "gender": "M",
@@ -11007,7 +11007,7 @@
     },
     {
       "pos": 21,
-      "prevPos": 39,
+      "prevPos": 0,
       "id": 6,
       "name": "HOMER",
       "gender": "M",
@@ -11557,7 +11557,7 @@
     },
     {
       "pos": 22,
-      "prevPos": 125,
+      "prevPos": 0,
       "id": 94,
       "name": "LALI",
       "gender": "F",
@@ -12107,7 +12107,7 @@
     },
     {
       "pos": 23,
-      "prevPos": 90,
+      "prevPos": 0,
       "id": 90,
       "name": "PATI ALONSO",
       "gender": "F",
@@ -13207,7 +13207,7 @@
     },
     {
       "pos": 25,
-      "prevPos": 103,
+      "prevPos": 0,
       "id": 61,
       "name": "FELIPE MUÑOZ CORSINI",
       "gender": "M",
@@ -13757,7 +13757,7 @@
     },
     {
       "pos": 26,
-      "prevPos": 72,
+      "prevPos": 0,
       "id": 108,
       "name": "MIKELPARDI",
       "gender": "M",
@@ -14857,7 +14857,7 @@
     },
     {
       "pos": 28,
-      "prevPos": 99,
+      "prevPos": 0,
       "id": 152,
       "name": "JUANMA RODRÍGUEZ",
       "gender": "M",
@@ -15407,7 +15407,7 @@
     },
     {
       "pos": 29,
-      "prevPos": 12,
+      "prevPos": 0,
       "id": 12,
       "name": "RIVALDO 11",
       "gender": "M",
@@ -15957,7 +15957,7 @@
     },
     {
       "pos": 30,
-      "prevPos": 149,
+      "prevPos": 0,
       "id": 60,
       "name": "JANDRO",
       "gender": "M",
@@ -17057,7 +17057,7 @@
     },
     {
       "pos": 32,
-      "prevPos": 28,
+      "prevPos": 0,
       "id": 62,
       "name": "ANDY JR.",
       "gender": "M",
@@ -19807,7 +19807,7 @@
     },
     {
       "pos": 37,
-      "prevPos": 18,
+      "prevPos": 0,
       "id": 156,
       "name": "BINFANTE",
       "gender": "M",
@@ -20357,7 +20357,7 @@
     },
     {
       "pos": 38,
-      "prevPos": 61,
+      "prevPos": 0,
       "id": 98,
       "name": "JAIME LAFUENTE",
       "gender": "M",
@@ -20907,7 +20907,7 @@
     },
     {
       "pos": 39,
-      "prevPos": 112,
+      "prevPos": 0,
       "id": 105,
       "name": "GONZALO HORCAJO",
       "gender": "M",
@@ -21457,7 +21457,7 @@
     },
     {
       "pos": 39,
-      "prevPos": 135,
+      "prevPos": 0,
       "id": 118,
       "name": "ALONSO DOMINGUEZ",
       "gender": "M",
@@ -22007,7 +22007,7 @@
     },
     {
       "pos": 41,
-      "prevPos": 168,
+      "prevPos": 0,
       "id": 151,
       "name": "TOTEMAGO10",
       "gender": "M",
@@ -23107,7 +23107,7 @@
     },
     {
       "pos": 43,
-      "prevPos": 76,
+      "prevPos": 0,
       "id": 161,
       "name": "PATI TORRES",
       "gender": "M",
@@ -23657,7 +23657,7 @@
     },
     {
       "pos": 44,
-      "prevPos": 88,
+      "prevPos": 0,
       "id": 181,
       "name": "MARIETAX",
       "gender": "M",
@@ -25307,7 +25307,7 @@
     },
     {
       "pos": 47,
-      "prevPos": 97,
+      "prevPos": 0,
       "id": 189,
       "name": "SAUSAGE",
       "gender": "F",
@@ -25857,7 +25857,7 @@
     },
     {
       "pos": 48,
-      "prevPos": 77,
+      "prevPos": 0,
       "id": 96,
       "name": "ORDAS FANS",
       "gender": "M",
@@ -26407,7 +26407,7 @@
     },
     {
       "pos": 49,
-      "prevPos": 85,
+      "prevPos": 0,
       "id": 88,
       "name": "DANIEL GOMEZ",
       "gender": "M",
@@ -26957,7 +26957,7 @@
     },
     {
       "pos": 50,
-      "prevPos": 125,
+      "prevPos": 0,
       "id": 68,
       "name": "BENE",
       "gender": "F",
@@ -27507,7 +27507,7 @@
     },
     {
       "pos": 51,
-      "prevPos": 187,
+      "prevPos": 0,
       "id": 166,
       "name": "TXOMIN BETANZOS",
       "gender": "M",
@@ -28057,7 +28057,7 @@
     },
     {
       "pos": 52,
-      "prevPos": 93,
+      "prevPos": 0,
       "id": 23,
       "name": "JOTAVILLA22",
       "gender": "M",
@@ -28607,7 +28607,7 @@
     },
     {
       "pos": 53,
-      "prevPos": 172,
+      "prevPos": 0,
       "id": 129,
       "name": "JACO ZAGLUL",
       "gender": "M",
@@ -29157,7 +29157,7 @@
     },
     {
       "pos": 54,
-      "prevPos": 30,
+      "prevPos": 0,
       "id": 138,
       "name": "BORJA DÍAZ",
       "gender": "M",
@@ -29707,7 +29707,7 @@
     },
     {
       "pos": 55,
-      "prevPos": 154,
+      "prevPos": 0,
       "id": 175,
       "name": "ALEX.FDEZ",
       "gender": "M",
@@ -30257,7 +30257,7 @@
     },
     {
       "pos": 56,
-      "prevPos": 177,
+      "prevPos": 0,
       "id": 183,
       "name": "COSTALUSTRA",
       "gender": "M",
@@ -32457,7 +32457,7 @@
     },
     {
       "pos": 60,
-      "prevPos": 82,
+      "prevPos": 0,
       "id": 37,
       "name": "MERINOOOS",
       "gender": "M",
@@ -33007,7 +33007,7 @@
     },
     {
       "pos": 61,
-      "prevPos": 87,
+      "prevPos": 0,
       "id": 83,
       "name": "ARISTRADAMUS FC",
       "gender": "M",
@@ -33557,7 +33557,7 @@
     },
     {
       "pos": 62,
-      "prevPos": 146,
+      "prevPos": 0,
       "id": 67,
       "name": "MINI MANU",
       "gender": "M",
@@ -34107,7 +34107,7 @@
     },
     {
       "pos": 63,
-      "prevPos": 25,
+      "prevPos": 0,
       "id": 73,
       "name": "SANJOSINI",
       "gender": "M",
@@ -34657,7 +34657,7 @@
     },
     {
       "pos": 64,
-      "prevPos": 105,
+      "prevPos": 0,
       "id": 19,
       "name": "PIPITA",
       "gender": "M",
@@ -36307,7 +36307,7 @@
     },
     {
       "pos": 67,
-      "prevPos": 102,
+      "prevPos": 0,
       "id": 58,
       "name": "HERNI",
       "gender": "M",
@@ -36857,7 +36857,7 @@
     },
     {
       "pos": 68,
-      "prevPos": 13,
+      "prevPos": 0,
       "id": 154,
       "name": "CARLOS PEIRÓ",
       "gender": "M",
@@ -37407,7 +37407,7 @@
     },
     {
       "pos": 69,
-      "prevPos": 92,
+      "prevPos": 0,
       "id": 126,
       "name": "JAIMEPAZM",
       "gender": "M",
@@ -37957,7 +37957,557 @@
     },
     {
       "pos": 70,
-      "prevPos": 49,
+      "prevPos": 0,
+      "id": 233,
+      "name": "NO KANE NO GAIN",
+      "gender": "M",
+      "total": 303,
+      "grupos": 29,
+      "eliminatorias": 256,
+      "pichichi": 18,
+      "pichichi_mundial": 18,
+      "pichichi1": 14,
+      "pichichi2": 4,
+      "pichichi_esp": 0,
+      "pichichi_name1": "Francia — Mbappé, Kylian",
+      "pichichi_name2": "Colombia — Díaz, Luis",
+      "pichichi_name_esp": "Nico Williams",
+      "matches": [
+        {
+          "phase": "Grupo A",
+          "match": "MEX-SUD",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo A",
+          "match": "COR-CHE",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo A",
+          "match": "CHE-SUD",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo A",
+          "match": "MEX-COR",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo A",
+          "match": "CHE-MEX",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo A",
+          "match": "SUD-COR",
+          "pts": 3
+        },
+        {
+          "phase": "Grupo B",
+          "match": "CAN-BIH",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo B",
+          "match": "QAT-SUI",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo B",
+          "match": "CAN-QAT",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo B",
+          "match": "SUI-BIH",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo B",
+          "match": "SUI-CAN",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo B",
+          "match": "BIH-QAT",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo C",
+          "match": "BRA-MAR",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo C",
+          "match": "HAI-ESC",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo C",
+          "match": "ESC-MAR",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo C",
+          "match": "BRA-HAI",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo C",
+          "match": "ESC-BRA",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo C",
+          "match": "MAR-HAI",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo D",
+          "match": "USA-PAR",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo D",
+          "match": "AUS-TUR",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo D",
+          "match": "USA-AUS",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo D",
+          "match": "TUR-PAR",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo D",
+          "match": "TUR-USA",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo D",
+          "match": "PAR-AUS",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo E",
+          "match": "ALE-CUR",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo E",
+          "match": "IVO-ECU",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo E",
+          "match": "ALE-IVO",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo E",
+          "match": "ECU-CUR",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo E",
+          "match": "ECU-ALE",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo E",
+          "match": "CUR-IVO",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo F",
+          "match": "NED-JAP",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo F",
+          "match": "SWE-TUN",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo F",
+          "match": "NED-SWE",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo F",
+          "match": "TUN-JAP",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo F",
+          "match": "JAP-SWE",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo F",
+          "match": "TUN-NED",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo G",
+          "match": "BEL-EGY",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo G",
+          "match": "IRA-NZE",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo G",
+          "match": "BEL-IRA",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo G",
+          "match": "NZE-EGY",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo G",
+          "match": "EGY-IRA",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo G",
+          "match": "NZE-BEL",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo H",
+          "match": "ESP-CAB",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo H",
+          "match": "SAU-URU",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo H",
+          "match": "ESP-SAU",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo H",
+          "match": "URU-CAB",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo H",
+          "match": "CAB-SAU",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo H",
+          "match": "URU-ESP",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo I",
+          "match": "FRA-SEN",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo I",
+          "match": "IRK-NOR",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo I",
+          "match": "FRA-IRK",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo I",
+          "match": "NOR-SEN",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo I",
+          "match": "NOR-FRA",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo I",
+          "match": "SEN-IRK",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo J",
+          "match": "ARG-ALG",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo J",
+          "match": "AUT-JOR",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo J",
+          "match": "ARG-AUT",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo J",
+          "match": "JOR-ALG",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo J",
+          "match": "ALG-AUT",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo J",
+          "match": "JOR-ARG",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo K",
+          "match": "POR-RDC",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo K",
+          "match": "UZB-COL",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo K",
+          "match": "POR-UZB",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo K",
+          "match": "COL-RDC",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo K",
+          "match": "COL-POR",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo K",
+          "match": "RDC-UZB",
+          "pts": 3
+        },
+        {
+          "phase": "Grupo L",
+          "match": "ING-CRO",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo L",
+          "match": "GHA-PAN",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo L",
+          "match": "ING-GHA",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo L",
+          "match": "PAN-CRO",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo L",
+          "match": "PAN-ING",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo L",
+          "match": "CRO-GHA",
+          "pts": 0
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "Dieciseisavos 1",
+          "pts": 2
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "Dieciseisavos 2",
+          "pts": 2
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "Dieciseisavos 3",
+          "pts": 2
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "NED-MAR",
+          "pts": 5
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "ECU-NOR",
+          "pts": 5
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "FRA-JAP",
+          "pts": 3
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "MEX-ESC",
+          "pts": 7
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "CRO-SEN",
+          "pts": 4
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "BEL-COR",
+          "pts": 5
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "TUR-IVO",
+          "pts": 3
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "ESP-AUT",
+          "pts": 7
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "POR-ING",
+          "pts": 7
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "SUI-EGY",
+          "pts": 3
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "USA-NZE",
+          "pts": 2
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "ARG-URU",
+          "pts": 7
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "COL-GHA",
+          "pts": 5
+        },
+        {
+          "phase": "Octavos de Final",
+          "match": "ALE-FRA",
+          "pts": 14
+        },
+        {
+          "phase": "Octavos de Final",
+          "match": "CHE-NED",
+          "pts": 0
+        },
+        {
+          "phase": "Octavos de Final",
+          "match": "BRA-ECU",
+          "pts": 6
+        },
+        {
+          "phase": "Octavos de Final",
+          "match": "MEX-CRO",
+          "pts": 6
+        },
+        {
+          "phase": "Octavos de Final",
+          "match": "POR-ESP",
+          "pts": 17
+        },
+        {
+          "phase": "Octavos de Final",
+          "match": "TUR-BEL",
+          "pts": 14
+        },
+        {
+          "phase": "Octavos de Final",
+          "match": "ARG-USA",
+          "pts": 10
+        },
+        {
+          "phase": "Octavos de Final",
+          "match": "EGY-COL",
+          "pts": 6
+        },
+        {
+          "phase": "Cuartos de final",
+          "match": "FRA-NED",
+          "pts": 0
+        },
+        {
+          "phase": "Cuartos de final",
+          "match": "ESP-BEL",
+          "pts": 22
+        },
+        {
+          "phase": "Cuartos de final",
+          "match": "BRA-MEX",
+          "pts": 9
+        },
+        {
+          "phase": "Cuartos de final",
+          "match": "ARG-COL",
+          "pts": 22
+        },
+        {
+          "phase": "Semifinales",
+          "match": "NED-ESP",
+          "pts": 13
+        },
+        {
+          "phase": "Semifinales",
+          "match": "BRA-ARG",
+          "pts": 30
+        },
+        {
+          "phase": "Tercer y Cuarto",
+          "match": "NED-BRA",
+          "pts": 0
+        },
+        {
+          "phase": "Tercer y Cuarto",
+          "match": "TERCERO",
+          "pts": 0
+        },
+        {
+          "phase": "Final y Campeón",
+          "match": "ESP-ARG",
+          "pts": 18
+        },
+        {
+          "phase": "Final y Campeón",
+          "match": "CAMPEÓN",
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "pos": 71,
+      "prevPos": 0,
       "id": 158,
       "name": "PRESIDENTE PÉREZ",
       "gender": "M",
@@ -38506,8 +39056,558 @@
       ]
     },
     {
-      "pos": 71,
-      "prevPos": 53,
+      "pos": 72,
+      "prevPos": 0,
+      "id": 251,
+      "name": "MENDIX",
+      "gender": "?",
+      "total": 302,
+      "grupos": 38,
+      "eliminatorias": 244,
+      "pichichi": 20,
+      "pichichi_mundial": 16,
+      "pichichi1": 16,
+      "pichichi2": 0,
+      "pichichi_esp": 4,
+      "pichichi_name1": "Francia — Mbappé, Kylian",
+      "pichichi_name2": "Argentina — Álvarez, Julián",
+      "pichichi_name_esp": "Oyarzabal, Mikel",
+      "matches": [
+        {
+          "phase": "Grupo A",
+          "match": "MEX-SUD",
+          "pts": 3
+        },
+        {
+          "phase": "Grupo A",
+          "match": "COR-CHE",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo A",
+          "match": "CHE-SUD",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo A",
+          "match": "MEX-COR",
+          "pts": 3
+        },
+        {
+          "phase": "Grupo A",
+          "match": "CHE-MEX",
+          "pts": 3
+        },
+        {
+          "phase": "Grupo A",
+          "match": "SUD-COR",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo B",
+          "match": "CAN-BIH",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo B",
+          "match": "QAT-SUI",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo B",
+          "match": "CAN-QAT",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo B",
+          "match": "SUI-BIH",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo B",
+          "match": "SUI-CAN",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo B",
+          "match": "BIH-QAT",
+          "pts": 3
+        },
+        {
+          "phase": "Grupo C",
+          "match": "BRA-MAR",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo C",
+          "match": "HAI-ESC",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo C",
+          "match": "ESC-MAR",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo C",
+          "match": "BRA-HAI",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo C",
+          "match": "ESC-BRA",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo C",
+          "match": "MAR-HAI",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo D",
+          "match": "USA-PAR",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo D",
+          "match": "AUS-TUR",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo D",
+          "match": "USA-AUS",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo D",
+          "match": "TUR-PAR",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo D",
+          "match": "TUR-USA",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo D",
+          "match": "PAR-AUS",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo E",
+          "match": "ALE-CUR",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo E",
+          "match": "IVO-ECU",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo E",
+          "match": "ALE-IVO",
+          "pts": 3
+        },
+        {
+          "phase": "Grupo E",
+          "match": "ECU-CUR",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo E",
+          "match": "ECU-ALE",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo E",
+          "match": "CUR-IVO",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo F",
+          "match": "NED-JAP",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo F",
+          "match": "SWE-TUN",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo F",
+          "match": "NED-SWE",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo F",
+          "match": "TUN-JAP",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo F",
+          "match": "JAP-SWE",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo F",
+          "match": "TUN-NED",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo G",
+          "match": "BEL-EGY",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo G",
+          "match": "IRA-NZE",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo G",
+          "match": "BEL-IRA",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo G",
+          "match": "NZE-EGY",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo G",
+          "match": "EGY-IRA",
+          "pts": 3
+        },
+        {
+          "phase": "Grupo G",
+          "match": "NZE-BEL",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo H",
+          "match": "ESP-CAB",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo H",
+          "match": "SAU-URU",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo H",
+          "match": "ESP-SAU",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo H",
+          "match": "URU-CAB",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo H",
+          "match": "CAB-SAU",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo H",
+          "match": "URU-ESP",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo I",
+          "match": "FRA-SEN",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo I",
+          "match": "IRK-NOR",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo I",
+          "match": "FRA-IRK",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo I",
+          "match": "NOR-SEN",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo I",
+          "match": "NOR-FRA",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo I",
+          "match": "SEN-IRK",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo J",
+          "match": "ARG-ALG",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo J",
+          "match": "AUT-JOR",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo J",
+          "match": "ARG-AUT",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo J",
+          "match": "JOR-ALG",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo J",
+          "match": "ALG-AUT",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo J",
+          "match": "JOR-ARG",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo K",
+          "match": "POR-RDC",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo K",
+          "match": "UZB-COL",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo K",
+          "match": "POR-UZB",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo K",
+          "match": "COL-RDC",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo K",
+          "match": "COL-POR",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo K",
+          "match": "RDC-UZB",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo L",
+          "match": "ING-CRO",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo L",
+          "match": "GHA-PAN",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo L",
+          "match": "ING-GHA",
+          "pts": 1
+        },
+        {
+          "phase": "Grupo L",
+          "match": "PAN-CRO",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo L",
+          "match": "PAN-ING",
+          "pts": 0
+        },
+        {
+          "phase": "Grupo L",
+          "match": "CRO-GHA",
+          "pts": 0
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "Dieciseisavos 1",
+          "pts": 4
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "Dieciseisavos 2",
+          "pts": 2
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "Dieciseisavos 3",
+          "pts": 0
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "NED-MAR",
+          "pts": 7
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "ECU-NOR",
+          "pts": 5
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "FRA-JAP",
+          "pts": 3
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "MEX-ESC",
+          "pts": 5
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "CRO-SEN",
+          "pts": 5
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "BEL-COR",
+          "pts": 3
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "TUR-IVO",
+          "pts": 3
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "ESP-AUT",
+          "pts": 3
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "POR-ING",
+          "pts": 4
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "SUI-EGY",
+          "pts": 2
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "USA-NZE",
+          "pts": 5
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "ARG-URU",
+          "pts": 7
+        },
+        {
+          "phase": "Dieciseisavos de Final",
+          "match": "COL-GHA",
+          "pts": 5
+        },
+        {
+          "phase": "Octavos de Final",
+          "match": "ALE-FRA",
+          "pts": 14
+        },
+        {
+          "phase": "Octavos de Final",
+          "match": "CHE-NED",
+          "pts": 0
+        },
+        {
+          "phase": "Octavos de Final",
+          "match": "BRA-ECU",
+          "pts": 6
+        },
+        {
+          "phase": "Octavos de Final",
+          "match": "MEX-CRO",
+          "pts": 6
+        },
+        {
+          "phase": "Octavos de Final",
+          "match": "POR-ESP",
+          "pts": 10
+        },
+        {
+          "phase": "Octavos de Final",
+          "match": "TUR-BEL",
+          "pts": 14
+        },
+        {
+          "phase": "Octavos de Final",
+          "match": "ARG-USA",
+          "pts": 10
+        },
+        {
+          "phase": "Octavos de Final",
+          "match": "EGY-COL",
+          "pts": 4
+        },
+        {
+          "phase": "Cuartos de final",
+          "match": "FRA-NED",
+          "pts": 9
+        },
+        {
+          "phase": "Cuartos de final",
+          "match": "ESP-BEL",
+          "pts": 22
+        },
+        {
+          "phase": "Cuartos de final",
+          "match": "BRA-MEX",
+          "pts": 9
+        },
+        {
+          "phase": "Cuartos de final",
+          "match": "ARG-COL",
+          "pts": 9
+        },
+        {
+          "phase": "Semifinales",
+          "match": "NED-ESP",
+          "pts": 13
+        },
+        {
+          "phase": "Semifinales",
+          "match": "BRA-ARG",
+          "pts": 13
+        },
+        {
+          "phase": "Tercer y Cuarto",
+          "match": "NED-BRA",
+          "pts": 9
+        },
+        {
+          "phase": "Tercer y Cuarto",
+          "match": "TERCERO",
+          "pts": 15
+        },
+        {
+          "phase": "Final y Campeón",
+          "match": "ESP-ARG",
+          "pts": 18
+        },
+        {
+          "phase": "Final y Campeón",
+          "match": "CAMPEÓN",
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "pos": 73,
+      "prevPos": 0,
       "id": 16,
       "name": "MURO",
       "gender": "M",
@@ -39056,8 +40156,8 @@
       ]
     },
     {
-      "pos": 72,
-      "prevPos": 152,
+      "pos": 74,
+      "prevPos": 0,
       "id": 44,
       "name": "LOZA",
       "gender": "M",
@@ -39606,8 +40706,8 @@
       ]
     },
     {
-      "pos": 73,
-      "prevPos": 59,
+      "pos": 75,
+      "prevPos": 0,
       "id": 180,
       "name": "TORIJA'S",
       "gender": "F",
@@ -40156,8 +41256,8 @@
       ]
     },
     {
-      "pos": 74,
-      "prevPos": 58,
+      "pos": 76,
+      "prevPos": 0,
       "id": 71,
       "name": "JORDYDEPOR",
       "gender": "M",
@@ -40706,8 +41806,8 @@
       ]
     },
     {
-      "pos": 75,
-      "prevPos": 89,
+      "pos": 77,
+      "prevPos": 0,
       "id": 30,
       "name": "NACHO BREY",
       "gender": "M",
@@ -41256,7 +42356,7 @@
       ]
     },
     {
-      "pos": 76,
+      "pos": 78,
       "prevPos": 0,
       "id": 221,
       "name": "CULCOR",
@@ -41806,8 +42906,8 @@
       ]
     },
     {
-      "pos": 77,
-      "prevPos": 40,
+      "pos": 79,
+      "prevPos": 0,
       "id": 127,
       "name": "PAU_SD",
       "gender": "F",
@@ -42356,8 +43456,8 @@
       ]
     },
     {
-      "pos": 78,
-      "prevPos": 100,
+      "pos": 80,
+      "prevPos": 0,
       "id": 131,
       "name": "AGUILAR",
       "gender": "M",
@@ -42906,8 +44006,8 @@
       ]
     },
     {
-      "pos": 79,
-      "prevPos": 44,
+      "pos": 81,
+      "prevPos": 0,
       "id": 167,
       "name": "FERNANDINHO26",
       "gender": "M",
@@ -43456,7 +44556,7 @@
       ]
     },
     {
-      "pos": 80,
+      "pos": 82,
       "prevPos": 0,
       "id": 212,
       "name": "JONYPEPE99",
@@ -44006,8 +45106,8 @@
       ]
     },
     {
-      "pos": 81,
-      "prevPos": 175,
+      "pos": 83,
+      "prevPos": 0,
       "id": 191,
       "name": "MOTOPAPIS",
       "gender": "F",
@@ -44556,7 +45656,7 @@
       ]
     },
     {
-      "pos": 82,
+      "pos": 84,
       "prevPos": 0,
       "id": 229,
       "name": "CDV21",
@@ -45106,8 +46206,8 @@
       ]
     },
     {
-      "pos": 83,
-      "prevPos": 118,
+      "pos": 85,
+      "prevPos": 0,
       "id": 46,
       "name": "MR OSTRA",
       "gender": "M",
@@ -45656,8 +46756,8 @@
       ]
     },
     {
-      "pos": 84,
-      "prevPos": 162,
+      "pos": 86,
+      "prevPos": 0,
       "id": 185,
       "name": "LOS CABESAS",
       "gender": "F",
@@ -46206,8 +47306,8 @@
       ]
     },
     {
-      "pos": 85,
-      "prevPos": 190,
+      "pos": 87,
+      "prevPos": 0,
       "id": 150,
       "name": "DANI GARCIA",
       "gender": "M",
@@ -46756,8 +47856,8 @@
       ]
     },
     {
-      "pos": 86,
-      "prevPos": 22,
+      "pos": 88,
+      "prevPos": 0,
       "id": 86,
       "name": "JAVIROBLES",
       "gender": "M",
@@ -47306,8 +48406,8 @@
       ]
     },
     {
-      "pos": 87,
-      "prevPos": 148,
+      "pos": 89,
+      "prevPos": 0,
       "id": 173,
       "name": "KIKEPA",
       "gender": "M",
@@ -47856,8 +48956,8 @@
       ]
     },
     {
-      "pos": 88,
-      "prevPos": 186,
+      "pos": 90,
+      "prevPos": 0,
       "id": 102,
       "name": "LOPEZ",
       "gender": "M",
@@ -48406,7 +49506,7 @@
       ]
     },
     {
-      "pos": 89,
+      "pos": 91,
       "prevPos": 0,
       "id": 195,
       "name": "FAJARDO",
@@ -48956,7 +50056,7 @@
       ]
     },
     {
-      "pos": 90,
+      "pos": 92,
       "prevPos": 0,
       "id": 239,
       "name": "JULI - INTELIGENCIA ARTIFICIAL",
@@ -49506,8 +50606,8 @@
       ]
     },
     {
-      "pos": 91,
-      "prevPos": 118,
+      "pos": 93,
+      "prevPos": 0,
       "id": 136,
       "name": "TROY",
       "gender": "M",
@@ -50056,8 +51156,8 @@
       ]
     },
     {
-      "pos": 92,
-      "prevPos": 64,
+      "pos": 94,
+      "prevPos": 0,
       "id": 147,
       "name": "REGALATTI",
       "gender": "M",
@@ -50606,7 +51706,7 @@
       ]
     },
     {
-      "pos": 93,
+      "pos": 95,
       "prevPos": 0,
       "id": 225,
       "name": "D.HORCAJO",
@@ -51156,8 +52256,8 @@
       ]
     },
     {
-      "pos": 94,
-      "prevPos": 69,
+      "pos": 96,
+      "prevPos": 0,
       "id": 121,
       "name": "SALMON SORLOTH",
       "gender": "M",
@@ -51706,8 +52806,8 @@
       ]
     },
     {
-      "pos": 95,
-      "prevPos": 2,
+      "pos": 97,
+      "prevPos": 0,
       "id": 87,
       "name": "FLASHGON",
       "gender": "M",
@@ -52256,8 +53356,8 @@
       ]
     },
     {
-      "pos": 95,
-      "prevPos": 146,
+      "pos": 97,
+      "prevPos": 0,
       "id": 133,
       "name": "DEL RÍO JR",
       "gender": "M",
@@ -52806,8 +53906,8 @@
       ]
     },
     {
-      "pos": 97,
-      "prevPos": 6,
+      "pos": 99,
+      "prevPos": 0,
       "id": 115,
       "name": "PULPO PAUL DEL PUERTO DE LA VALETTA",
       "gender": "M",
@@ -53356,7 +54456,7 @@
       ]
     },
     {
-      "pos": 98,
+      "pos": 100,
       "prevPos": 0,
       "id": 203,
       "name": "LAMINE RABAL",
@@ -53906,7 +55006,7 @@
       ]
     },
     {
-      "pos": 99,
+      "pos": 101,
       "prevPos": 0,
       "id": 211,
       "name": "AGORA",
@@ -54456,8 +55556,8 @@
       ]
     },
     {
-      "pos": 100,
-      "prevPos": 45,
+      "pos": 102,
+      "prevPos": 0,
       "id": 66,
       "name": "MANU RIAU",
       "gender": "M",
@@ -55006,8 +56106,8 @@
       ]
     },
     {
-      "pos": 101,
-      "prevPos": 135,
+      "pos": 103,
+      "prevPos": 0,
       "id": 91,
       "name": "DANI CRUZ",
       "gender": "M",
@@ -55556,8 +56656,8 @@
       ]
     },
     {
-      "pos": 102,
-      "prevPos": 30,
+      "pos": 104,
+      "prevPos": 0,
       "id": 29,
       "name": "ANITA DINAMITA",
       "gender": "F",
@@ -56106,7 +57206,7 @@
       ]
     },
     {
-      "pos": 103,
+      "pos": 105,
       "prevPos": 0,
       "id": 201,
       "name": "VIVA ER PAPI",
@@ -56656,8 +57756,8 @@
       ]
     },
     {
-      "pos": 104,
-      "prevPos": 57,
+      "pos": 106,
+      "prevPos": 0,
       "id": 39,
       "name": "LIUKS OYARZABAL",
       "gender": "M",
@@ -57206,8 +58306,8 @@
       ]
     },
     {
-      "pos": 105,
-      "prevPos": 56,
+      "pos": 107,
+      "prevPos": 0,
       "id": 89,
       "name": "ALVARILES PAGOLA",
       "gender": "M",
@@ -57756,7 +58856,7 @@
       ]
     },
     {
-      "pos": 106,
+      "pos": 108,
       "prevPos": 0,
       "id": 217,
       "name": "CÉSAR",
@@ -58306,8 +59406,8 @@
       ]
     },
     {
-      "pos": 107,
-      "prevPos": 32,
+      "pos": 109,
+      "prevPos": 0,
       "id": 164,
       "name": "BORJA GARCIA PRADOS",
       "gender": "M",
@@ -58856,8 +59956,8 @@
       ]
     },
     {
-      "pos": 108,
-      "prevPos": 177,
+      "pos": 110,
+      "prevPos": 0,
       "id": 36,
       "name": "ENRIQUE CARO",
       "gender": "M",
@@ -59406,7 +60506,7 @@
       ]
     },
     {
-      "pos": 109,
+      "pos": 111,
       "prevPos": 0,
       "id": 242,
       "name": "TRIPLE J",
@@ -59956,8 +61056,8 @@
       ]
     },
     {
-      "pos": 110,
-      "prevPos": 184,
+      "pos": 112,
+      "prevPos": 0,
       "id": 47,
       "name": "ZANA",
       "gender": "M",
@@ -60506,8 +61606,8 @@
       ]
     },
     {
-      "pos": 111,
-      "prevPos": 55,
+      "pos": 113,
+      "prevPos": 0,
       "id": 63,
       "name": "LOCH",
       "gender": "M",
@@ -61056,8 +62156,8 @@
       ]
     },
     {
-      "pos": 111,
-      "prevPos": 125,
+      "pos": 113,
+      "prevPos": 0,
       "id": 169,
       "name": "MILLI",
       "gender": "M",
@@ -61606,8 +62706,8 @@
       ]
     },
     {
-      "pos": 113,
-      "prevPos": 101,
+      "pos": 115,
+      "prevPos": 0,
       "id": 11,
       "name": "TRUSKY",
       "gender": "M",
@@ -62156,8 +63256,8 @@
       ]
     },
     {
-      "pos": 114,
-      "prevPos": 16,
+      "pos": 116,
+      "prevPos": 0,
       "id": 128,
       "name": "DAVID JR",
       "gender": "M",
@@ -62706,7 +63806,7 @@
       ]
     },
     {
-      "pos": 115,
+      "pos": 117,
       "prevPos": 0,
       "id": 193,
       "name": "ALEX DE DIEGO",
@@ -63256,7 +64356,7 @@
       ]
     },
     {
-      "pos": 116,
+      "pos": 118,
       "prevPos": 0,
       "id": 200,
       "name": "MIGUEL GARCÍA DURÁ",
@@ -63806,8 +64906,8 @@
       ]
     },
     {
-      "pos": 117,
-      "prevPos": 183,
+      "pos": 119,
+      "prevPos": 0,
       "id": 81,
       "name": "DANIELPG",
       "gender": "M",
@@ -64356,8 +65456,8 @@
       ]
     },
     {
-      "pos": 118,
-      "prevPos": 155,
+      "pos": 120,
+      "prevPos": 0,
       "id": 93,
       "name": "JULI",
       "gender": "M",
@@ -64906,8 +66006,8 @@
       ]
     },
     {
-      "pos": 119,
-      "prevPos": 164,
+      "pos": 121,
+      "prevPos": 0,
       "id": 182,
       "name": "DAPIS",
       "gender": "M",
@@ -65456,8 +66556,8 @@
       ]
     },
     {
-      "pos": 120,
-      "prevPos": 116,
+      "pos": 122,
+      "prevPos": 0,
       "id": 55,
       "name": "ATILA",
       "gender": "M",
@@ -66006,8 +67106,8 @@
       ]
     },
     {
-      "pos": 121,
-      "prevPos": 181,
+      "pos": 123,
+      "prevPos": 0,
       "id": 146,
       "name": "EDUSIMAL",
       "gender": "M",
@@ -66556,7 +67656,7 @@
       ]
     },
     {
-      "pos": 122,
+      "pos": 124,
       "prevPos": 0,
       "id": 215,
       "name": "CARLOS JARA",
@@ -67106,8 +68206,8 @@
       ]
     },
     {
-      "pos": 123,
-      "prevPos": 125,
+      "pos": 125,
+      "prevPos": 0,
       "id": 159,
       "name": "IBÁÑEZ",
       "gender": "M",
@@ -67656,8 +68756,8 @@
       ]
     },
     {
-      "pos": 124,
-      "prevPos": 13,
+      "pos": 126,
+      "prevPos": 0,
       "id": 10,
       "name": "LUISCO",
       "gender": "M",
@@ -68206,8 +69306,8 @@
       ]
     },
     {
-      "pos": 125,
-      "prevPos": 171,
+      "pos": 127,
+      "prevPos": 0,
       "id": 43,
       "name": "BELLVER",
       "gender": "M",
@@ -68756,8 +69856,8 @@
       ]
     },
     {
-      "pos": 126,
-      "prevPos": 162,
+      "pos": 128,
+      "prevPos": 0,
       "id": 119,
       "name": "MARTA LLORDEN DE PAZ",
       "gender": "F",
@@ -69306,8 +70406,8 @@
       ]
     },
     {
-      "pos": 127,
-      "prevPos": 188,
+      "pos": 129,
+      "prevPos": 0,
       "id": 165,
       "name": "TOÑÍN",
       "gender": "M",
@@ -69856,8 +70956,8 @@
       ]
     },
     {
-      "pos": 128,
-      "prevPos": 34,
+      "pos": 130,
+      "prevPos": 0,
       "id": 38,
       "name": "EMI",
       "gender": "M",
@@ -70406,7 +71506,7 @@
       ]
     },
     {
-      "pos": 129,
+      "pos": 131,
       "prevPos": 0,
       "id": 205,
       "name": "NOTTINGHAM MIEDO",
@@ -70956,8 +72056,8 @@
       ]
     },
     {
-      "pos": 130,
-      "prevPos": 21,
+      "pos": 132,
+      "prevPos": 0,
       "id": 9,
       "name": "PR7",
       "gender": "M",
@@ -71506,8 +72606,8 @@
       ]
     },
     {
-      "pos": 131,
-      "prevPos": 182,
+      "pos": 133,
+      "prevPos": 0,
       "id": 100,
       "name": "JOSÉ PORTO",
       "gender": "M",
@@ -72056,8 +73156,8 @@
       ]
     },
     {
-      "pos": 132,
-      "prevPos": 13,
+      "pos": 134,
+      "prevPos": 0,
       "id": 160,
       "name": "IBÁÑEZ 2",
       "gender": "M",
@@ -72606,7 +73706,7 @@
       ]
     },
     {
-      "pos": 133,
+      "pos": 135,
       "prevPos": 0,
       "id": 204,
       "name": "JOSELU",
@@ -73156,7 +74256,7 @@
       ]
     },
     {
-      "pos": 134,
+      "pos": 136,
       "prevPos": 0,
       "id": 243,
       "name": "DIEGO BARO SIMEONE",
@@ -73706,8 +74806,8 @@
       ]
     },
     {
-      "pos": 135,
-      "prevPos": 9,
+      "pos": 137,
+      "prevPos": 0,
       "id": 125,
       "name": "MAX BOMBO",
       "gender": "M",
@@ -74256,8 +75356,8 @@
       ]
     },
     {
-      "pos": 136,
-      "prevPos": 63,
+      "pos": 138,
+      "prevPos": 0,
       "id": 26,
       "name": "VALLE",
       "gender": "M",
@@ -74806,8 +75906,8 @@
       ]
     },
     {
-      "pos": 137,
-      "prevPos": 166,
+      "pos": 139,
+      "prevPos": 0,
       "id": 149,
       "name": "JARE 14",
       "gender": "M",
@@ -75356,8 +76456,8 @@
       ]
     },
     {
-      "pos": 138,
-      "prevPos": 10,
+      "pos": 140,
+      "prevPos": 0,
       "id": 192,
       "name": "YAYI Y LJ",
       "gender": "F",
@@ -75906,8 +77006,8 @@
       ]
     },
     {
-      "pos": 139,
-      "prevPos": 17,
+      "pos": 141,
+      "prevPos": 0,
       "id": 117,
       "name": "GUILLEHAROL",
       "gender": "M",
@@ -76456,8 +77556,8 @@
       ]
     },
     {
-      "pos": 140,
-      "prevPos": 139,
+      "pos": 142,
+      "prevPos": 0,
       "id": 64,
       "name": "LUIS HORCAJO",
       "gender": "M",
@@ -77006,8 +78106,8 @@
       ]
     },
     {
-      "pos": 141,
-      "prevPos": 140,
+      "pos": 143,
+      "prevPos": 0,
       "id": 78,
       "name": "JESUS SANTAMARIA",
       "gender": "M",
@@ -77556,7 +78656,7 @@
       ]
     },
     {
-      "pos": 142,
+      "pos": 144,
       "prevPos": 0,
       "id": 236,
       "name": "COURTNEY",
@@ -78106,8 +79206,8 @@
       ]
     },
     {
-      "pos": 143,
-      "prevPos": 113,
+      "pos": 145,
+      "prevPos": 0,
       "id": 80,
       "name": "ZIDANI",
       "gender": "M",
@@ -78656,8 +79756,8 @@
       ]
     },
     {
-      "pos": 144,
-      "prevPos": 49,
+      "pos": 146,
+      "prevPos": 0,
       "id": 113,
       "name": "DOMINIQUE ALBERS",
       "gender": "F",
@@ -79206,8 +80306,8 @@
       ]
     },
     {
-      "pos": 145,
-      "prevPos": 137,
+      "pos": 147,
+      "prevPos": 0,
       "id": 130,
       "name": "BERNABÉ MOHEDANO",
       "gender": "M",
@@ -79756,8 +80856,8 @@
       ]
     },
     {
-      "pos": 146,
-      "prevPos": 179,
+      "pos": 148,
+      "prevPos": 0,
       "id": 145,
       "name": "FLOIER",
       "gender": "M",
@@ -80306,8 +81406,8 @@
       ]
     },
     {
-      "pos": 147,
-      "prevPos": 46,
+      "pos": 149,
+      "prevPos": 0,
       "id": 4,
       "name": "JUANPI TORRICO",
       "gender": "M",
@@ -80856,8 +81956,8 @@
       ]
     },
     {
-      "pos": 148,
-      "prevPos": 97,
+      "pos": 150,
+      "prevPos": 0,
       "id": 7,
       "name": "AK99",
       "gender": "M",
@@ -81406,8 +82506,8 @@
       ]
     },
     {
-      "pos": 149,
-      "prevPos": 118,
+      "pos": 151,
+      "prevPos": 0,
       "id": 155,
       "name": "MARIO",
       "gender": "M",
@@ -81956,8 +83056,8 @@
       ]
     },
     {
-      "pos": 150,
-      "prevPos": 168,
+      "pos": 152,
+      "prevPos": 0,
       "id": 53,
       "name": "TOWERS",
       "gender": "M",
@@ -82506,7 +83606,7 @@
       ]
     },
     {
-      "pos": 151,
+      "pos": 153,
       "prevPos": 0,
       "id": 224,
       "name": "MARAVILLA",
@@ -83056,7 +84156,7 @@
       ]
     },
     {
-      "pos": 152,
+      "pos": 154,
       "prevPos": 0,
       "id": 196,
       "name": "LOTO",
@@ -83606,8 +84706,8 @@
       ]
     },
     {
-      "pos": 153,
-      "prevPos": 82,
+      "pos": 155,
+      "prevPos": 0,
       "id": 13,
       "name": "HASSELBAINK 17",
       "gender": "M",
@@ -84156,8 +85256,8 @@
       ]
     },
     {
-      "pos": 154,
-      "prevPos": 192,
+      "pos": 156,
+      "prevPos": 0,
       "id": 172,
       "name": "GABIGOL06",
       "gender": "M",
@@ -84706,8 +85806,8 @@
       ]
     },
     {
-      "pos": 155,
-      "prevPos": 41,
+      "pos": 157,
+      "prevPos": 0,
       "id": 2,
       "name": "GASPAR GS",
       "gender": "M",
@@ -85256,8 +86356,8 @@
       ]
     },
     {
-      "pos": 156,
-      "prevPos": 32,
+      "pos": 158,
+      "prevPos": 0,
       "id": 157,
       "name": "JAQUETE",
       "gender": "M",
@@ -85806,8 +86906,8 @@
       ]
     },
     {
-      "pos": 157,
-      "prevPos": 64,
+      "pos": 159,
+      "prevPos": 0,
       "id": 14,
       "name": "JAVI LORENTE",
       "gender": "M",
@@ -86356,7 +87456,7 @@
       ]
     },
     {
-      "pos": 158,
+      "pos": 160,
       "prevPos": 0,
       "id": 219,
       "name": "ÁGUILA",
@@ -86906,8 +88006,8 @@
       ]
     },
     {
-      "pos": 159,
-      "prevPos": 84,
+      "pos": 161,
+      "prevPos": 0,
       "id": 99,
       "name": "PAUL M",
       "gender": "M",
@@ -87456,8 +88556,8 @@
       ]
     },
     {
-      "pos": 160,
-      "prevPos": 73,
+      "pos": 162,
+      "prevPos": 0,
       "id": 104,
       "name": "JACOBO HORCAJO",
       "gender": "M",
@@ -88006,8 +89106,8 @@
       ]
     },
     {
-      "pos": 160,
-      "prevPos": 62,
+      "pos": 162,
+      "prevPos": 0,
       "id": 153,
       "name": "RUBEN SAN",
       "gender": "M",
@@ -88556,8 +89656,8 @@
       ]
     },
     {
-      "pos": 162,
-      "prevPos": 153,
+      "pos": 164,
+      "prevPos": 0,
       "id": 74,
       "name": "MENDIETA JUNIOR",
       "gender": "M",
@@ -89106,8 +90206,8 @@
       ]
     },
     {
-      "pos": 163,
-      "prevPos": 110,
+      "pos": 165,
+      "prevPos": 0,
       "id": 190,
       "name": "MARÍA MILLA",
       "gender": "F",
@@ -89656,8 +90756,8 @@
       ]
     },
     {
-      "pos": 164,
-      "prevPos": 19,
+      "pos": 166,
+      "prevPos": 0,
       "id": 56,
       "name": "JOAQUINILLO",
       "gender": "M",
@@ -90206,8 +91306,8 @@
       ]
     },
     {
-      "pos": 165,
-      "prevPos": 166,
+      "pos": 167,
+      "prevPos": 0,
       "id": 148,
       "name": "DANIELO",
       "gender": "M",
@@ -90756,8 +91856,8 @@
       ]
     },
     {
-      "pos": 166,
-      "prevPos": 1,
+      "pos": 168,
+      "prevPos": 0,
       "id": 101,
       "name": "CDR",
       "gender": "M",
@@ -91306,8 +92406,8 @@
       ]
     },
     {
-      "pos": 167,
-      "prevPos": 141,
+      "pos": 169,
+      "prevPos": 0,
       "id": 92,
       "name": "BORJA RODRIGO PAGOLA",
       "gender": "M",
@@ -91856,8 +92956,8 @@
       ]
     },
     {
-      "pos": 168,
-      "prevPos": 160,
+      "pos": 170,
+      "prevPos": 0,
       "id": 8,
       "name": "PEPEDSV",
       "gender": "M",
@@ -92406,8 +93506,8 @@
       ]
     },
     {
-      "pos": 169,
-      "prevPos": 36,
+      "pos": 171,
+      "prevPos": 0,
       "id": 188,
       "name": "MICHELLE HILL",
       "gender": "F",
@@ -92956,8 +94056,8 @@
       ]
     },
     {
-      "pos": 170,
-      "prevPos": 125,
+      "pos": 172,
+      "prevPos": 0,
       "id": 186,
       "name": "GONZALO ZUBÍA",
       "gender": "M",
@@ -93506,8 +94606,8 @@
       ]
     },
     {
-      "pos": 171,
-      "prevPos": 67,
+      "pos": 173,
+      "prevPos": 0,
       "id": 77,
       "name": "ESTUPIDEZ ARTIFICIAL",
       "gender": "M",
@@ -94056,8 +95156,8 @@
       ]
     },
     {
-      "pos": 172,
-      "prevPos": 26,
+      "pos": 174,
+      "prevPos": 0,
       "id": 120,
       "name": "MATILLA",
       "gender": "M",
@@ -94606,8 +95706,8 @@
       ]
     },
     {
-      "pos": 173,
-      "prevPos": 75,
+      "pos": 175,
+      "prevPos": 0,
       "id": 32,
       "name": "SANTIMVN",
       "gender": "M",
@@ -95156,8 +96256,8 @@
       ]
     },
     {
-      "pos": 174,
-      "prevPos": 80,
+      "pos": 176,
+      "prevPos": 0,
       "id": 187,
       "name": "BBA",
       "gender": "M",
@@ -95706,8 +96806,8 @@
       ]
     },
     {
-      "pos": 175,
-      "prevPos": 24,
+      "pos": 177,
+      "prevPos": 0,
       "id": 31,
       "name": "HARRY BREY",
       "gender": "M",
@@ -96256,8 +97356,8 @@
       ]
     },
     {
-      "pos": 176,
-      "prevPos": 158,
+      "pos": 178,
+      "prevPos": 0,
       "id": 54,
       "name": "JOAQUIN THE THIRD",
       "gender": "M",
@@ -96806,8 +97906,8 @@
       ]
     },
     {
-      "pos": 177,
-      "prevPos": 79,
+      "pos": 179,
+      "prevPos": 0,
       "id": 112,
       "name": "LUISMI JR.",
       "gender": "M",
@@ -97356,7 +98456,7 @@
       ]
     },
     {
-      "pos": 178,
+      "pos": 180,
       "prevPos": 0,
       "id": 194,
       "name": "ASM",
@@ -97906,8 +99006,8 @@
       ]
     },
     {
-      "pos": 179,
-      "prevPos": 104,
+      "pos": 181,
+      "prevPos": 0,
       "id": 59,
       "name": "ZUBIZU",
       "gender": "M",
@@ -98456,7 +99556,7 @@
       ]
     },
     {
-      "pos": 180,
+      "pos": 182,
       "prevPos": 0,
       "id": 237,
       "name": "EGCA",
@@ -99006,8 +100106,8 @@
       ]
     },
     {
-      "pos": 181,
-      "prevPos": 23,
+      "pos": 183,
+      "prevPos": 0,
       "id": 52,
       "name": "TARTAN TORERO",
       "gender": "M",
@@ -99556,8 +100656,8 @@
       ]
     },
     {
-      "pos": 182,
-      "prevPos": 107,
+      "pos": 184,
+      "prevPos": 0,
       "id": 42,
       "name": "LAFUIGNA",
       "gender": "M",
@@ -100106,8 +101206,8 @@
       ]
     },
     {
-      "pos": 183,
-      "prevPos": 77,
+      "pos": 185,
+      "prevPos": 0,
       "id": 69,
       "name": "MIGUEL ARRANZ",
       "gender": "M",
@@ -100656,8 +101756,8 @@
       ]
     },
     {
-      "pos": 184,
-      "prevPos": 137,
+      "pos": 186,
+      "prevPos": 0,
       "id": 27,
       "name": "LA HANSIWAGEN",
       "gender": "M",
@@ -101206,8 +102306,8 @@
       ]
     },
     {
-      "pos": 185,
-      "prevPos": 150,
+      "pos": 187,
+      "prevPos": 0,
       "id": 95,
       "name": "NATS",
       "gender": "F",
@@ -101756,8 +102856,8 @@
       ]
     },
     {
-      "pos": 186,
-      "prevPos": 133,
+      "pos": 188,
+      "prevPos": 0,
       "id": 110,
       "name": "DON FLORENTINO PÉREZ (5)",
       "gender": "M",
@@ -102306,8 +103406,8 @@
       ]
     },
     {
-      "pos": 187,
-      "prevPos": 164,
+      "pos": 189,
+      "prevPos": 0,
       "id": 35,
       "name": "MARC PERIS",
       "gender": "M",
@@ -102856,8 +103956,8 @@
       ]
     },
     {
-      "pos": 188,
-      "prevPos": 114,
+      "pos": 190,
+      "prevPos": 0,
       "id": 75,
       "name": "MENDIJR",
       "gender": "M",
@@ -103406,8 +104506,8 @@
       ]
     },
     {
-      "pos": 189,
-      "prevPos": 174,
+      "pos": 191,
+      "prevPos": 0,
       "id": 162,
       "name": "RAMIROGUERRA",
       "gender": "M",
@@ -103956,8 +105056,8 @@
       ]
     },
     {
-      "pos": 190,
-      "prevPos": 184,
+      "pos": 192,
+      "prevPos": 0,
       "id": 135,
       "name": "DEIVIDILLO",
       "gender": "M",
@@ -104506,7 +105606,7 @@
       ]
     },
     {
-      "pos": 191,
+      "pos": 193,
       "prevPos": 0,
       "id": 209,
       "name": "GRIEZMANN",
@@ -105056,8 +106156,8 @@
       ]
     },
     {
-      "pos": 192,
-      "prevPos": 141,
+      "pos": 194,
+      "prevPos": 0,
       "id": 70,
       "name": "RODRI SANTANDER",
       "gender": "M",
@@ -105606,7 +106706,7 @@
       ]
     },
     {
-      "pos": 193,
+      "pos": 195,
       "prevPos": 0,
       "id": 216,
       "name": "BARDA",
@@ -106156,8 +107256,8 @@
       ]
     },
     {
-      "pos": 194,
-      "prevPos": 191,
+      "pos": 196,
+      "prevPos": 0,
       "id": 111,
       "name": "FELIPE REDONDO",
       "gender": "M",
@@ -106706,8 +107806,8 @@
       ]
     },
     {
-      "pos": 195,
-      "prevPos": 48,
+      "pos": 197,
+      "prevPos": 0,
       "id": 109,
       "name": "PARDIMIKEL",
       "gender": "M",
@@ -107256,8 +108356,8 @@
       ]
     },
     {
-      "pos": 196,
-      "prevPos": 73,
+      "pos": 198,
+      "prevPos": 0,
       "id": 3,
       "name": "MONNE",
       "gender": "M",
@@ -107806,8 +108906,8 @@
       ]
     },
     {
-      "pos": 197,
-      "prevPos": 35,
+      "pos": 199,
+      "prevPos": 0,
       "id": 57,
       "name": "CARLOS MP",
       "gender": "M",
@@ -108356,8 +109456,8 @@
       ]
     },
     {
-      "pos": 198,
-      "prevPos": 49,
+      "pos": 200,
+      "prevPos": 0,
       "id": 34,
       "name": "GUERRA",
       "gender": "M",
@@ -108906,8 +110006,8 @@
       ]
     },
     {
-      "pos": 199,
-      "prevPos": 134,
+      "pos": 201,
+      "prevPos": 0,
       "id": 177,
       "name": "MACIAN",
       "gender": "M",
@@ -109456,7 +110556,7 @@
       ]
     },
     {
-      "pos": 200,
+      "pos": 202,
       "prevPos": 0,
       "id": 207,
       "name": "WILL",
@@ -110006,7 +111106,7 @@
       ]
     },
     {
-      "pos": 200,
+      "pos": 202,
       "prevPos": 0,
       "id": 250,
       "name": "LUIS MIGUEL REDONDO FRANCO",
@@ -110556,8 +111656,8 @@
       ]
     },
     {
-      "pos": 202,
-      "prevPos": 125,
+      "pos": 204,
+      "prevPos": 0,
       "id": 171,
       "name": "LOLA2026",
       "gender": "F",
@@ -111106,7 +112206,7 @@
       ]
     },
     {
-      "pos": 203,
+      "pos": 205,
       "prevPos": 0,
       "id": 232,
       "name": "DUTCHY",
@@ -111656,7 +112756,7 @@
       ]
     },
     {
-      "pos": 204,
+      "pos": 206,
       "prevPos": 0,
       "id": 210,
       "name": "RITA",
@@ -112206,7 +113306,7 @@
       ]
     },
     {
-      "pos": 205,
+      "pos": 207,
       "prevPos": 0,
       "id": 241,
       "name": "EL BICHO 7",
@@ -112756,7 +113856,7 @@
       ]
     },
     {
-      "pos": 206,
+      "pos": 208,
       "prevPos": 0,
       "id": 247,
       "name": "PATINHO",
@@ -113306,8 +114406,8 @@
       ]
     },
     {
-      "pos": 207,
-      "prevPos": 155,
+      "pos": 209,
+      "prevPos": 0,
       "id": 170,
       "name": "AGM",
       "gender": "F",
@@ -113856,8 +114956,8 @@
       ]
     },
     {
-      "pos": 208,
-      "prevPos": 122,
+      "pos": 210,
+      "prevPos": 0,
       "id": 114,
       "name": "ANTOINE DE LA VALETTE",
       "gender": "M",
@@ -114406,8 +115506,8 @@
       ]
     },
     {
-      "pos": 209,
-      "prevPos": 109,
+      "pos": 211,
+      "prevPos": 0,
       "id": 176,
       "name": "JOEK",
       "gender": "M",
@@ -114956,8 +116056,8 @@
       ]
     },
     {
-      "pos": 210,
-      "prevPos": 150,
+      "pos": 212,
+      "prevPos": 0,
       "id": 137,
       "name": "BHIDALGO",
       "gender": "M",
@@ -115506,8 +116606,8 @@
       ]
     },
     {
-      "pos": 211,
-      "prevPos": 68,
+      "pos": 213,
+      "prevPos": 0,
       "id": 139,
       "name": "RIKIS LEIVAR",
       "gender": "M",
@@ -116056,8 +117156,8 @@
       ]
     },
     {
-      "pos": 212,
-      "prevPos": 42,
+      "pos": 214,
+      "prevPos": 0,
       "id": 40,
       "name": "MIKEZABAL",
       "gender": "M",
@@ -116606,8 +117706,8 @@
       ]
     },
     {
-      "pos": 213,
-      "prevPos": 123,
+      "pos": 215,
+      "prevPos": 0,
       "id": 134,
       "name": "FAMILIA LARRAZ-MARTINEZ",
       "gender": "M",
@@ -117156,8 +118256,8 @@
       ]
     },
     {
-      "pos": 214,
-      "prevPos": 93,
+      "pos": 216,
+      "prevPos": 0,
       "id": 142,
       "name": "CAN IT PLEASE COME HOME?",
       "gender": "M",
@@ -117706,8 +118806,8 @@
       ]
     },
     {
-      "pos": 215,
-      "prevPos": 124,
+      "pos": 217,
+      "prevPos": 0,
       "id": 123,
       "name": "AMATINA",
       "gender": "F",
@@ -118256,8 +119356,8 @@
       ]
     },
     {
-      "pos": 215,
-      "prevPos": 5,
+      "pos": 217,
+      "prevPos": 0,
       "id": 163,
       "name": "VYAGOL",
       "gender": "M",
@@ -118806,8 +119906,8 @@
       ]
     },
     {
-      "pos": 217,
-      "prevPos": 155,
+      "pos": 219,
+      "prevPos": 0,
       "id": 141,
       "name": "SABANDIHA",
       "gender": "M",
@@ -119356,8 +120456,8 @@
       ]
     },
     {
-      "pos": 218,
-      "prevPos": 85,
+      "pos": 220,
+      "prevPos": 0,
       "id": 85,
       "name": "RUBÉN JARQUE",
       "gender": "M",
@@ -119906,7 +121006,7 @@
       ]
     },
     {
-      "pos": 219,
+      "pos": 221,
       "prevPos": 0,
       "id": 230,
       "name": "JULS",
@@ -120456,7 +121556,7 @@
       ]
     },
     {
-      "pos": 220,
+      "pos": 222,
       "prevPos": 0,
       "id": 240,
       "name": "BIGELIOTT",
@@ -121006,8 +122106,8 @@
       ]
     },
     {
-      "pos": 221,
-      "prevPos": 3,
+      "pos": 223,
+      "prevPos": 0,
       "id": 25,
       "name": "PICHI",
       "gender": "M",
@@ -121556,7 +122656,7 @@
       ]
     },
     {
-      "pos": 222,
+      "pos": 224,
       "prevPos": 0,
       "id": 231,
       "name": "LUIGI",
@@ -122106,8 +123206,8 @@
       ]
     },
     {
-      "pos": 223,
-      "prevPos": 91,
+      "pos": 225,
+      "prevPos": 0,
       "id": 65,
       "name": "MURCI",
       "gender": "M",
@@ -122656,8 +123756,8 @@
       ]
     },
     {
-      "pos": 224,
-      "prevPos": 189,
+      "pos": 226,
+      "prevPos": 0,
       "id": 116,
       "name": "GARETH BALE",
       "gender": "M",
@@ -123206,8 +124306,8 @@
       ]
     },
     {
-      "pos": 225,
-      "prevPos": 115,
+      "pos": 227,
+      "prevPos": 0,
       "id": 51,
       "name": "ORDAS MODERADAS",
       "gender": "M",
@@ -123756,7 +124856,7 @@
       ]
     },
     {
-      "pos": 226,
+      "pos": 228,
       "prevPos": 0,
       "id": 235,
       "name": "ANTONIO MERINO",
@@ -124306,8 +125406,8 @@
       ]
     },
     {
-      "pos": 227,
-      "prevPos": 37,
+      "pos": 229,
+      "prevPos": 0,
       "id": 17,
       "name": "JCMILLABR",
       "gender": "M",
@@ -124856,8 +125956,8 @@
       ]
     },
     {
-      "pos": 228,
-      "prevPos": 80,
+      "pos": 230,
+      "prevPos": 0,
       "id": 28,
       "name": "AGUADO PORTE",
       "gender": "M",
@@ -125406,8 +126506,8 @@
       ]
     },
     {
-      "pos": 229,
-      "prevPos": 176,
+      "pos": 231,
+      "prevPos": 0,
       "id": 184,
       "name": "LLAMAS",
       "gender": "M",
@@ -125956,7 +127056,7 @@
       ]
     },
     {
-      "pos": 230,
+      "pos": 232,
       "prevPos": 0,
       "id": 208,
       "name": "PRESIDENTE",
@@ -126506,8 +127606,8 @@
       ]
     },
     {
-      "pos": 231,
-      "prevPos": 60,
+      "pos": 233,
+      "prevPos": 0,
       "id": 103,
       "name": "DON HANS-DIETER FLICK",
       "gender": "M",
@@ -127056,8 +128156,8 @@
       ]
     },
     {
-      "pos": 232,
-      "prevPos": 37,
+      "pos": 234,
+      "prevPos": 0,
       "id": 72,
       "name": "DAVID FERNÁNDEZ ORTIZ",
       "gender": "M",
@@ -127606,7 +128706,7 @@
       ]
     },
     {
-      "pos": 233,
+      "pos": 235,
       "prevPos": 0,
       "id": 197,
       "name": "GONCHO",
@@ -128156,8 +129256,8 @@
       ]
     },
     {
-      "pos": 234,
-      "prevPos": 69,
+      "pos": 236,
+      "prevPos": 0,
       "id": 76,
       "name": "MARI MADERO",
       "gender": "F",
@@ -128706,8 +129806,8 @@
       ]
     },
     {
-      "pos": 235,
-      "prevPos": 4,
+      "pos": 237,
+      "prevPos": 0,
       "id": 15,
       "name": "BELTRÁN LORENTE -SOROLLA",
       "gender": "M",
@@ -129256,8 +130356,8 @@
       ]
     },
     {
-      "pos": 236,
-      "prevPos": 118,
+      "pos": 238,
+      "prevPos": 0,
       "id": 41,
       "name": "ORDAS LOCAS",
       "gender": "M",
@@ -129806,8 +130906,8 @@
       ]
     },
     {
-      "pos": 237,
-      "prevPos": 54,
+      "pos": 239,
+      "prevPos": 0,
       "id": 144,
       "name": "ADRIANA RC",
       "gender": "F",
@@ -130356,8 +131456,8 @@
       ]
     },
     {
-      "pos": 238,
-      "prevPos": 69,
+      "pos": 240,
+      "prevPos": 0,
       "id": 82,
       "name": "XULIO XAVIERT",
       "gender": "M",
@@ -130906,8 +132006,8 @@
       ]
     },
     {
-      "pos": 238,
-      "prevPos": 106,
+      "pos": 240,
+      "prevPos": 0,
       "id": 106,
       "name": "PUTO",
       "gender": "M",
@@ -131456,8 +132556,8 @@
       ]
     },
     {
-      "pos": 240,
-      "prevPos": 117,
+      "pos": 242,
+      "prevPos": 0,
       "id": 20,
       "name": "GABRIEL LOPEZ GARZON",
       "gender": "M",
@@ -132006,8 +133106,8 @@
       ]
     },
     {
-      "pos": 241,
-      "prevPos": 107,
+      "pos": 243,
+      "prevPos": 0,
       "id": 107,
       "name": "FABS",
       "gender": "M",
@@ -132556,7 +133656,7 @@
       ]
     },
     {
-      "pos": 242,
+      "pos": 244,
       "prevPos": 0,
       "id": 234,
       "name": "JOTA JOTA",
@@ -133106,7 +134206,7 @@
       ]
     },
     {
-      "pos": 243,
+      "pos": 245,
       "prevPos": 0,
       "id": 213,
       "name": "ALVAROALEX",
@@ -133656,8 +134756,8 @@
       ]
     },
     {
-      "pos": 244,
-      "prevPos": 125,
+      "pos": 246,
+      "prevPos": 0,
       "id": 18,
       "name": "BELAS",
       "gender": "M",
@@ -134206,8 +135306,8 @@
       ]
     },
     {
-      "pos": 245,
-      "prevPos": 42,
+      "pos": 247,
+      "prevPos": 0,
       "id": 97,
       "name": "ANA HERMANA JULI",
       "gender": "F",
@@ -134756,8 +135856,8 @@
       ]
     },
     {
-      "pos": 246,
-      "prevPos": 47,
+      "pos": 248,
+      "prevPos": 0,
       "id": 122,
       "name": "MANUCHI_MUSSO",
       "gender": "F",
@@ -135306,8 +136406,8 @@
       ]
     },
     {
-      "pos": 247,
-      "prevPos": 180,
+      "pos": 249,
+      "prevPos": 0,
       "id": 33,
       "name": "QUIQUI",
       "gender": "M",
@@ -135856,8 +136956,8 @@
       ]
     },
     {
-      "pos": 248,
-      "prevPos": 7,
+      "pos": 250,
+      "prevPos": 0,
       "id": 21,
       "name": "CARLOTA PEIDRO",
       "gender": "M",
@@ -136406,8 +137506,8 @@
       ]
     },
     {
-      "pos": 249,
-      "prevPos": 66,
+      "pos": 251,
+      "prevPos": 0,
       "id": 22,
       "name": "DANNY_MELLOW",
       "gender": "M",
@@ -136922,556 +138022,6 @@
           "phase": "Cuartos de final",
           "match": "ARG-COL",
           "pts": 6
-        },
-        {
-          "phase": "Semifinales",
-          "match": "NED-ESP",
-          "pts": 0
-        },
-        {
-          "phase": "Semifinales",
-          "match": "BRA-ARG",
-          "pts": 0
-        },
-        {
-          "phase": "Tercer y Cuarto",
-          "match": "NED-BRA",
-          "pts": 0
-        },
-        {
-          "phase": "Tercer y Cuarto",
-          "match": "TERCERO",
-          "pts": 0
-        },
-        {
-          "phase": "Final y Campeón",
-          "match": "ESP-ARG",
-          "pts": 0
-        },
-        {
-          "phase": "Final y Campeón",
-          "match": "CAMPEÓN",
-          "pts": 0
-        }
-      ]
-    },
-    {
-      "pos": 250,
-      "prevPos": 0,
-      "id": 233,
-      "name": "NO KANE NO GAIN",
-      "gender": "M",
-      "total": 9,
-      "grupos": 0,
-      "eliminatorias": 9,
-      "pichichi": 0,
-      "pichichi_mundial": 0,
-      "pichichi1": 0,
-      "pichichi2": 0,
-      "pichichi_esp": 0,
-      "pichichi_name1": "",
-      "pichichi_name2": "",
-      "pichichi_name_esp": "",
-      "matches": [
-        {
-          "phase": "Grupo A",
-          "match": "MEX-SUD",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo A",
-          "match": "COR-CHE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo A",
-          "match": "CHE-SUD",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo A",
-          "match": "MEX-COR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo A",
-          "match": "CHE-MEX",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo A",
-          "match": "SUD-COR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo B",
-          "match": "CAN-BIH",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo B",
-          "match": "QAT-SUI",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo B",
-          "match": "CAN-QAT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo B",
-          "match": "SUI-BIH",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo B",
-          "match": "SUI-CAN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo B",
-          "match": "BIH-QAT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "BRA-MAR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "HAI-ESC",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ESC-MAR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "BRA-HAI",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "ESC-BRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo C",
-          "match": "MAR-HAI",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "USA-PAR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "AUS-TUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "USA-AUS",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "TUR-PAR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "TUR-USA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo D",
-          "match": "PAR-AUS",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "ALE-CUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "IVO-ECU",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "ALE-IVO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "ECU-CUR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "ECU-ALE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo E",
-          "match": "CUR-IVO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "NED-JAP",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "SWE-TUN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "NED-SWE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUN-JAP",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "JAP-SWE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo F",
-          "match": "TUN-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo G",
-          "match": "BEL-EGY",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo G",
-          "match": "IRA-NZE",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo G",
-          "match": "BEL-IRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo G",
-          "match": "NZE-EGY",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo G",
-          "match": "EGY-IRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo G",
-          "match": "NZE-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo H",
-          "match": "ESP-CAB",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo H",
-          "match": "SAU-URU",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo H",
-          "match": "ESP-SAU",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo H",
-          "match": "URU-CAB",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo H",
-          "match": "CAB-SAU",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo H",
-          "match": "URU-ESP",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo I",
-          "match": "FRA-SEN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo I",
-          "match": "IRK-NOR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo I",
-          "match": "FRA-IRK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo I",
-          "match": "NOR-SEN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo I",
-          "match": "NOR-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo I",
-          "match": "SEN-IRK",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo J",
-          "match": "ARG-ALG",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo J",
-          "match": "AUT-JOR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo J",
-          "match": "ARG-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo J",
-          "match": "JOR-ALG",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo J",
-          "match": "ALG-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo J",
-          "match": "JOR-ARG",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo K",
-          "match": "POR-RDC",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo K",
-          "match": "UZB-COL",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo K",
-          "match": "POR-UZB",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo K",
-          "match": "COL-RDC",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo K",
-          "match": "COL-POR",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo K",
-          "match": "RDC-UZB",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo L",
-          "match": "ING-CRO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo L",
-          "match": "GHA-PAN",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo L",
-          "match": "ING-GHA",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo L",
-          "match": "PAN-CRO",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo L",
-          "match": "PAN-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Grupo L",
-          "match": "CRO-GHA",
-          "pts": 0
-        },
-        {
-          "phase": "Dieciseisavos de Final",
-          "match": "Dieciseisavos 1",
-          "pts": 3
-        },
-        {
-          "phase": "Dieciseisavos de Final",
-          "match": "Dieciseisavos 2",
-          "pts": 3
-        },
-        {
-          "phase": "Dieciseisavos de Final",
-          "match": "Dieciseisavos 3",
-          "pts": 3
-        },
-        {
-          "phase": "Dieciseisavos de Final",
-          "match": "NED-MAR",
-          "pts": 0
-        },
-        {
-          "phase": "Dieciseisavos de Final",
-          "match": "ECU-NOR",
-          "pts": 0
-        },
-        {
-          "phase": "Dieciseisavos de Final",
-          "match": "FRA-JAP",
-          "pts": 0
-        },
-        {
-          "phase": "Dieciseisavos de Final",
-          "match": "MEX-ESC",
-          "pts": 0
-        },
-        {
-          "phase": "Dieciseisavos de Final",
-          "match": "CRO-SEN",
-          "pts": 0
-        },
-        {
-          "phase": "Dieciseisavos de Final",
-          "match": "BEL-COR",
-          "pts": 0
-        },
-        {
-          "phase": "Dieciseisavos de Final",
-          "match": "TUR-IVO",
-          "pts": 0
-        },
-        {
-          "phase": "Dieciseisavos de Final",
-          "match": "ESP-AUT",
-          "pts": 0
-        },
-        {
-          "phase": "Dieciseisavos de Final",
-          "match": "POR-ING",
-          "pts": 0
-        },
-        {
-          "phase": "Dieciseisavos de Final",
-          "match": "SUI-EGY",
-          "pts": 0
-        },
-        {
-          "phase": "Dieciseisavos de Final",
-          "match": "USA-NZE",
-          "pts": 0
-        },
-        {
-          "phase": "Dieciseisavos de Final",
-          "match": "ARG-URU",
-          "pts": 0
-        },
-        {
-          "phase": "Dieciseisavos de Final",
-          "match": "COL-GHA",
-          "pts": 0
-        },
-        {
-          "phase": "Octavos de Final",
-          "match": "ALE-FRA",
-          "pts": 0
-        },
-        {
-          "phase": "Octavos de Final",
-          "match": "CHE-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Octavos de Final",
-          "match": "BRA-ECU",
-          "pts": 0
-        },
-        {
-          "phase": "Octavos de Final",
-          "match": "MEX-CRO",
-          "pts": 0
-        },
-        {
-          "phase": "Octavos de Final",
-          "match": "POR-ESP",
-          "pts": 0
-        },
-        {
-          "phase": "Octavos de Final",
-          "match": "TUR-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Octavos de Final",
-          "match": "ARG-USA",
-          "pts": 0
-        },
-        {
-          "phase": "Octavos de Final",
-          "match": "EGY-COL",
-          "pts": 0
-        },
-        {
-          "phase": "Cuartos de final",
-          "match": "FRA-NED",
-          "pts": 0
-        },
-        {
-          "phase": "Cuartos de final",
-          "match": "ESP-BEL",
-          "pts": 0
-        },
-        {
-          "phase": "Cuartos de final",
-          "match": "BRA-MEX",
-          "pts": 0
-        },
-        {
-          "phase": "Cuartos de final",
-          "match": "ARG-COL",
-          "pts": 0
         },
         {
           "phase": "Semifinales",
