@@ -587,12 +587,13 @@ tr.detail-row.open{display:table-row}
             <th class="col-pts sort-active" data-sort="total">Total</th>
             <th class="col-sub hide-sm" data-sort="grupos">Grupos</th>
             <th class="col-sub hide-sm" data-sort="eliminatorias">Elim.</th>
-            <th class="col-sub hide-sm" data-sort="pichichi">Pic.</th>
+            <th class="col-sub hide-sm" data-sort="pichichi_mundial" title="Pichichi Mundial">Pic.M</th>
+            <th class="col-sub hide-sm" data-sort="pichichi_esp" title="Pichichi Español">Pic.E</th>
             <th class="col-exp"></th>
           </tr>
         </thead>
         <tbody id="tbody">
-          <tr><td class="state-cell" colspan="8">Cargando clasificación…</td></tr>
+          <tr><td class="state-cell" colspan="9">Cargando clasificación…</td></tr>
         </tbody>
       </table>
     </div>
@@ -707,7 +708,7 @@ function sortAndRender() {
 function renderTable() {
   const tbody = el('tbody');
   if (!VIEW.length) {
-    tbody.innerHTML = '<tr><td class="state-cell" colspan="8">Sin participantes que coincidan.</td></tr>';
+    tbody.innerHTML = '<tr><td class="state-cell" colspan="9">Sin participantes que coincidan.</td></tr>';
     return;
   }
   const q = el('search').value.trim().toLowerCase();
@@ -743,11 +744,12 @@ function rowHtml(p, q) {
   <td class="pts-cell">${p.total}</td>
   <td class="sub-cell hide-sm">${p.grupos}</td>
   <td class="sub-cell hide-sm">${p.eliminatorias}</td>
-  <td class="sub-cell hide-sm">${p.pichichi}</td>
+  <td class="sub-cell hide-sm">${p.pichichi_mundial}</td>
+  <td class="sub-cell hide-sm">${p.pichichi_esp}</td>
   <td><button class="xbtn" data-id="${p.id}" title="Ver desglose por partido">▶</button></td>
 </tr>
 <tr class="detail-row" id="d-${p.id}">
-  <td class="detail-cell" colspan="8">${detailHtml(p)}</td>
+  <td class="detail-cell" colspan="9">${detailHtml(p)}</td>
 </tr>`;
 }
 
@@ -786,7 +788,32 @@ function detailHtml(p) {
     </div>`;
   }).join('');
 
-  return `<div class="phase-grid">${blocks}</div>`;
+  // Bloque pichichi con nombres de jugadores
+  const picTotal = (p.pichichi_mundial || 0) + (p.pichichi_esp || 0);
+  const n1 = p.pichichi_name1 || '—';
+  const n2 = p.pichichi_name2 || '—';
+  const ne = p.pichichi_name_esp || '—';
+  const p1 = p.pichichi1 || 0;
+  const p2 = p.pichichi2 || 0;
+  const pe = p.pichichi_esp || 0;
+  const picBlock = `<div class="phase-block">
+    <div class="phase-title">Pichichi</div>
+    <div class="match-line">
+      <span class="match-name" title="Elección preferente — doble puntuación si acierta">🌍 Mundial 1ª: ${esc(n1)}</span>
+      <span class="pts-val ${p1>0?'pts-pos':'pts-zero'}">${p1}</span>
+    </div>
+    <div class="match-line">
+      <span class="match-name" title="Elección secundaria">🌍 Mundial 2ª: ${esc(n2)}</span>
+      <span class="pts-val ${p2>0?'pts-pos':'pts-zero'}">${p2}</span>
+    </div>
+    <div class="match-line">
+      <span class="match-name">🇪🇸 España: ${esc(ne)}</span>
+      <span class="pts-val ${pe>0?'pts-pos':'pts-zero'}">${pe}</span>
+    </div>
+    <div class="phase-footer"><span>Subtotal</span><span>${picTotal}</span></div>
+  </div>`;
+
+  return `<div class="phase-grid">${blocks}${picBlock}</div>`;
 }
 
 function toggleDetail(id) {
