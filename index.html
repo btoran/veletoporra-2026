@@ -850,17 +850,18 @@ function detailHtml(p) {
       const realBadge = hasReal
         ? `<span class="real-result res-plain">${esc(res.r)}</span>` : '';
       const pronCls = predScore ? (m.pts > 0 ? 'res-exact' : (hasReal ? 'res-miss' : '')) : '';
-      const pronBadge = predScore
-        ? `<span class="real-result ${pronCls}">${esc(predScore)}</span>` : '';
-      return `<div class="match-line">
+      const pronCell2 = predScore
+        ? `<span class="real-result ${pronCls}">${esc(predScore)}</span>` : `<span></span>`;
+      const realCell2 = hasReal
+        ? `<span class="real-result res-plain">${esc(res.r)}</span>` : `<span></span>`;
+      return `<div class="match-line match-line-group">
         <span class="match-name">${esc(m.match)}</span>
-        ${realBadge}${pronBadge}
+        ${realCell2}
+        ${pronCell2}
         <span class="pts-val ${cls}">${m.pts}</span>
       </div>`;
     }).join('');
-    const colHeader = isGroup
-      ? `<div class="match-col-hdr"><span></span><span>real</span><span>pron</span><span>pts</span></div>`
-      : '';
+    const colHeader = `<div class="match-col-hdr"><span></span><span>real</span><span>pron</span><span>pts</span></div>`;
     return `<div class="phase-block">
       <div class="phase-title">${esc(phase)}</div>
       ${colHeader}
