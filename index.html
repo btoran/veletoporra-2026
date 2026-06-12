@@ -649,7 +649,7 @@ let sortKey = 'total';
 let sortAsc = false;
 let expanded = new Set();
 let RESULTS = {};
-let PREDS = {};        // PREDS[id][fase|partido] = string pronóstico
+let PREDS = {};        // PREDS[id] = array de preds en orden posicional
 
 // ─── INIT ────────────────────────────────────────────────────────────────────
 async function init() {
@@ -676,13 +676,8 @@ async function init() {
     const rp = await fetch('pronosticos.json?t=' + Date.now());
     if (rp.ok) {
       const pd = await rp.json();
-      const flatKeys = [];
-      (pd.structure || []).forEach(ph =>
-        (ph.matches || []).forEach(m => flatKeys.push(ph.phase + '|' + m))
-      );
       (pd.participants || []).forEach(p => {
-        PREDS[p.id] = {};
-        flatKeys.forEach((key, i) => { PREDS[p.id][key] = (p.preds[i] || '').trim(); });
+        PREDS[p.id] = (p.preds || []).map(v => (v || '').trim());
       });
     }
   } catch(_) {}
@@ -814,11 +809,12 @@ function detailHtml(p) {
   if (!p.matches || !p.matches.length)
     return `<p class="detail-empty">Desglose disponible cuando empiece el torneo.</p>`;
 
-  // Agrupar por fase
+  // Agrupar por fase, manteniendo índice posicional para lookup en PREDS
   const phases = {};
+  let _idx = 0;
   p.matches.forEach(m => {
     if (!phases[m.phase]) phases[m.phase] = [];
-    phases[m.phase].push(m);
+    phases[m.phase].push({...m, _idx: _idx++});
   });
 
   const blocks = Object.entries(phases).map(([phase, ms]) => {
@@ -828,17 +824,20 @@ function detailHtml(p) {
       const cls = m.pts > 0 ? 'pts-pos' : 'pts-zero';
       const key = phase + '|' + m.match;
       const res = RESULTS[key];
+      const predRaw = (PREDS[p.id] && PREDS[p.id][m._idx]) || '';
+      // Extraer la parte del marcador del pronóstico (formato "local|score|visitor" en elim)
+      const predScore = predRaw.includes('|') ? predRaw.split('|')[1] : predRaw;
+
       if (isGroup) {
         const realStr = res && res.r ? res.r : '';
-        const predStr = (PREDS[p.id] && PREDS[p.id][key]) || '';
         let pronCls = '';
-        if (predStr && realStr) {
+        if (predScore && realStr) {
           if (m.pts >= 3)      pronCls = 'res-exact';
           else if (m.pts >= 1) pronCls = 'res-sign';
           else                 pronCls = 'res-miss';
         }
         const realCell = realStr ? `<span class="real-result res-plain">${esc(realStr)}</span>` : `<span></span>`;
-        const pronCell = (predStr && realStr) ? `<span class="real-result ${pronCls}">${esc(predStr)}</span>` : `<span></span>`;
+        const pronCell = (predScore && realStr) ? `<span class="real-result ${pronCls}">${esc(predScore)}</span>` : `<span></span>`;
         return `<div class="match-line match-line-group">
           <span class="match-name">${esc(m.match)}</span>
           ${realCell}
@@ -846,14 +845,16 @@ function detailHtml(p) {
           <span class="pts-val ${cls}">${m.pts}</span>
         </div>`;
       }
-      let resultBadges = '';
-      if (res && res.r) {
-        const rcls = m.pts > 0 ? 'res-exact' : 'res-miss';
-        resultBadges = `<span class="real-result ${rcls}">${esc(res.r)}</span>`;
-      }
+      // Eliminatorias: resultado real + pronóstico del usuario
+      const hasReal = res && res.r;
+      const realBadge = hasReal
+        ? `<span class="real-result res-plain">${esc(res.r)}</span>` : '';
+      const pronCls = predScore ? (m.pts > 0 ? 'res-exact' : (hasReal ? 'res-miss' : '')) : '';
+      const pronBadge = predScore
+        ? `<span class="real-result ${pronCls}">${esc(predScore)}</span>` : '';
       return `<div class="match-line">
         <span class="match-name">${esc(m.match)}</span>
-        ${resultBadges}
+        ${realBadge}${pronBadge}
         <span class="pts-val ${cls}">${m.pts}</span>
       </div>`;
     }).join('');
