@@ -13,6 +13,7 @@
       nav_clasificacion: '📊 Clasificación',
       nav_pronosticos:   '🔮 Pronósticos',
       nav_premios:       '🏆 Premios',
+      nav_patrocinadores:'🤝 Patrocinadores',
       lang_switch_title: 'Switch to English',
       lang_switch_label: '🌐 EN',
       result_sg: 'resultado',
@@ -83,7 +84,15 @@
       prem_sec_posicion: 'Premios de posición — cortesía de patrocinadores',
       prem_sec_especiales: 'Premios especiales',
       prem_now: 'Ahora: ',
-      prem_org: 'De la organización'
+      prem_org: 'De la organización',
+
+      // patrocinadores.html
+      pat_doc_title: 'Patrocinadores — Veletoporra Mundial 2026',
+      pat_subtitle: 'Quienes hacen posible la porra',
+      pat_hero_title: 'Nuestros patrocinadores',
+      pat_hero_sub: 'Gracias a ellos hay premios para todos. Dale la vuelta a cada tarjeta para conocerlos y visita su web.',
+      pat_sec_label: 'Patrocinadores oficiales',
+      pat_empty: 'Patrocinadores disponibles muy pronto.'
     },
 
     en: {
@@ -91,6 +100,7 @@
       nav_clasificacion: '📊 Standings',
       nav_pronosticos:   '🔮 Predictions',
       nav_premios:       '🏆 Prizes',
+      nav_patrocinadores:'🤝 Sponsors',
       lang_switch_title: 'Cambiar a español',
       lang_switch_label: '🌐 ES',
       result_sg: 'result',
@@ -161,7 +171,15 @@
       prem_sec_posicion: 'Position prizes — courtesy of our sponsors',
       prem_sec_especiales: 'Special prizes',
       prem_now: 'Now: ',
-      prem_org: 'From the organisers'
+      prem_org: 'From the organisers',
+
+      // patrocinadores.html
+      pat_doc_title: 'Sponsors — Veletoporra World Cup 2026',
+      pat_subtitle: 'The people who make the porra possible',
+      pat_hero_title: 'Our sponsors',
+      pat_hero_sub: 'Thanks to them there are prizes for everyone. Flip each card to get to know them and visit their site.',
+      pat_sec_label: 'Official sponsors',
+      pat_empty: 'Sponsors coming very soon.'
     }
   };
 

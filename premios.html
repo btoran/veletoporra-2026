@@ -378,6 +378,7 @@ body{
       <a href="index.html"       class="nav-pill" data-i18n="nav_clasificacion">📊 Clasificación</a>
       <a href="pronosticos.html" class="nav-pill" data-i18n="nav_pronosticos">🔮 Pronósticos</a>
       <a href="premios.html"     class="nav-pill active" data-i18n="nav_premios">🏆 Premios</a>
+      <a href="patrocinadores.html" class="nav-pill" data-i18n="nav_patrocinadores">🤝 Patrocinadores</a>
     </nav>
   </div>
 </header>
@@ -655,10 +656,22 @@ function firstWoman() {
   return src[0]?.name || null;
 }
 
+/**
+ * Clasificación ordenada (mejor primero), igual que index.html.
+ * NO usamos el número `pos` crudo del Excel como etiqueta de puesto: ese campo
+ * arrastra un desplazamiento +1 (el líder sale como 2). Aquí ordenamos y la
+ * posición la da la propia secuencia, así que el premio Nº = el slot N de la fila.
+ */
+function rankedStandings() {
+  const base = STANDINGS.length ? STANDINGS : DEMO_STANDINGS;
+  return base
+    .filter(s => s.pos > 0 || s.total > 0)
+    .sort((a, b) => (a.pos - b.pos) || ((b.total || 0) - (a.total || 0)));
+}
+
 // Resuelve el ganador a partir de la `key` del premio (independiente del idioma).
 function winnerFor(key) {
   if (!key) return null;
-  const src = STANDINGS.length ? STANDINGS : DEMO_STANDINGS;
   switch (key.type) {
     case 'group':           return categoryWinner('grupos');
     // Desempate: pichichi1 (preferente) → pichichi2 (secundario) → ID
@@ -666,10 +679,22 @@ function winnerFor(key) {
     case 'pichichiEsp':     return categoryWinner('pichichi_esp');
     case 'woman':           return firstWoman();
     case 'last': {
-      const sorted = [...src].sort((a, b) => b.pos - a.pos);
-      return sorted[0]?.name || null;
+      // Último: dentro del grupo empatado al fondo, el primero de ese bloque.
+      const ranked = rankedStandings();
+      if (!ranked.length) return null;
+      const worst = ranked[ranked.length - 1].total || 0;
+      return ranked.find(s => (s.total || 0) === worst)?.name || null;
     }
-    case 'pos':             return src.find(s => s.pos === key.n)?.name || null;
+    case 'pos': {
+      // Premio Nº → ocupante del slot N. Si ese slot cae dentro de un bloque
+      // empatado (mismo total), mostramos el primero de ese bloque.
+      const ranked = rankedStandings();
+      const occ = ranked[key.n - 1];
+      if (!occ) return null;
+      let i = key.n - 1;
+      while (i > 0 && (ranked[i - 1].total || 0) === (occ.total || 0)) i--;
+      return ranked[i]?.name || null;
+    }
     default:                return null;
   }
 }
