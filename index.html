@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Veletoporra Mundial 2026 — Clasificación</title>
+<title data-i18n="idx_doc_title">Veletoporra Mundial 2026 — Clasificación</title>
+<script src="i18n.js"></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
@@ -103,6 +104,7 @@ body{
   border-color:var(--gold);
   color:#000;
 }
+.lang-pill{cursor:pointer;font-family:inherit;line-height:1.2}
 
 /* ── MAIN ────────────────────────────────────────────────── */
 .main{
@@ -559,13 +561,13 @@ tr.detail-row.open{display:table-row}
       </div>
     </div>
     <nav class="header-nav">
-      <a href="index.html"       class="nav-pill active">📊 Clasificación</a>
-      <a href="pronosticos.html" class="nav-pill">🔮 Pronósticos</a>
-      <a href="premios.html"     class="nav-pill">🏆 Premios</a>
+      <a href="index.html"       class="nav-pill active" data-i18n="nav_clasificacion">📊 Clasificación</a>
+      <a href="pronosticos.html" class="nav-pill" data-i18n="nav_pronosticos">🔮 Pronósticos</a>
+      <a href="premios.html"     class="nav-pill" data-i18n="nav_premios">🏆 Premios</a>
     </nav>
     <div class="header-update">
       <strong id="last-update">—</strong>
-      Última actualización
+      <span data-i18n="idx_last_update">Última actualización</span>
     </div>
   </div>
 </header>
@@ -576,20 +578,20 @@ tr.detail-row.open{display:table-row}
   <!-- STATS -->
   <div class="stats">
     <div class="stat">
-      <div class="stat-label">Participantes</div>
+      <div class="stat-label" data-i18n="idx_stat_participants">Participantes</div>
       <div class="stat-value" id="stat-n">—</div>
     </div>
     <div class="stat">
-      <div class="stat-label">Líder</div>
+      <div class="stat-label" data-i18n="idx_stat_leader">Líder</div>
       <div class="stat-value">🥇</div>
       <div class="stat-sub" id="stat-leader">—</div>
     </div>
     <div class="stat">
-      <div class="stat-label">Puntos líder</div>
+      <div class="stat-label" data-i18n="idx_stat_leader_pts">Puntos líder</div>
       <div class="stat-value" id="stat-pts">—</div>
     </div>
     <div class="stat" id="stat-you-wrap" style="display:none">
-      <div class="stat-label">Tu posición</div>
+      <div class="stat-label" data-i18n="idx_stat_you">Tu posición</div>
       <div class="stat-value" id="stat-you">—</div>
       <div class="stat-sub" id="stat-you-name">—</div>
     </div>
@@ -600,7 +602,7 @@ tr.detail-row.open{display:table-row}
     <div class="search-wrap">
       <span class="search-icon">🔍</span>
       <input type="text" class="search" id="search"
-             placeholder="Busca tu nombre o alias…"
+             placeholder="Busca tu nombre o alias…" data-i18n-ph="idx_search_ph"
              autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
     </div>
     <span class="search-hint" id="search-hint"></span>
@@ -612,19 +614,19 @@ tr.detail-row.open{display:table-row}
       <table>
         <thead>
           <tr>
-            <th class="col-pos" title="Posición">#</th>
-            <th class="col-mov" title="Movimiento respecto a ayer">Mov</th>
-            <th class="col-name" data-sort="name">Nombre</th>
-            <th class="col-pts sort-active" data-sort="total">Total</th>
-            <th class="col-sub hide-sm" data-sort="grupos">Grupos</th>
-            <th class="col-sub hide-sm" data-sort="eliminatorias">Elim.</th>
-            <th class="col-sub hide-sm" data-sort="pichichi_mundial" title="Pichichi Mundial">Pic.M</th>
-            <th class="col-sub hide-sm" data-sort="pichichi_esp" title="Pichichi Español">Pic.E</th>
+            <th class="col-pos" data-i18n-title="idx_th_pos_title" title="Posición">#</th>
+            <th class="col-mov" data-i18n="idx_th_mov" data-i18n-title="idx_th_mov_title" title="Movimiento respecto a ayer">Mov</th>
+            <th class="col-name" data-sort="name" data-i18n="idx_th_name">Nombre</th>
+            <th class="col-pts sort-active" data-sort="total" data-i18n="idx_th_total">Total</th>
+            <th class="col-sub hide-sm" data-sort="grupos" data-i18n="idx_th_groups">Grupos</th>
+            <th class="col-sub hide-sm" data-sort="eliminatorias" data-i18n="idx_th_elim">Elim.</th>
+            <th class="col-sub hide-sm" data-sort="pichichi_mundial" data-i18n="idx_th_picm" data-i18n-title="idx_th_picm_title" title="Pichichi Mundial">Pic.M</th>
+            <th class="col-sub hide-sm" data-sort="pichichi_esp" data-i18n="idx_th_pice" data-i18n-title="idx_th_pice_title" title="Pichichi Español">Pic.E</th>
             <th class="col-exp"></th>
           </tr>
         </thead>
         <tbody id="tbody">
-          <tr><td class="state-cell" colspan="9">Cargando clasificación…</td></tr>
+          <tr><td class="state-cell" colspan="9" data-i18n="idx_loading">Cargando clasificación…</td></tr>
         </tbody>
       </table>
     </div>
@@ -632,7 +634,7 @@ tr.detail-row.open{display:table-row}
 
   <!-- SPONSORS -->
   <section class="sponsors" id="sponsors" style="display:none">
-    <p class="sponsors-label">Patrocinadores</p>
+    <p class="sponsors-label" data-i18n="idx_sponsors_label">Patrocinadores</p>
     <div class="sponsors-grid" id="sponsors-grid"></div>
   </section>
 
@@ -643,6 +645,9 @@ tr.detail-row.open{display:table-row}
 </footer>
 
 <script>
+// ─── I18N ───────────────────────────────────────────────────────────────────
+const { t, phase, LANG } = window.I18N;
+
 // ─── STATE ──────────────────────────────────────────────────────────────────
 let ALL = [];          // todos los standings, ordenados
 let VIEW = [];         // vista actual (filtrada)
@@ -664,10 +669,10 @@ async function init() {
   const meta = data.meta || {};
 
   // Meta
-  el('fase-label').textContent = meta.fase || 'Clasificación General';
+  el('fase-label').textContent = meta.fase ? phase(meta.fase) : t('idx_fase_fallback');
   if (meta.lastUpdate) {
     const d = new Date(meta.lastUpdate);
-    el('last-update').textContent = d.toLocaleDateString('es-ES',
+    el('last-update').textContent = d.toLocaleDateString(LANG === 'es' ? 'es-ES' : 'en-GB',
       {day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});
   }
   el('stat-n').textContent = meta.totalParticipants ?? data.standings.length;
@@ -686,6 +691,10 @@ async function init() {
   // Sort initial
   RESULTS = data.results || {};
   ALL = [...data.standings].sort((a,b) => a.pos - b.pos || b.total - a.total);
+  // Asignar rankPos real (1-based, con empates compartiendo posición)
+  ALL.forEach((p, i) => {
+    p.rankPos = i === 0 ? 1 : (p.total === ALL[i-1].total ? ALL[i-1].rankPos : i + 1);
+  });
   if (ALL.length) {
     el('stat-leader').textContent = ALL[0].name;
     el('stat-pts').textContent    = ALL[0].total;
@@ -719,12 +728,12 @@ async function init() {
     } else {
       VIEW = ALL.filter(p => p.name.toLowerCase().includes(q));
       el('search-hint').textContent =
-        VIEW.length ? `${VIEW.length} resultado${VIEW.length !== 1 ? 's' : ''}` : 'Sin resultados';
+        VIEW.length ? `${VIEW.length} ${VIEW.length === 1 ? t('result_sg') : t('result_pl')}` : t('no_results');
 
       // "Tu posición" card si hay coincidencia exacta
       const exact = VIEW.find(p => p.name.toLowerCase() === q);
       if (exact) {
-        el('stat-you').textContent    = exact.pos;
+        el('stat-you').textContent    = exact.rankPos;
         el('stat-you-name').textContent = exact.name;
         el('stat-you-wrap').style.display = '';
       } else {
@@ -753,11 +762,11 @@ function sortAndRender() {
 function renderTable() {
   const tbody = el('tbody');
   if (!VIEW.length) {
-    tbody.innerHTML = '<tr><td class="state-cell" colspan="9">Sin participantes que coincidan.</td></tr>';
+    tbody.innerHTML = `<tr><td class="state-cell" colspan="9">${t('idx_no_match')}</td></tr>`;
     return;
   }
   const q = el('search').value.trim().toLowerCase();
-  tbody.innerHTML = VIEW.map((p, i) => rowHtml(p, i + 1, i === 0 ? null : VIEW[i-1].total - p.total, q)).join('');
+  tbody.innerHTML = VIEW.map((p, i) => rowHtml(p, p.rankPos, i === 0 ? null : VIEW[i-1].total - p.total, q)).join('');
 
   tbody.querySelectorAll('.xbtn').forEach(btn => {
     btn.addEventListener('click', () => toggleDetail(btn.dataset.id));
@@ -791,7 +800,7 @@ function rowHtml(p, displayPos, gap, q) {
   <td class="sub-cell hide-sm">${p.eliminatorias}</td>
   <td class="sub-cell hide-sm">${p.pichichi_mundial}</td>
   <td class="sub-cell hide-sm">${p.pichichi_esp}</td>
-  <td><button class="xbtn" data-id="${p.id}" title="Ver desglose por partido">▶</button></td>
+  <td><button class="xbtn" data-id="${p.id}" title="${t('idx_view_detail')}">▶</button></td>
 </tr>
 <tr class="detail-row" id="d-${p.id}">
   <td class="detail-cell" colspan="9">${detailHtml(p)}</td>
@@ -808,7 +817,7 @@ function movHtml(pos, prev) {
 
 function detailHtml(p) {
   if (!p.matches || !p.matches.length)
-    return `<p class="detail-empty">Desglose disponible cuando empiece el torneo.</p>`;
+    return `<p class="detail-empty">${t('idx_detail_empty')}</p>`;
 
   // Agrupar por fase, manteniendo índice posicional para lookup en PREDS
   const phases = {};
@@ -818,12 +827,12 @@ function detailHtml(p) {
     phases[m.phase].push({...m, _idx: _idx++});
   });
 
-  const blocks = Object.entries(phases).map(([phase, ms]) => {
+  const blocks = Object.entries(phases).map(([phaseName, ms]) => {
     const sub = ms.reduce((s,m) => s + (m.pts||0), 0);
-    const isGroup = phase.toLowerCase().includes('grupo');
+    const isGroup = phaseName.toLowerCase().includes('grupo');
     const lines = ms.map(m => {
       const cls = m.pts > 0 ? 'pts-pos' : 'pts-zero';
-      const key = phase + '|' + m.match;
+      const key = phaseName + '|' + m.match;
       const res = RESULTS[key];
       const predRaw = (PREDS[p.id] && PREDS[p.id][m._idx]) || '';
       // Extraer la parte del marcador del pronóstico (formato "local|score|visitor" en elim)
@@ -862,12 +871,12 @@ function detailHtml(p) {
         <span class="pts-val ${cls}">${m.pts}</span>
       </div>`;
     }).join('');
-    const colHeader = `<div class="match-col-hdr"><span></span><span>real</span><span>pron</span><span>pts</span></div>`;
+    const colHeader = `<div class="match-col-hdr"><span></span><span>${t('idx_col_real')}</span><span>${t('idx_col_pron')}</span><span>${t('idx_col_pts')}</span></div>`;
     return `<div class="phase-block">
-      <div class="phase-title">${esc(phase)}</div>
+      <div class="phase-title">${esc(phase(phaseName))}</div>
       ${colHeader}
       ${lines}
-      <div class="phase-footer"><span>Subtotal</span><span>${sub}</span></div>
+      <div class="phase-footer"><span>${t('idx_subtotal')}</span><span>${sub}</span></div>
     </div>`;
   }).join('');
 
@@ -880,20 +889,20 @@ function detailHtml(p) {
   const p2 = p.pichichi2 || 0;
   const pe = p.pichichi_esp || 0;
   const picBlock = `<div class="phase-block">
-    <div class="phase-title">Pichichi</div>
+    <div class="phase-title">${t('idx_pichichi')}</div>
     <div class="match-line">
-      <span class="match-name" title="Elección preferente — doble puntuación si acierta">🌍 Mundial 1ª: ${esc(n1)}</span>
+      <span class="match-name" title="${t('idx_pic_m1_title')}">${t('idx_pic_m1')}${esc(n1)}</span>
       <span class="pts-val ${p1>0?'pts-pos':'pts-zero'}">${p1}</span>
     </div>
     <div class="match-line">
-      <span class="match-name" title="Elección secundaria">🌍 Mundial 2ª: ${esc(n2)}</span>
+      <span class="match-name" title="${t('idx_pic_m2_title')}">${t('idx_pic_m2')}${esc(n2)}</span>
       <span class="pts-val ${p2>0?'pts-pos':'pts-zero'}">${p2}</span>
     </div>
     <div class="match-line">
-      <span class="match-name">🇪🇸 España: ${esc(ne)}</span>
+      <span class="match-name">${t('idx_pic_esp')}${esc(ne)}</span>
       <span class="pts-val ${pe>0?'pts-pos':'pts-zero'}">${pe}</span>
     </div>
-    <div class="phase-footer"><span>Subtotal</span><span>${picTotal}</span></div>
+    <div class="phase-footer"><span>${t('idx_subtotal')}</span><span>${picTotal}</span></div>
   </div>`;
 
   return `<div class="phase-grid">${blocks}${picBlock}</div>`;
@@ -922,7 +931,7 @@ function renderSponsors(list) {
       : `<span style="font-size:44px">${s.logo || '🏢'}</span>`;
     const color = esc(s.color || 'var(--gold)');
     const visitBtn = s.url && s.url !== '#'
-      ? `<a class="sp-visit-btn" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">Visitar →</a>`
+      ? `<a class="sp-visit-btn" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${t('visit')}</a>`
       : '';
     return `
     <div class="sp-flip" onclick="this.classList.toggle('flipped')">
@@ -931,7 +940,7 @@ function renderSponsors(list) {
           <div class="sp-flip-stripe" style="background:${color}"></div>
           <div class="sp-flip-logo-wrap ${logoWrapClass}">${logoInner}</div>
           <div class="sp-flip-name">${esc(s.name)}</div>
-          <div class="sp-flip-badge">Patrocinador</div>
+          <div class="sp-flip-badge">${t('idx_sponsor_badge')}</div>
         </div>
         <div class="sp-flip-back">
           <div class="sp-flip-stripe" style="background:${color}"></div>

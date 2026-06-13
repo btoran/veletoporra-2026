@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Veletoporra Mundial 2026 — Pronósticos</title>
+<title data-i18n="pron_doc_title">Veletoporra Mundial 2026 — Pronósticos</title>
+<script src="i18n.js"></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
@@ -71,6 +72,7 @@ body{
 }
 .nav-pill:hover{border-color:var(--gold);color:var(--gold)}
 .nav-pill.active{background:var(--gold);border-color:var(--gold);color:#000}
+.lang-pill{cursor:pointer;font-family:inherit;line-height:1.2}
 
 /* ── MAIN ────────────────────────────────────────────────── */
 .main{max-width:1100px;margin:0 auto;padding:20px 16px 40px}
@@ -297,13 +299,13 @@ body{
       <span class="header-ball">⚽</span>
       <div class="header-text">
         <h1>Veletoporra Mundial 2026</h1>
-        <p class="subtitle">Pronósticos</p>
+        <p class="subtitle" data-i18n="pron_subtitle">Pronósticos</p>
       </div>
     </div>
     <nav class="header-nav">
-      <a href="index.html"      class="nav-pill">📊 Clasificación</a>
-      <a href="pronosticos.html" class="nav-pill active">🔮 Pronósticos</a>
-      <a href="premios.html"    class="nav-pill">🏆 Premios</a>
+      <a href="index.html"      class="nav-pill" data-i18n="nav_clasificacion">📊 Clasificación</a>
+      <a href="pronosticos.html" class="nav-pill active" data-i18n="nav_pronosticos">🔮 Pronósticos</a>
+      <a href="premios.html"    class="nav-pill" data-i18n="nav_premios">🏆 Premios</a>
     </nav>
   </div>
 </header>
@@ -316,7 +318,7 @@ body{
     <div class="search-wrap">
       <span class="search-icon">🔍</span>
       <input type="text" class="search" id="pron-search"
-             placeholder="Busca tu nombre o el de otro participante…"
+             placeholder="Busca tu nombre o el de otro participante…" data-i18n-ph="pron_search_ph"
              autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
     </div>
     <span class="search-hint" id="search-hint"></span>
@@ -332,7 +334,7 @@ body{
     <div class="pron-card-header">
       <span class="pron-card-name" id="pron-card-name"></span>
       <span class="pron-card-meta" id="pron-card-meta"></span>
-      <button class="pron-card-close" onclick="clearSelection()" title="Cerrar">✕</button>
+      <button class="pron-card-close" onclick="clearSelection()" data-i18n-title="pron_close" title="Cerrar">✕</button>
     </div>
     <div class="pron-grid-wrap">
       <div class="phase-grid" id="pron-phase-grid"></div>
@@ -342,8 +344,8 @@ body{
   <!-- EMPTY STATE -->
   <div id="pron-empty" class="pron-empty">
     <div class="pron-empty-icon">🔮</div>
-    <div class="pron-empty-title">Consulta los pronósticos</div>
-    <p class="pron-empty-sub">
+    <div class="pron-empty-title" data-i18n="pron_empty_title">Consulta los pronósticos</div>
+    <p class="pron-empty-sub" data-i18n-html="pron_empty_sub">
       Escribe tu nombre en el buscador para ver todos tus pronósticos.<br>
       También puedes buscar a cualquier otro participante.
     </p>
@@ -356,6 +358,9 @@ body{
 </footer>
 
 <script>
+// ─── I18N ───────────────────────────────────────────────────────────────────
+const { t, phase, team, teams, matchLabel } = window.I18N;
+
 // ─── STATE ──────────────────────────────────────────────────────────────────
 let DATA       = null;   // pronosticos.json completo
 let selectedId = null;
@@ -370,8 +375,8 @@ async function init() {
   if (!DATA) {
     el('pron-empty').innerHTML =
       '<div class="pron-empty-icon">⚠️</div>' +
-      '<div class="pron-empty-title">No se pudo cargar el archivo de pronósticos</div>' +
-      '<p class="pron-empty-sub">Asegúrate de abrir esta página desde el servidor local (./preview.sh) y de haber ejecutado export_json.py.</p>';
+      '<div class="pron-empty-title">' + t('pron_err_title') + '</div>' +
+      '<p class="pron-empty-sub">' + t('pron_err_sub') + '</p>';
     return;
   }
 
@@ -403,12 +408,12 @@ function onSearch(e) {
   );
 
   hint.textContent = matches.length
-    ? `${matches.length} resultado${matches.length !== 1 ? 's' : ''}`
-    : 'Sin resultados';
+    ? `${matches.length} ${matches.length === 1 ? t('result_sg') : t('result_pl')}`
+    : t('no_results');
 
   const listEl = el('pron-list');
   if (!matches.length) {
-    listEl.innerHTML = '<div class="pron-no-results">Sin resultados para "' + esc(e.target.value.trim()) + '"</div>';
+    listEl.innerHTML = '<div class="pron-no-results">' + t('pron_no_results_for') + ' "' + esc(e.target.value.trim()) + '"</div>';
   } else {
     listEl.innerHTML = matches.map(p =>
       `<div class="pron-item${p.id === selectedId ? ' selected' : ''}"
@@ -442,7 +447,7 @@ function selectParticipant(id) {
   el('search-hint').textContent      = '';
 
   el('pron-card-name').textContent = p.name;
-  el('pron-card-meta').textContent = `Participante #${p.id}`;
+  el('pron-card-meta').textContent = `${t('pron_participant')} #${p.id}`;
   el('pron-phase-grid').innerHTML  = renderPredictions(p);
   el('pron-card').style.display    = '';
 
@@ -479,9 +484,10 @@ function renderPredictions(p) {
 
       if (isPichichi) {
         const [picName, picGoals] = raw.includes('|') ? raw.split('|') : [raw, ''];
-        const goalsLabel = picGoals ? `${picGoals} gol${picGoals === '1' ? '' : 'es'}` : '';
+        const goalsLabel = picGoals ? `${picGoals} ${picGoals === '1' ? t('pron_goal_sg') : t('pron_goal_pl')}` : '';
+        const label = matchLabel(match);
         return `<div class="match-line">
-          <span class="match-name" title="${esc(match)}">${esc(match)}</span>
+          <span class="match-name" title="${esc(label)}">${esc(label)}</span>
           <span class="pred-name${!picName ? ' pred-empty' : ''}">${esc(picName || '—')}</span>
           <span class="pred-val${!picGoals ? ' pred-empty' : ''}">${esc(goalsLabel || '—')}</span>
         </div>`;
@@ -489,7 +495,7 @@ function renderPredictions(p) {
 
       if (isGroup) {
         return `<div class="match-line">
-          <span class="match-name">${esc(match)}</span>
+          <span class="match-name">${esc(teams(match))}</span>
           <span class="pred-val${empty ? ' pred-empty' : ''}">${esc(pred)}</span>
         </div>`;
       }
@@ -497,22 +503,22 @@ function renderPredictions(p) {
       // Eliminatorias: formato "local|score|visitor" → equipos a la izq, marcador a la der
       if (raw.includes('|')) {
         const [local, score, visitor] = raw.split('|');
-        const teams = (local && visitor) ? `${local} - ${visitor}` : match;
+        const teamsStr = (local && visitor) ? `${team(local)} - ${team(visitor)}` : matchLabel(match);
         return `<div class="match-line">
-          <span class="match-name">${esc(teams)}</span>
+          <span class="match-name">${esc(teamsStr)}</span>
           <span class="pred-val${!score ? ' pred-empty' : ''}">${esc(score || '—')}</span>
         </div>`;
       }
 
       // Winner slots (Tercer Clasificado, Campeón): solo nombre equipo
       return `<div class="match-line">
-        <span class="match-name">${esc(match)}</span>
-        <span class="pred-name${empty ? ' pred-empty' : ''}">${esc(raw || '—')}</span>
+        <span class="match-name">${esc(matchLabel(match))}</span>
+        <span class="pred-name${empty ? ' pred-empty' : ''}">${esc(raw ? team(raw) : '—')}</span>
       </div>`;
     }).join('');
 
     return `<div class="phase-block${isPichichi ? ' phase-block-wide' : ''}">
-      <div class="phase-title">${esc(block.phase)}</div>
+      <div class="phase-title">${esc(phase(block.phase))}</div>
       ${lines}
     </div>`;
   }).join('');

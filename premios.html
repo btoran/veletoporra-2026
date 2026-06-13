@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Premios — Veletoporra Mundial 2026</title>
+<title data-i18n="prem_doc_title">Premios — Veletoporra Mundial 2026</title>
+<script src="i18n.js"></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
@@ -86,6 +87,7 @@ body{
   border-color:var(--gold);
   color:#000;
 }
+.lang-pill{cursor:pointer;font-family:inherit;line-height:1.2}
 
 /* ── MAIN ────────────────────────────────────────────────── */
 .main{
@@ -369,46 +371,46 @@ body{
       <span class="header-ball">⚽</span>
       <div class="header-text">
         <h1>Veletoporra Mundial 2026</h1>
-        <p class="subtitle">¿Qué hay en juego?</p>
+        <p class="subtitle" data-i18n="prem_subtitle">¿Qué hay en juego?</p>
       </div>
     </div>
     <nav class="header-nav">
-      <a href="index.html"       class="nav-pill">📊 Clasificación</a>
-      <a href="pronosticos.html" class="nav-pill">🔮 Pronósticos</a>
-      <a href="premios.html"     class="nav-pill active">🏆 Premios</a>
+      <a href="index.html"       class="nav-pill" data-i18n="nav_clasificacion">📊 Clasificación</a>
+      <a href="pronosticos.html" class="nav-pill" data-i18n="nav_pronosticos">🔮 Pronósticos</a>
+      <a href="premios.html"     class="nav-pill active" data-i18n="nav_premios">🏆 Premios</a>
     </nav>
   </div>
 </header>
 
 <main class="main">
 
-  <div class="edition-note">
+  <div class="edition-note" data-i18n-html="prem_edition_note">
     <strong>Premios Mundial 2026 confirmados.</strong> Patrocinadores y premios reales para esta edición.
   </div>
 
   <div class="hero">
     <div class="hero-icon">🏆</div>
-    <h2>Premios Veletoporra</h2>
-    <p>Metálico, experiencias y regalos de nuestros patrocinadores. Aquí todo el mundo tiene opciones.</p>
+    <h2 data-i18n="prem_hero_title">Premios Veletoporra</h2>
+    <p data-i18n="prem_hero_sub">Metálico, experiencias y regalos de nuestros patrocinadores. Aquí todo el mundo tiene opciones.</p>
   </div>
 
   <div class="section">
-    <p class="section-label">El bote — premios en metálico</p>
+    <p class="section-label" data-i18n="prem_sec_bote">El bote — premios en metálico</p>
     <div class="podio" id="podio"></div>
   </div>
 
   <div class="section">
-    <p class="section-label">Premios de categoría</p>
+    <p class="section-label" data-i18n="prem_sec_categoria">Premios de categoría</p>
     <div class="prizes-grid" id="especiales"></div>
   </div>
 
   <div class="section">
-    <p class="section-label">Premios de posición — cortesía de patrocinadores</p>
+    <p class="section-label" data-i18n="prem_sec_posicion">Premios de posición — cortesía de patrocinadores</p>
     <div class="prizes-grid" id="posicion"></div>
   </div>
 
   <div class="section">
-    <p class="section-label">Premios especiales</p>
+    <p class="section-label" data-i18n="prem_sec_especiales">Premios especiales</p>
     <div class="prizes-grid" id="simbolicos"></div>
   </div>
 
@@ -420,61 +422,84 @@ body{
 </footer>
 
 <script>
+// ─── I18N ─────────────────────────────────────────────────────────────────────
+const { t, LANG } = window.I18N;
+// Resuelve un campo bilingüe {es,en} al idioma activo; deja pasar strings sueltos.
+const L = v => (v && typeof v === 'object' && ('es' in v)) ? (v[LANG] != null ? v[LANG] : v.es) : v;
+
 // ─── DATOS Mundial 2026 ───────────────────────────────────────────────────────
+
+// Cada premio lleva una `key` que describe a quién corresponde (independiente
+// del texto mostrado), y los campos de texto son bilingües {es, en}.
+const VINO_DESC = {
+  es: "Vinos versátiles que le den sabor y color a todos esos pequeños, grandes momentos de la vida. Aquí y ahora, disfruta del mundial y de la vida con uno de nuestros vinos.",
+  en: "Versatile wines to add flavour and colour to all those small, great moments in life. Here and now, enjoy the World Cup and life with one of our wines."
+};
+const AGORA_DESC = {
+  es: "Si buscas tu mejor aliado para proyectos de nueva construcción, reforma o rehabilitación, Ágora Arquitectura es el indicado. Con más de 30 años de experiencia, tus proyectos están en las mejores manos.",
+  en: "If you're looking for the best partner for new builds, renovations or refurbishments, Ágora Arquitectura is the one. With over 30 years of experience, your projects are in the best hands."
+};
 
 const PODIO = [
   {
-    pos: "Campeón",
+    key: { type: "pos", n: 1 },
+    pos:   { es: "Campeón", en: "Champion" },
     medal: "🥇",
     amount: "1.400 €",
-    unit: "en metálico",
-    extra: "🍺 Caja de cerveza Mahou 5 Estrellas",
+    unit:  { es: "en metálico", en: "in cash" },
+    extra: { es: "🍺 Caja de cerveza Mahou 5 Estrellas", en: "🍺 Case of Mahou 5 Estrellas beer" },
     color: "#c9a227"
   },
   {
-    pos: "2º clasificado",
+    key: { type: "pos", n: 2 },
+    pos:   { es: "2º clasificado", en: "2nd place" },
     medal: "🥈",
     amount: "600 €",
-    unit: "en metálico",
-    extra: "🍺 Caja de cerveza Mahou 5 Estrellas",
+    unit:  { es: "en metálico", en: "in cash" },
+    extra: { es: "🍺 Caja de cerveza Mahou 5 Estrellas", en: "🍺 Case of Mahou 5 Estrellas beer" },
     color: "#a8a8a8"
   },
   {
-    pos: "3er clasificado",
+    key: { type: "pos", n: 3 },
+    pos:   { es: "3er clasificado", en: "3rd place" },
     medal: "🥉",
     amount: "300 €",
-    unit: "en metálico",
-    extra: "🍺 Caja de cerveza Mahou 5 Estrellas",
+    unit:  { es: "en metálico", en: "in cash" },
+    extra: { es: "🍺 Caja de cerveza Mahou 5 Estrellas", en: "🍺 Case of Mahou 5 Estrellas beer" },
     color: "#b87333"
   }
 ];
 
 const ESPECIALES = [
   {
-    cat: "Ganador de grupos", icon: "🦷",
-    title: "Blanqueamiento completo, sesiones luz LED y férulas personalizadas",
-    desc: "Para lucir una sonrisa perfecta cuando nuestra selección levante el mundial, el mejor sitio al que acudir es Clínica Santamaría.",
+    key: { type: "group" }, icon: "🦷",
+    cat:   { es: "Ganador de grupos", en: "Group stage winner" },
+    title: { es: "Blanqueamiento completo, sesiones luz LED y férulas personalizadas", en: "Full teeth whitening, LED light sessions and custom trays" },
+    desc:  { es: "Para lucir una sonrisa perfecta cuando nuestra selección levante el mundial, el mejor sitio al que acudir es Clínica Santamaría.", en: "To show off a perfect smile when Spain lifts the World Cup, Clínica Santamaría is the place to go." },
     sponsor: { name: "Clínica Santamaría", logo: "logos/clinica_santamaria.png", url: "https://www.clinica-santamaria.com/" },
     color: "#3a7fc0"
   },
   {
-    cat: "Primera mujer clasificada", icon: "✨",
-    title: "Tarjeta regalo para crear tu perfume único personalizado con IA",
-    desc: "Recuerdos, momentos y emociones se transforman en el alma de tu perfume. Una experiencia única en el mundo, que da comienzo a una nueva era en la perfumería.",
+    key: { type: "woman" }, icon: "✨",
+    cat:   { es: "Primera mujer clasificada", en: "Top-ranked woman" },
+    title: { es: "Tarjeta regalo para crear tu perfume único personalizado con IA", en: "Gift card to create your own AI-personalised signature perfume" },
+    desc:  { es: "Recuerdos, momentos y emociones se transforman en el alma de tu perfume. Una experiencia única en el mundo, que da comienzo a una nueva era en la perfumería.", en: "Memories, moments and emotions become the soul of your perfume. A one-of-a-kind experience that opens a new era in perfumery." },
     sponsor: { name: "XIA Perfumes", logo: "logos/xia.jpeg", url: "https://www.xiaperfumes.es/", photo: true },
     color: "#9060c0"
   },
   {
-    cat: "Goleador España", icon: "👕",
-    title: "Camiseta oficial de la selección de España",
-    desc: "Si buscas tu mejor aliado para proyectos de nueva construcción, reforma o rehabilitación, Ágora Arquitectura es el indicado. Con más de 30 años de experiencia, tus proyectos están en las mejores manos.",
+    key: { type: "pichichiEsp" }, icon: "👕",
+    cat:   { es: "Goleador España", en: "Spain top scorer" },
+    title: { es: "Camiseta oficial de la selección de España", en: "Official Spain national team jersey" },
+    desc:  AGORA_DESC,
     sponsor: { name: "Ágora Arquitectura", logo: "logos/agora.png", url: "https://agora-arquitectura.com/" },
     color: "#e05050"
   },
   {
-    cat: "Goleador mundial · Pichichi", icon: "🏠",
-    title: "Tarjeta regalo MediaMarkt por valor de 200 €",
-    desc: "Porque cada hogar tiene una historia, te ayudamos a encontrar la tuya. Convertimos la búsqueda de tu hogar en una experiencia cercana y personal.",
+    key: { type: "pichichiMundial" }, icon: "🏠",
+    cat:   { es: "Goleador mundial · Pichichi", en: "World top scorer · Pichichi" },
+    title: { es: "Tarjeta regalo MediaMarkt por valor de 200 €", en: "MediaMarkt gift card worth €200" },
+    desc:  { es: "Porque cada hogar tiene una historia, te ayudamos a encontrar la tuya. Convertimos la búsqueda de tu hogar en una experiencia cercana y personal.", en: "Because every home has a story, we help you find yours. We turn the search for your home into a close, personal experience." },
     sponsor: { name: "Volga Real Estate", logo: "logos/volga.png", url: "https://www.idealista.com/pro/volga-real-estate/", logoLarge: true },
     color: "#4a7fb5"
   }
@@ -482,72 +507,82 @@ const ESPECIALES = [
 
 const POSICION = [
   {
-    cat: "4º clasificado", icon: "🍷",
-    title: "6 botellas de vino",
-    desc: "Vinos versátiles que le den sabor y color a todos esos pequeños, grandes momentos de la vida. Aquí y ahora, disfruta del mundial y de la vida con uno de nuestros vinos.",
+    key: { type: "pos", n: 4 }, icon: "🍷",
+    cat:   { es: "4º clasificado", en: "4th place" },
+    title: { es: "6 botellas de vino", en: "6 bottles of wine" },
+    desc:  VINO_DESC,
     sponsor: { name: "Cría Cuervos", logo: "logos/criacuervos_3.png", url: "https://vinoscriacuervos.com" },
     color: "#7a2a4a"
   },
   {
-    cat: "5º clasificado", icon: "🍷",
-    title: "4 botellas de vino",
-    desc: "Vinos versátiles que le den sabor y color a todos esos pequeños, grandes momentos de la vida. Aquí y ahora, disfruta del mundial y de la vida con uno de nuestros vinos.",
+    key: { type: "pos", n: 5 }, icon: "🍷",
+    cat:   { es: "5º clasificado", en: "5th place" },
+    title: { es: "4 botellas de vino", en: "4 bottles of wine" },
+    desc:  VINO_DESC,
     sponsor: { name: "Cría Cuervos", logo: "logos/criacuervos_3.png", url: "https://vinoscriacuervos.com" },
     color: "#7a2a4a"
   },
   {
-    cat: "6º clasificado", icon: "🍷",
-    title: "2 botellas de vino",
-    desc: "Vinos versátiles que le den sabor y color a todos esos pequeños, grandes momentos de la vida. Aquí y ahora, disfruta del mundial y de la vida con uno de nuestros vinos.",
+    key: { type: "pos", n: 6 }, icon: "🍷",
+    cat:   { es: "6º clasificado", en: "6th place" },
+    title: { es: "2 botellas de vino", en: "2 bottles of wine" },
+    desc:  VINO_DESC,
     sponsor: { name: "Cría Cuervos", logo: "logos/criacuervos_3.png", url: "https://vinoscriacuervos.com" },
     color: "#7a2a4a"
   },
   {
-    cat: "7º clasificado", icon: "🎁",
-    title: "Caja Wonderbox Escapada con Encanto",
-    desc: "En Acrisure combinamos la atención cercana de un equipo local con la capacidad operativa de una red global. Cualquier seguro que necesitéis, nuestro amigo Daniel San José seguro que es capaz de mejorarlo.",
+    key: { type: "pos", n: 7 }, icon: "🎁",
+    cat:   { es: "7º clasificado", en: "7th place" },
+    title: { es: "Caja Wonderbox Escapada con Encanto", en: "Wonderbox 'Charming Getaway' box" },
+    desc:  { es: "En Acrisure combinamos la atención cercana de un equipo local con la capacidad operativa de una red global. Cualquier seguro que necesitéis, nuestro amigo Daniel San José seguro que es capaz de mejorarlo.", en: "At Acrisure we combine the close attention of a local team with the operating power of a global network. Whatever insurance you need, our friend Daniel San José can surely improve on it." },
     sponsor: { name: "Acrisure", logo: "logos/acrisure.jpeg", url: "https://acrisure.es/acrisure/", logoLarge: true },
     color: "#1a7a5a"
   },
   {
-    cat: "8º clasificado", icon: "⚽",
-    title: "2 entradas para un partido de liga del Real Madrid",
-    desc: "Si necesitas entradas para cualquier evento a nivel mundial y una gestión personalizada, 22EVNTS es tu empresa. ¡Quien sabe si tendrá que gestionarnos entradas para la final del mundial!",
+    key: { type: "pos", n: 8 }, icon: "⚽",
+    cat:   { es: "8º clasificado", en: "8th place" },
+    title: { es: "2 entradas para un partido de liga del Real Madrid", en: "2 tickets to a Real Madrid league match" },
+    desc:  { es: "Si necesitas entradas para cualquier evento a nivel mundial y una gestión personalizada, 22EVNTS es tu empresa. ¡Quien sabe si tendrá que gestionarnos entradas para la final del mundial!", en: "If you need tickets to any event worldwide with personalised service, 22EVNTS is your company. Who knows, they might even sort us tickets for the World Cup final!" },
     sponsor: { name: "22EVNTS", logo: "logos/22evnts.jpeg", url: "https://www.instagram.com/22evnts/" },
     color: "#c0c020"
   },
   {
-    cat: "9º clasificado", icon: "👟",
-    title: "Estudio de la pisada gratuito + 20% dto. en plantillas",
-    desc: "En clínica Baena Martín, centro de podología, medicina estética y fisioterapia, se especializan en cuidados para todas las edades. Sus profesionales están esperando para cubrir vuestras necesidades. ¡No dudéis en visitarles, saldréis encantados!",
+    key: { type: "pos", n: 9 }, icon: "👟",
+    cat:   { es: "9º clasificado", en: "9th place" },
+    title: { es: "Estudio de la pisada gratuito + 20% dto. en plantillas", en: "Free gait analysis + 20% off insoles" },
+    desc:  { es: "En clínica Baena Martín, centro de podología, medicina estética y fisioterapia, se especializan en cuidados para todas las edades. Sus profesionales están esperando para cubrir vuestras necesidades. ¡No dudéis en visitarles, saldréis encantados!", en: "At Baena Martín clinic — podiatry, aesthetic medicine and physiotherapy — they specialise in care for all ages. Their team is ready to meet your needs. Don't hesitate to visit, you'll leave delighted!" },
     sponsor: { name: "Clínica Baena Martín", logo: "logos/baena_martin.jpg", url: "https://www.clinicabaenamartin.com/" },
     color: "#2a8fc8"
   },
   {
-    cat: "10º clasificado", icon: "🦴",
-    title: "Sesión de osteopatía personalizada en clínica de Algete",
-    desc: "Recupera tu bienestar, mejora tu movilidad y vuelve a sentirte bien con una atención osteopática personalizada en tu clínica en Algete.",
+    key: { type: "pos", n: 10 }, icon: "🦴",
+    cat:   { es: "10º clasificado", en: "10th place" },
+    title: { es: "Sesión de osteopatía personalizada en clínica de Algete", en: "Personalised osteopathy session at the Algete clinic" },
+    desc:  { es: "Recupera tu bienestar, mejora tu movilidad y vuelve a sentirte bien con una atención osteopática personalizada en tu clínica en Algete.", en: "Recover your wellbeing, improve your mobility and feel good again with personalised osteopathic care at your clinic in Algete." },
     sponsor: { name: "SOMA Osteopatía", logo: "logos/soma.png", url: "https://www.instagram.com/fabioguerra_15/" },
     color: "#20a0a0"
   },
   {
-    cat: "26º clasificado", icon: "🚗",
-    title: "Revisión técnica de coche en servicio post-venta",
-    desc: "Yo compro mi coche en Flexicar. Si lo prefieres, también gestionamos la venta de tu vehículo.",
+    key: { type: "pos", n: 26 }, icon: "🚗",
+    cat:   { es: "26º clasificado", en: "26th place" },
+    title: { es: "Revisión técnica de coche en servicio post-venta", en: "Car technical check at the after-sales service" },
+    desc:  { es: "Yo compro mi coche en Flexicar. Si lo prefieres, también gestionamos la venta de tu vehículo.", en: "I buy my car at Flexicar. If you prefer, we also handle the sale of your vehicle." },
     sponsor: { name: "Flexicar", logo: "logos/flexicar.png", url: "https://www.flexicar.es/" },
     color: "#e07020"
   },
   {
-    cat: "55º clasificado", icon: "🥂",
-    title: "15 entradas gratis + 2 botellas de vino en la terraza",
-    desc: "Porque los premios se disfrutan mejor compartiéndolos. Si tú eres mi PORRA, yo soy tu VUELTA. A veces el mejor premio está a la vuelta de la esquina.",
+    key: { type: "pos", n: 55 }, icon: "🥂",
+    cat:   { es: "55º clasificado", en: "55th place" },
+    title: { es: "15 entradas gratis + 2 botellas de vino en la terraza", en: "15 free passes + 2 bottles of wine on the terrace" },
+    desc:  { es: "Porque los premios se disfrutan mejor compartiéndolos. Si tú eres mi PORRA, yo soy tu VUELTA. A veces el mejor premio está a la vuelta de la esquina.", en: "Because prizes are best enjoyed shared. If you're my PORRA, I'm your VUELTA. Sometimes the best prize is just around the corner." },
     sponsor: { name: "La Vuelta", logo: "logos/la_vuelta.png", url: "https://www.instagram.com/lavuelta_madrid/" },
     color: "#c9a227"
   },
   {
-    cat: "Último clasificado", icon: "🪣",
-    title: "Certificado energético",
-    desc: "Si buscas tu mejor aliado para proyectos de nueva construcción, reforma o rehabilitación, Ágora Arquitectura es el indicado. Con más de 30 años de experiencia, tus proyectos están en las mejores manos.",
+    key: { type: "last" }, icon: "🪣",
+    cat:   { es: "Último clasificado", en: "Last place" },
+    title: { es: "Certificado energético", en: "Energy performance certificate" },
+    desc:  AGORA_DESC,
     sponsor: { name: "Ágora Arquitectura", logo: "logos/agora.png", url: "https://agora-arquitectura.com/" },
     color: "#e05050"
   }
@@ -555,9 +590,10 @@ const POSICION = [
 
 const SIMBOLICOS = [
   {
-    cat: "De la organización",
+    key: null,
     icon: "🏎️",
-    title: "Conjunto de merchandising Oracle Red Bull Racing F1",
+    cat:   { es: "De la organización", en: "From the organisers" },
+    title: { es: "Conjunto de merchandising Oracle Red Bull Racing F1", en: "Oracle Red Bull Racing F1 merchandise set" },
     desc: null,
     sponsor: null,
     color: "#cc2200"
@@ -619,39 +655,23 @@ function firstWoman() {
   return src[0]?.name || null;
 }
 
-function personAtPos(catText) {
+// Resuelve el ganador a partir de la `key` del premio (independiente del idioma).
+function winnerFor(key) {
+  if (!key) return null;
   const src = STANDINGS.length ? STANDINGS : DEMO_STANDINGS;
-  const lower = catText.toLowerCase();
-
-  // Categorías especiales
-  if (lower.includes('ganador de grupos')) {
-    return categoryWinner('grupos');
-  }
-  if (lower.includes('pichichi') && (lower.includes('mundial') || lower.includes('goleador mundial'))) {
+  switch (key.type) {
+    case 'group':           return categoryWinner('grupos');
     // Desempate: pichichi1 (preferente) → pichichi2 (secundario) → ID
-    return categoryWinner('pichichi_mundial', ['pichichi1', 'pichichi2']);
+    case 'pichichiMundial': return categoryWinner('pichichi_mundial', ['pichichi1', 'pichichi2']);
+    case 'pichichiEsp':     return categoryWinner('pichichi_esp');
+    case 'woman':           return firstWoman();
+    case 'last': {
+      const sorted = [...src].sort((a, b) => b.pos - a.pos);
+      return sorted[0]?.name || null;
+    }
+    case 'pos':             return src.find(s => s.pos === key.n)?.name || null;
+    default:                return null;
   }
-  if (lower.includes('goleador españa') || lower.includes('goleador espana')) {
-    return categoryWinner('pichichi_esp');
-  }
-  if (lower.includes('mujer')) {
-    return firstWoman();
-  }
-
-  // Posición numérica
-  if (/último/i.test(lower)) {
-    const sorted = [...src].sort((a,b) => b.pos - a.pos);
-    return sorted[0]?.name || null;
-  }
-  const m = catText.match(/^(\d+)/);
-  if (m) {
-    const pos = parseInt(m[1]);
-    return src.find(s => s.pos === pos)?.name || null;
-  }
-  if (lower.includes('campeón') || lower.includes('campeon')) {
-    return src.find(s => s.pos === 1)?.name || null;
-  }
-  return null;
 }
 
 // ─── RENDER ──────────────────────────────────────────────────────────────────
@@ -661,7 +681,8 @@ const DARK_LOGOS = new Set(['logos/agora.png','logos/22evnts.jpeg','logos/criacu
 function flipCardHtml(p) {
   const s = p.sponsor;
   const color = p.color || 'var(--gold)';
-  const person = personAtPos(p.cat);
+  const person = winnerFor(p.key);
+  const cat = L(p.cat);
 
   let frontLogo;
   if (s && s.logo) {
@@ -676,16 +697,16 @@ function flipCardHtml(p) {
   } else {
     frontLogo = `
       <div class="flip-logo-wrap no-logo">${p.icon}</div>
-      <div class="flip-sponsor-name" style="color:var(--muted);font-size:11px;font-weight:600">De la organización</div>`;
+      <div class="flip-sponsor-name" style="color:var(--muted);font-size:11px;font-weight:600">${t('prem_org')}</div>`;
   }
 
   const personBadge = person
-    ? `<div class="flip-current-person">Ahora: ${person}</div>`
+    ? `<div class="flip-current-person">${t('prem_now')}${person}</div>`
     : '';
 
   const visitBtn = s && s.url && s.url !== '#'
     ? `<div class="flip-back-footer">
-         <a class="flip-visit-btn" href="${s.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">Visitar →</a>
+         <a class="flip-visit-btn" href="${s.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${t('visit')}</a>
        </div>`
     : '';
 
@@ -695,18 +716,18 @@ function flipCardHtml(p) {
         <div class="flip-front">
           <div class="flip-prize-stripe" style="background:${color}"></div>
           ${frontLogo}
-          <div class="flip-pos-badge">${p.cat}</div>
+          <div class="flip-pos-badge">${cat}</div>
           ${personBadge}
         </div>
         <div class="flip-back">
           <div class="flip-prize-stripe" style="background:${color}"></div>
           <div class="flip-back-header">
-            <div class="flip-pos-badge" style="margin-top:0">${p.cat}${person ? ' · ' + person : ''}</div>
+            <div class="flip-pos-badge" style="margin-top:0">${cat}${person ? ' · ' + person : ''}</div>
           </div>
           <div class="flip-back-body">
             <span class="flip-prize-icon">${p.icon}</span>
-            <div class="flip-prize-title">${p.title}</div>
-            ${p.desc ? `<div class="flip-prize-desc">${p.desc}</div>` : ''}
+            <div class="flip-prize-title">${L(p.title)}</div>
+            ${p.desc ? `<div class="flip-prize-desc">${L(p.desc)}</div>` : ''}
           </div>
           ${visitBtn}
         </div>
@@ -716,17 +737,17 @@ function flipCardHtml(p) {
 
 function renderPodio() {
   document.getElementById('podio').innerHTML = PODIO.map(p => {
-    const person = personAtPos(p.pos);
-    const personBadge = person ? `<div class="flip-current-person" style="margin-top:8px">Ahora: ${person}</div>` : '';
+    const person = winnerFor(p.key);
+    const personBadge = person ? `<div class="flip-current-person" style="margin-top:8px">${t('prem_now')}${person}</div>` : '';
     return `
     <div class="podio-card">
       <div class="podio-stripe" style="background:${p.color}"></div>
       <div class="podio-body">
         <div class="podio-medal">${p.medal}</div>
-        <div class="podio-pos">${p.pos}</div>
+        <div class="podio-pos">${L(p.pos)}</div>
         <div class="podio-amount" style="color:${p.color}">${p.amount}</div>
-        <div class="podio-unit">${p.unit}</div>
-        <span class="podio-extra">${p.extra}</span>
+        <div class="podio-unit">${L(p.unit)}</div>
+        <span class="podio-extra">${L(p.extra)}</span>
         ${personBadge}
       </div>
     </div>`;
