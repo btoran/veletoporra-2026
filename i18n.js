@@ -16,6 +16,7 @@
       nav_patrocinadores:'🤝 Patrocinadores',
       lang_switch_title: 'Switch to English',
       lang_switch_label: '🌐 EN',
+      lang_aria: 'Cambiar idioma',
       result_sg: 'resultado',
       result_pl: 'resultados',
       no_results: 'Sin resultados',
@@ -103,6 +104,7 @@
       nav_patrocinadores:'🤝 Sponsors',
       lang_switch_title: 'Cambiar a español',
       lang_switch_label: '🌐 ES',
+      lang_aria: 'Switch language',
       result_sg: 'result',
       result_pl: 'results',
       no_results: 'No results',
@@ -298,18 +300,31 @@
     });
   }
 
-  // Inserta el botón de cambio de idioma en la nav del header.
+  // Inserta el selector de idioma (segmentado ES | EN) en la esquina superior
+  // derecha del header, separado de las pestañas de navegación.
   function injectToggle() {
-    const nav = document.querySelector('.header-nav');
-    if (!nav || nav.querySelector('#lang-toggle')) return;
-    const btn = document.createElement('button');
-    btn.id = 'lang-toggle';
-    btn.className = 'nav-pill lang-pill';
-    btn.type = 'button';
-    btn.textContent = t('lang_switch_label');
-    btn.title = t('lang_switch_title');
-    btn.addEventListener('click', () => setLang(LANG === 'es' ? 'en' : 'es'));
-    nav.appendChild(btn);
+    const host = document.querySelector('.header-right') || document.querySelector('.header-nav');
+    if (!host || host.querySelector('.lang-switch')) return;
+    const sw = document.createElement('div');
+    sw.className = 'lang-switch';
+    sw.setAttribute('role', 'group');
+    sw.setAttribute('aria-label', t('lang_aria'));
+    const globe = document.createElement('span');
+    globe.className = 'lang-globe';
+    globe.textContent = '🌐';
+    globe.setAttribute('aria-hidden', 'true');
+    sw.appendChild(globe);
+    [['es', 'ES', 'Español'], ['en', 'EN', 'English']].forEach(([code, label, title]) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'lang-opt' + (code === LANG ? ' active' : '');
+      b.textContent = label;
+      b.title = title;
+      b.setAttribute('aria-pressed', code === LANG ? 'true' : 'false');
+      b.addEventListener('click', () => { if (code !== LANG) setLang(code); });
+      sw.appendChild(b);
+    });
+    host.insertBefore(sw, host.firstChild);
   }
 
   function boot() {

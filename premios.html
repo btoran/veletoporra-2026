@@ -39,7 +39,7 @@ body{
   max-width:1100px;
   margin:0 auto;
   display:flex;
-  align-items:center;
+  align-items:flex-start;
   justify-content:space-between;
   gap:12px;
   flex-wrap:wrap;
@@ -62,12 +62,20 @@ body{
   color:var(--muted);
   margin-top:2px;
 }
+.header-right{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:10px;
+  flex:1 1 auto;
+  min-width:0;
+}
 .header-nav{
   display:flex;
   gap:8px;
-  flex-shrink:1;
   flex-wrap:wrap;
   justify-content:flex-end;
+  width:100%;
 }
 .nav-pill{
   padding:6px 14px;
@@ -89,7 +97,37 @@ body{
   border-color:var(--gold);
   color:#000;
 }
-.lang-pill{cursor:pointer;font-family:inherit;line-height:1.2}
+/* ── SELECTOR DE IDIOMA (esquina superior derecha) ───────── */
+.lang-switch{
+  display:inline-flex;
+  align-items:stretch;
+  border:1px solid var(--border);
+  border-radius:20px;
+  overflow:hidden;
+  background:var(--surface);
+}
+.lang-switch .lang-globe{
+  display:flex;
+  align-items:center;
+  padding:0 6px 0 10px;
+  font-size:11px;
+  color:var(--muted);
+}
+.lang-switch button{
+  border:none;
+  background:transparent;
+  font-family:inherit;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.5px;
+  color:var(--muted);
+  padding:5px 11px;
+  cursor:pointer;
+  transition:background .15s,color .15s;
+}
+.lang-switch button:hover{color:var(--gold)}
+.lang-switch button.active{background:var(--gold);color:#000}
+.lang-switch button.active:hover{color:#000}
 
 /* ── MAIN ────────────────────────────────────────────────── */
 .main{
@@ -376,12 +414,14 @@ body{
         <p class="subtitle" data-i18n="prem_subtitle">¿Qué hay en juego?</p>
       </div>
     </div>
-    <nav class="header-nav">
-      <a href="index.html"       class="nav-pill" data-i18n="nav_clasificacion">📊 Clasificación</a>
-      <a href="pronosticos.html" class="nav-pill" data-i18n="nav_pronosticos">🔮 Pronósticos</a>
-      <a href="premios.html"     class="nav-pill active" data-i18n="nav_premios">🏆 Premios</a>
-      <a href="patrocinadores.html" class="nav-pill" data-i18n="nav_patrocinadores">🤝 Patrocinadores</a>
-    </nav>
+    <div class="header-right">
+      <nav class="header-nav">
+        <a href="index.html"       class="nav-pill" data-i18n="nav_clasificacion">📊 Clasificación</a>
+        <a href="pronosticos.html" class="nav-pill" data-i18n="nav_pronosticos">🔮 Pronósticos</a>
+        <a href="premios.html"     class="nav-pill active" data-i18n="nav_premios">🏆 Premios</a>
+        <a href="patrocinadores.html" class="nav-pill" data-i18n="nav_patrocinadores">🤝 Patrocinadores</a>
+      </nav>
+    </div>
   </div>
 </header>
 
