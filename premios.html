@@ -129,6 +129,29 @@ body{
 .lang-switch button.active{background:var(--gold);color:#000}
 .lang-switch button.active:hover{color:#000}
 
+/* ── CONTROLES + MENÚ MÓVIL (hamburguesa) ────────────────── */
+.header-controls{display:flex;align-items:center;gap:8px}
+.nav-toggle{
+  display:none;
+  align-items:center;justify-content:center;
+  width:40px;height:30px;
+  border:1px solid var(--border);border-radius:20px;
+  background:var(--surface);color:var(--text);
+  font-size:15px;line-height:1;cursor:pointer;padding:0;
+  transition:border-color .15s,color .15s;
+}
+.nav-toggle:hover{border-color:var(--gold);color:var(--gold)}
+@media(max-width:640px){
+  .nav-toggle{display:inline-flex}
+  .header-nav{
+    display:none;width:100%;
+    flex-direction:column;align-items:stretch;
+    gap:6px;margin-top:8px;
+  }
+  .header-right.nav-open .header-nav{display:flex}
+  .header-nav .nav-pill{width:100%;text-align:left;padding:10px 14px;font-size:13px}
+}
+
 /* ── MAIN ────────────────────────────────────────────────── */
 .main{
   max-width:1100px;

@@ -17,6 +17,7 @@
       lang_switch_title: 'Switch to English',
       lang_switch_label: '🌐 EN',
       lang_aria: 'Cambiar idioma',
+      menu_aria: 'Abrir menú de navegación',
       result_sg: 'resultado',
       result_pl: 'resultados',
       no_results: 'Sin resultados',
@@ -105,6 +106,7 @@
       lang_switch_title: 'Cambiar a español',
       lang_switch_label: '🌐 ES',
       lang_aria: 'Switch language',
+      menu_aria: 'Open navigation menu',
       result_sg: 'result',
       result_pl: 'results',
       no_results: 'No results',
@@ -300,11 +302,8 @@
     });
   }
 
-  // Inserta el selector de idioma (segmentado ES | EN) en la esquina superior
-  // derecha del header, separado de las pestañas de navegación.
-  function injectToggle() {
-    const host = document.querySelector('.header-right') || document.querySelector('.header-nav');
-    if (!host || host.querySelector('.lang-switch')) return;
+  // Construye el selector de idioma (segmentado ES | EN).
+  function buildLangSwitch() {
     const sw = document.createElement('div');
     sw.className = 'lang-switch';
     sw.setAttribute('role', 'group');
@@ -324,7 +323,53 @@
       b.addEventListener('click', () => { if (code !== LANG) setLang(code); });
       sw.appendChild(b);
     });
-    host.insertBefore(sw, host.firstChild);
+    return sw;
+  }
+
+  // Monta la fila de controles del header: idioma (esquina superior derecha) +
+  // botón hamburguesa que despliega las pestañas en móvil. En escritorio el
+  // hamburguesa se oculta por CSS y la nav se muestra siempre.
+  function injectToggle() {
+    const host = document.querySelector('.header-right') || document.querySelector('.header-nav');
+    if (!host || host.querySelector('.header-controls')) return;
+    const nav = host.querySelector('.header-nav');
+
+    const controls = document.createElement('div');
+    controls.className = 'header-controls';
+    controls.appendChild(buildLangSwitch());
+
+    if (nav) {
+      if (!nav.id) nav.id = 'header-nav';
+      const burger = document.createElement('button');
+      burger.type = 'button';
+      burger.className = 'nav-toggle';
+      burger.innerHTML = '☰';
+      burger.setAttribute('aria-label', t('menu_aria'));
+      burger.setAttribute('aria-controls', nav.id);
+      burger.setAttribute('aria-expanded', 'false');
+
+      const close = () => {
+        host.classList.remove('nav-open');
+        burger.setAttribute('aria-expanded', 'false');
+        burger.innerHTML = '☰';
+      };
+      burger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const open = host.classList.toggle('nav-open');
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+        burger.innerHTML = open ? '✕' : '☰';
+      });
+      // Cerrar al tocar fuera del header o con Escape.
+      document.addEventListener('click', (e) => {
+        if (host.classList.contains('nav-open') && !host.contains(e.target)) close();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') close();
+      });
+      controls.appendChild(burger);
+    }
+
+    host.insertBefore(controls, host.firstChild);
   }
 
   function boot() {
