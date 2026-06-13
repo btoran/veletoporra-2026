@@ -757,9 +757,9 @@ async function init() {
   // Sort initial
   RESULTS = data.results || {};
   ALL = [...data.standings].sort((a,b) => a.pos - b.pos || b.total - a.total);
-  // Asignar rankPos real (1-based, con empates compartiendo posición)
+  // Posición secuencial 1-based: en empate, cada uno ocupa su puesto según el orden de la clasificación (2,3,4,5...)
   ALL.forEach((p, i) => {
-    p.rankPos = i === 0 ? 1 : (p.total === ALL[i-1].total ? ALL[i-1].rankPos : i + 1);
+    p.rankPos = i + 1;
   });
   if (ALL.length) {
     el('stat-leader').textContent = ALL[0].name;
