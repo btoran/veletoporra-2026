@@ -65,7 +65,9 @@ body{
 .header-nav{
   display:flex;
   gap:8px;
-  flex-shrink:0;
+  flex-shrink:1;
+  flex-wrap:wrap;
+  justify-content:flex-end;
 }
 .nav-pill{
   padding:6px 14px;
@@ -679,21 +681,15 @@ function winnerFor(key) {
     case 'pichichiEsp':     return categoryWinner('pichichi_esp');
     case 'woman':           return firstWoman();
     case 'last': {
-      // Último: dentro del grupo empatado al fondo, el primero de ese bloque.
+      // Último clasificado: ocupante real del último puesto de la lista.
       const ranked = rankedStandings();
-      if (!ranked.length) return null;
-      const worst = ranked[ranked.length - 1].total || 0;
-      return ranked.find(s => (s.total || 0) === worst)?.name || null;
+      return ranked[ranked.length - 1]?.name || null;
     }
     case 'pos': {
-      // Premio Nº → ocupante del slot N. Si ese slot cae dentro de un bloque
-      // empatado (mismo total), mostramos el primero de ese bloque.
+      // Premio Nº → ocupante real del puesto N (1º al 1º, 8º al 8º…),
+      // aunque varios empaten a puntos. El orden lo da la clasificación.
       const ranked = rankedStandings();
-      const occ = ranked[key.n - 1];
-      if (!occ) return null;
-      let i = key.n - 1;
-      while (i > 0 && (ranked[i - 1].total || 0) === (occ.total || 0)) i--;
-      return ranked[i]?.name || null;
+      return ranked[key.n - 1]?.name || null;
     }
     default:                return null;
   }
