@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdate": "2026-06-13T14:03:48",
+    "lastUpdate": "2026-06-14T08:56:53",
     "fase": "Jornada 1 — Fase de Grupos",
     "totalParticipants": 251
   },
@@ -3860,7 +3860,7 @@
       "prevPos": 0,
       "id": 250,
       "name": "LUIS MIGUEL REDONDO FRANCO",
-      "gender": "?",
+      "gender": "M",
       "total": 8,
       "grupos": 8,
       "eliminatorias": 0,
@@ -15410,7 +15410,7 @@
       "prevPos": 0,
       "id": 244,
       "name": "BARITO11",
-      "gender": "?",
+      "gender": "M",
       "total": 7,
       "grupos": 7,
       "eliminatorias": 0,
@@ -15960,7 +15960,7 @@
       "prevPos": 0,
       "id": 246,
       "name": "CARLOS BLASCO",
-      "gender": "?",
+      "gender": "M",
       "total": 7,
       "grupos": 7,
       "eliminatorias": 0,
@@ -44010,7 +44010,7 @@
       "prevPos": 0,
       "id": 243,
       "name": "DIEGO BARO SIMEONE",
-      "gender": "?",
+      "gender": "M",
       "total": 5,
       "grupos": 5,
       "eliminatorias": 0,
@@ -44560,7 +44560,7 @@
       "prevPos": 0,
       "id": 247,
       "name": "PATINHO",
-      "gender": "?",
+      "gender": "M",
       "total": 5,
       "grupos": 5,
       "eliminatorias": 0,
@@ -45110,7 +45110,7 @@
       "prevPos": 0,
       "id": 249,
       "name": "JOSE AGRA",
-      "gender": "?",
+      "gender": "M",
       "total": 5,
       "grupos": 5,
       "eliminatorias": 0,
@@ -73160,7 +73160,7 @@
       "prevPos": 0,
       "id": 245,
       "name": "LENDOIRO PREACHER",
-      "gender": "?",
+      "gender": "M",
       "total": 4,
       "grupos": 4,
       "eliminatorias": 0,
@@ -119910,7 +119910,7 @@
       "prevPos": 0,
       "id": 248,
       "name": "LORO JR",
-      "gender": "?",
+      "gender": "M",
       "total": 2,
       "grupos": 2,
       "eliminatorias": 0,
@@ -120460,7 +120460,7 @@
       "prevPos": 0,
       "id": 251,
       "name": "MENDIX",
-      "gender": "?",
+      "gender": "M",
       "total": 2,
       "grupos": 2,
       "eliminatorias": 0,
@@ -138076,30 +138076,11 @@
   },
   "sponsors": [
     {
-      "name": "Cría Cuervos",
-      "logo": "logos/criacuervos_3.png",
-      "lightBg": true,
-      "url": "https://vinoscriacuervos.com",
-      "tagline": "Vinos versátiles que le den sabor y color a todos esos pequeños, grandes momentos de la vida. Aquí y ahora, disfruta del mundial y de la vida con uno de nuestros vinos."
-    },
-    {
-      "name": "Flexicar",
-      "logo": "logos/flexicar.png",
-      "url": "https://www.flexicar.es",
-      "tagline": "Yo compro mi coche en Flexicar. Si lo prefieres, también gestionamos la venta de tu vehículo."
-    },
-    {
       "name": "XIA Perfumes",
       "logo": "logos/xia.jpeg",
       "url": "https://www.xiaperfumes.es/",
       "photo": true,
       "tagline": "Recuerdos, momentos y emociones se transforman en el alma de tu perfume. Una experiencia única en el mundo, que da comienzo a una nueva era en la perfumería."
-    },
-    {
-      "name": "La Vuelta",
-      "logo": "logos/la_vuelta.png",
-      "url": "https://www.instagram.com/lavuelta_madrid",
-      "tagline": "Porque los premios se disfrutan mejor compartiéndolos. Si tú eres mi PORRA, yo soy tu VUELTA. A veces el mejor premio está a la vuelta de la esquina."
     },
     {
       "name": "Volga Real Estate",
@@ -138109,23 +138090,10 @@
       "tagline": "Porque cada hogar tiene una historia, te ayudamos a encontrar la tuya. Convertimos la búsqueda de tu hogar en una experiencia cercana y personal."
     },
     {
-      "name": "Ágora Arquitectura",
-      "logo": "logos/agora.png",
-      "lightBg": true,
-      "url": "https://agora-arquitectura.com/",
-      "tagline": "Si buscas tu mejor aliado para proyectos de nueva construcción, reforma o rehabilitación, Ágora Arquitectura es el indicado. Con más de 30 años de experiencia, tus proyectos están en las mejores manos."
-    },
-    {
-      "name": "Clínica Santamaría",
-      "logo": "logos/clinica_santamaria.png",
-      "url": "https://www.clinica-santamaria.com/",
-      "tagline": "Para lucir una sonrisa perfecta cuando nuestra selección levante el mundial, el mejor sitio al que acudir es Clínica Santamaría."
-    },
-    {
-      "name": "Clínica Baena Martín",
-      "logo": "logos/baena_martin.jpg",
-      "url": "https://www.clinicabaenamartin.com/",
-      "tagline": "En clínica Baena Martín, centro de podología, medicina estética y fisioterapia, se especializan en cuidados para todas las edades. Sus profesionales están esperando para cubrir vuestras necesidades. ¡No dudéis en visitarles, saldréis encantados!"
+      "name": "Flexicar",
+      "logo": "logos/flexicar.png",
+      "url": "https://www.flexicar.es",
+      "tagline": "Yo compro mi coche en Flexicar. Si lo prefieres, también gestionamos la venta de tu vehículo."
     },
     {
       "name": "SOMA Osteopatía",
@@ -138146,6 +138114,38 @@
       "lightBg": true,
       "url": "https://www.instagram.com/22evnts",
       "tagline": "Si necesitas entradas para cualquier evento a nivel mundial y una gestión personalizada, 22EVNTS es tu empresa. ¡Quien sabe si tendrá que gestionarnos entradas para la final del mundial!"
+    },
+    {
+      "name": "Cría Cuervos",
+      "logo": "logos/criacuervos_3.png",
+      "lightBg": true,
+      "url": "https://vinoscriacuervos.com",
+      "tagline": "Vinos versátiles que le den sabor y color a todos esos pequeños, grandes momentos de la vida. Aquí y ahora, disfruta del mundial y de la vida con uno de nuestros vinos."
+    },
+    {
+      "name": "Clínica Santamaría",
+      "logo": "logos/clinica_santamaria.png",
+      "url": "https://www.clinica-santamaria.com/",
+      "tagline": "Para lucir una sonrisa perfecta cuando nuestra selección levante el mundial, el mejor sitio al que acudir es Clínica Santamaría."
+    },
+    {
+      "name": "La Vuelta",
+      "logo": "logos/la_vuelta.png",
+      "url": "https://www.instagram.com/lavuelta_madrid",
+      "tagline": "Porque los premios se disfrutan mejor compartiéndolos. Si tú eres mi PORRA, yo soy tu VUELTA. A veces el mejor premio está a la vuelta de la esquina."
+    },
+    {
+      "name": "Clínica Baena Martín",
+      "logo": "logos/baena_martin.jpg",
+      "url": "https://www.clinicabaenamartin.com/",
+      "tagline": "En clínica Baena Martín, centro de podología, medicina estética y fisioterapia, se especializan en cuidados para todas las edades. Sus profesionales están esperando para cubrir vuestras necesidades. ¡No dudéis en visitarles, saldréis encantados!"
+    },
+    {
+      "name": "Ágora Arquitectura",
+      "logo": "logos/agora.png",
+      "lightBg": true,
+      "url": "https://agora-arquitectura.com/",
+      "tagline": "Si buscas tu mejor aliado para proyectos de nueva construcción, reforma o rehabilitación, Ágora Arquitectura es el indicado. Con más de 30 años de experiencia, tus proyectos están en las mejores manos."
     }
   ]
 }
