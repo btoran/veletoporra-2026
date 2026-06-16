@@ -269,8 +269,9 @@ table{
 }
 @media(max-width:580px){
   table{min-width:0;table-layout:fixed;width:100%}
-  .col-pos{width:38px}
+  .col-pos{width:44px}
   .col-mov,.mov{display:none}
+  .pos-cell .pos-mov{display:block;font-size:9px;font-weight:700;line-height:1;margin-top:2px;white-space:nowrap}
   .col-pts{width:52px}
   .col-exp{width:32px}
   td{padding:8px 7px}
@@ -326,6 +327,7 @@ td{
 /* position cell */
 .pos-cell{text-align:center;font-weight:700;font-size:15px}
 .medal{font-size:18px;line-height:1}
+.pos-mov{display:none}
 
 /* movement cell */
 .mov{text-align:center;font-size:11px;font-weight:700;white-space:nowrap}
@@ -858,7 +860,7 @@ function rowHtml(p, displayPos, gap, q) {
 
   return `
 <tr class="data-row ${rankCls} ${foundCls}" data-id="${p.id}">
-  <td class="pos-cell">${posHtml}</td>
+  <td class="pos-cell">${posHtml}<span class="pos-mov">${movMini(p.pos, p.prevPos)}</span></td>
   <td class="mov">${movHtml(p.pos, p.prevPos)}</td>
   <td class="name-cell">${esc(p.name)}</td>
   <td class="pts-cell">${p.total}${gap === null ? '' : `<div class="pts-gap">${gap === 0 ? '—' : '-'+gap}</div>`}</td>
@@ -879,6 +881,15 @@ function movHtml(pos, prev) {
   if (d > 0) return `<span class="mov-up">▲${d}</span>`;
   if (d < 0) return `<span class="mov-dn">▼${Math.abs(d)}</span>`;
   return '<span class="mov-eq">─</span>';
+}
+
+// Versión compacta para móvil: solo muestra la flecha cuando hay cambio real
+function movMini(pos, prev) {
+  if (!prev || prev === 0) return '';
+  const d = prev - pos;
+  if (d > 0) return `<span class="mov-up">▲${d}</span>`;
+  if (d < 0) return `<span class="mov-dn">▼${Math.abs(d)}</span>`;
+  return '';
 }
 
 function detailHtml(p) {
