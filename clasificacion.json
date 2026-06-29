@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastUpdate": "2026-06-28T18:29:17",
-    "fase": "Jornada 3 — Fase de Grupos",
+    "lastUpdate": "2026-06-29T08:05:22",
+    "fase": "Dieciseisavos (R32)",
     "totalParticipants": 251
   },
   "standings": [
@@ -557,7 +557,7 @@
     },
     {
       "pos": 2,
-      "prevPos": 3,
+      "prevPos": 2,
       "id": 47,
       "name": "ZANA",
       "gender": "M",
@@ -1107,7 +1107,7 @@
     },
     {
       "pos": 2,
-      "prevPos": 3,
+      "prevPos": 2,
       "id": 48,
       "name": "MANZANA",
       "gender": "M",
@@ -1657,7 +1657,7 @@
     },
     {
       "pos": 4,
-      "prevPos": 5,
+      "prevPos": 4,
       "id": 38,
       "name": "EMI",
       "gender": "M",
@@ -2207,7 +2207,7 @@
     },
     {
       "pos": 5,
-      "prevPos": 7,
+      "prevPos": 5,
       "id": 120,
       "name": "MATILLA",
       "gender": "M",
@@ -2757,7 +2757,7 @@
     },
     {
       "pos": 6,
-      "prevPos": 2,
+      "prevPos": 6,
       "id": 223,
       "name": "KUBISMO",
       "gender": "M",
@@ -3307,7 +3307,7 @@
     },
     {
       "pos": 7,
-      "prevPos": 9,
+      "prevPos": 7,
       "id": 214,
       "name": "AR9",
       "gender": "M",
@@ -3857,7 +3857,7 @@
     },
     {
       "pos": 8,
-      "prevPos": 6,
+      "prevPos": 8,
       "id": 17,
       "name": "JCMILLABR",
       "gender": "M",
@@ -4407,7 +4407,7 @@
     },
     {
       "pos": 9,
-      "prevPos": 11,
+      "prevPos": 9,
       "id": 163,
       "name": "VYAGOL",
       "gender": "M",
@@ -4957,7 +4957,7 @@
     },
     {
       "pos": 10,
-      "prevPos": 8,
+      "prevPos": 10,
       "id": 40,
       "name": "MIKEZABAL",
       "gender": "M",
@@ -5507,7 +5507,7 @@
     },
     {
       "pos": 11,
-      "prevPos": 12,
+      "prevPos": 11,
       "id": 183,
       "name": "COSTALUSTRA",
       "gender": "M",
@@ -6057,7 +6057,7 @@
     },
     {
       "pos": 12,
-      "prevPos": 18,
+      "prevPos": 12,
       "id": 6,
       "name": "HOMER",
       "gender": "M",
@@ -6607,7 +6607,7 @@
     },
     {
       "pos": 13,
-      "prevPos": 16,
+      "prevPos": 13,
       "id": 222,
       "name": "ICHIGAN",
       "gender": "M",
@@ -7157,7 +7157,7 @@
     },
     {
       "pos": 14,
-      "prevPos": 17,
+      "prevPos": 14,
       "id": 59,
       "name": "ZUBIZU",
       "gender": "M",
@@ -7707,7 +7707,7 @@
     },
     {
       "pos": 15,
-      "prevPos": 27,
+      "prevPos": 15,
       "id": 96,
       "name": "ORDAS FANS",
       "gender": "M",
@@ -8257,7 +8257,7 @@
     },
     {
       "pos": 16,
-      "prevPos": 28,
+      "prevPos": 16,
       "id": 50,
       "name": "ILLY",
       "gender": "F",
@@ -8807,7 +8807,7 @@
     },
     {
       "pos": 17,
-      "prevPos": 10,
+      "prevPos": 17,
       "id": 24,
       "name": "DANIEL MALDONADO",
       "gender": "M",
@@ -9357,7 +9357,7 @@
     },
     {
       "pos": 18,
-      "prevPos": 32,
+      "prevPos": 18,
       "id": 196,
       "name": "LOTO",
       "gender": "F",
@@ -11007,7 +11007,7 @@
     },
     {
       "pos": 21,
-      "prevPos": 13,
+      "prevPos": 21,
       "id": 142,
       "name": "CAN IT PLEASE COME HOME?",
       "gender": "M",
@@ -11557,7 +11557,7 @@
     },
     {
       "pos": 22,
-      "prevPos": 14,
+      "prevPos": 22,
       "id": 209,
       "name": "GRIEZMANN",
       "gender": "M",
@@ -12107,7 +12107,7 @@
     },
     {
       "pos": 23,
-      "prevPos": 15,
+      "prevPos": 23,
       "id": 247,
       "name": "PATINHO",
       "gender": "M",
@@ -12657,7 +12657,7 @@
     },
     {
       "pos": 24,
-      "prevPos": 36,
+      "prevPos": 24,
       "id": 90,
       "name": "PATI ALONSO",
       "gender": "F",
@@ -13207,7 +13207,7 @@
     },
     {
       "pos": 25,
-      "prevPos": 28,
+      "prevPos": 25,
       "id": 199,
       "name": "PABLO SOLER MARTÍNEZ",
       "gender": "M",
@@ -13757,7 +13757,7 @@
     },
     {
       "pos": 26,
-      "prevPos": 20,
+      "prevPos": 26,
       "id": 156,
       "name": "BINFANTE",
       "gender": "M",
@@ -14307,7 +14307,7 @@
     },
     {
       "pos": 26,
-      "prevPos": 43,
+      "prevPos": 26,
       "id": 194,
       "name": "ASM",
       "gender": "M",
@@ -14857,7 +14857,7 @@
     },
     {
       "pos": 28,
-      "prevPos": 34,
+      "prevPos": 28,
       "id": 132,
       "name": "ROBERTO IBÁÑEZ",
       "gender": "M",
@@ -15407,7 +15407,7 @@
     },
     {
       "pos": 29,
-      "prevPos": 22,
+      "prevPos": 29,
       "id": 250,
       "name": "LUIS MIGUEL REDONDO FRANCO",
       "gender": "M",
@@ -15957,7 +15957,7 @@
     },
     {
       "pos": 30,
-      "prevPos": 45,
+      "prevPos": 30,
       "id": 75,
       "name": "MENDIJR",
       "gender": "M",
@@ -16507,7 +16507,7 @@
     },
     {
       "pos": 31,
-      "prevPos": 46,
+      "prevPos": 31,
       "id": 117,
       "name": "GUILLEHAROL",
       "gender": "M",
@@ -17057,7 +17057,7 @@
     },
     {
       "pos": 32,
-      "prevPos": 23,
+      "prevPos": 32,
       "id": 134,
       "name": "FAMILIA LARRAZ-MARTINEZ",
       "gender": "M",
@@ -17607,7 +17607,7 @@
     },
     {
       "pos": 33,
-      "prevPos": 25,
+      "prevPos": 33,
       "id": 11,
       "name": "TRUSKY",
       "gender": "M",
@@ -18157,7 +18157,7 @@
     },
     {
       "pos": 34,
-      "prevPos": 26,
+      "prevPos": 34,
       "id": 248,
       "name": "LORO JR",
       "gender": "M",
@@ -19807,7 +19807,7 @@
     },
     {
       "pos": 37,
-      "prevPos": 38,
+      "prevPos": 37,
       "id": 88,
       "name": "DANIEL GOMEZ",
       "gender": "M",
@@ -20357,7 +20357,7 @@
     },
     {
       "pos": 38,
-      "prevPos": 39,
+      "prevPos": 38,
       "id": 172,
       "name": "GABIGOL06",
       "gender": "M",
@@ -20907,7 +20907,7 @@
     },
     {
       "pos": 39,
-      "prevPos": 31,
+      "prevPos": 39,
       "id": 116,
       "name": "GARETH BALE",
       "gender": "M",
@@ -21457,7 +21457,7 @@
     },
     {
       "pos": 40,
-      "prevPos": 33,
+      "prevPos": 40,
       "id": 157,
       "name": "JAQUETE",
       "gender": "M",
@@ -22007,7 +22007,7 @@
     },
     {
       "pos": 41,
-      "prevPos": 40,
+      "prevPos": 41,
       "id": 135,
       "name": "DEIVIDILLO",
       "gender": "M",
@@ -22557,7 +22557,7 @@
     },
     {
       "pos": 41,
-      "prevPos": 40,
+      "prevPos": 41,
       "id": 169,
       "name": "MILLI",
       "gender": "M",
@@ -23107,7 +23107,7 @@
     },
     {
       "pos": 43,
-      "prevPos": 42,
+      "prevPos": 43,
       "id": 102,
       "name": "LOPEZ",
       "gender": "M",
@@ -23657,7 +23657,7 @@
     },
     {
       "pos": 44,
-      "prevPos": 43,
+      "prevPos": 44,
       "id": 179,
       "name": "BORJALORO",
       "gender": "M",
@@ -24207,7 +24207,7 @@
     },
     {
       "pos": 45,
-      "prevPos": 63,
+      "prevPos": 45,
       "id": 127,
       "name": "PAU_SD",
       "gender": "F",
@@ -24757,7 +24757,7 @@
     },
     {
       "pos": 46,
-      "prevPos": 30,
+      "prevPos": 46,
       "id": 110,
       "name": "DON FLORENTINO PÉREZ (5)",
       "gender": "M",
@@ -25857,7 +25857,7 @@
     },
     {
       "pos": 48,
-      "prevPos": 49,
+      "prevPos": 48,
       "id": 14,
       "name": "JAVI LORENTE",
       "gender": "M",
@@ -26407,7 +26407,7 @@
     },
     {
       "pos": 48,
-      "prevPos": 24,
+      "prevPos": 48,
       "id": 103,
       "name": "DON HANS-DIETER FLICK",
       "gender": "M",
@@ -26957,7 +26957,7 @@
     },
     {
       "pos": 50,
-      "prevPos": 69,
+      "prevPos": 50,
       "id": 246,
       "name": "CARLOS BLASCO",
       "gender": "M",
@@ -27507,7 +27507,7 @@
     },
     {
       "pos": 51,
-      "prevPos": 52,
+      "prevPos": 51,
       "id": 206,
       "name": "CAPTAIN CONCACAF",
       "gender": "M",
@@ -28057,7 +28057,7 @@
     },
     {
       "pos": 52,
-      "prevPos": 53,
+      "prevPos": 52,
       "id": 49,
       "name": "JUANRA",
       "gender": "M",
@@ -28607,7 +28607,7 @@
     },
     {
       "pos": 52,
-      "prevPos": 53,
+      "prevPos": 52,
       "id": 99,
       "name": "PAUL M",
       "gender": "M",
@@ -29157,7 +29157,7 @@
     },
     {
       "pos": 52,
-      "prevPos": 70,
+      "prevPos": 52,
       "id": 217,
       "name": "CÉSAR",
       "gender": "M",
@@ -29707,7 +29707,7 @@
     },
     {
       "pos": 52,
-      "prevPos": 70,
+      "prevPos": 52,
       "id": 218,
       "name": "AGUI",
       "gender": "M",
@@ -30257,7 +30257,7 @@
     },
     {
       "pos": 52,
-      "prevPos": 70,
+      "prevPos": 52,
       "id": 219,
       "name": "ÁGUILA",
       "gender": "M",
@@ -30807,7 +30807,7 @@
     },
     {
       "pos": 57,
-      "prevPos": 56,
+      "prevPos": 57,
       "id": 79,
       "name": "CURRO",
       "gender": "M",
@@ -31357,7 +31357,7 @@
     },
     {
       "pos": 58,
-      "prevPos": 76,
+      "prevPos": 58,
       "id": 93,
       "name": "JULI",
       "gender": "M",
@@ -31907,7 +31907,7 @@
     },
     {
       "pos": 59,
-      "prevPos": 77,
+      "prevPos": 59,
       "id": 45,
       "name": "GONZALO JR",
       "gender": "M",
@@ -32457,7 +32457,7 @@
     },
     {
       "pos": 60,
-      "prevPos": 82,
+      "prevPos": 60,
       "id": 171,
       "name": "LOLA2026",
       "gender": "F",
@@ -33007,7 +33007,7 @@
     },
     {
       "pos": 61,
-      "prevPos": 64,
+      "prevPos": 61,
       "id": 220,
       "name": "CLAUDIO",
       "gender": "M",
@@ -33557,7 +33557,7 @@
     },
     {
       "pos": 62,
-      "prevPos": 65,
+      "prevPos": 62,
       "id": 7,
       "name": "AK99",
       "gender": "M",
@@ -34107,7 +34107,7 @@
     },
     {
       "pos": 62,
-      "prevPos": 47,
+      "prevPos": 62,
       "id": 15,
       "name": "BELTRÁN LORENTE -SOROLLA",
       "gender": "M",
@@ -34657,7 +34657,7 @@
     },
     {
       "pos": 64,
-      "prevPos": 84,
+      "prevPos": 64,
       "id": 64,
       "name": "LUIS HORCAJO",
       "gender": "M",
@@ -35207,7 +35207,7 @@
     },
     {
       "pos": 65,
-      "prevPos": 50,
+      "prevPos": 65,
       "id": 240,
       "name": "BIGELIOTT",
       "gender": "M",
@@ -35757,7 +35757,7 @@
     },
     {
       "pos": 66,
-      "prevPos": 87,
+      "prevPos": 66,
       "id": 139,
       "name": "RIKIS LEIVAR",
       "gender": "M",
@@ -36307,7 +36307,7 @@
     },
     {
       "pos": 67,
-      "prevPos": 51,
+      "prevPos": 67,
       "id": 231,
       "name": "LUIGI",
       "gender": "M",
@@ -36857,7 +36857,7 @@
     },
     {
       "pos": 68,
-      "prevPos": 70,
+      "prevPos": 68,
       "id": 138,
       "name": "BORJA DÍAZ",
       "gender": "M",
@@ -37407,7 +37407,7 @@
     },
     {
       "pos": 68,
-      "prevPos": 53,
+      "prevPos": 68,
       "id": 224,
       "name": "MARAVILLA",
       "gender": "M",
@@ -37957,7 +37957,7 @@
     },
     {
       "pos": 70,
-      "prevPos": 75,
+      "prevPos": 70,
       "id": 128,
       "name": "DAVID JR",
       "gender": "M",
@@ -38507,7 +38507,7 @@
     },
     {
       "pos": 71,
-      "prevPos": 95,
+      "prevPos": 71,
       "id": 229,
       "name": "CDV21",
       "gender": "M",
@@ -39057,7 +39057,7 @@
     },
     {
       "pos": 72,
-      "prevPos": 57,
+      "prevPos": 72,
       "id": 165,
       "name": "TOÑÍN",
       "gender": "M",
@@ -39607,7 +39607,7 @@
     },
     {
       "pos": 73,
-      "prevPos": 58,
+      "prevPos": 73,
       "id": 154,
       "name": "CARLOS PEIRÓ",
       "gender": "M",
@@ -40157,7 +40157,7 @@
     },
     {
       "pos": 74,
-      "prevPos": 79,
+      "prevPos": 74,
       "id": 68,
       "name": "BENE",
       "gender": "F",
@@ -40707,7 +40707,7 @@
     },
     {
       "pos": 75,
-      "prevPos": 61,
+      "prevPos": 75,
       "id": 226,
       "name": "CALVOSTODOS",
       "gender": "M",
@@ -41257,7 +41257,7 @@
     },
     {
       "pos": 76,
-      "prevPos": 62,
+      "prevPos": 76,
       "id": 239,
       "name": "JULI - INTELIGENCIA ARTIFICIAL",
       "gender": "M",
@@ -41807,7 +41807,7 @@
     },
     {
       "pos": 77,
-      "prevPos": 58,
+      "prevPos": 77,
       "id": 31,
       "name": "HARRY BREY",
       "gender": "M",
@@ -42357,7 +42357,7 @@
     },
     {
       "pos": 78,
-      "prevPos": 66,
+      "prevPos": 78,
       "id": 211,
       "name": "AGORA",
       "gender": "M",
@@ -42907,7 +42907,7 @@
     },
     {
       "pos": 79,
-      "prevPos": 60,
+      "prevPos": 79,
       "id": 136,
       "name": "TROY",
       "gender": "M",
@@ -43457,7 +43457,7 @@
     },
     {
       "pos": 80,
-      "prevPos": 67,
+      "prevPos": 80,
       "id": 101,
       "name": "CDR",
       "gender": "M",
@@ -44007,7 +44007,7 @@
     },
     {
       "pos": 81,
-      "prevPos": 68,
+      "prevPos": 81,
       "id": 145,
       "name": "FLOIER",
       "gender": "M",
@@ -44557,7 +44557,7 @@
     },
     {
       "pos": 82,
-      "prevPos": 90,
+      "prevPos": 82,
       "id": 69,
       "name": "MIGUEL ARRANZ",
       "gender": "M",
@@ -45107,7 +45107,7 @@
     },
     {
       "pos": 83,
-      "prevPos": 91,
+      "prevPos": 83,
       "id": 62,
       "name": "ANDY JR.",
       "gender": "M",
@@ -45657,7 +45657,7 @@
     },
     {
       "pos": 83,
-      "prevPos": 70,
+      "prevPos": 83,
       "id": 178,
       "name": "ARMAS",
       "gender": "M",
@@ -46207,7 +46207,7 @@
     },
     {
       "pos": 83,
-      "prevPos": 91,
+      "prevPos": 83,
       "id": 185,
       "name": "LOS CABESAS",
       "gender": "F",
@@ -46757,7 +46757,7 @@
     },
     {
       "pos": 86,
-      "prevPos": 93,
+      "prevPos": 86,
       "id": 5,
       "name": "JOSELE",
       "gender": "M",
@@ -47307,7 +47307,7 @@
     },
     {
       "pos": 87,
-      "prevPos": 102,
+      "prevPos": 87,
       "id": 39,
       "name": "LIUKS OYARZABAL",
       "gender": "M",
@@ -47857,7 +47857,7 @@
     },
     {
       "pos": 87,
-      "prevPos": 94,
+      "prevPos": 87,
       "id": 242,
       "name": "TRIPLE J",
       "gender": "M",
@@ -48407,7 +48407,7 @@
     },
     {
       "pos": 89,
-      "prevPos": 80,
+      "prevPos": 89,
       "id": 92,
       "name": "BORJA RODRIGO PAGOLA",
       "gender": "M",
@@ -48957,7 +48957,7 @@
     },
     {
       "pos": 89,
-      "prevPos": 80,
+      "prevPos": 89,
       "id": 195,
       "name": "FAJARDO",
       "gender": "M",
@@ -49507,7 +49507,7 @@
     },
     {
       "pos": 91,
-      "prevPos": 85,
+      "prevPos": 91,
       "id": 213,
       "name": "ALVAROALEX",
       "gender": "M",
@@ -50057,7 +50057,7 @@
     },
     {
       "pos": 92,
-      "prevPos": 86,
+      "prevPos": 92,
       "id": 174,
       "name": "THE BIG MAN",
       "gender": "M",
@@ -50607,7 +50607,7 @@
     },
     {
       "pos": 93,
-      "prevPos": 98,
+      "prevPos": 93,
       "id": 108,
       "name": "MIKELPARDI",
       "gender": "M",
@@ -51157,7 +51157,7 @@
     },
     {
       "pos": 94,
-      "prevPos": 78,
+      "prevPos": 94,
       "id": 181,
       "name": "MARIETAX",
       "gender": "M",
@@ -51707,7 +51707,7 @@
     },
     {
       "pos": 95,
-      "prevPos": 88,
+      "prevPos": 95,
       "id": 19,
       "name": "PIPITA",
       "gender": "M",
@@ -52257,7 +52257,7 @@
     },
     {
       "pos": 96,
-      "prevPos": 99,
+      "prevPos": 96,
       "id": 221,
       "name": "CULCOR",
       "gender": "M",
@@ -52807,7 +52807,7 @@
     },
     {
       "pos": 97,
-      "prevPos": 101,
+      "prevPos": 97,
       "id": 244,
       "name": "BARITO11",
       "gender": "M",
@@ -53357,7 +53357,7 @@
     },
     {
       "pos": 98,
-      "prevPos": 114,
+      "prevPos": 98,
       "id": 168,
       "name": "SUSINO",
       "gender": "M",
@@ -53907,7 +53907,7 @@
     },
     {
       "pos": 99,
-      "prevPos": 82,
+      "prevPos": 99,
       "id": 81,
       "name": "DANIELPG",
       "gender": "M",
@@ -54457,7 +54457,7 @@
     },
     {
       "pos": 99,
-      "prevPos": 102,
+      "prevPos": 99,
       "id": 130,
       "name": "BERNABÉ MOHEDANO",
       "gender": "M",
@@ -55007,7 +55007,7 @@
     },
     {
       "pos": 101,
-      "prevPos": 105,
+      "prevPos": 101,
       "id": 249,
       "name": "JOSE AGRA",
       "gender": "M",
@@ -55557,7 +55557,7 @@
     },
     {
       "pos": 102,
-      "prevPos": 107,
+      "prevPos": 102,
       "id": 46,
       "name": "MR OSTRA",
       "gender": "M",
@@ -56107,7 +56107,7 @@
     },
     {
       "pos": 103,
-      "prevPos": 96,
+      "prevPos": 103,
       "id": 170,
       "name": "AGM",
       "gender": "F",
@@ -56657,7 +56657,7 @@
     },
     {
       "pos": 104,
-      "prevPos": 126,
+      "prevPos": 104,
       "id": 36,
       "name": "ENRIQUE CARO",
       "gender": "M",
@@ -57207,7 +57207,7 @@
     },
     {
       "pos": 105,
-      "prevPos": 111,
+      "prevPos": 105,
       "id": 228,
       "name": "THE TAFFIA",
       "gender": "M",
@@ -57757,7 +57757,7 @@
     },
     {
       "pos": 106,
-      "prevPos": 89,
+      "prevPos": 106,
       "id": 27,
       "name": "LA HANSIWAGEN",
       "gender": "M",
@@ -58307,7 +58307,7 @@
     },
     {
       "pos": 107,
-      "prevPos": 99,
+      "prevPos": 107,
       "id": 100,
       "name": "JOSÉ PORTO",
       "gender": "M",
@@ -58857,7 +58857,7 @@
     },
     {
       "pos": 108,
-      "prevPos": 112,
+      "prevPos": 108,
       "id": 158,
       "name": "PRESIDENTE PÉREZ",
       "gender": "M",
@@ -59407,7 +59407,7 @@
     },
     {
       "pos": 109,
-      "prevPos": 114,
+      "prevPos": 109,
       "id": 113,
       "name": "DOMINIQUE ALBERS",
       "gender": "F",
@@ -59957,7 +59957,7 @@
     },
     {
       "pos": 110,
-      "prevPos": 102,
+      "prevPos": 110,
       "id": 208,
       "name": "PRESIDENTE",
       "gender": "M",
@@ -60507,7 +60507,7 @@
     },
     {
       "pos": 111,
-      "prevPos": 133,
+      "prevPos": 111,
       "id": 164,
       "name": "BORJA GARCIA PRADOS",
       "gender": "M",
@@ -61057,7 +61057,7 @@
     },
     {
       "pos": 112,
-      "prevPos": 106,
+      "prevPos": 112,
       "id": 166,
       "name": "TXOMIN BETANZOS",
       "gender": "M",
@@ -61607,7 +61607,7 @@
     },
     {
       "pos": 113,
-      "prevPos": 118,
+      "prevPos": 113,
       "id": 87,
       "name": "FLASHGON",
       "gender": "M",
@@ -62157,7 +62157,7 @@
     },
     {
       "pos": 114,
-      "prevPos": 119,
+      "prevPos": 114,
       "id": 56,
       "name": "JOAQUINILLO",
       "gender": "M",
@@ -62707,7 +62707,7 @@
     },
     {
       "pos": 115,
-      "prevPos": 113,
+      "prevPos": 115,
       "id": 83,
       "name": "ARISTRADAMUS FC",
       "gender": "M",
@@ -63257,7 +63257,7 @@
     },
     {
       "pos": 116,
-      "prevPos": 121,
+      "prevPos": 116,
       "id": 98,
       "name": "JAIME LAFUENTE",
       "gender": "M",
@@ -63807,7 +63807,7 @@
     },
     {
       "pos": 117,
-      "prevPos": 124,
+      "prevPos": 117,
       "id": 16,
       "name": "MURO",
       "gender": "M",
@@ -64357,7 +64357,7 @@
     },
     {
       "pos": 118,
-      "prevPos": 109,
+      "prevPos": 118,
       "id": 180,
       "name": "TORIJA'S",
       "gender": "F",
@@ -64907,7 +64907,7 @@
     },
     {
       "pos": 119,
-      "prevPos": 97,
+      "prevPos": 119,
       "id": 10,
       "name": "LUISCO",
       "gender": "M",
@@ -65457,7 +65457,7 @@
     },
     {
       "pos": 120,
-      "prevPos": 110,
+      "prevPos": 120,
       "id": 60,
       "name": "JANDRO",
       "gender": "M",
@@ -66007,7 +66007,7 @@
     },
     {
       "pos": 121,
-      "prevPos": 129,
+      "prevPos": 121,
       "id": 230,
       "name": "JULS",
       "gender": "M",
@@ -66557,7 +66557,7 @@
     },
     {
       "pos": 122,
-      "prevPos": 130,
+      "prevPos": 122,
       "id": 37,
       "name": "MERINOOOS",
       "gender": "M",
@@ -67107,7 +67107,7 @@
     },
     {
       "pos": 123,
-      "prevPos": 149,
+      "prevPos": 123,
       "id": 146,
       "name": "EDUSIMAL",
       "gender": "M",
@@ -67657,7 +67657,7 @@
     },
     {
       "pos": 123,
-      "prevPos": 122,
+      "prevPos": 123,
       "id": 147,
       "name": "REGALATTI",
       "gender": "M",
@@ -68207,7 +68207,7 @@
     },
     {
       "pos": 125,
-      "prevPos": 152,
+      "prevPos": 125,
       "id": 191,
       "name": "MOTOPAPIS",
       "gender": "F",
@@ -68757,7 +68757,7 @@
     },
     {
       "pos": 126,
-      "prevPos": 108,
+      "prevPos": 126,
       "id": 193,
       "name": "ALEX DE DIEGO",
       "gender": "M",
@@ -69307,7 +69307,7 @@
     },
     {
       "pos": 127,
-      "prevPos": 135,
+      "prevPos": 127,
       "id": 32,
       "name": "SANTIMVN",
       "gender": "M",
@@ -69857,7 +69857,7 @@
     },
     {
       "pos": 128,
-      "prevPos": 136,
+      "prevPos": 128,
       "id": 71,
       "name": "JORDYDEPOR",
       "gender": "M",
@@ -70407,7 +70407,7 @@
     },
     {
       "pos": 129,
-      "prevPos": 117,
+      "prevPos": 129,
       "id": 153,
       "name": "RUBEN SAN",
       "gender": "M",
@@ -70957,7 +70957,7 @@
     },
     {
       "pos": 130,
-      "prevPos": 126,
+      "prevPos": 130,
       "id": 186,
       "name": "GONZALO ZUBÍA",
       "gender": "M",
@@ -71507,7 +71507,7 @@
     },
     {
       "pos": 131,
-      "prevPos": 120,
+      "prevPos": 131,
       "id": 80,
       "name": "ZIDANI",
       "gender": "M",
@@ -72057,7 +72057,7 @@
     },
     {
       "pos": 132,
-      "prevPos": 164,
+      "prevPos": 132,
       "id": 66,
       "name": "MANU RIAU",
       "gender": "M",
@@ -72607,7 +72607,7 @@
     },
     {
       "pos": 133,
-      "prevPos": 123,
+      "prevPos": 133,
       "id": 131,
       "name": "AGUILAR",
       "gender": "M",
@@ -73157,7 +73157,7 @@
     },
     {
       "pos": 134,
-      "prevPos": 116,
+      "prevPos": 134,
       "id": 57,
       "name": "CARLOS MP",
       "gender": "M",
@@ -73707,7 +73707,7 @@
     },
     {
       "pos": 135,
-      "prevPos": 125,
+      "prevPos": 135,
       "id": 115,
       "name": "PULPO PAUL DEL PUERTO DE LA VALETTA",
       "gender": "M",
@@ -74257,7 +74257,7 @@
     },
     {
       "pos": 135,
-      "prevPos": 138,
+      "prevPos": 135,
       "id": 225,
       "name": "D.HORCAJO",
       "gender": "M",
@@ -74807,7 +74807,7 @@
     },
     {
       "pos": 137,
-      "prevPos": 128,
+      "prevPos": 137,
       "id": 152,
       "name": "JUANMA RODRÍGUEZ",
       "gender": "M",
@@ -75357,7 +75357,7 @@
     },
     {
       "pos": 138,
-      "prevPos": 147,
+      "prevPos": 138,
       "id": 151,
       "name": "TOTEMAGO10",
       "gender": "M",
@@ -75907,7 +75907,7 @@
     },
     {
       "pos": 139,
-      "prevPos": 131,
+      "prevPos": 139,
       "id": 207,
       "name": "WILL",
       "gender": "M",
@@ -76457,7 +76457,7 @@
     },
     {
       "pos": 140,
-      "prevPos": 132,
+      "prevPos": 140,
       "id": 74,
       "name": "MENDIETA JUNIOR",
       "gender": "M",
@@ -77007,7 +77007,7 @@
     },
     {
       "pos": 141,
-      "prevPos": 151,
+      "prevPos": 141,
       "id": 26,
       "name": "VALLE",
       "gender": "M",
@@ -77557,7 +77557,7 @@
     },
     {
       "pos": 142,
-      "prevPos": 153,
+      "prevPos": 142,
       "id": 67,
       "name": "MINI MANU",
       "gender": "M",
@@ -78107,7 +78107,7 @@
     },
     {
       "pos": 142,
-      "prevPos": 134,
+      "prevPos": 142,
       "id": 167,
       "name": "FERNANDINHO26",
       "gender": "M",
@@ -78657,7 +78657,7 @@
     },
     {
       "pos": 144,
-      "prevPos": 156,
+      "prevPos": 144,
       "id": 201,
       "name": "VIVA ER PAPI",
       "gender": "M",
@@ -79207,7 +79207,7 @@
     },
     {
       "pos": 145,
-      "prevPos": 136,
+      "prevPos": 145,
       "id": 176,
       "name": "JOEK",
       "gender": "M",
@@ -79757,7 +79757,7 @@
     },
     {
       "pos": 146,
-      "prevPos": 157,
+      "prevPos": 146,
       "id": 212,
       "name": "JONYPEPE99",
       "gender": "M",
@@ -80307,7 +80307,7 @@
     },
     {
       "pos": 147,
-      "prevPos": 160,
+      "prevPos": 147,
       "id": 77,
       "name": "ESTUPIDEZ ARTIFICIAL",
       "gender": "M",
@@ -80857,7 +80857,7 @@
     },
     {
       "pos": 148,
-      "prevPos": 162,
+      "prevPos": 148,
       "id": 42,
       "name": "LAFUIGNA",
       "gender": "M",
@@ -81407,7 +81407,7 @@
     },
     {
       "pos": 148,
-      "prevPos": 175,
+      "prevPos": 148,
       "id": 84,
       "name": "JRIEGO",
       "gender": "M",
@@ -81957,7 +81957,7 @@
     },
     {
       "pos": 148,
-      "prevPos": 162,
+      "prevPos": 148,
       "id": 173,
       "name": "KIKEPA",
       "gender": "M",
@@ -82507,7 +82507,7 @@
     },
     {
       "pos": 148,
-      "prevPos": 140,
+      "prevPos": 148,
       "id": 203,
       "name": "LAMINE RABAL",
       "gender": "M",
@@ -83057,7 +83057,7 @@
     },
     {
       "pos": 152,
-      "prevPos": 180,
+      "prevPos": 152,
       "id": 141,
       "name": "SABANDIHA",
       "gender": "M",
@@ -83607,7 +83607,7 @@
     },
     {
       "pos": 153,
-      "prevPos": 141,
+      "prevPos": 153,
       "id": 23,
       "name": "JOTAVILLA22",
       "gender": "M",
@@ -84157,7 +84157,7 @@
     },
     {
       "pos": 154,
-      "prevPos": 166,
+      "prevPos": 154,
       "id": 155,
       "name": "MARIO",
       "gender": "M",
@@ -84707,7 +84707,7 @@
     },
     {
       "pos": 155,
-      "prevPos": 144,
+      "prevPos": 155,
       "id": 234,
       "name": "JOTA JOTA",
       "gender": "M",
@@ -85257,7 +85257,7 @@
     },
     {
       "pos": 156,
-      "prevPos": 139,
+      "prevPos": 156,
       "id": 187,
       "name": "BBA",
       "gender": "M",
@@ -85807,7 +85807,7 @@
     },
     {
       "pos": 157,
-      "prevPos": 145,
+      "prevPos": 157,
       "id": 126,
       "name": "JAIMEPAZM",
       "gender": "M",
@@ -86357,7 +86357,7 @@
     },
     {
       "pos": 158,
-      "prevPos": 167,
+      "prevPos": 158,
       "id": 34,
       "name": "GUERRA",
       "gender": "M",
@@ -86907,7 +86907,7 @@
     },
     {
       "pos": 159,
-      "prevPos": 168,
+      "prevPos": 159,
       "id": 237,
       "name": "EGCA",
       "gender": "M",
@@ -87457,7 +87457,7 @@
     },
     {
       "pos": 160,
-      "prevPos": 148,
+      "prevPos": 160,
       "id": 150,
       "name": "DANI GARCIA",
       "gender": "M",
@@ -88007,7 +88007,7 @@
     },
     {
       "pos": 161,
-      "prevPos": 149,
+      "prevPos": 161,
       "id": 13,
       "name": "HASSELBAINK 17",
       "gender": "M",
@@ -88557,7 +88557,7 @@
     },
     {
       "pos": 162,
-      "prevPos": 170,
+      "prevPos": 162,
       "id": 175,
       "name": "ALEX.FDEZ",
       "gender": "M",
@@ -89107,7 +89107,7 @@
     },
     {
       "pos": 163,
-      "prevPos": 153,
+      "prevPos": 163,
       "id": 137,
       "name": "BHIDALGO",
       "gender": "M",
@@ -89657,7 +89657,7 @@
     },
     {
       "pos": 163,
-      "prevPos": 153,
+      "prevPos": 163,
       "id": 205,
       "name": "NOTTINGHAM MIEDO",
       "gender": "M",
@@ -90207,7 +90207,7 @@
     },
     {
       "pos": 165,
-      "prevPos": 142,
+      "prevPos": 165,
       "id": 107,
       "name": "FABS",
       "gender": "M",
@@ -90757,7 +90757,7 @@
     },
     {
       "pos": 166,
-      "prevPos": 158,
+      "prevPos": 166,
       "id": 105,
       "name": "GONZALO HORCAJO",
       "gender": "M",
@@ -91307,7 +91307,7 @@
     },
     {
       "pos": 167,
-      "prevPos": 145,
+      "prevPos": 167,
       "id": 104,
       "name": "JACOBO HORCAJO",
       "gender": "M",
@@ -91857,7 +91857,7 @@
     },
     {
       "pos": 168,
-      "prevPos": 174,
+      "prevPos": 168,
       "id": 243,
       "name": "DIEGO BARO SIMEONE",
       "gender": "M",
@@ -92407,7 +92407,7 @@
     },
     {
       "pos": 169,
-      "prevPos": 159,
+      "prevPos": 169,
       "id": 236,
       "name": "COURTNEY",
       "gender": "M",
@@ -92957,7 +92957,7 @@
     },
     {
       "pos": 170,
-      "prevPos": 161,
+      "prevPos": 170,
       "id": 1,
       "name": "ARROBAMARCOVARELAFAM",
       "gender": "M",
@@ -93507,7 +93507,7 @@
     },
     {
       "pos": 171,
-      "prevPos": 184,
+      "prevPos": 171,
       "id": 86,
       "name": "JAVIROBLES",
       "gender": "M",
@@ -94057,7 +94057,7 @@
     },
     {
       "pos": 172,
-      "prevPos": 143,
+      "prevPos": 172,
       "id": 41,
       "name": "ORDAS LOCAS",
       "gender": "M",
@@ -94607,7 +94607,7 @@
     },
     {
       "pos": 173,
-      "prevPos": 175,
+      "prevPos": 173,
       "id": 227,
       "name": "ROC_1",
       "gender": "M",
@@ -95157,7 +95157,7 @@
     },
     {
       "pos": 174,
-      "prevPos": 179,
+      "prevPos": 174,
       "id": 210,
       "name": "RITA",
       "gender": "F",
@@ -95707,7 +95707,7 @@
     },
     {
       "pos": 175,
-      "prevPos": 169,
+      "prevPos": 175,
       "id": 4,
       "name": "JUANPI TORRICO",
       "gender": "M",
@@ -96257,7 +96257,7 @@
     },
     {
       "pos": 176,
-      "prevPos": 171,
+      "prevPos": 176,
       "id": 12,
       "name": "RIVALDO 11",
       "gender": "M",
@@ -96807,7 +96807,7 @@
     },
     {
       "pos": 176,
-      "prevPos": 165,
+      "prevPos": 176,
       "id": 76,
       "name": "MARI MADERO",
       "gender": "F",
@@ -97357,7 +97357,7 @@
     },
     {
       "pos": 176,
-      "prevPos": 171,
+      "prevPos": 176,
       "id": 251,
       "name": "MENDIX",
       "gender": "M",
@@ -97907,7 +97907,7 @@
     },
     {
       "pos": 179,
-      "prevPos": 196,
+      "prevPos": 179,
       "id": 85,
       "name": "RUBÉN JARQUE",
       "gender": "M",
@@ -98457,7 +98457,7 @@
     },
     {
       "pos": 180,
-      "prevPos": 173,
+      "prevPos": 180,
       "id": 65,
       "name": "MURCI",
       "gender": "M",
@@ -99007,7 +99007,7 @@
     },
     {
       "pos": 181,
-      "prevPos": 204,
+      "prevPos": 181,
       "id": 189,
       "name": "SAUSAGE",
       "gender": "F",
@@ -99557,7 +99557,7 @@
     },
     {
       "pos": 182,
-      "prevPos": 177,
+      "prevPos": 182,
       "id": 52,
       "name": "TARTAN TORERO",
       "gender": "M",
@@ -100107,7 +100107,7 @@
     },
     {
       "pos": 182,
-      "prevPos": 177,
+      "prevPos": 182,
       "id": 188,
       "name": "MICHELLE HILL",
       "gender": "F",
@@ -100657,7 +100657,7 @@
     },
     {
       "pos": 184,
-      "prevPos": 198,
+      "prevPos": 184,
       "id": 63,
       "name": "LOCH",
       "gender": "M",
@@ -101207,7 +101207,7 @@
     },
     {
       "pos": 185,
-      "prevPos": 181,
+      "prevPos": 185,
       "id": 123,
       "name": "AMATINA",
       "gender": "F",
@@ -101757,7 +101757,7 @@
     },
     {
       "pos": 186,
-      "prevPos": 182,
+      "prevPos": 186,
       "id": 122,
       "name": "MANUCHI_MUSSO",
       "gender": "F",
@@ -102307,7 +102307,7 @@
     },
     {
       "pos": 187,
-      "prevPos": 199,
+      "prevPos": 187,
       "id": 216,
       "name": "BARDA",
       "gender": "M",
@@ -102857,7 +102857,7 @@
     },
     {
       "pos": 188,
-      "prevPos": 184,
+      "prevPos": 188,
       "id": 182,
       "name": "DAPIS",
       "gender": "M",
@@ -103407,7 +103407,7 @@
     },
     {
       "pos": 189,
-      "prevPos": 215,
+      "prevPos": 189,
       "id": 124,
       "name": "GIOVANNI PIERDOMENICO",
       "gender": "F",
@@ -103957,7 +103957,7 @@
     },
     {
       "pos": 190,
-      "prevPos": 186,
+      "prevPos": 190,
       "id": 94,
       "name": "LALI",
       "gender": "F",
@@ -104507,7 +104507,7 @@
     },
     {
       "pos": 191,
-      "prevPos": 187,
+      "prevPos": 191,
       "id": 140,
       "name": "LA CUCARACHA",
       "gender": "F",
@@ -105057,7 +105057,7 @@
     },
     {
       "pos": 192,
-      "prevPos": 189,
+      "prevPos": 192,
       "id": 44,
       "name": "LOZA",
       "gender": "M",
@@ -105607,7 +105607,7 @@
     },
     {
       "pos": 192,
-      "prevPos": 189,
+      "prevPos": 192,
       "id": 238,
       "name": "DON JOSE MOURINHO",
       "gender": "M",
@@ -106157,7 +106157,7 @@
     },
     {
       "pos": 194,
-      "prevPos": 191,
+      "prevPos": 194,
       "id": 91,
       "name": "DANI CRUZ",
       "gender": "M",
@@ -106707,7 +106707,7 @@
     },
     {
       "pos": 195,
-      "prevPos": 193,
+      "prevPos": 195,
       "id": 119,
       "name": "MARTA LLORDEN DE PAZ",
       "gender": "F",
@@ -107257,7 +107257,7 @@
     },
     {
       "pos": 196,
-      "prevPos": 183,
+      "prevPos": 196,
       "id": 21,
       "name": "CARLOTA PEIDRO",
       "gender": "M",
@@ -107807,7 +107807,7 @@
     },
     {
       "pos": 197,
-      "prevPos": 194,
+      "prevPos": 197,
       "id": 118,
       "name": "ALONSO DOMINGUEZ",
       "gender": "M",
@@ -108357,7 +108357,7 @@
     },
     {
       "pos": 198,
-      "prevPos": 203,
+      "prevPos": 198,
       "id": 109,
       "name": "PARDIMIKEL",
       "gender": "M",
@@ -108907,7 +108907,7 @@
     },
     {
       "pos": 199,
-      "prevPos": 204,
+      "prevPos": 199,
       "id": 204,
       "name": "JOSELU",
       "gender": "M",
@@ -109457,7 +109457,7 @@
     },
     {
       "pos": 200,
-      "prevPos": 188,
+      "prevPos": 200,
       "id": 55,
       "name": "ATILA",
       "gender": "M",
@@ -110007,7 +110007,7 @@
     },
     {
       "pos": 201,
-      "prevPos": 197,
+      "prevPos": 201,
       "id": 121,
       "name": "SALMON SORLOTH",
       "gender": "M",
@@ -110557,7 +110557,7 @@
     },
     {
       "pos": 202,
-      "prevPos": 192,
+      "prevPos": 202,
       "id": 2,
       "name": "GASPAR GS",
       "gender": "M",
@@ -111107,7 +111107,7 @@
     },
     {
       "pos": 203,
-      "prevPos": 207,
+      "prevPos": 203,
       "id": 198,
       "name": "POLA",
       "gender": "F",
@@ -111657,7 +111657,7 @@
     },
     {
       "pos": 204,
-      "prevPos": 200,
+      "prevPos": 204,
       "id": 33,
       "name": "QUIQUI",
       "gender": "M",
@@ -112207,7 +112207,7 @@
     },
     {
       "pos": 205,
-      "prevPos": 210,
+      "prevPos": 205,
       "id": 114,
       "name": "ANTOINE DE LA VALETTE",
       "gender": "M",
@@ -112757,7 +112757,7 @@
     },
     {
       "pos": 205,
-      "prevPos": 210,
+      "prevPos": 205,
       "id": 160,
       "name": "IBÁÑEZ 2",
       "gender": "M",
@@ -113307,7 +113307,7 @@
     },
     {
       "pos": 207,
-      "prevPos": 212,
+      "prevPos": 207,
       "id": 235,
       "name": "ANTONIO MERINO",
       "gender": "M",
@@ -113857,7 +113857,7 @@
     },
     {
       "pos": 208,
-      "prevPos": 202,
+      "prevPos": 208,
       "id": 233,
       "name": "NO KANE NO GAIN",
       "gender": "M",
@@ -114407,7 +114407,7 @@
     },
     {
       "pos": 209,
-      "prevPos": 208,
+      "prevPos": 209,
       "id": 29,
       "name": "ANITA DINAMITA",
       "gender": "F",
@@ -114957,7 +114957,7 @@
     },
     {
       "pos": 210,
-      "prevPos": 195,
+      "prevPos": 210,
       "id": 20,
       "name": "GABRIEL LOPEZ GARZON",
       "gender": "M",
@@ -115507,7 +115507,7 @@
     },
     {
       "pos": 211,
-      "prevPos": 201,
+      "prevPos": 211,
       "id": 125,
       "name": "MAX BOMBO",
       "gender": "M",
@@ -116057,7 +116057,7 @@
     },
     {
       "pos": 212,
-      "prevPos": 224,
+      "prevPos": 212,
       "id": 144,
       "name": "ADRIANA RC",
       "gender": "F",
@@ -117157,7 +117157,7 @@
     },
     {
       "pos": 214,
-      "prevPos": 232,
+      "prevPos": 214,
       "id": 35,
       "name": "MARC PERIS",
       "gender": "M",
@@ -117707,7 +117707,7 @@
     },
     {
       "pos": 215,
-      "prevPos": 214,
+      "prevPos": 215,
       "id": 202,
       "name": "JOSÉ MANUEL",
       "gender": "M",
@@ -118257,7 +118257,7 @@
     },
     {
       "pos": 216,
-      "prevPos": 225,
+      "prevPos": 216,
       "id": 149,
       "name": "JARE 14",
       "gender": "M",
@@ -118807,7 +118807,7 @@
     },
     {
       "pos": 217,
-      "prevPos": 226,
+      "prevPos": 217,
       "id": 30,
       "name": "NACHO BREY",
       "gender": "M",
@@ -119357,7 +119357,7 @@
     },
     {
       "pos": 218,
-      "prevPos": 216,
+      "prevPos": 218,
       "id": 73,
       "name": "SANJOSINI",
       "gender": "M",
@@ -119907,7 +119907,7 @@
     },
     {
       "pos": 219,
-      "prevPos": 227,
+      "prevPos": 219,
       "id": 245,
       "name": "LENDOIRO PREACHER",
       "gender": "M",
@@ -120457,7 +120457,7 @@
     },
     {
       "pos": 220,
-      "prevPos": 217,
+      "prevPos": 220,
       "id": 133,
       "name": "DEL RÍO JR",
       "gender": "M",
@@ -121007,7 +121007,7 @@
     },
     {
       "pos": 220,
-      "prevPos": 206,
+      "prevPos": 220,
       "id": 241,
       "name": "EL BICHO 7",
       "gender": "M",
@@ -121557,7 +121557,7 @@
     },
     {
       "pos": 222,
-      "prevPos": 218,
+      "prevPos": 222,
       "id": 106,
       "name": "PUTO",
       "gender": "M",
@@ -122107,7 +122107,7 @@
     },
     {
       "pos": 223,
-      "prevPos": 219,
+      "prevPos": 223,
       "id": 197,
       "name": "GONCHO",
       "gender": "M",
@@ -122657,7 +122657,7 @@
     },
     {
       "pos": 224,
-      "prevPos": 209,
+      "prevPos": 224,
       "id": 25,
       "name": "PICHI",
       "gender": "M",
@@ -123207,7 +123207,7 @@
     },
     {
       "pos": 225,
-      "prevPos": 230,
+      "prevPos": 225,
       "id": 129,
       "name": "JACO ZAGLUL",
       "gender": "M",
@@ -123757,7 +123757,7 @@
     },
     {
       "pos": 226,
-      "prevPos": 221,
+      "prevPos": 226,
       "id": 58,
       "name": "HERNI",
       "gender": "M",
@@ -124307,7 +124307,7 @@
     },
     {
       "pos": 227,
-      "prevPos": 228,
+      "prevPos": 227,
       "id": 51,
       "name": "ORDAS MODERADAS",
       "gender": "M",
@@ -124857,7 +124857,7 @@
     },
     {
       "pos": 228,
-      "prevPos": 222,
+      "prevPos": 228,
       "id": 43,
       "name": "BELLVER",
       "gender": "M",
@@ -125407,7 +125407,7 @@
     },
     {
       "pos": 229,
-      "prevPos": 220,
+      "prevPos": 229,
       "id": 53,
       "name": "TOWERS",
       "gender": "M",
@@ -125957,7 +125957,7 @@
     },
     {
       "pos": 230,
-      "prevPos": 233,
+      "prevPos": 230,
       "id": 215,
       "name": "CARLOS JARA",
       "gender": "M",
@@ -126507,7 +126507,7 @@
     },
     {
       "pos": 231,
-      "prevPos": 229,
+      "prevPos": 231,
       "id": 78,
       "name": "JESUS SANTAMARIA",
       "gender": "M",
@@ -127057,7 +127057,7 @@
     },
     {
       "pos": 232,
-      "prevPos": 222,
+      "prevPos": 232,
       "id": 162,
       "name": "RAMIROGUERRA",
       "gender": "M",
@@ -127607,7 +127607,7 @@
     },
     {
       "pos": 233,
-      "prevPos": 231,
+      "prevPos": 233,
       "id": 232,
       "name": "DUTCHY",
       "gender": "M",
@@ -129807,7 +129807,7 @@
     },
     {
       "pos": 237,
-      "prevPos": 238,
+      "prevPos": 237,
       "id": 61,
       "name": "FELIPE MUÑOZ CORSINI",
       "gender": "M",
@@ -130357,7 +130357,7 @@
     },
     {
       "pos": 238,
-      "prevPos": 239,
+      "prevPos": 238,
       "id": 143,
       "name": "HENAR CDS",
       "gender": "F",
@@ -130907,7 +130907,7 @@
     },
     {
       "pos": 239,
-      "prevPos": 244,
+      "prevPos": 239,
       "id": 148,
       "name": "DANIELO",
       "gender": "M",
@@ -131457,7 +131457,7 @@
     },
     {
       "pos": 240,
-      "prevPos": 237,
+      "prevPos": 240,
       "id": 200,
       "name": "MIGUEL GARCÍA DURÁ",
       "gender": "M",
@@ -132007,7 +132007,7 @@
     },
     {
       "pos": 241,
-      "prevPos": 240,
+      "prevPos": 241,
       "id": 9,
       "name": "PR7",
       "gender": "M",
@@ -133107,7 +133107,7 @@
     },
     {
       "pos": 243,
-      "prevPos": 247,
+      "prevPos": 243,
       "id": 161,
       "name": "PATI TORRES",
       "gender": "M",
@@ -133657,7 +133657,7 @@
     },
     {
       "pos": 244,
-      "prevPos": 241,
+      "prevPos": 244,
       "id": 190,
       "name": "MARÍA MILLA",
       "gender": "F",
@@ -134207,7 +134207,7 @@
     },
     {
       "pos": 245,
-      "prevPos": 246,
+      "prevPos": 245,
       "id": 177,
       "name": "MACIAN",
       "gender": "M",
@@ -134757,7 +134757,7 @@
     },
     {
       "pos": 246,
-      "prevPos": 243,
+      "prevPos": 246,
       "id": 18,
       "name": "BELAS",
       "gender": "M",
@@ -135307,7 +135307,7 @@
     },
     {
       "pos": 247,
-      "prevPos": 245,
+      "prevPos": 247,
       "id": 72,
       "name": "DAVID FERNÁNDEZ ORTIZ",
       "gender": "M",
@@ -135857,7 +135857,7 @@
     },
     {
       "pos": 248,
-      "prevPos": 249,
+      "prevPos": 248,
       "id": 82,
       "name": "XULIO XAVIERT",
       "gender": "M",
@@ -136407,7 +136407,7 @@
     },
     {
       "pos": 249,
-      "prevPos": 248,
+      "prevPos": 249,
       "id": 184,
       "name": "LLAMAS",
       "gender": "M",
@@ -138344,6 +138344,10 @@
     "Grupo L|CRO-GHA": {
       "r": "2-1",
       "q": "1"
+    },
+    "Dieciseisavos de Final|SUD-CAN": {
+      "r": "0-1",
+      "q": ""
     }
   },
   "sponsors": [
@@ -138354,36 +138358,29 @@
       "tagline": "Recupera tu bienestar, mejora tu movilidad y vuelve a sentirte bien con una atención osteopática personalizada en tu clínica en Algete."
     },
     {
+      "name": "Cría Cuervos",
+      "logo": "logos/criacuervos_3.png",
+      "lightBg": true,
+      "url": "https://vinoscriacuervos.com",
+      "tagline": "Vinos versátiles que le den sabor y color a todos esos pequeños, grandes momentos de la vida. Aquí y ahora, disfruta del mundial y de la vida con uno de nuestros vinos."
+    },
+    {
       "name": "Clínica Santamaría",
       "logo": "logos/clinica_santamaria.png",
       "url": "https://www.clinica-santamaria.com/",
       "tagline": "Para lucir una sonrisa perfecta cuando nuestra selección levante el mundial, el mejor sitio al que acudir es Clínica Santamaría."
     },
     {
-      "name": "Acrisure",
-      "logo": "logos/acrisure.jpeg",
-      "logoLarge": true,
-      "url": "https://acrisure.com",
-      "tagline": "En Acrisure combinamos la atención cercana de un equipo local con la capacidad operativa de una red global. Cualquier seguro que necesitéis, nuestro amigo Daniel San José seguro que es capaz de mejorarlo."
-    },
-    {
-      "name": "La Vuelta",
-      "logo": "logos/la_vuelta.png",
-      "url": "https://www.instagram.com/lavuelta_madrid",
-      "tagline": "Porque los premios se disfrutan mejor compartiéndolos. Si tú eres mi PORRA, yo soy tu VUELTA. A veces el mejor premio está a la vuelta de la esquina."
+      "name": "Flexicar",
+      "logo": "logos/flexicar.png",
+      "url": "https://www.flexicar.es",
+      "tagline": "Yo compro mi coche en Flexicar. Si lo prefieres, también gestionamos la venta de tu vehículo."
     },
     {
       "name": "Clínica Baena Martín",
       "logo": "logos/baena_martin.jpg",
       "url": "https://www.clinicabaenamartin.com/",
       "tagline": "En clínica Baena Martín, centro de podología, medicina estética y fisioterapia, se especializan en cuidados para todas las edades. Sus profesionales están esperando para cubrir vuestras necesidades. ¡No dudéis en visitarles, saldréis encantados!"
-    },
-    {
-      "name": "Volga Real Estate",
-      "logo": "logos/volga.png",
-      "logoLarge": true,
-      "url": "https://volgarealestate.es",
-      "tagline": "Porque cada hogar tiene una historia, te ayudamos a encontrar la tuya. Convertimos la búsqueda de tu hogar en una experiencia cercana y personal."
     },
     {
       "name": "Ágora Arquitectura",
@@ -138400,11 +138397,18 @@
       "tagline": "Recuerdos, momentos y emociones se transforman en el alma de tu perfume. Una experiencia única en el mundo, que da comienzo a una nueva era en la perfumería."
     },
     {
-      "name": "Cría Cuervos",
-      "logo": "logos/criacuervos_3.png",
-      "lightBg": true,
-      "url": "https://vinoscriacuervos.com",
-      "tagline": "Vinos versátiles que le den sabor y color a todos esos pequeños, grandes momentos de la vida. Aquí y ahora, disfruta del mundial y de la vida con uno de nuestros vinos."
+      "name": "Acrisure",
+      "logo": "logos/acrisure.jpeg",
+      "logoLarge": true,
+      "url": "https://acrisure.com",
+      "tagline": "En Acrisure combinamos la atención cercana de un equipo local con la capacidad operativa de una red global. Cualquier seguro que necesitéis, nuestro amigo Daniel San José seguro que es capaz de mejorarlo."
+    },
+    {
+      "name": "Volga Real Estate",
+      "logo": "logos/volga.png",
+      "logoLarge": true,
+      "url": "https://volgarealestate.es",
+      "tagline": "Porque cada hogar tiene una historia, te ayudamos a encontrar la tuya. Convertimos la búsqueda de tu hogar en una experiencia cercana y personal."
     },
     {
       "name": "22EVNTS",
@@ -138414,10 +138418,10 @@
       "tagline": "Si necesitas entradas para cualquier evento a nivel mundial y una gestión personalizada, 22EVNTS es tu empresa. ¡Quien sabe si tendrá que gestionarnos entradas para la final del mundial!"
     },
     {
-      "name": "Flexicar",
-      "logo": "logos/flexicar.png",
-      "url": "https://www.flexicar.es",
-      "tagline": "Yo compro mi coche en Flexicar. Si lo prefieres, también gestionamos la venta de tu vehículo."
+      "name": "La Vuelta",
+      "logo": "logos/la_vuelta.png",
+      "url": "https://www.instagram.com/lavuelta_madrid",
+      "tagline": "Porque los premios se disfrutan mejor compartiéndolos. Si tú eres mi PORRA, yo soy tu VUELTA. A veces el mejor premio está a la vuelta de la esquina."
     }
   ]
 }
